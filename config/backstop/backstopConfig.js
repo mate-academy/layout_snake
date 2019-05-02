@@ -4,7 +4,7 @@
 const basicScenario = {
   label: 'test', // name of the test
   url: 'http://localhost:8080',
-  referenceUrl: '', // put here reference to github-pages with ready project
+  referenceUrl: 'https://mate-academy.github.io/layout_solutions/snake/',
   readyEvent: '',
   readySelector: '',
   delay: 1000,
@@ -17,7 +17,7 @@ const basicScenario = {
   selectorExpansion: true,
   expect: 0,
   misMatchThreshold: 1, // 1% of 100%
-  requireSameDimensions: true
+  requireSameDimensions: true,
 };
 
 module.exports = {
@@ -26,13 +26,47 @@ module.exports = {
   onReadyScript: 'puppet/onReady.js',
   viewports: [
     {
-      name: 'tablet_h',
-      width: 1024,
-      height: 768
-    }
+      name: '1200',
+      width: 1200,
+      height: 200,
+    },
+    {
+      name: '1050',
+      width: 1050,
+      height: 200,
+    },
+    {
+      name: '900',
+      width: 900,
+      height: 200,
+    },
+    {
+      name: '750',
+      width: 750,
+      height: 200,
+    },
+    {
+      name: '600',
+      width: 600,
+      height: 200,
+    },
+    {
+      name: '450',
+      width: 450,
+      height: 200,
+    },
+    {
+      name: '300',
+      width: 300,
+      height: 200,
+    },
   ],
   scenarios: [
-    { ...basicScenario }
+    {
+      ...basicScenario,
+      label: 'entire-document',
+      selectors: ['document'],
+    },
     // define here scenarios for testing
   ],
   paths: {
@@ -40,15 +74,15 @@ module.exports = {
     bitmaps_test: 'backstop_data/bitmaps_test',
     engine_scripts: 'backstop_data/engine_scripts',
     html_report: 'backstop_data/html_report',
-    ci_report: 'backstop_data/ci_report'
+    ci_report: 'backstop_data/ci_report',
   },
   report: ['browser'],
   engine: 'puppeteer',
   engineOptions: {
-    args: ['--no-sandbox']
+    args: ['--no-sandbox'],
   },
   asyncCaptureLimit: 5,
   asyncCompareLimit: 50,
   debug: false,
-  debugWindow: false
+  debugWindow: false,
 };
