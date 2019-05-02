@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  color: white;
+}
+
+.colored-divs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div {
+  flex-basis: 33.33%;
+  min-width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.first {
+  background: red;
+  order: 1;
+}
+
+.second {
+  background: rgb(204, 0, 0);
+  order: 2;
+}
+
+.third {
+  background: rgb(153, 0, 0);
+  order: 3;
+}
+
+.fourth {
+  background: rgb(102, 0, 0);
+  order: 6;
+}
+
+.fifth {
+  background: rgb(51, 0, 0);
+  order: 5;
+}
+
+.sixth {
+  background: black;
+  order: 4;
+}
+
+@media (max-width: 899px) {
+  div {
+    flex-basis: 50%;
+  }
+
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .third {
+    order: 4;
+  }
+
+  .fourth {
+    order: 3;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
+
+@media (max-width: 599px) {
+  div {
+    flex-basis: 100%;
+  }
+
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .third {
+    order: 3;
+  }
+
+  .fourth {
+    order: 4;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
