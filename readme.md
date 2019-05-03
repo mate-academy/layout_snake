@@ -1,4 +1,4 @@
-# Boilerplate for layout tasks
+gulldan1996# Boilerplalayout_snakeut tasks
 
 Display six colored blocks on the screen without any extra margins:
 
@@ -26,5 +26,5 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [UPDATE DEMO LINK](https://gulldan1996.github.io/layout_snake/)
+- [UPDATE TEST REPORT LINK](https://gulldan1996.github.io/layout_snake/report/html_report/)
