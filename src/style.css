@@ -79,11 +79,9 @@ div {
     width: 375px;
   }
 
-  .three {
-    order: 2;
-  }
-
-  .five {
+  .three,
+  .five,
+  .six {
     order: 2;
   }
 
@@ -91,9 +89,6 @@ div {
     order: 1;
   }
 
-  .six {
-    order: 2;
-  }
 }
 
 @media(max-width: 600px) {
@@ -107,19 +102,11 @@ div {
     width: 450px;
   }
 
-  .three {
-    order: 0;
-  }
-
-  .five {
-    order: 0;
-  }
-
-  .four {
-    order: 0;
-  }
-
+  .five,
+  .three,
+  .four,
   .six {
     order: 0;
   }
+
 }
