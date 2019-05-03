@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  color: white;
+}
+
+.colored-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.colored-blocks > div {
+  flex-basis: 33.33%;
+  min-width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.one {
+  background: red;
+  order: 1;
+}
+
+.two {
+  background: rgb(204, 0, 0);
+  order: 2;
+}
+
+.three {
+  background: rgb(153, 0, 0);
+  order: 3;
+}
+
+.four {
+  background: rgb(102, 0, 0);
+  order: 6;
+}
+
+.five {
+  background: rgb(51, 0, 0);
+  order: 5;
+}
+
+.six {
+  background: black;
+  order: 4;
+}
+
+@media (max-width: 899px) {
+  .colored-blocks > div {
+    flex-basis: 50%;
+  }
+  .one {
+    order: 1;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .three {
+    order: 4;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media (max-width: 599px) {
+  .colored-blocks > div {
+    flex-basis: 100%;
+  }
+  .one {
+    order: 1;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .three {
+    order: 3;
+  }
+
+  .four {
+    order: 4;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
