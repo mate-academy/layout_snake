@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100px;
+  font-family: Arial, serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.one {
+  background: rgb(255, 0, 0);
+}
+
+.two {
+  background: rgb(204, 0, 0);
+}
+
+.three {
+  background: rgb(153, 0, 0);
+}
+
+.four {
+  background: rgb(102, 0, 0);
+}
+
+.five {
+  background: rgb(51, 0, 0);
+}
+
+.six {
+  background: rgb(0, 0, 0);
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+}
+
+@media (min-width: 900px) {
+  .block:nth-child(1) {
+    order: 1;
+  }
+
+  .block:nth-child(2) {
+    order: 2;
+  }
+
+  .block:nth-child(3) {
+    order: 3;
+  }
+
+  .block:nth-child(4) {
+    order: 6;
+  }
+
+  .block:nth-child(5) {
+    order: 5;
+  }
+
+  .block:nth-child(6) {
+    order: 4;
+  }
+}
+
+@media (max-width: 899px) {
+  .block:nth-child(1) {
+    order: 1;
+  }
+
+  .block:nth-child(2) {
+    order: 2;
+  }
+
+  .block:nth-child(3) {
+    order: 4;
+  }
+
+  .block:nth-child(4) {
+    order: 3;
+  }
+
+  .block:nth-child(5) {
+    order: 5;
+  }
+
+  .block:nth-child(6) {
+    order: 6;
+  }
+}
+
+@media (max-width: 599px) {
+  .block:nth-child(1) {
+    order: 1;
+  }
+
+  .block:nth-child(2) {
+    order: 2;
+  }
+
+  .block:nth-child(3) {
+    order: 3;
+  }
+
+  .block:nth-child(4) {
+    order: 4;
+  }
+
+  .block:nth-child(5) {
+    order: 5;
+  }
+
+  .block:nth-child(6) {
+    order: 6;
+  }
+}
