@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-basis: 33.33%;
+  height: 300px;
+  min-width: 300px;
+  padding: 100px 0;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  box-sizing: border-box;
+}
+
+.second {
+  background-color: rgb(204, 0, 0);
+}
+
+.third {
+  background-color: rgb(153, 0, 0);
+}
+
+.fourth {
+  background-color: rgb(102, 0, 0);
+  order: 6;
+}
+
+.fifth {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.sixth {
+  background-color: rgb(0, 0, 0);
+  order: 4;
+}
+
+@media (max-width: 899px) {
+  .item {
+    flex-basis: 50%;
+  }
+
+  .third {
+    order: 4;
+  }
+
+  .fourth {
+    order: 3;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
+
+@media (max-width: 599px) {
+  .item {
+    flex-basis: 100%;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .third {
+    order: 3;
+  }
+
+  .fourth {
+    order: 4;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
