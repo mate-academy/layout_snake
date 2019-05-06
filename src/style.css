@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.block {
+div > div {
   display: flex;
   height: 300px;
   min-width: 300px;
@@ -18,65 +18,65 @@ p {
   color: white;
 }
 
-#b1 {
+.b1 {
   background-color: #f00;
 }
 
-#b2 {
+.b2 {
   background-color: #c00;
 }
 
-#b3 {
+.b3 {
   background-color: #900;
 }
 
-#b4 {
+.b4 {
   background-color: #600;
   order: 3;
 }
 
-#b5 {
+.b5 {
   background-color: #300;
   order: 2;
 }
 
-#b6 {
+.b6 {
   background-color: #000;
   order: 1;
 }
 
 @media (max-width: 899px) {
-  #b4 {
+  .b4 {
     order: 1;
   }
   
-  #b3 {
+  .b3 {
     order: 2;
   }
 
-  #b5 {
+  .b5 {
     order: 3;
   }
 
-  #b6 {
+  .b6 {
     order: 4;
   }
 }
 
 @media (max-width: 599px) {
-  #b3 {
+  .b3 {
     order: 1;
   }
 
-  #b4 {
+  .b4 {
     order: 2;
   }
   
-  #b5 {
+  .b5 {
     order: 3;
   }
 
-  #b6 {
+  .b6 {
     order: 4;
   }
 }
