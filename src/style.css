@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div > div {
+  display: flex;
+  height: 300px;
+  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33%;
+}
+
+p {
+  font: 100px arial;
+  color: white;
+}
+
+.b1 {
+  background-color: #f00;
+}
+
+.b2 {
+  background-color: #c00;
+}
+
+.b3 {
+  background-color: #900;
+}
+
+.b4 {
+  background-color: #600;
+  order: 3;
+}
+
+.b5 {
+  background-color: #300;
+  order: 2;
+}
+
+.b6 {
+  background-color: #000;
+  order: 1;
+}
+
+@media (max-width: 899px) {
+  .b4 {
+    order: 1;
+  }
+  
+  .b3 {
+    order: 2;
+  }
+
+  .b5 {
+    order: 3;
+  }
+
+  .b6 {
+    order: 4;
+  }
+}
+
+@media (max-width: 599px) {
+  .b3 {
+    order: 1;
+  }
+
+  .b4 {
+    order: 2;
+  }
+  
+  .b5 {
+    order: 3;
+  }
+
+  .b6 {
+    order: 4;
+  }
+}
