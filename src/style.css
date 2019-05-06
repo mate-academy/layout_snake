@@ -21,18 +21,15 @@
 }
 
 .first {
-  background: #ff00;
-  order: 1;
+  background: #f00;
 }
 
 .second {
   background: #c00;
-  order: 2;
 }
 
 .third {
   background: #900;
-  order: 3;
 }
 
 .fourth {
@@ -55,24 +52,12 @@
     flex-basis: 50%;
   }
   
-  .first {
-    order: 1;
-  }
-  
-  .second {
-    order: 2;
-  }
-  
   .third {
     order: 4;
   }
   
   .fourth {
     order: 3;
-  }
-  
-  .fifth {
-    order: 5;
   }
   
   .sixth {
@@ -83,29 +68,6 @@
 @media (max-width: 599px) {
   .container > div {
     flex-basis: 100%;
-  }
-  
-  .first {
-    order: 1;
-  }
-  
-  .second {
-    order: 2;
-  }
-  
-  .third {
-    order: 3;
-  }
-  
-  .fourth {
-    order: 4;
-  }
-  
-  .fifth {
-    order: 5;
-  }
-  
-  .sixth {
-    order: 6;
+    order: 0;
   }
 }
