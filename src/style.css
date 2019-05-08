@@ -36,35 +36,16 @@ div {
 
 .four {
   background-color: #600;
+  order: 2;
 }
 
 .five {
   background-color: #300;
+  order: 1;
 }
 
 .six {
   background-color: #000;
-}
-
-@media(min-width: 1200px) {
-  .four {
-    order: 2;
-  }
-
-  .five {
-    order: 1;
-  }
-}
-
-@media(max-width: 1050px) {
-
-  .four {
-    order: 2;
-  }
-
-  .five {
-    order: 1;
-  }
 }
 
 @media(max-width: 750px) {
