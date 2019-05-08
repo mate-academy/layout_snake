@@ -75,7 +75,7 @@ body {
 
 @media (max-width: 599px) {
   .box__container > div {
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
   
   .box__elem-4 {
