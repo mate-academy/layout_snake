@@ -44,10 +44,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  .container > div {
-    height: 300px;
-    width: 50%;
-  }
   
   .three {
     order: 4;
