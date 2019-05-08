@@ -14,10 +14,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-width: 900px;
 }
 
 .flex-container > div {
-  flex-basis: calc(100% / 3);
+  flex-basis: 33.33%;
   height: 300px;
   text-align: center;
   min-width: 300px;
@@ -50,28 +51,30 @@ body {
 }
 
 @media (max-width: 899px) {
-  .flex-container div {
-    flex-basis: 50%;
+  .flex-container {
+    min-width: 600px;
   }
 
-  .three {
-    order: 1;
+  .flex-container > div {
+    flex-basis: 50%;
   }
 
   .four {
     order: 0;
   }
 
+  .three,
+  .six,
   .five {
-    order: 1;
-  }
-
-  .six {
     order: 1;
   }
 }
 
 @media (max-width: 599px) {
+  .flex-container {
+    min-width: 300px;
+  }
+
   .flex-container > div {
     flex-basis: 100%;
     order: 0;
