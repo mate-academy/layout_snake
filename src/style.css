@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+}
+
+.container {
+  font-family: "Arial", sans-serif;
+  font-size: 100px;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+}
+
+div {
+  height: 300px;
+  min-width: 300px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  background: red;
+}
+
+.second {
+  background: rgb(204, 0, 0);
+}
+
+.third {
+  background: rgb(153, 0, 0);
+}
+
+.fourth {
+  background: rgb(102, 0, 0);
+}
+
+.fifth {
+  background: rgb(51, 0, 0);
+}
+
+.sixth {
+  background: black;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-basis: 50%;
+  }
+
+  .third {
+    order: 4;
+  }
+
+  .fourth {
+    order: 3;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-basis: 30%;
+  }
+
+  .fourth {
+    order: 6;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 4;
+  }
+}
