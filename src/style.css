@@ -45,8 +45,7 @@
 
 @media (min-width: 600px) {
   .box > div {
-	
-    width: 50%;
+    flex-basis: 50%;
   }
 
   .thirth {
@@ -68,8 +67,7 @@
 
 @media (min-width: 900px) {
   .box > div {
-	
-    width: 30%;
+    flex-basis: 30%;
   }
 
   .fourth {
