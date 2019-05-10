@@ -4,14 +4,14 @@
 
 .flex_container {
   display: flex;
-  width: 100%;
-  align-items: stretch;
+  flex-flow: row wrap;
+  justify-content: stretch;
 }
 
 .snake {
+  flex-grow: 1;
   height: 300px;
-  width: 100%;
-
+  min-width: 300px;;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 300px;
   font-size: 100px;
@@ -21,72 +21,68 @@
 
 .block_1 {
   background: hsl(0, 100%, 50%);
-  order: 1;
 }
 
 .block_2 {
-  order: 2;
   background: hsl(0, 100%, 40%);
 }
 
 .block_3 {
-  order: 3;
   background: hsl(0, 100%, 30%);
 }
 
 .block_4 {
-  order: 4;
   background: hsl(0, 100%, 20%);
 }
 
 .block_5 {
-  order: 5;
   background: hsl(0, 100%, 10%);
 }
 
 .block_6 {
-  order: 6;
   background: hsl(0, 100%, 0%);
 }
 
-@media all and (min-width: 0) {
-  .flex_container {
-    flex-direction: column;
-  }
-}
-
 @media all and (min-width: 600px) {
-  .flex_container {
-    flex-flow: wrap;
-  }
-
   .snake {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   .block_3 {
-    order: 4;
+    order: 2;
   }
 
   .block_4 {
+    order: 1;
+  }
+
+  .block_5 {
     order: 3;
+  }
+
+  .block_6 {
+    order: 4;
   }
 }
 
 @media all and (min-width: 900px) {
   .snake {
-    width: calc(100% / 3);
+    flex-basis: 30%;
   }
 
   .block_3 {
-    order: 3;
+    order: 0;
   }
 
   .block_4 {
-    order: 6;
+    order: 3;
+  }
+
+  .block_5 {
+    order: 2;
   }
 
   .block_6 {
-    order: 4;
+    order: 1;
   }
 }
