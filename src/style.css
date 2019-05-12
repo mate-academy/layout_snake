@@ -12,7 +12,6 @@ div {
   text-align: center;
   line-height: 300px;
   height: 300px;
-  margin: 0;
   color: #fff;
 }
 
@@ -53,14 +52,6 @@ div {
 }
 
 @media screen and (max-width: 899px) {
-  .one {
-    order: 1;
-  }
-
-  .two {
-    order: 1;
-  }
-    
   .three {
     order: 4;
   }
@@ -79,14 +70,6 @@ div {
 }
 
 @media screen and (max-width: 599px) {
-  .one {
-    order: 1;
-  }
-
-  .two {
-    order: 1;
-  }
-  
   .three {
     order: 1;
   }
