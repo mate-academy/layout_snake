@@ -26,5 +26,5 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+* [Demo link](https://valeriitovstyk.github.io/layout_snake/) <br>
+* [Test report](https://valeriitovstyk.github.io/layout_snake/report/html_report/)
