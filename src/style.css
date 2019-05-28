@@ -13,8 +13,8 @@ html {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* max-width: 1200px; */
-  width: 93%;
+  max-width: 1200px;
+  /* width: 93%; */
   margin: 0 auto;
   justify-content: center;
 }
@@ -24,6 +24,7 @@ html {
   min-width: 300px;
   width: 30%;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
 }
@@ -59,10 +60,7 @@ html {
 }
 /*-----------Media-----------*/
 
-@media all and (max-width:900px) {
-  .block {
-    width: 50%;
-  }
+@media all and (max-width:899px) {
   .third {
     order: 3;
   }
@@ -76,16 +74,23 @@ html {
     order: 3;
   }
 }
-  
-@media all and (max-width:750px) {
-  .block {
-    width: 50%;
+
+@media all and (max-width:599px) {
+  .third {
+    order: 3;
+  }
+  .fourth {
+    order: 3;
+  }
+  .fiveth {
+    order: 5;
+  }
+  .sixth {
+    order: 6;
   }
 }
-@media all and (max-width:600px) {
-  .block {
-    width: 300px;
-  }
+
+@media all and (max-width:449px) {
   .third {
     order: 1;
   }
