@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+}
+
+.container__all {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  height: 300px;
+  width: 300px;
+  color: white;
+  font-size: 100px;
+}
+
+.one {
+  background-color: rgb(245, 10, 10);
+}
+
+.two {
+  background-color: rgb(189, 7, 7);
+}
+
+.tree {
+  background-color: rgb(145, 3, 3);
+}
+
+.four {
+  background-color: rgb(105, 4, 4);
+}
+
+.five {
+  background-color: rgb(66, 2, 2);
+}
+
+.six {
+  background-color: rgb(8, 8, 8);
+}
+
+@media (max-width: 1200px) {
+  .container__all {
+    width: 300px;
+  }
+  .four {
+    order: 6;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 4;
+  }
+}
+
+@media (max-width: 1050px) {
+  .four {
+    order: 6;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 4;
+  }
+}
+
+@media (max-width: 900px) {
+  .tree {
+    order: 3;
+  }
+  .four {
+    order: 6;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 4;
+  }
+}
+
+@media (max-width: 750px) {
+  .tree {
+    order: 4;
+  }
+  .four {
+    order: 3;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 6;
+  }
+}
+
+@media (max-width: 600px) {
+  .tree {
+    order: 4;
+  }
+  .four {
+    order: 3;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 6;
+  }
+}
+
+@media (max-width: 450px) {
+  .tree {
+    order: 3;
+  }
+  .four {
+    order: 4;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 6;
+  }
+}
+
+@media (max-width: 300px) {
+  .tree {
+    order: 3;
+  }
+  .four {
+    order: 4;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 6;
+  }
+}
