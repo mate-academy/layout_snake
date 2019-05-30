@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-.container > div {
+div[class*="box"] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@ body {
     flex-flow: row wrap;
   }
 
-  .container > div {
+  div[class*="box"] {
     flex-basis: 50%;
   }
 
@@ -62,7 +62,7 @@ body {
 }
 
 @media (min-width: 900px) {
-  .container > div {
+  div[class*="box"] {
     flex-basis: 33.33%;
   }
 
