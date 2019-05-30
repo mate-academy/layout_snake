@@ -37,7 +37,7 @@ body {
   background-color: #000;
 }
 
-@media all and (min-width: 600px) {
+@media (min-width: 600px) {
   .container {
     display: flex;
     flex-flow: row wrap;
@@ -61,7 +61,7 @@ body {
 
 }
 
-@media all and (min-width: 900px) {
+@media (min-width: 900px) {
   .container > div {
     flex-basis: 33.33%;
   }
