@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  height: 300px;
+  width: 300px;
+  font-size: 100px;
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(204, 0, 0);
+}
+
+.tree {
+  background-color: rgb(139, 0, 0);
+}
+
+.four {
+  background-color: rgb(92, 0, 0);
+}
+
+.five {
+  background-color: rgb(44, 0, 0);
+}
+
+.six {
+  background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width: 600px) {
+
+  .tree {
+    order: 4;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .tree {
+    order: 3;
+  }
+
+  .four {
+    order: 6;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 4;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .box__item {
+    min-width: 301px;
+  }
+}
