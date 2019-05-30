@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-around;
+  height: 300px;
+  width: 33%;
+}
+
+p {
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.snake1 {
+  background-color: red;
+}
+
+.snake2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.snake3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.snake4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.snake5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.snake6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 12200px) {
+  .container {
+    width: 100%;
+  }
+
+  div:nth-child(-n +3) {
+    order: 1;
+  }
+
+  div:nth-child(4) {
+    order: 6;
+  }
+
+  div:nth-child(5) {
+    order: 5;
+  }
+
+  div:nth-child(6) {
+    order: 4;
+  }
+
+}
+
+@media (max-width: 750px) {
+  div {
+    width: 50%;
+  }
+
+  div:nth-child(-n + 2) {
+    order: 1;
+  }
+
+  div:nth-child(3) {
+    order: 4;
+  }
+  div:nth-child(4) {
+    order: 3;
+  }
+
+  div:nth-child(5) {
+    order: 4;
+  }
+
+  div:nth-child(6) {
+    order: 4;
+  }
+
+}
+
+@media (max-width: 600px) {
+  div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    flex: none;
+    display: block;
+  }
+
+  div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    width: 300px;
+  }
+}
