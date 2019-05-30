@@ -10,7 +10,6 @@ body {
 
 .container__all {
   display: flex;
-
   align-items: center;
   justify-content: center;
   flex-grow: 1;
@@ -44,9 +43,24 @@ body {
   background-color: rgb(8, 8, 8);
 }
 
+@media (max-width: 1400px) {
+  .container__all {
+    width: 310px;
+  }
+  .four {
+    order: 6;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 4;
+  }
+}
+
 @media (max-width: 1200px) {
   .container__all {
-    width: 300px;
+    width: 305px;
   }
   .four {
     order: 6;
@@ -60,6 +74,9 @@ body {
 }
 
 @media (max-width: 1050px) {
+  .container__all {
+    width: 294px;
+  }
   .four {
     order: 6;
   }
@@ -72,8 +89,8 @@ body {
 }
 
 @media (max-width: 900px) {
-  .tree {
-    order: 3;
+  .container__all {
+    width: 292px;
   }
   .four {
     order: 6;
@@ -87,6 +104,9 @@ body {
 }
 
 @media (max-width: 750px) {
+  .container__all {
+    width: 295px;
+  }
   .tree {
     order: 4;
   }
@@ -102,6 +122,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .container__all {
+    width: 280px;
+  }
   .tree {
     order: 4;
   }
