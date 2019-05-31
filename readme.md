@@ -26,5 +26,5 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [DEMO LINK](https://pegas13fps.github.io/layout_snake/)
+- [TEST REPORT LINK](https://pegas13fps.github.io/layout_snake/report/html_report/)
