@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.snake div {
+  height: 300px;
+  display: flex;
+  width: 33%;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.snake__block1-number {
+  font-size: 100px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  vertical-align: 300px;
+}
+
+.snake__block1 {
+  background-color: #f00;
+}
+
+.snake__block2 {
+  background-color: #c00;
+}
+
+.snake__block3 {
+  background-color: #900;
+}
+
+.snake__block4 {
+  background-color: #600;
+}
+
+.snake__block5 {
+  background-color: #300;
+}
+
+.snake__block6 {
+  background-color: #000;
+}
+
+.snake div:nth-child(4) {
+  order: 6;
+}
+
+.snake div:nth-child(5) {
+  order: 5;
+}
+
+.snake div:nth-child(6) {
+  order: 4;
+}
+
+@media (max-width: 750px) {
+
+  .snake {
+    width: 100%;
+  }
+
+  .snake div {
+    width: 50%;
+  }
+
+  .snake div:nth-child(3) {
+    order: 4;
+  }
+
+  .snake div:nth-child(4) {
+    order: 3;
+  }
+
+  .snake div:nth-child(5) {
+    order: 4;
+  }
+
+  .snake div:nth-child(6) {
+    order: 4;
+  }
+}
+
+@media (max-width: 450px) {
+  .snake {
+    display: block;
+  }
+
+  .snake div {
+    width: 100%;
+  }
+}
