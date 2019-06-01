@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  margin: 0 auto;
+}
+
+main .color-block {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+main #first-block {
+  background-color: #f00;
+}
+
+main #second-block {
+  background-color: #c00;
+}
+
+main #third-block {
+  background-color: #900;
+}
+
+main #fourth-block {
+  background-color: #600;
+}
+
+main #fifth-block {
+  background-color: #300;
+}
+
+main #sixth-block {
+  background-color: #000;
+}
+
+@media screen and (min-width: 300px) {
+  main {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  main {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main .color-block {
+    width: 50%;
+  }
+
+  main #third-block {
+    order: 2;
+  }
+
+  main #fourth-block {
+    order: 1;
+  }
+
+  main #fifth-block {
+    order: 3;
+  }
+
+  main #sixth-block {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  main {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: 900px;
+  }
+
+  main .color-block {
+    width: 33.33%;
+  }
+
+  main #third-block {
+    order: 1;
+  }
+
+  main #fourth-block {
+    order: 4;
+  }
+
+  main #sixth-block {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  main {
+    width: 1050px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 1200px;
+  }
+}
