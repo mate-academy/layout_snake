@@ -19,7 +19,7 @@ snake).
 For better clarity, please refer to the reference [screenshots](references) at 
 300, 450, 600, 750, 900, 1050, and 1200 pixel-wide screen.
 
----
+---a
 **Read the guideline before start**
 
 [Guideline](https://github.com/mate-academy/layout_task-guideline/blob/master/README.md)
