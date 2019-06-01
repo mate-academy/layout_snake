@@ -8,7 +8,7 @@ body {
   justify-content: stretch;
 }
 
-.container div {
+.blocks {
   flex: 100%;
   height: 300px;
   min-width: 300px;
