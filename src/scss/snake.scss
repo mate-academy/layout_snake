@@ -12,32 +12,32 @@ $main-color: red;
   position: absolute;
 
   &__square1 {
-    background-color: $main-colo;
+    background-color: $main-color;
     order: 1;
   }
 
   &__square2 {
-    background-color: scale-color ($main-color, darkness 20%);
+    background-color: darken($main-color, 10%);
     order: 2;
   }
 
   &__square3 {
-    background-color: scale-color ($main-color, darkness 40%);
+    background-color: darken($main-color, 20%);
     order: 3;
   }
 
   &__square4 {
-    background-color: scale-color ($main-color, darkness 60%);
+    background-color: darken($main-color, 30%);
     order: 6;
   }
 
   &__square5 {
-    background-color: scale-color ($main-color, darkness 80%);
+    background-color: darken($main-color, 40%);
     order: 5;
   }
 
   &__square6 {
-    background-color: scale-color ($main-color, darkness 100%);
+    background-color: darken($main-color, 50%);
     order: 4;
   }
 }
