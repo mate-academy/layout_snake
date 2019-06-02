@@ -1,0 +1,161 @@
+@import "./scss/snake.scss";
+
+@media (max-width: 1170px) and (min-width: 950px) {
+  .snake {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-rows: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    position: absolute;
+  }
+}
+
+@media (max-width:1500px) and (min-width: 1171px) {
+  .snake {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-auto-rows: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    position: absolute;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 100px) {
+  .snake {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-auto-rows: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    position: absolute;
+  }
+
+  .snake__square4 {
+    background-color: rgb(102, 0, 0);
+    order: 4;
+  }
+
+  .snake__square6 {
+    background-color: rgb(0, 0, 0);
+    order: 6;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 401px) {
+  .snake {
+    display: grid;
+    grid-template-columns: 450px;
+    grid-auto-rows: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    position: absolute;
+  }
+
+  .snake__square4 {
+    background-color: rgb(102, 0, 0);
+    order: 4;
+  }
+
+  .snake__square6 {
+    background-color: rgb(0, 0, 0);
+    order: 6;
+  }
+}
+
+@media (max-width: 670px) and (min-width:501px) {
+  .snake {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-auto-rows: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    position: absolute;
+  }
+
+  .snake__square3 {
+    background-color: rgb(153, 0, 0);
+    order: 4;
+  }
+
+  .snake__square4 {
+    background-color: rgb(102, 0, 0);
+    order: 3;
+  }
+
+  .snake__square5 {
+    background-color: rgb(51, 0, 0);
+    order: 5;
+  }
+
+  .snake__square6 {
+    background-color: rgb(0, 0, 0);
+    order: 6;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 670px) {
+  .snake {
+    display: grid;
+    grid-template-columns: 375px 375px;
+    grid-auto-rows: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    position: absolute;
+  }
+
+  .snake__square3 {
+    background-color: rgb(153, 0, 0);
+    order: 4;
+  }
+
+  .snake__square4 {
+    background-color: rgb(102, 0, 0);
+    order: 3;
+  }
+
+  .snake__square5 {
+    background-color: rgb(51, 0, 0);
+    order: 5;
+  }
+
+  .snake__square6 {
+    background-color: rgb(0, 0, 0);
+    order: 6;
+  }
+}
+
+@media (max-width: 949px) and (min-width: 851px) {
+  .snake {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-rows: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    position: absolute;
+  }
+}
+
+

@@ -1,0 +1,43 @@
+$main-color: red;
+
+.snake {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-auto-rows: 300px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+  margin: auto;
+  position: absolute;
+
+  &__square1 {
+    background-color: $main-colo;
+    order: 1;
+  }
+
+  &__square2 {
+    background-color: scale-color ($main-color, darkness 20%);
+    order: 2;
+  }
+
+  &__square3 {
+    background-color: scale-color ($main-color, darkness 40%);
+    order: 3;
+  }
+
+  &__square4 {
+    background-color: scale-color ($main-color, darkness 60%);
+    order: 6;
+  }
+
+  &__square5 {
+    background-color: scale-color ($main-color, darkness 80%);
+    order: 5;
+  }
+
+  &__square6 {
+    background-color: scale-color ($main-color, darkness 100%);
+    order: 4;
+  }
+}
