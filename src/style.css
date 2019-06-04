@@ -12,26 +12,31 @@ body {
 }
 
 .item {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   height: 300px;
-  width: 33.3%;
+  line-height: 300px;
+  width: 100%;
 }
 
 .first {
   background-color: #f00;
+  order: 1;
 }
 
 .second {
-  background-color: #d00;
+  background-color: #c00;
+  order: 2;
 }
 
 .third {
-  background-color: #a00;
+  background-color: #900;
+  order: 3;
 }
 
 .fourth {
   background-color: #600;
-  order: 6;
+  order: 4;
 }
 
 .fifth {
@@ -41,37 +46,14 @@ body {
 
 .sixth {
   background-color: #000;
-  order: 4;
+  order: 6;
 }
 
-@media (max-width: 599px) {
-  .first {
-    order: 1;
+@media (min-width: 600px) {
+  .item {
+    flex-basis: 50%;
   }
 
-  .second {
-    order: 2;
-  }
-
-  .third {
-    order: 3;
-  }
-
-  .fourth {
-    order: 4;
-  }
-
-  .fifth {
-    order: 5;
-  }
-
-  .sixth {
-    order: 6;
-  }
-
-}
-
-@media (min-width: 600px) (max-width: 899px) {
   .first {
     order: 1;
   }
@@ -95,5 +77,34 @@ body {
   .sixth {
     order: 6;
   }
+}
 
+@media (min-width: 900px) {
+  .item {
+    flex-basis: 33.3%;
+  }
+
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .third {
+    order: 3;
+  }
+
+  .fourth {
+    order: 6;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 4;
+  }
 }
