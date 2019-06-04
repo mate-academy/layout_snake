@@ -5,12 +5,12 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
+  max-width: 1200px;
 }
 
 .block {
   height: 300px;
-  min-width: 300px;
+  min-width: 301px;
   flex: auto;
   color: #fff;
   font-family: "Arial", sans-serif;
@@ -45,7 +45,7 @@ main {
   background-color: #000;
 }
 
-@media screen and (max-width:899px) {
+@media screen and (max-width:900px) {
 
   .third {
     order: 4;
@@ -60,7 +60,7 @@ main {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .fourth {
     order: 4;
   }
