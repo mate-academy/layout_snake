@@ -14,6 +14,9 @@
   display: grid;
   grid-template-columns: minmax(300px, 450px);
   grid-template-rows: repeat(6, 300px);
+
+  line-height: 300px;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -51,23 +54,23 @@
 }
 
 .box-1 {
-  background: #ff0a22;
+  background: #f00;
 }
 
 .box-2 {
-  background: #d4081b;
+  background: #c00;
 }
 
 .box-3 {
-  background: #9e0614;
+  background: #900;
 }
 
 .box-4 {
-  background: #6b040e;
+  background: #600;
 }
 
 .box-5 {
-  background: #380207;
+  background: #300;
 }
 
 .box-6 {
