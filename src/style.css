@@ -6,52 +6,48 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   font-size: 100px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .item {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 300px;
-  line-height: 300px;
-  width: 100%;
 }
 
 .first {
   background-color: #f00;
-  order: 1;
 }
 
 .second {
   background-color: #c00;
-  order: 2;
 }
 
 .third {
   background-color: #900;
-  order: 3;
 }
 
 .fourth {
   background-color: #600;
-  order: 4;
 }
 
 .fifth {
   background-color: #300;
-  order: 5;
 }
 
 .sixth {
   background-color: #000;
-  order: 6;
 }
 
 @media (min-width: 600px) {
   .item {
     flex-basis: 50%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .first {
