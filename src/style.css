@@ -10,7 +10,7 @@ body {
   color: #fff;
 }
 
-.main {
+.flexbox {
   flex-basis: 33.3%;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@ body {
 }
 
 @media (max-width:750px) {
-  .main {
+  .flexbox {
     flex-basis: 50%;
   }
 
@@ -69,7 +69,7 @@ body {
 }
 
 @media (max-width:450px) {
-  .main {
+  .flexbox {
     flex-basis: 100%;
   }
 
