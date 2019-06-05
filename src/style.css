@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.snake-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake-blocks div {
+  font-family: Arial;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  color: #fff;
+}
+
+.block-one {
+  background-color: #f00;
+}
+
+.block-two {
+  background-color: #c00;
+}
+
+.block-three {
+  background-color: #900;
+}
+
+.block-four {
+  background-color: #600;
+}
+
+.block-five {
+  background-color: #400;
+}
+
+.block-six {
+  background-color: #000;
+}
+
+@media (min-width: 300px) {
+  .block-three {
+    order: 4;
+  }
+
+  .block-four {
+    order: 3;
+  }
+
+  .block-five {
+    order: 5;
+  }
+
+  .block-six {
+    order: 6;
+  }
+}
+
+@media(min-width: 600px) {
+  .block-three {
+    order: 3;
+  }
+
+  .block-four {
+    order: 6;
+  }
+
+  .block-five {
+    order: 5;
+  }
+
+  .block-six {
+    order: 4;
+  }
+}
+
+@media(min-width: 900px) {
+  .block-three {
+    order: 3;
+  }
+
+  .block-four {
+    order: 6;
+  }
+
+  .block-five {
+    order: 5;
+  }
+
+  .block-six {
+    order: 4;
+  }
+}
+
+@media(min-width: 1200px) {
+  .block-three {
+    order: 3;
+  }
+
+  .block-four {
+    order: 6;
+  }
+
+  .block-five {
+    order: 5;
+  }
+
+  .block-six {
+    order: 4;
+  }
+}
