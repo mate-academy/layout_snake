@@ -1,29 +1,30 @@
 $main-color: red;
+$main-width: 300px;
+$main-height: 300px;
 
 .snake {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-auto-rows: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: white;
-  margin: auto;
-  position: absolute;
+  line-height: 300px;
+
+
+
 
   &__square1 {
     background-color: $main-color;
-    order: 1;
   }
 
   &__square2 {
     background-color: darken($main-color, 10%);
-    order: 2;
   }
 
   &__square3 {
     background-color: darken($main-color, 20%);
-    order: 3;
   }
 
   &__square4 {
@@ -40,4 +41,9 @@ $main-color: red;
     background-color: darken($main-color, 50%);
     order: 4;
   }
+}
+
+.square {
+  width: $main-width;
+  height: $main-height;
 }
