@@ -5,9 +5,7 @@
 
 .snake {
   display: grid;
-  height: 300px;
   line-height: 300px;
-  width: 100%;
   color: white;
   font-family: Arial, serif;
   font-size: 100px;
@@ -44,9 +42,9 @@
   order: 6;
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .snake {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .box3 {
@@ -60,7 +58,7 @@
 
 @media (min-width: 900px) {
   .snake {
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .box4 {
