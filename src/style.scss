@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+.snake {
+  $height: 300px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__chain {
+    flex-grow: 1;
+    flex-basis: $height;
+    font-family: arial, sans-serif;
+    text-align: center;
+    line-height: $height;
+    font-size: 100px;
+    color: #fff;
+  }
+
+  $redness: 255;
+  $redness-step: 255 / 5;
+
+  @for $i from 1 to 7 {
+    &__chain#{$i} { background-color: rgb($redness 0 0); }
+    $redness: $redness - $redness-step;
+  }
+
+  @for $i from 4 to 7 {
+    &__chain#{$i} { order: 4 + 3 - $i }
+  }
+}
+
+@media (min-width: 1200px) {
+  .snake {
+    &__chain {flex-basis: 400px;}
+  }
+}
+
+@media (max-width: 899px) {
+  .snake {
+    &__chain3 { order: 4}
+    &__chain4 { order: 3}
+    &__chain5 { order: 5}
+    &__chain6 { order: 6}
+  }
+}
+
+@media (max-width: 599px) {
+  .snake {
+    &__chain3 { order: 3}
+    &__chain4 { order: 4}
+    &__chain5 { order: 5}
+    &__chain6 { order: 6}
+  }
+}
