@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-around;
+  height: 300px;
+  min-width: 33%;
+}
+
+p {
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.snake1 {
+  background-color: red;
+}
+
+.snake2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.snake3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.snake4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.snake5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.snake6 {
+  background-color: rgb(0, 0, 0);
+}
+
+.snake1,
+.snake2,
+.snake3 {
+  order: 1;
+}
+
+.snake4 {
+  order: 6;
+}
+
+.snake5 {
+  order: 5;
+}
+
+.snake6 {
+  order: 4;
+}
+
+@media (max-width: 750px) {
+  div {
+    width: 50%;
+  }
+
+  .snake1,
+  .snake2 {
+    order: 1;
+  }
+
+  .snake3 {
+    order: 4;
+  }
+  .snake4 {
+    order: 3;
+  }
+
+  .snake5 {
+    order: 4;
+  }
+
+  .snake6 {
+    order: 4;
+  }
+
+}
+
+@media (max-width: 600px) {
+  div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    flex: none;
+    display: block;
+  }
+
+  div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    width: 300px;
+  }
+}
