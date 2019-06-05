@@ -17,7 +17,7 @@ div {
   flex-grow: 1;
   justify-content: space-around;
   height: 300px;
-  width: 33%;
+  min-width: 33%;
 }
 
 p {
@@ -50,27 +50,22 @@ p {
   background-color: rgb(0, 0, 0);
 }
 
-@media (max-width: 12200px) {
-  .container {
-    width: 100%;
-  }
+.snake1,
+.snake2,
+.snake3 {
+  order: 1;
+}
 
-  div:nth-child(-n +3) {
-    order: 1;
-  }
+.snake4 {
+  order: 6;
+}
 
-  div:nth-child(4) {
-    order: 6;
-  }
+.snake5 {
+  order: 5;
+}
 
-  div:nth-child(5) {
-    order: 5;
-  }
-
-  div:nth-child(6) {
-    order: 4;
-  }
-
+.snake6 {
+  order: 4;
 }
 
 @media (max-width: 750px) {
@@ -78,22 +73,23 @@ p {
     width: 50%;
   }
 
-  div:nth-child(-n + 2) {
+  .snake1,
+  .snake2 {
     order: 1;
   }
 
-  div:nth-child(3) {
+  .snake3 {
     order: 4;
   }
-  div:nth-child(4) {
+  .snake4 {
     order: 3;
   }
 
-  div:nth-child(5) {
+  .snake5 {
     order: 4;
   }
 
-  div:nth-child(6) {
+  .snake6 {
     order: 4;
   }
 
