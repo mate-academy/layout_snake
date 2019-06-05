@@ -1,3 +1,4 @@
+$height: 300px;
 /***********************************************************
                           GENERAL
 ***********************************************************/
@@ -6,12 +7,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
 /***********************************************************
                           MAIN
 ***********************************************************/
 .block {
-  height: 300px;
+  height: $height;
   font-family: Arial, sans-serif;
   font-size: 100px;
   display: flex;
@@ -49,7 +49,6 @@ body {
   .block {
     flex-basis: 50%;
   }
-
   .block_3 {
     order: 2;
   }
@@ -66,11 +65,11 @@ body {
     order: 6;
   }
 }
+
 @media (min-width: 751px) {
   .block {
     flex-basis: 33.33%;
   }
-
   .block_3 {
     order: 1;
   }
@@ -87,5 +86,3 @@ body {
     order: 2;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
