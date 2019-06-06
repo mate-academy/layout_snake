@@ -1,0 +1,52 @@
+@import "./scss/snake.scss";
+
+ @media (max-width: 599px) {
+  .square {
+    flex-basis: 300;
+    flex-grow: 1;
+  }
+
+  .snake__square4 {
+      order: 4;
+  }
+
+  .snake__square5 {
+    order: 5;
+  }
+
+  .snake__square6 {
+      order: 6;
+  }
+}
+
+ @media (min-width: 600px) and (max-width: 749px) {
+
+   .snake__square3 {
+    order: 4;
+  }
+
+  .snake__square4 {
+    order: 3;
+  }
+}
+
+ @media (min-width: 750px) and (max-width: 899px) {
+
+  .square {
+    flex-basis: 50%;
+  }
+
+  .snake__square3 {
+    order: 4;
+  }
+
+  .snake__square4 {
+    order: 3;
+  }
+}
+
+ @media (min-width: 1200px)  {
+  .square {
+    flex-basis: 33%;
+  }
+}

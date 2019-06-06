@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+$main-color: red;
+$main-width: 300px;
+$main-height: 300px;
+
+.snake {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+  line-height: 300px;
+
+
+
+
+  &__square1 {
+    background-color: $main-color;
+  }
+
+  &__square2 {
+    background-color: darken($main-color, 10%);
+  }
+
+  &__square3 {
+    background-color: darken($main-color, 20%);
+  }
+
+  &__square4 {
+    background-color: darken($main-color, 30%);
+    order: 6;
+  }
+
+  &__square5 {
+    background-color: darken($main-color, 40%);
+    order: 5;
+  }
+
+  &__square6 {
+    background-color: darken($main-color, 50%);
+    order: 4;
+  }
+}
+
+.square {
+  width: $main-width;
+  height: $main-height;
+}
