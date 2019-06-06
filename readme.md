@@ -27,4 +27,4 @@ For better clarity, please refer to the reference [screenshots](references) at
 **Result**
 
 - [DEMO LINK](https://vitalinkaa.github.io/layout_snake/)
-- [TEST REPORT LINK](https://vitalinkaa.github.io/layout_snake/html_report/)
+- [REPORT LINK](https://vitalinkaa.github.io/layout_snake/report/html_report/)
