@@ -1,17 +1,10 @@
-body {
-  padding: 0;
-  margin: 0;
-}
 @import "./scss/snake.scss";
 
- @media (min-width: 1px) and (max-width: 300px) {
-
+ @media (max-width: 599px) {
   .square {
-    width: 300px;
-    height: $main-height;
+    flex-basis: 300;
+    flex-grow: 1;
   }
-
-
 
   .snake__square4 {
       order: 4;
@@ -26,34 +19,9 @@ body {
   }
 }
 
- @media (min-width: 301px) and (max-width: 599px) {
-
-  .square {
-    width: 450px;
-    height: $main-height;
-  }
-
-  .snake__square4 {
-    order: 4;
-  }
-
-  .snake__square5 {
-   order: 5;
-  }
-
-   .snake__square6 {
-    order: 6;
-  }
-}
-
  @media (min-width: 600px) and (max-width: 749px) {
 
-  .square {
-    width: 300px;
-    height: $main-height;
-  }
-
-  .snake__square3 {
+   .snake__square3 {
     order: 4;
   }
 
@@ -65,8 +33,7 @@ body {
  @media (min-width: 750px) and (max-width: 899px) {
 
   .square {
-    width: 375px;
-    height: $main-height;
+    flex-basis: 50%;
   }
 
   .snake__square3 {
@@ -78,10 +45,8 @@ body {
   }
 }
 
- @media (min-width: 1200px) and (max-width: 2000px) {
-
+ @media (min-width: 1200px)  {
   .square {
-    width: 400px;
-    height: $main-height;
+    flex-basis: 33%;
   }
 }
