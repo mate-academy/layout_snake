@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.content div {
+.container {
   color: #fff;
   height: 300px;
   font: 100px Arial, sans-serif;
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .content div {
+  .container {
     flex-basis: 50%;
   }
 
@@ -70,16 +70,8 @@
 }
 
 @media (max-width: 599px) {
-  .content div {
+  .container {
     flex-basis: 100%;
-  }
-
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six {
     order: initial;
   }
 }
