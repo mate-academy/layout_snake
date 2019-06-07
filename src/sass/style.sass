@@ -1,0 +1,68 @@
+body
+  margin: 0
+
+.grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  grid-auto-rows: 300px
+  color: white
+  &-item 
+    display: grid
+    align-items: center
+    justify-content: center
+    font-family: "Arial"
+    font-size: 100px
+    &:nth-child(1)
+      background-color: hsl(0, 100%, 50%)
+    &:nth-child(2)
+      background-color: hsl(0, 100%, 40%)
+    &:nth-child(3)
+      background-color: hsl(0, 100%, 30%)
+    &:nth-child(4)
+      background-color: hsl(0, 100%, 20%)
+      grid-column: 3 / 4
+      grid-row: 2
+    &:nth-child(5)
+      background-color: hsl(0, 100%, 10%)
+      grid-column: 2 / 3
+      grid-row: 2
+    &:nth-child(6)
+      background-color: hsl(0, 100%, 0%)
+      grid-column: 1 / 2
+      grid-row: 2
+
+@media screen and (max-width: 900px)
+  .grid-item
+    grid-column: auto / auto
+    grid-row: auto
+  .grid-item:nth-child(3)
+    grid-column: 2 / 3
+    grid-row: 2
+  .grid-item:nth-child(4)
+    grid-column:  1 / 2
+    grid-row: 2
+  .grid-item:nth-child(5)
+    grid-column: auto
+    grid-row: 3
+  .grid-item:nth-child(6)
+    grid-column: auto
+    grid-row: 3
+@media screen and (max-width: 600px)
+  .grid-item:nth-child(1)
+    grid-column:  auto
+    grid-row: 1
+  .grid-item:nth-child(2)
+    grid-column: auto
+    grid-row: 2
+  .grid-item:nth-child(3)
+    grid-column: auto
+    grid-row: 3
+  .grid-item:nth-child(4)
+    grid-column:  auto
+    grid-row: 4
+  .grid-item:nth-child(5)
+    grid-column: auto
+    grid-row: 5
+  .grid-item:nth-child(6)
+    grid-column: auto
+    grid-row: 6
