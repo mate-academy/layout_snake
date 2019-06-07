@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.block {
+  flex-basis: 300px;
+  flex-grow: 1;
+  line-height: 300px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+.block:nth-child(1) {
+  background-color: red;
+}
+
+.block:nth-child(2) {
+  background-color: #cd0000;
+}
+
+.block:nth-child(3) {
+  background-color: #9a0000;
+}
+
+.block:nth-child(4) {
+  background-color: #600;
+  order: 3;
+}
+
+.block:nth-child(5) {
+  background-color: #300000;
+  order: 2;
+}
+
+.block:nth-child(6) {
+  background-color: black;
+  order: 1;
+}
+
+@media (max-width: 599px) {
+  .block:nth-child(1) {
+    order: 1;
+  }
+
+  .block:nth-child(2) {
+    order: 2;
+  }
+
+  .block:nth-child(3) {
+    order: 3;
+  }
+
+  .block:nth-child(4) {
+
+    order: 4;
+  }
+
+  .block:nth-child(5) {
+    order: 5;
+  }
+
+  .block:nth-child(6) {
+    order: 6;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .block:nth-child(3) {
+    order: 2;
+  }
+
+  .block:nth-child(4) {
+    order: 1;
+  }
+
+  .block:nth-child(5) {
+    order: 3;
+  }
+
+  .block:nth-child(6) {
+    order: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block {
+    flex-basis: 400px;
+  }
+}
