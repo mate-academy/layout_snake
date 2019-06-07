@@ -1,3 +1,9 @@
+**Result**
+
+- [DEMO LINK](https://tolyaruban.github.io/layout_snake/)
+- [TEST REPORT LINK](https://tolyaruban.github.io/layout_snake/report/html_report/)
+
+
 # Boilerplate for layout tasks
 
 Display six colored blocks on the screen without any extra margins:
@@ -23,8 +29,3 @@ For better clarity, please refer to the reference [screenshots](references) at
 **Read the guideline before start**
 
 [Guideline](https://github.com/mate-academy/layout_task-guideline/blob/master/README.md)
-
-**Result**
-
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
