@@ -8,9 +8,6 @@
   font-size: 100px;
   color: #fff;
 
-}
-
-.box {
   display: grid;
   grid-template-columns: minmax(300px, 450px);
   grid-template-rows: repeat(6, 300px);
@@ -20,7 +17,7 @@
 }
 
 @media (min-width: 600px) {
-  .box {
+  .container {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 450px));
     grid-template-rows: repeat(3, 300px);
@@ -32,7 +29,7 @@
 }
 
 @media (min-width: 900px) {
-  .box {
+  .container {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 450px));
     grid-template-rows: repeat(2, 300px);
