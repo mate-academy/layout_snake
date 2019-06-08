@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.item1 {
+  background-color: red;
+}
+
+.item2 {
+  background-color: rgb(189, 7, 7);
+}
+
+.item3 {
+  background-color: rgb(145, 3, 3);
+}
+
+.item4 {
+  background-color: rgb(105, 4, 4);
+}
+
+.item5 {
+  background-color: rgb(66, 2, 2);
+}
+
+.item6 {
+  background-color: black;
+}
+
+@media (min-width: 1200px) {
+  div {
+    min-width: 301px;
+  }
+
+  .item4 {
+    background-color: rgb(105, 4, 4);
+    order: 3;
+  }
+  
+  .item5 {
+    background-color: rgb(66, 2, 2);
+    order: 2;
+  }
+  
+  .item6 {
+    background-color: black;
+    order: 1;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .item4 {
+    background-color: rgb(105, 4, 4);
+    order: 2;
+  }
+
+  .item5 {
+    background-color: rgb(66, 2, 2);
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .item3 {
+    background-color: rgb(145, 3, 3);
+    order: 2;
+  }
+
+  .item4 {
+    background-color: rgb(105, 4, 4);
+    order: 1;
+  }
+
+  .item5 {
+    background-color: rgb(66, 2, 2);
+    order: 3;
+  }
+  
+  .item6 {
+    background-color: black;
+    order: 4;
+  }
+}
