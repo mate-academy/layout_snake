@@ -61,7 +61,8 @@
 
 @media (min-width: 600px) {
   .container__block--width {
-    width: 300px;
+    max-width: 50%;
+    min-width: 300px;
   }
 
   .container__block--item-3 {
@@ -88,7 +89,8 @@
 
 @media (min-width: 900px) {
   .container__block--width {
-    width: 300px;
+    max-width: 33.3%;
+    min-width: 300px;
   }
 
   .container__block--item-4 {
@@ -116,7 +118,6 @@
   .container__block--width {
     width: 33.3%;
   }
-
   .container__block--item-4 {
     order: 6;
   }
