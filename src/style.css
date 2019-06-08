@@ -4,67 +4,63 @@
 
 .container {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+  color: #fff;
 }
 
 .coub {
-  flex-basis: 300px;
-  flex-grow: 1;
-  line-height: 300px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 100px;
-  color: white;
-}
-
-.coub1 {
-  background-color: red;
-}
-
-.coub2 {
-  background-color: #cd0000;
-}
-
-.coub3 {
-  background-color: #9a0000;
+  flex-basis: 33.3%;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
 }
 
 .coub4 {
-  background-color: #600;
   order: 3;
 }
 
 .coub5 {
-  background-color: #300000;
   order: 2;
 }
 
-.coub6 {
-  background-color: black;
-  order: 1;
+.coub1 {
+  background: #f00;
 }
 
-@media (max-width: 599px) {
-  .coub1 {
-    order: 1;
-  }
+.coub2 {
+  background: #c00;
+}
 
-  .coub2 {
-    order: 2;
+.coub3 {
+  background: #900;
+}
+
+.coub4 {
+  background: #600;
+}
+
+.coub5 {
+  background: #300;
+}
+
+.coub6 {
+  background: #000;
+}
+
+@media (max-width:750px) {
+  .coub {
+    flex-basis: 50%;
   }
 
   .coub3 {
-    order: 3;
-  }
-
-  .coub4 {
-
     order: 4;
   }
 
   .coub5 {
-    order: 5;
+    order: 4;
   }
 
   .coub6 {
@@ -72,26 +68,16 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
-  .coub3 {
-    order: 2;
+@media (max-width:450px) {
+  .coub {
+    flex-basis: 100%;
   }
 
-  .coub4 {
+  .coub3 {
     order: 1;
   }
 
-  .coub5 {
-    order: 3;
-  }
-
   .coub6 {
-    order: 4;
-  }
-}
-
-@media (min-width: 1200px) {
-  .coub {
-    flex-basis: 400px;
+    order: 6;
   }
 }
