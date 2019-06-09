@@ -1,65 +1,101 @@
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .snake__body-block {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   height: 300px;
   color: white;
   font-size: 100px;
   font-family: Arial, sans-serif;
-}
-
-.snake {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "one two three" "six five four";
+  width: 400px;
 }
 
 .one {
   background-color: #f00;
-  grid-area: one;
+  order: 1;
 }
 
 .two {
   background-color: #c00;
-  grid-area: two;
+  order: 2;
 }
 
 .three {
   background-color: #900;
-  grid-area: three;
+  order: 3;
 }
 
 .four {
   background-color: #600;
-  grid-area: four;
+  order: 6;
 }
 
 .five {
   background-color: #300;
-  grid-area: five;
+  order: 5;
 }
 
 .six {
   background-color: #000;
-  grid-area: six;
+  order: 4;
 }
 
-@media screen and (max-width: 751px) {
-  .snake {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "one two" "four three" "five six";
+@media screen and (max-width: 1200px) {
+  .snake__body-block {
+    width: 300px;
   }
 }
 
-@media screen and (max-width: 451px) {
-  .snake {
-    grid-template-columns: 1fr;
-    grid-template-areas: "one" "two" "three" "four" "five" "six";
+@media screen and (max-width: 900px) {
+  .snake__body-block {
+    width: 375px;
+  }
+  .four {
+    background-color: #600;
+    order: 3;
+  }
+
+  .three {
+    background-color: #900;
+    order: 4;
+  }
+
+  .six {
+    background-color: #000;
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .snake__body-block {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .snake__body-block {
+    width: 450px;
+  }
+
+  .three {
+    background-color: #900;
+    order: 3;
+  }
+
+  .four {
+    background-color: #600;
+    order: 4;
   }
 }
