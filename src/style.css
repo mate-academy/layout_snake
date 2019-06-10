@@ -70,7 +70,7 @@ body {
 
 @media only screen and (min-width: 900px) {
   .flexItem {
-    min-width: 33%;
+    min-width: 300px;
   }
 
   .block4 {
@@ -83,5 +83,17 @@ body {
 
   .block6 {
     order: 4;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1199px) {
+  .flexItem {
+    min-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .flexItem {
+    min-width: 400px;
   }
 }
