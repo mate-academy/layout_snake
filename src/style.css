@@ -19,7 +19,7 @@ body {
   color: white;
   font-size: 100px;
   font-family: Arial, sans-serif;
-  width: 400px;
+  width: calc(100%/3);
 }
 
 .one {
@@ -52,15 +52,9 @@ body {
   order: 4;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 899px) {
   .snake__body-block {
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .snake__body-block {
-    width: 375px;
+    width: calc(100%/2);
   }
   .four {
     background-color: #600;
@@ -78,15 +72,9 @@ body {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 599px) {
   .snake__body-block {
-    width: 290px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .snake__body-block {
-    width: 450px;
+    width: 100%;
   }
 
   .three {
