@@ -85,3 +85,25 @@
     min-width: 400px;
   }
 }
+
+@media (min-width: 1600px) {
+
+  .block {
+    min-width: 100px;
+  }
+  .block-flow {
+    flex-wrap: nowrap;
+  }
+
+  .block:nth-child(4) {
+    order: 4;
+  }
+
+  .block:nth-child(5) {
+    order: 5;
+  }
+
+  .block:nth-child(6) {
+    order: 6;
+  }
+}
