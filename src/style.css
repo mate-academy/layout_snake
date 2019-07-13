@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.33%;
+  min-width: 300px;
+  flex-grow: 1;
+  height: 300px;
+}
+
+.one {
+  background-color: #f00;
+}
+
+.two {
+  background-color: #c00;
+}
+
+.three {
+  background-color: #900;
+}
+
+.four {
+  background-color: #600;
+  order: 2;
+}
+
+.five {
+  background-color: #300;
+  order: 1;
+}
+
+.six {
+  background-color: #000;
+}
+
+@media(max-width: 750px) {
+
+  .three,
+  .five,
+  .six {
+    order: 2;
+  }
+
+  .four {
+    order: 1;
+  }
+
+}
+
+@media(max-width: 450px) {
+
+  .five,
+  .three,
+  .four,
+  .six {
+    order: 0;
+  }
+
+}
