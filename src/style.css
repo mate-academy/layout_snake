@@ -8,7 +8,6 @@ body {
   color: rgb(255, 255, 255);
   font-family: Arial, sans-serif;
   font-size: 100px;
-  box-sizing: border-box;
 }
 
 .boxes__box {
