@@ -12,7 +12,6 @@ body {
   color: white;
 
   height: 300px;
-  background-color: red;
 
   flex-basis: 300px;
   flex-grow: 1;
