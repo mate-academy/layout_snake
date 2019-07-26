@@ -32,7 +32,7 @@ body {
   --main-color: #f00;
 }
 
-.red::before {
+.theme-color::before {
   content: "";
   background-color: var(--main-color);
   position: absolute;
@@ -43,19 +43,19 @@ body {
   z-index: -1;
 }
 
-.red.darken-1::before {
+.theme-color.darken-1::before {
   filter: brightness(80%);
 }
 
-.red.darken-2::before {
+.theme-color.darken-2::before {
   filter: brightness(60%);
 }
 
-.red.darken-3::before {
+.theme-color.darken-3::before {
   filter: brightness(40%);
 }
 
-.red.darken-4::before {
+.theme-color.darken-4::before {
   filter: brightness(20%);
 }
 
