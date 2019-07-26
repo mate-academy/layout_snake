@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  height: 300px;
+  font-size: 100px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  color: #fff;
+  flex-basis: 33.33%;
+  position: relative;
+}
+
+.flex-item:nth-child(4) {
+  order: 6;
+}
+
+.flex-item:nth-child(5) {
+  order: 5;
+}
+
+:root {
+  --main-color: #f00;
+}
+
+.red::before {
+  content: "";
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.red.darken-1::before {
+  filter: brightness(80%);
+}
+
+.red.darken-2::before {
+  filter: brightness(60%);
+}
+
+.red.darken-3::before {
+  filter: brightness(40%);
+}
+
+.red.darken-4::before {
+  filter: brightness(20%);
+}
+
+.black {
+  background-color: #000;
+}
+
+@media (max-width: 750px) {
+  .flex-item {
+    flex-basis: 50%;
+  }
+
+  .flex-item:nth-child(3) {
+    order: 4;
+  }
+
+  .flex-item:nth-child(4) {
+    order: 3;
+  }
+
+  .flex-item:nth-child(6) {
+    order: 6;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+
+  .flex-item:nth-child(4) {
+    order: 4;
+  }
+}
