@@ -90,6 +90,6 @@ body {
 @media (min-width: 1200px) {
 
   .flex_item {
-    flex-basis: 350px;
+    flex-basis: 400px;
   }
 }
