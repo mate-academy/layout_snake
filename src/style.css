@@ -3,7 +3,7 @@ body {
 }
 
 .block {
-  height: 300px;
+  min-height: 300px;
   text-align: center;
   font-family: "Arial", sans-serif;
   font-size: 100px;
@@ -70,7 +70,8 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    min-width: 300px;
+    min-width: 33%;
+    flex-grow: 1;
   }
 
   .block2 {
@@ -87,17 +88,5 @@ body {
 
   .block6 {
     order: 4;
-  }
-}
-
-@media (min-width: 1050px) {
-  .block {
-    min-width: 350px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .block {
-    min-width: 400px;
   }
 }
