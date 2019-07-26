@@ -87,9 +87,3 @@ body {
     min-width: 400px;
   }
 }
-
-@media (min-width: 1590px) {
-  .flex-element {
-    min-width: 530px;
-  }
-}
