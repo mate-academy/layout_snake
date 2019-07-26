@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -89,6 +89,5 @@
 @media all and (min-width: 1200px) {
   .flex-block {
     min-width: 400px;
-    flex-grow: unset;
   }
 }
