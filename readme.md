@@ -28,3 +28,4 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 - [UPDATE DEMO LINK](https://igaryok.github.io/layout_snake/)
 - [UPDATE TEST REPORT LINK](https://igaryok.github.io/layout_snake/report/html_report/)
+- [PR](https://github.com/mate-academy/layout_snake/pull/118)
