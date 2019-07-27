@@ -26,5 +26,5 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 **Result**
 
-- [UPDATE DEMO LINK](https://ivansafiulin.github.io/layout_html-form/)
-- [UPDATE TEST REPORT LINK](https://ivansafiulin.github.io/layout_html-form/report/html_report/)
+- [UPDATE DEMO LINK](https://ivansafiulin.github.io/layout_snake/)
+- [UPDATE TEST REPORT LINK](https://ivansafiulin.github.io/layout_snake/report/html_report/)
