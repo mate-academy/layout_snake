@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+.snake-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake-section {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.snake-section-1 {
+  background-color: #f00;
+}
+
+.snake-section-2 {
+  background-color: #c00;
+}
+
+.snake-section-3 {
+  background-color: #900;
+}
+
+.snake-section-4 {
+  background-color: #600;
+}
+
+.snake-section-5 {
+  background-color: #300;
+}
+
+.snake-section-6 {
+  background-color: #000;
+}
+
+@media (min-width: 600px) {
+  .snake-section {
+    flex-basis: 50%;
+  }
+
+  .snake-section-1 {
+    order: 1;
+  }
+
+  .snake-section-2 {
+    order: 2;
+  }
+
+  .snake-section-3 {
+    order: 4;
+  }
+
+  .snake-section-4 {
+    order: 3;
+  }
+
+  .snake-section-5 {
+    order: 5;
+  }
+
+  .snake-section-6 {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .snake-section {
+    flex-basis: 33.3%;
+  }
+
+  .snake-section-1 {
+    order: 1;
+  }
+
+  .snake-section-2 {
+    order: 2;
+  }
+
+  .snake-section-3 {
+    order: 3;
+  }
+
+  .snake-section-4 {
+    order: 6;
+  }
+
+  .snake-section-5 {
+    order: 5;
+  }
+
+  .snake-section-6 {
+    order: 4;
+  }
+}
