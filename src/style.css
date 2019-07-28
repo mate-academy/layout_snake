@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+.snake-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  display: flex;
+  height: 300px;
+  font-family: Arial;
+  font-size: 100px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+  order: 1;
+}
+
+.two {
+  background-color: rgb(204, 0, 0);
+  order: 2;
+}
+
+.three {
+  background-color: rgb(153, 0, 0);
+  order: 3;
+}
+
+.four {
+  background-color: rgb(102, 0, 0);
+  order: 4;
+}
+
+.five {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.six {
+  background-color: rgb(0, 0, 0);
+  order: 6;
+}
+
+@media (min-width: 600px) {
+  .three {
+    order: 4;
+  }
+  .four {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .four {
+    order: 6;
+  }
+  .six {
+    order: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .color-box {
+    min-width: 400px;
+  }
+}
