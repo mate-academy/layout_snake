@@ -9,12 +9,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 300px;
+  flex-wrap: wrap;
 }
 
 .number {
   color: white;
   font-family: Arial;
   font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 300px;
+  flex-basis: 300px;
 }
 
 .block1 {
@@ -40,6 +47,11 @@ body {
 .block6 {
   background-color: #000;
 }
+
+@media only screen and (min-width: 1200px) {
+  .block {
+    flex-basis: 400px;
+  }
 
 @media only screen and (min-width: 900px) {
   .block {
