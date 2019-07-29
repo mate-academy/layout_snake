@@ -26,5 +26,6 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+ [DEMO LINK](https://shklyarigor2015.github.io/layout_snake/)<br>
+ [REPORT LINK](https://shklyarigor2015.github.io/layout_snake/report/html_report/)<br>
+ [PR](https://github.com/mate-academy/layout_snake/pull/125)<br>
