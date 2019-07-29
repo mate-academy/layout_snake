@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 300px;
+  flex: 1 1 auto;
+}
+
+.font-number {
+  font-family: Arial, serif;
+  font-size: 100px;
+  color: white;
+}
+
+.first-card {
+  background: #f00;
+  order: 1;
+}
+
+.second-card {
+  background: #cd0000;
+  order: 2;
+}
+
+.third-card {
+  background: #9a0000;
+  order: 3;
+}
+
+.fourth-card {
+  background: #600;
+  order: 6;
+}
+
+.fifth-card {
+  background: #300;
+  order: 5;
+}
+
+.sixth-card {
+  background: #000;
+  order: 4;
+}
+
+@media screen and (max-width: 750px) {
+  .card-flex {
+    width: 50%;
+  }
+
+  .fourth-card {
+    order: 2;
+  }
+  .sixth-card {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-flex {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .fourth-card {
+    order: 4;
+  }
+}
