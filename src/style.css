@@ -5,7 +5,6 @@ body {
 .container {
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 100%;
 }
 
 .block {
