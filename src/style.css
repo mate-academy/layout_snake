@@ -48,6 +48,12 @@ body {
   order: 4;
 }
 
+@media (min-width: 1200px) {
+  .child {
+    flex-basis: 33.33%;
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1200px) {
   .child {
     flex-basis: 33.33%;
