@@ -10,7 +10,7 @@ body {
 .snake-part {
   height: 300px;
 
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   text-align: center;
 
@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 100%;
+  flex-basis: 100%;
 }
 
 .snake-part-1 {
@@ -48,27 +48,9 @@ body {
   background-color: #000;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   .snake-part {
-    flex: 1 1 33.33%;
-  }
-
-  .snake-part-4 {
-    order: 6;
-  }
-
-  .snake-part-5 {
-    order: 5;
-  }
-
-  .snake-part-6 {
-    order: 4;
-  }
-}
-
-@media only screen and (max-width: 899px) and (min-width: 600px) {
-  .snake-part {
-    flex: 1 1 50%;
+    flex-basis: 50%;
   }
 
   .snake-part-3 {
@@ -85,5 +67,23 @@ body {
 
   .snake-part-6 {
     order: 6;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .snake-part {
+    flex-basis: 33.33%;
+  }
+
+  .snake-part-4 {
+    order: 6;
+  }
+
+  .snake-part-5 {
+    order: 5;
+  }
+
+  .snake-part-6 {
+    order: 4;
   }
 }
