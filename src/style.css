@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1 1 100%;
 }
 
 .snake-part-1 {
