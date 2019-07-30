@@ -7,19 +7,14 @@ body {
   flex-wrap: wrap;
 }
 
-.block-one,
-.block-two,
-.block-three,
-.block-four,
-.block-five,
-.block-six {
+.block {
   height: 300px;
   font: 100px arial, sans-serif;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
+  flex-basis: 300px;
   flex-grow: 1;
 }
 
@@ -96,13 +91,7 @@ body {
 
 @media (min-width: 1200px) {
 
-  .block-one,
-  .block-two,
-  .block-three,
-  .block-four,
-  .block-five,
-
-  .block-six {
-    min-width: 400px;
+  .block {
+    flex-basis: 400px;
   }
 }
