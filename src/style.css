@@ -28,7 +28,6 @@ body {
 
 .block-three {
   background-color: rgb(153,0,0);
-
 }
 
 .block-four {
@@ -87,11 +86,8 @@ body {
   .block-four {
     order: 5;
   }
-}
-
-@media (min-width: 1200px) {
 
   .block {
-    flex-basis: 400px;
+    flex-basis: 33%;
   }
 }
