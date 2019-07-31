@@ -7,13 +7,13 @@ body {
   flex-wrap: wrap;
 }
 
-span {
+.number {
   font-size: 100px;
   font-family: Arial;
   color: white;
 }
 
-.block {
+.red {
   height: 300px;
   width: 33.33%;
   display: flex;
@@ -22,85 +22,85 @@ span {
   min-width: 300px;
 }
 
-.one {
+.block-one {
   background-color: #f00;
 }
 
-.two {
+.block-two {
   background-color: #c00;
 }
 
-.three {
+.block-three {
   background-color: #900;
 }
 
-.four {
+.block-four {
   background-color: #600;
 }
 
-.five {
+.block-five {
   background-color: #300;
 }
 
-.six {
+.block-six {
   background-color: #000;
 }
 
-@media screen and (max-width: 750px) {
-  .block {
+@media (min-width: 600px) and (max-width: 899px) {
+  .red {
     width: 50%;
   }
 
-  .one {
+  .block-one {
     order: 1;
   }
 
-  .two {
+  .block-two {
     order: 2;
   }
 
-  .three {
+  .block-three {
     order: 4;
   }
 
-  .four {
+  .block-four {
     order: 3;
   }
 
-  .five {
+  .block-five {
     order: 5;
   }
 
-  .six {
+  .block-six {
     order: 6;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .block {
+@media (max-width: 599px) {
+  .red {
     width: 100%;
   }
-  .one {
+  .block-one {
     order: 1;
   }
 
-  .two {
+  .block-two {
     order: 2;
   }
 
-  .three {
+  .block-three {
     order: 3;
   }
 
-  .four {
+  .block-four {
     order: 4;
   }
 
-  .five {
+  .block-five {
     order: 5;
   }
 
-  .six {
+  .block-six {
     order: 6;
   }
 }
