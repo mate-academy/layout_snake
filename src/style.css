@@ -8,42 +8,41 @@ body {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1200px) {
-  .block {
-    height: 300px;
-    line-height: 300px;
-    width: 400px;
-    text-align: center;
-    font-size: 100px;
-    color: white;
-    font-weight: bold;
-    font-family: Arial;
-  }
+.block {
+  height: 300px;
+  line-height: 300px;
+  width: 400px;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial;
+}
 
-  .block-first {
-    background-color: red;
-  }
+.block-first {
+  background-color: red;
+}
 
-  .block-second {
-    background-color: #c00;
-  }
+.block-second {
+  background-color: #c00;
+}
 
-  .block-third {
-    background-color: #900;
-  }
+.block-third {
+  background-color: #900;
+}
 
-  .block-fourth {
-    background-color: #600;
-    order: 2;
-  }
+.block-fourth {
+  background-color: #600;
+  order: 2;
+}
 
-  .block-fifth {
-    background-color: #300;
-    order: 1;
-  }
-  .block-sixth {
-    background-color: black;
-  }
+.block-fifth {
+  background-color: #300;
+  order: 1;
+}
+
+.block-sixth {
+  background-color: black;
 }
 
 @media screen and (max-width: 1050px) {
