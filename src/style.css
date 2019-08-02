@@ -61,6 +61,10 @@ body {
     order: 3;
   }
 
+  .block-sixth {
+    order: 6;
+  }
+
 }
 
 @media screen and (max-width: 750px) {
