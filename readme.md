@@ -26,5 +26,5 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 **Result**
 
-- [UPDATE DEMO LINK](https://drop777.github.io/layout_snake/)
-- [UPDATE TEST REPORT LINK](https://drop777.github.io/layout_snake/report/html_report/)
+- [ DEMO LINK](https://drop777.github.io/layout_snake/)
+- [ TEST REPORT LINK](https://drop777.github.io/layout_snake/report/html_report/)
