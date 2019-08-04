@@ -4,20 +4,17 @@ body {
 
 .flex-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  max-width: 100%;
 }
 
 .block {
-  height: 300px;
   line-height: 300px;
   min-width: 300px;
   text-align: center;
   font-size: 100px;
   color: white;
   font-weight: bold;
-  font-family: Arial;
+  font-family: Arial, Arial, Helvetica, sans-serif;
   flex: 1 1 33.33%;
 }
 
@@ -61,22 +58,6 @@ body {
     order: 3;
   }
 
-  .block-sixth {
-    order: 6;
-  }
-
-}
-
-@media screen and (max-width: 750px) {
-
-  .block-third {
-    order: 4;
-  }
-
-  .block-fourth {
-    order: 3;
-  }
-
   .block-fifth {
     order: 5;
   }
@@ -87,25 +68,7 @@ body {
 
 }
 
-@media screen and (max-width: 600px) {
-
-  .block-third {
-    order: 4;
-  }
-
-  .block-fourth {
-    order: 3;
-  }
-  .block-fifth {
-    order: 5;
-  }
-
-  .block-sixth {
-    order: 6;
-  }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 599px) {
 
   .block-third {
     order: 3;
