@@ -52,7 +52,6 @@ body {
 }
 
 @media screen and (max-width: 899px) {
-
   .color-block {
     width: 50%;
   }
@@ -85,14 +84,12 @@ body {
 }
 
 @media screen and (max-width: 649px) {
-
   .color-block {
     min-width: 300px;
   }
 }
 
 @media screen and (max-width: 599px) {
-
   .color-block {
     width: 100%;
   }
