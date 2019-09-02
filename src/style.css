@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.commonStyles {
+  height: 300px;
+  width: 400px;
+  font: 100px Arial;
+  color: white;
+  line-height: 300px;
+  text-align: center;
+}
+
+.block-1 {
+  background-color: #f00;
+  order: 1;
+}
+
+.block-2 {
+  background-color: #c00;
+  order: 2;
+}
+
+.block-3 {
+  background-color: #900;
+  order: 3;
+}
+
+.block-4 {
+  background-color: #600;
+  order: 6;
+}
+
+.block-5 {
+  background-color: #300;
+  order: 5;
+}
+
+.block-6 {
+  background-color: black;
+  order: 4;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 1050px;
+  }
+
+  .commonStyles {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 900px;
+  }
+
+  .commonStyles {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 750px;
+  }
+
+  .commonStyles {
+    width: 375px;
+  }
+
+  .block-3 {
+    order: 4;
+  }
+
+  .block-4 {
+    order: 3;
+  }
+
+  .block-6 {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 600px;
+  }
+
+  .commonStyles {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 450px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .commonStyles {
+    width: 450px;
+  }
+
+  .block-3 {
+    order: 3;
+  }
+
+  .block-4 {
+    order: 4;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .commonStyles {
+    width: 300px;
+  }
+}
