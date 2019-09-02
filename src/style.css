@@ -33,6 +33,7 @@
 
 .block-5 {
   background-color: #300;
+  order: 5;
 }
 
 .block-6 {
@@ -41,20 +42,17 @@
 }
 
 @media screen and (max-width: 899px) {
+
   .block-3 {
-    order: 2;
+    order: 4;
   }
 
   .block-4 {
-    order: 1;
-  }
-
-  .block-5 {
     order: 3;
   }
 
   .block-6 {
-    order: 4;
+    order: 6;
   }
 }
 
