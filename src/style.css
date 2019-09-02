@@ -15,7 +15,8 @@ body {
   font-size: 100px;
   line-height: 300px;
   text-align: center;
-  min-width: 33.33%;
+  flex: 1 1 300px;
+  min-width: 30vw;
 }
 
 .block-1 {
