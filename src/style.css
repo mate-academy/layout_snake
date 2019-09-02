@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+.div-cont {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.col-box {
+  flex-grow: 1;
+  height: 300px;
+  min-width: 300px;
+  align-items: center;
+  flex-basis: calc(100% / 3);
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-family: "Arial", sans-serif;
+  line-height: 100px; /* this why happening some test fails */
+}
+
+.div1 {
+  background-color: #f00;
+}
+
+.div2 {
+  background-color: #c00;
+}
+
+.div3 {
+  background-color: #900;
+}
+
+.div4 {
+  background-color: #600;
+  order: 6;
+}
+
+.div5 {
+  background-color: #300;
+  order: 5;
+}
+
+.div6 {
+  background-color: #000;
+  order: 4;
+}
+
+@media screen and (max-width: 899px) {
+  .div3 {
+    order: 2;
+  }
+
+  .div4 {
+    order: 1;
+  }
+
+  .div5 {
+    order: 3;
+  }
+
+  .div6 {
+    order: 4;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .div3 {
+    order: 1;
+  }
+}
