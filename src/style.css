@@ -3,15 +3,31 @@
   flex-wrap: wrap;
 }
 
+/*.item {*/
+/*  height: 300px;*/
+/*  flex: 1 1 300px;*/
+/*  line-height: 300px;*/
+/*  min-width: 30vw;*/
+/*  text-align: center;*/
+/*  font-family: Arial, sans-serif;*/
+/*  font-size: 100px;*/
+/*  color: white;*/
+/*}*/
+
 .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 300px;
+  width: 33.33%;
   height: 300px;
-  flex: 1 1 300px;
-  line-height: 300px;
-  min-width: 30vw;
-  text-align: center;
-  font-family: Arial, sans-serif;
+}
+
+.item p {
+  font-family: "Arial", sans-serif;
+  color: #fff;
   font-size: 100px;
-  color: white;
 }
 
 .block-1 {
