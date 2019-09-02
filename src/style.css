@@ -50,7 +50,7 @@ body {
 
 @media (max-width: 899px) {
   .container > div {
-    min-width: 50%;
+    flex-basis: 50%;
   }
   .block_3 {
     order: 4;
@@ -68,7 +68,7 @@ body {
 
 @media (max-width: 599px) {
   .container > div {
-    min-width: 100%;
+    flex-basis: 100%;
   }
   .block_4,
   .block_5,
