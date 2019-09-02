@@ -57,7 +57,7 @@
   order: 4;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 900px) {
 
   .block-3 {
     order: 4;
@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .block-3 {
     order: 1;
   }
