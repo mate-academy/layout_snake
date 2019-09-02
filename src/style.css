@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-1,
+.block-2,
+.block-3,
+.block-4,
+.block-5,
+.block-6 {
+  height: 300px;
+  min-width: 300px;
+  font-family: Arial;
+  font-size: 100px;
+  margin: 0;
+  justify-content: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex: 1 1 calc(100% / 3);
+}
+
+@media (min-width: 751px) {
+  .block-1 {
+    background-color: rgba(100%, 0%, 0%, 1);
+    order: 1;
+  }
+
+  .block-2 {
+    background-color: rgba(100%, 0%, 0%, 0.8);
+    order: 2;
+  }
+
+  .block-3 {
+    background-color: rgba(100%, 0%, 0%, 0.6);
+    order: 3;
+  }
+
+  .block-4 {
+    background-color: rgba(100%, 0%, 0%, 0.4);
+    order: 6;
+  }
+
+  .block-5 {
+    background-color: rgba(100%, 0%, 0%, 0.2);
+    order: 5;
+  }
+
+  .block-6 {
+    background-color: rgba(100%, 0%, 0%, 0);
+    order: 4;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 750px) {
+  .block-1 {
+    background-color: rgba(100%, 0%, 0%, 1);
+    order: 1;
+  }
+
+  .block-2 {
+    background-color: rgba(100%, 0%, 0%, 0.8);
+    order: 2;
+  }
+
+  .block-3 {
+    background-color: rgba(100%, 0%, 0%, 0.6);
+    order: 4;
+  }
+
+  .block-4 {
+    background-color: rgba(100%, 0%, 0%, 0.4);
+    order: 3;
+  }
+
+  .block-5 {
+    background-color: rgba(100%, 0%, 0%, 0.2);
+    order: 5;
+  }
+
+  .block-6 {
+    background-color: rgba(100%, 0%, 0%, 0);
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .block-1 {
+    background-color: rgba(100%, 0%, 0%, 1);
+    order: 1;
+  }
+
+  .block-2 {
+    background-color: rgba(100%, 0%, 0%, 0.8);
+    order: 2;
+  }
+
+  .block-3 {
+    background-color: rgba(100%, 0%, 0%, 0.6);
+    order: 3;
+  }
+
+  .block-4 {
+    background-color: rgba(100%, 0%, 0%, 0.4);
+    order: 4;
+  }
+
+  .block-5 {
+    background-color: rgba(100%, 0%, 0%, 0.2);
+    order: 5;
+  }
+
+  .block-6 {
+    background-color: rgba(100%, 0%, 0%, 0);
+    order: 6;
+  }
+}
