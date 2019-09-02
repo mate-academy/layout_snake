@@ -27,4 +27,4 @@ For better clarity, please refer to the reference [screenshots](references) at
 **Result**
 
 - [LINK](https://nikakarelets.github.io/layout_snake/)
-- [UPDATE TEST REPORT LINK](https://nikakarelets.github.io/layout_snake>/report/html_report/)
+- [TEST REPORT LINK](https://nikakarelets.github.io/layout_snake>/report/html_report/)
