@@ -5,13 +5,11 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .commonStyles {
   height: 300px;
-  width: 400px;
+  min-width: calc(100% / 3);
   font: 100px Arial;
   color: white;
   line-height: 300px;
