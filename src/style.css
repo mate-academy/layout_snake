@@ -28,7 +28,7 @@ body {
   flex: 1 1 calc(100% / 3);
 }
 
-@media (min-width: 751px) {
+@media (min-width: 900px) {
   .block-1 {
     background-color: rgba(100%, 0%, 0%, 1);
     order: 1;
@@ -60,7 +60,7 @@ body {
   }
 }
 
-@media (min-width: 451px) and (max-width: 750px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .block-1 {
     background-color: rgba(100%, 0%, 0%, 1);
     order: 1;
@@ -92,7 +92,7 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 599px) {
   .block-1 {
     background-color: rgba(100%, 0%, 0%, 1);
     order: 1;
