@@ -7,23 +7,23 @@ body {
 }
 
 .Upblock {
-  align-content: stretch;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  flex-direction: initial;
-  flex: 1 1 auto;
-  line-height: 300px;
 }
 
 .blockUpper {
   height: 300px;
   color: white;
-  min-width: 30vw;
-  width: 300px;
+  min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 100px;
+  flex-grow: 1;
+  font-size: 100px;
+  font-family: "Arial";
+  flex-basis: calc(100% / 3);
 }
 
 .blockUpper1 {
