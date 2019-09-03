@@ -26,5 +26,5 @@ For better clarity, please refer to the reference [screenshots](references) at
 
 **Result**
 
-- [DEMO LINK](https://havrylenkov.github.io/layout_snake/)
-- [UPDATE TEST REPORT LINK](https://havrylenkov.github.io/layout_snake/report/html_report/)
+- [LINK](https://havrylenkov.github.io/layout_snake/)
+- [TEST REPORT LINK](https://havrylenkov.github.io/layout_snake/report/html_report/)
