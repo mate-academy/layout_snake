@@ -11,19 +11,15 @@ body {
   width: calc(100% / 3);
   min-width: 300px;
   height: 300px;
-  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .block p {
   font-family: Arial;
   font-size: 105px;
   color: white;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .item-4 {
