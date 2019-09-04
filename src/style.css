@@ -48,13 +48,13 @@ body {
 
 @media screen and (max-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .container {
-    width: 1050px;
+    width: 100%;
   }
 
   .commonStyles {
@@ -64,7 +64,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .container {
-    width: 900px;
+    width: 100%;
   }
 
   .commonStyles {
@@ -74,7 +74,7 @@ body {
 
 @media screen and (max-width: 750px) {
   .container {
-    width: 750px;
+    width: 100%;
   }
 
   .commonStyles {
@@ -96,7 +96,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .container {
-    width: 600px;
+    width: 100%;
   }
 
   .commonStyles {
@@ -106,7 +106,7 @@ body {
 
 @media screen and (max-width: 450px) {
   .container {
-    width: 450px;
+    width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -127,7 +127,7 @@ body {
 @media screen and (max-width: 300px) {
   .container {
     flex-direction: column;
-    width: 300px;
+    width: 100%;
   }
 
   .commonStyles {
