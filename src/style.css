@@ -51,29 +51,29 @@ body {
 }
 
 @media screen and (max-width: 899px) {
-  .block-3 {
+  .block_3 {
     order: 2;
   }
 
-  .block-4 {
+  .block_4 {
     order: 1;
   }
 
-  .block-5 {
+  .block_5 {
     order: 3;
   }
 
-  .block-6 {
+  .block_6 {
     order: 4;
   }
 }
 
 @media screen and (max-width: 599px) {
-  .block-3 {
+  .block_3 {
     order: 1;
   }
 
-  .block-4 {
+  .block_4 {
     order: 2;
   }
 }
