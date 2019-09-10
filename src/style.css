@@ -6,12 +6,12 @@ body {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .item {
-  height: 300px;
-  width: 400px;
+  min-height: 300px;
+  min-width: 400px;
   font: 100px Arial, Helvetica, sans-serif;
   color: white;
   line-height: 300px;
