@@ -1,20 +1,18 @@
 'use strict';
-
 // https://github.com/garris/BackstopJS#advanced-scenarios
 
 const backstop = require('@mate-academy/backstop-config');
-
 const { basicScenario } = backstop;
 
 const basic = {
   ...basicScenario,
   label: 'Elementary test',
-  referenceUrl:
-    'https://mate-academy.github.io/layout_solutions/snake/',
+  referenceUrl: basicScenario.referenceUrl + '/snake/',
 };
 
 const config = {
   ...backstop,
+  fileNameTemplate: '{scenarioLabel}_{viewportLabel}',
   viewports: [
     {
       name: '1200',
@@ -55,7 +53,7 @@ const config = {
   scenarios: [
     {
       ...basic,
-      label: 'entire-document',
+      label: 'Entire document',
       selectors: ['document'],
     },
   ],
