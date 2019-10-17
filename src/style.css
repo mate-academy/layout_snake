@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-family: Arial;
+  color: white;
+  font-size: 100px;
+  min-width: 300px;
+  flex: 1 33.3%;
+}
+
+.grid--one {
+  background-color: rgb(255, 0, 0);
+}
+
+.grid--two {
+  background-color: rgb(204, 0, 0);
+}
+
+.grid--three {
+  background-color: rgb(153, 0, 0);
+}
+
+.grid--four {
+  background-color: rgb(102, 0, 0);
+}
+
+.grid--five {
+  background-color: rgb(51, 0, 0);
+}
+
+.grid--six {
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 900px) {
+  .grid--four {
+    order: 3;
+  }
+  .grid--five {
+    order: 2;
+  }
+  .grid--six {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 899px) {
+  .grid--one {
+    order: 1;
+  }
+  .grid--two {
+    order: 2;
+  }
+  .grid--three {
+    order: 4;
+  }
+  .grid--four {
+    order: 3;
+  }
+  .grid--five {
+    order: 5;
+  }
+  .grid--six {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid--one {
+    order: 1;
+  }
+  .grid--two {
+    order: 2;
+  }
+  .grid--three {
+    order: 3;
+  }
+  .grid--four {
+    order: 4;
+  }
+  .grid--five {
+    order: 5;
+  }
+  .grid--six {
+    order: 6;
+  }
+}
