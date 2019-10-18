@@ -8,7 +8,7 @@ body {
   flex-wrap: wrap;
 }
 
-.wrapper > div {
+.wrapper > .item {
   flex-basis: 33.33%;
   height: 300px;
   display: flex;
@@ -20,17 +20,14 @@ body {
 
 .block-one {
   background-color: #f00;
-  order: 1;
 }
 
 .block-two {
   background-color: #c00;
-  order: 2;
 }
 
 .block-three {
   background-color: #900;
-  order: 3;
 }
 
 .block-four {
@@ -49,7 +46,7 @@ body {
 }
 
 @media (max-width: 899px) {
-  .wrapper > div {
+  .wrapper > .item {
     flex-basis: 50%;
   }
 
@@ -61,24 +58,15 @@ body {
     order: 3;
   }
 
-  .block-five {
-    order: 5;
-  }
-
   .block-six {
     order: 6;
   }
 }
 
 @media (max-width: 450px) {
-  .wrapper > div {
+  .wrapper > .item {
     flex-basis: 100%;
   }
-
-  .block-three {
-    order: 3;
-  }
-
   .block-four {
     order: 4;
   }
