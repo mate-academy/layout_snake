@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .container-down {
+    flex-direction: row-reverse;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+  }
+}
+
+.block {
+  height: 300px;
+  color: white;
+  flex-grow: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block-num1 {
+  background-color: red;
+}
+
+.block-num2 {
+  background-color: rgb(204 0 0);
+}
+
+.block-num3 {
+  background-color: rgb(153 0 0);
+}
+
+.block-num4 {
+  background-color: rgb(102 0 0);
+}
+
+.block-num5 {
+  background-color: rgb(51 0 0);
+}
+
+.block-num6 {
+  background-color: black;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .container-to-doubles {
+    display: block;
+  }
+  .block-num1 {
+    float: left;
+    width: 50%;
+  }
+
+  .block-num2 {
+    width: 50%;
+  }
+
+  .block-num3 {
+    float: right;
+    width: 50%;
+  }
+
+  .block-num4 {
+    width: 50%;
+  }
+
+  .block-num5 {
+    float: left;
+    width: 50%;
+  }
+
+  .block-num6 {
+    width: 50%;
+  }
+}
