@@ -49,7 +49,7 @@ body {
   order: 4;
 }
 
-@media (max-width: 899px) {
+@media screen and (max-width: 899px) {
   .block {
     width: 50%;
   }
@@ -71,7 +71,7 @@ body {
   }
 }
 
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .block {
     width: 100%;
   }
