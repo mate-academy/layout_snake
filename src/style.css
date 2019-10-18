@@ -77,22 +77,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .grid--one {
-    order: 1;
-  }
-  .grid--two {
-    order: 2;
-  }
-  .grid--three {
-    order: 3;
-  }
-  .grid--four {
-    order: 4;
-  }
-  .grid--five {
-    order: 5;
-  }
-  .grid--six {
-    order: 6;
+  .grid--item {
+    order: 0;
   }
 }
