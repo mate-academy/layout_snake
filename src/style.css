@@ -2,16 +2,10 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 900px) {
-  .container-down {
-    flex-direction: row-reverse;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    vertical-align: middle;
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
 }
 
 .block {
@@ -50,34 +44,44 @@ body {
   background-color: black;
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
-  .container-to-doubles {
-    display: block;
-  }
-  .block-num1 {
-    float: left;
-    width: 50%;
-  }
-
-  .block-num2 {
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .block {
     width: 50%;
   }
 
   .block-num3 {
-    float: right;
-    width: 50%;
+    order: 4;
   }
 
   .block-num4 {
-    width: 50%;
+    order: 3;
   }
 
   .block-num5 {
-    float: left;
-    width: 50%;
+    order: 5;
   }
 
   .block-num6 {
-    width: 50%;
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .block {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .block {
+    width: 33%;
+  }
+
+  .block-num4 {
+    order: 6;
+  }
+
+  .block-num5 {
+    order: 4;
   }
 }
