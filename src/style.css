@@ -27,20 +27,20 @@ body {
 }
 
 .grid__block_2 {
-  background-color: rgb(162, 28, 30);
+  background-color: rgb(204, 0, 0);
 
 }
 
 .grid__block_3 {
-  background-color: rgb(119, 21, 22);
+  background-color: rgb(153, 0, 0);
 }
 
 .grid__block_4 {
-  background-color: rgb(85, 0, 0);
+  background-color: rgb(102, 0, 0);
 }
 
 .grid__block_5 {
-  background-color: rgb(64, 0, 0);
+  background-color: rgb(51, 0, 0);
 }
 
 .grid__block_6 {
@@ -61,7 +61,7 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
   .grid__block_3 {
     order: 2;
   }
@@ -78,7 +78,7 @@ body {
     order: 4;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .grid-item {
     order: 0;
   }
