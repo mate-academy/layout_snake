@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nested--box {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 33.33%;
+  height: 300px;
+  min-width: 300px;
+  color: white;
+  font-family: Arial;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nested--box--first {
+  background-color: red;
+}
+
+.nested--box--second {
+  background-color: rgb(204, 0, 0);
+}
+
+.nested--box--third {
+  background-color: rgb(153, 0, 0);
+}
+
+.nested--box--fourth {
+  background-color: rgb(102, 0, 0);
+}
+
+.nested--box--fifth {
+  background-color: rgb(51, 0, 0);
+}
+
+.nested--box--sixth {
+  background-color: black;
+}
+
+@media screen and (max-width: 450px) {
+  .nested--box--first {
+    order: 1;
+  }
+  .nested--box--second {
+    order: 2;
+  }
+  .nested--box--third {
+    order: 3;
+  }
+  .nested--box--fourth {
+    order: 4;
+  }
+  .nested--box--fifth {
+    order: 5;
+  }
+  .nested--box--sixth {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 899px) {
+  .nested--box--first {
+    order: 1;
+  }
+  .nested--box--second {
+    order: 2;
+  }
+  .nested--box--fourth {
+    order: 3;
+  }
+  .nested--box--third {
+    order: 4;
+  }
+  .nested--box--fifth {
+    order: 5;
+  }
+  .nested--box--sixth {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nested--box--sixth {
+    order: 1;
+  }
+
+  .nested--box--fifth {
+    order: 2;
+  }
+
+  .nested--box--fourth {
+    order: 3;
+  }
+}
