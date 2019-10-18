@@ -9,6 +9,7 @@ body {
 
 .block {
   height: 300px;
+  min-width: 300px;
 
   font-family: Arial;
   font-size: 100px;
