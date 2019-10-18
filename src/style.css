@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.block {
+  font-family: arial;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  height: 300px;
+  line-height: 300px;
+  flex: 1 1 300px;
+}
+
+.first {
+  background-color: #f00;
+  order: 1;
+}
+
+.second {
+  background-color: #c00;
+  order: 2;
+}
+
+.third {
+  background-color: #900;
+  order: 3;
+}
+
+.forth {
+  background-color: #600;
+  order: 4;
+}
+
+.fifth {
+  background-color: #300;
+  order: 5;
+}
+
+.sixth {
+  background-color: #000;
+  order: 6;
+}
+
+@media screen and (min-width: 900px) {
+  .first,
+  .second,
+  .third {
+    flex: 1 1 33.33%;
+  }
+
+  .forth {
+    order: 6;
+  }
+
+  .sixth {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .third {
+    order: 4;
+  }
+
+  .forth {
+    order: 3;
+  }
+}
