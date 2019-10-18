@@ -44,45 +44,18 @@ body {
   background-color: black;
 }
 
-@media screen and (max-width: 450px) {
-  .nested--box--first {
-    order: 1;
-  }
-  .nested--box--second {
-    order: 2;
-  }
-  .nested--box--third {
-    order: 3;
-  }
-  .nested--box--fourth {
-    order: 4;
-  }
-  .nested--box--fifth {
-    order: 5;
-  }
-  .nested--box--sixth {
-    order: 6;
-  }
-}
-
 @media screen and (min-width: 451px) and (max-width: 899px) {
-  .nested--box--first {
+  .nested--box--fourth {
     order: 1;
   }
-  .nested--box--second {
+  .nested--box--third {
     order: 2;
   }
-  .nested--box--fourth {
+  .nested--box--fifth {
     order: 3;
   }
-  .nested--box--third {
-    order: 4;
-  }
-  .nested--box--fifth {
-    order: 5;
-  }
   .nested--box--sixth {
-    order: 6;
+    order: 4;
   }
 }
 
