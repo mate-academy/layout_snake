@@ -33,7 +33,7 @@ body {
   order: 3;
 }
 
-.forth {
+.fourth {
   background-color: #600;
   order: 4;
 }
@@ -55,7 +55,7 @@ body {
     flex: 1 1 33.33%;
   }
 
-  .forth {
+  .fourth {
     order: 6;
   }
 
@@ -69,7 +69,7 @@ body {
     order: 4;
   }
 
-  .forth {
+  .fourth {
     order: 3;
   }
 }
