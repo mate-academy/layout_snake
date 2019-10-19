@@ -47,7 +47,6 @@ body {
   }
 
   .blocks {
-    flex-grow: 1;
     flex-basis: 33.3%;
   }
 
@@ -71,7 +70,6 @@ body {
   }
 
   .blocks {
-    flex-grow: 1;
     flex-basis: 50%;
   }
 
