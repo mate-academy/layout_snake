@@ -50,7 +50,7 @@ body {
   order: 6;
 }
 
-@media (min-width: 451px) {
+@media (min-width: 451px) and (max-width: 899px) {
   .block-third {
     order: 4;
   }
