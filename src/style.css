@@ -17,41 +17,40 @@ body {
   justify-content: center;
   color: white;
   flex-grow: 1;
+  flex-basis: 33.3%;
 }
 
 .block-first {
   background-color: red;
+  order: 1;
 }
 
 .block-second {
   background-color: rgb(calc(255*0.8), 0, 0);
+  order: 2;
 }
 
 .block-third {
   background-color: rgb(calc(255*0.6), 0, 0);
+  order: 3;
 }
 
 .block-fourth {
   background-color: rgb(calc(255*0.4), 0, 0);
+  order: 4;
 }
 
 .block-fifth {
   background-color: rgb(calc(255*0.2), 0, 0);
+  order: 5;
 }
 
 .block-six {
   background-color: black;
+  order: 6;
 }
 
-@media screen and (min-width: 500px) {
-  .block-first {
-    order: 1;
-  }
-
-  .block-second {
-    order: 2;
-  }
-
+@media (min-width: 451px) {
   .block-third {
     order: 4;
   }
@@ -59,44 +58,14 @@ body {
   .block-fourth {
     order: 3;
   }
-
-  .block-fifth {
-    order: 5;
-  }
-
-  .block-six {
-    order: 6;
-  }
 }
 
-@media screen and (min-width: 800px) {
-  .block-first {
-    order: 1;
-  }
-
-  .block-second {
-    order: 2;
-  }
-
-  .block-third {
-    order: 3;
-  }
-
+@media (min-width: 900px) {
   .block-fourth {
     order: 6;
   }
 
-  .block-fifth {
-    order: 5;
-  }
-
   .block-six {
     order: 4;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .block {
-    min-width: 302px;
   }
 }
