@@ -9,12 +9,11 @@ body {
 
 .style-blocks {
   display: flex;
-  flex-grow: 1;
+  flex: 1 1 300px;
   justify-content: center;
   align-items: center;
   height: 300px;
-  width: 30% ;
-  min-width: 300px;
+  min-width: 30%;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   color: rgb(255, 255, 255);
@@ -73,9 +72,5 @@ body {
 
   .fourth-block {
     order: 4;
-  }
-
-  .style-blocks {
-    width: 100%;
   }
 }
