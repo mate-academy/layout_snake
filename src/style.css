@@ -8,7 +8,7 @@ body {
 }
 
 .block {
-  height: 300px;
+  height: 33.3%;
   min-width: 300px;
 
   font-family: Arial;
@@ -50,7 +50,7 @@ body {
 
 @media screen and (min-width: 300px) {
   .block {
-    width: 300px;
+    width: 100%;
   }
 
   .first_block {
@@ -80,7 +80,7 @@ body {
 
 @media screen and (min-width: 450px) {
   .block {
-    width: 450px;
+    width: 100%;
   }
 
   .first_block {
@@ -110,7 +110,7 @@ body {
 
 @media screen and (min-width: 600px) {
   .block {
-    width: 300px;
+    width: 50%;
   }
 
   .first_block {
@@ -140,7 +140,7 @@ body {
 
 @media screen and (min-width: 750px) {
   .block {
-    width: 375px;
+    width: 50%;
   }
 
   .first_block {
@@ -170,7 +170,7 @@ body {
 
 @media screen and (min-width: 900px) {
   .block {
-    width: 300px;
+    width: 33.3%;
   }
   .first_block {
     order: 1;
@@ -199,7 +199,7 @@ body {
 
 @media screen and (min-width: 1050px) {
   .block {
-    width: 350px;
+    width: 33.3%;
   }
   .first_block {
     order: 1;
@@ -228,7 +228,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .block {
-    width: 400px;
+    width: 33.3%;
   }
   .first_block {
     order: 1;
