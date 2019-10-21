@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 300px;
+  min-width: 300px;
+  font-family: Arial;
+  color: white;
+  font-size: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.3%;
+  flex-grow: 1;
+}
+
+.block--one {
+  background: red;
+  order: 1;
+}
+
+.block--two {
+  background: rgb(204, 0, 0);
+  order: 2;
+}
+
+.block--three {
+  background: rgb(153, 0, 0);
+  order: 4;
+}
+
+.block--four {
+  background: rgb(102, 0, 0);
+  order: 3;
+}
+
+.block--five {
+  background: rgb(51, 0, 0);
+  order: 5;
+}
+
+.block--six {
+  background: black;
+  order: 6;
+}
+
+@media screen and (max-width: 599px) {
+  .block--one {
+    background: red;
+    order: 1;
+  }
+
+  .block--two {
+    background: rgb(204, 0, 0);
+    order: 2;
+  }
+
+  .block--three {
+    background: rgb(153, 0, 0);
+    order: 3;
+  }
+
+  .block--four {
+    background: rgb(102, 0, 0);
+    order: 4;
+  }
+
+  .block--five {
+    background: rgb(51, 0, 0);
+    order: 5;
+  }
+
+  .block--six {
+    background: black;
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .block--one {
+    background: red;
+    order: 1;
+  }
+
+  .block--two {
+    background: rgb(204, 0, 0);
+    order: 2;
+  }
+
+  .block--three {
+    background: rgb(153, 0, 0);
+    order: 3;
+  }
+
+  .block--four {
+    background: rgb(102, 0, 0);
+    order: 6;
+  }
+
+  .block--five {
+    background: rgb(51, 0, 0);
+    order: 5;
+  }
+
+  .block--six {
+    background: black;
+    order: 4;
+  }
+}
