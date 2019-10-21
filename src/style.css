@@ -45,45 +45,43 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .box :nth-child(3) {
+  .third {
     order: 2;
   }
-  .box :nth-child(4) {
+  .fourth {
     order: 1;
   }
-  .box :nth-child(5) {
+  .fifth {
     order: 3;
   }
-  .box :nth-child(6) {
+  .sixth {
     order: 4;
   }
-}
-
-@media screen and (min-width: 900px) {
-  .box :nth-child(1) {
-    order: 1;
+  @media screen and (min-width: 900px) {
+    .first {
+      order: 1;
+    }
+    .second {
+      order: 1;
+    }
+    .third {
+      order: 1;
+    }
+    .fourth {
+      order: 3;
+    }
+    .fifth {
+      order: 2;
+    }
+    .sixth {
+      order: 1;
+    }
   }
-  .box :nth-child(2) {
-    order: 1;
-  }
-  .box :nth-child(3) {
-    order: 1;
-  }
-  .box :nth-child(4) {
-    order: 3;
-  }
-  .box :nth-child(5) {
-    order: 2;
-  }
-  .box :nth-child(6) {
-    order: 1;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .box :nth-child(1),
-  .box :nth-child(2),
-  .box :nth-child(3) {
-    width: 400px;
+  @media screen and (min-width: 1200px) {
+    .first,
+    .second,
+    .third {
+      width: 400px;
+    }
   }
 }
