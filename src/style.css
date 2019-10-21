@@ -17,17 +17,15 @@ body {
   justify-content: center;
   color: white;
   flex-grow: 1;
-  flex-basis: 33.3%;
+  flex-basis: calc(100%/3);
 }
 
 .block-first {
   background-color: red;
-  order: 1;
 }
 
 .block-second {
   background-color: rgb(calc(255*0.8), 0, 0);
-  order: 2;
 }
 
 .block-third {
@@ -50,7 +48,7 @@ body {
   order: 6;
 }
 
-@media (min-width: 451px) {
+@media (min-width: 600px) {
   .block-third {
     order: 4;
   }
