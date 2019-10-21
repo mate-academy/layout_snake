@@ -48,9 +48,6 @@ body {
   .third {
     order: 2;
   }
-  .fourth {
-    order: 1;
-  }
   .fifth {
     order: 3;
   }
