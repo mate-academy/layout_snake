@@ -58,23 +58,14 @@ body {
     order: 4;
   }
   @media screen and (min-width: 900px) {
-    .first {
-      order: 1;
-    }
-    .second {
-      order: 1;
-    }
-    .third {
-      order: 1;
-    }
     .fourth {
-      order: 3;
+      order: 6;
     }
     .fifth {
-      order: 2;
+      order: 5;
     }
     .sixth {
-      order: 1;
+      order: 4;
     }
   }
   @media screen and (min-width: 1200px) {
