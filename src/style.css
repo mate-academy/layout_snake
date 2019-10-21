@@ -23,12 +23,10 @@ body {
 
 .block--one {
   background: red;
-  order: 1;
 }
 
 .block--two {
   background: rgb(204, 0, 0);
-  order: 2;
 }
 
 .block--three {
@@ -52,16 +50,6 @@ body {
 }
 
 @media screen and (max-width: 599px) {
-  .block--one {
-    background: red;
-    order: 1;
-  }
-
-  .block--two {
-    background: rgb(204, 0, 0);
-    order: 2;
-  }
-
   .block--three {
     background: rgb(153, 0, 0);
     order: 3;
@@ -71,34 +59,9 @@ body {
     background: rgb(102, 0, 0);
     order: 4;
   }
-
-  .block--five {
-    background: rgb(51, 0, 0);
-    order: 5;
-  }
-
-  .block--six {
-    background: black;
-    order: 6;
-  }
 }
 
 @media screen and (min-width: 900px) {
-  .block--one {
-    background: red;
-    order: 1;
-  }
-
-  .block--two {
-    background: rgb(204, 0, 0);
-    order: 2;
-  }
-
-  .block--three {
-    background: rgb(153, 0, 0);
-    order: 3;
-  }
-
   .block--four {
     background: rgb(102, 0, 0);
     order: 6;
