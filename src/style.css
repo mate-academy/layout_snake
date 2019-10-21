@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+.main-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 33.3%;
+  font-size: 100px;
+  font-family: Arial, serif;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.first-block {
+  background-color: red;
+  order: 1;
+}
+
+.second-block {
+  background-color: rgb(204, 0, 0);
+  order: 2;
+}
+
+.third-block {
+  background-color: rgb(153, 0, 0);
+  order: 3;
+}
+
+.forth-block {
+  background-color: rgb(102, 0, 0);
+  order: 4;
+}
+
+.fifth-block {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.sixth-block {
+  background-color: black;
+  order: 6;
+}
+
+@media (min-width: 900px) {
+  .sixth-block {
+    order: 4;
+  }
+
+  .forth-block {
+    order: 6;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .third-block {
+    order: 4;
+  }
+  .forth-block {
+    order: 3;
+  }
+}
