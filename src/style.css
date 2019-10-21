@@ -80,29 +80,12 @@ body {
   .block {
     width: 50%;
   }
-
-  .three_block {
-    order: 2;
-  }
-
-  .four_block {
-    order: 1;
-  }
-
-  .five_block {
-    order: 3;
-  }
-
-  .six_block {
-    order: 4;
-  }
 }
 
 @media screen and (min-width: 900px) {
   .block {
     width: 33.3%;
   }
-
   .three_block {
     order: 0;
   }
@@ -145,16 +128,5 @@ body {
 @media screen and (min-width: 1200px) {
   .block {
     width: 33.3%;
-  }
-  .four_block {
-    order: 3;
-  }
-
-  .five_block {
-    order: 2;
-  }
-
-  .six_block {
-    order: 1;
   }
 }
