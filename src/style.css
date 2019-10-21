@@ -10,7 +10,7 @@ body {
 .block {
   height: 33.3%;
   min-width: 300px;
-
+  order: 0;
   font-family: Arial;
   font-size: 100px;
   color: white;
@@ -20,91 +20,37 @@ body {
 
 .first_block {
   background-color: rgb(255, 0, 0);
-  order: 1;
 }
 
 .second_block {
   background-color: rgb(204, 0, 0);
-  order: 2;
 }
 
 .three_block {
   background-color: rgb(153, 0, 0);
-  order: 3;
 }
 
 .four_block {
   background-color: rgb(102, 0, 0);
-  order: 6;
 }
 
 .five_block {
   background-color: rgb(51, 0, 0);
-  order: 5;
 }
 
 .six_block {
   background-color: rgb(0, 0, 0);
-  order: 4;
 }
 
 @media screen and (min-width: 300px) {
   .block {
     width: 100%;
   }
-
-  .first_block {
-    order: 1;
-  }
-
-  .second_block {
-    order: 2;
-  }
-
-  .three_block {
-    order: 3;
-  }
-
-  .four_block {
-    order: 4;
-  }
-
-  .five_block {
-    order: 5;
-  }
-
-  .six_block {
-    order: 6;
-  }
 }
 
 @media screen and (min-width: 450px) {
   .block {
     width: 100%;
-  }
-
-  .first_block {
-    order: 1;
-  }
-
-  .second_block {
-    order: 2;
-  }
-
-  .three_block {
-    order: 3;
-  }
-
-  .four_block {
-    order: 4;
-  }
-
-  .five_block {
-    order: 5;
-  }
-
-  .six_block {
-    order: 6;
   }
 }
 
@@ -113,28 +59,20 @@ body {
     width: 50%;
   }
 
-  .first_block {
-    order: 1;
-  }
-
-  .second_block {
+  .three_block {
     order: 2;
   }
 
-  .three_block {
-    order: 4;
-  }
-
   .four_block {
-    order: 3;
+    order: 1;
   }
 
   .five_block {
-    order: 5;
+    order: 3;
   }
 
   .six_block {
-    order: 6;
+    order: 4;
   }
 }
 
@@ -143,28 +81,20 @@ body {
     width: 50%;
   }
 
-  .first_block {
-    order: 1;
-  }
-
-  .second_block {
+  .three_block {
     order: 2;
   }
 
-  .three_block {
-    order: 4;
-  }
-
   .four_block {
-    order: 3;
+    order: 1;
   }
 
   .five_block {
-    order: 5;
+    order: 3;
   }
 
   .six_block {
-    order: 6;
+    order: 4;
   }
 }
 
@@ -172,28 +102,21 @@ body {
   .block {
     width: 33.3%;
   }
-  .first_block {
-    order: 1;
-  }
-
-  .second_block {
-    order: 2;
-  }
 
   .three_block {
-    order: 3;
+    order: 0;
   }
 
   .four_block {
-    order: 6;
+    order: 3;
   }
 
   .five_block {
-    order: 5;
+    order: 2;
   }
 
   .six_block {
-    order: 4;
+    order: 1;
   }
 }
 
@@ -201,28 +124,21 @@ body {
   .block {
     width: 33.3%;
   }
-  .first_block {
-    order: 1;
-  }
-
-  .second_block {
-    order: 2;
-  }
 
   .three_block {
-    order: 3;
+    order: 0;
   }
 
   .four_block {
-    order: 6;
+    order: 3;
   }
 
   .five_block {
-    order: 5;
+    order: 2;
   }
 
   .six_block {
-    order: 4;
+    order: 1;
   }
 }
 
@@ -230,27 +146,15 @@ body {
   .block {
     width: 33.3%;
   }
-  .first_block {
-    order: 1;
-  }
-
-  .second_block {
-    order: 2;
-  }
-
-  .three_block {
+  .four_block {
     order: 3;
   }
 
-  .four_block {
-    order: 6;
-  }
-
   .five_block {
-    order: 5;
+    order: 2;
   }
 
   .six_block {
-    order: 4;
+    order: 1;
   }
 }
