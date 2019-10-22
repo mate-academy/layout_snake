@@ -6,18 +6,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 1200px;
 }
 
 .flex-item {
-  width: 300px;
+  display: flex;
   height: 300px;
+  min-width: 300px;
   font-size: 100px;
   line-height: 300px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   flex-grow: 1;
+  flex-basis: 33%;
 }
 
 .first {
@@ -43,7 +44,6 @@ body {
 .sixth {
   background-color: rgb(0, 0, 0);
 }
-
 @media screen and (min-width: 600px) {
   .third {
     order: 2;
@@ -63,13 +63,6 @@ body {
     }
     .sixth {
       order: 4;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .first,
-    .second,
-    .third {
-      width: 400px;
     }
   }
 }
