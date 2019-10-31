@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 300px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: white;
   font-size: 100px;
   min-width: 300px;
