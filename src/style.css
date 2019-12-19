@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.snake__container {
+.snake {
   display: flex;
   flex-wrap: wrap;
 }
