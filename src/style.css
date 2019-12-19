@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.left,
+.right {
+  height: 300px;
+  min-width: 300px;
+  font-family: Arial;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+  flex-grow: 1;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.black {
+  background-color: black;
+}
+
+.red-01 {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.red-02 {
+  background-color: hsl(0, 100%, 30%);
+}
+
+.red-03 {
+  background-color: hsl(0, 100%, 20%);
+}
+
+.red-04 {
+  background-color: hsl(0, 100%, 10%);
+}
+
+/*Media queries*/
+@media (min-width: 600px) {
+  .red-02 {
+    order: 4;
+  }
+  .red-03 {
+    order: 3;
+  }
+  .red-04 {
+    order: 5;
+  }
+  .black {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .red-02 {
+    order: 3;
+  }
+  .red-03 {
+    order: 6;
+  }
+  .red-04 {
+    order: 5;
+  }
+  .black {
+    order: 4;
+  }
+}
+
+/*Что бы на 1200px у нас было 3 картинки в ряде, а не 4*/
+@media (min-width: 1199px) and (max-width: 1200px) {
+  .red-02 {
+    width: 301px;
+  }
+}
