@@ -19,13 +19,11 @@ body {
 .item {
   font-family: Arial, sans-serif;
   font-size: 100px;
-
-  height: 300px;
   min-width: 300px;
   line-height: 300px;
   text-align: center;
-
   color: white;
+  flex-grow: 1;
 }
 
 .item-1 {
@@ -53,7 +51,7 @@ body {
 }
 
 @media (min-width: 600px) {
-  .item {
+  .flex-container {
     flex-basis: 50%;
   }
 
@@ -78,7 +76,7 @@ body {
 }
 
 @media (min-width: 900px) {
-  .item {
+  .flex-container {
     flex-basis: calc(100vw / 3);
   }
 
