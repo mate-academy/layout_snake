@@ -4,23 +4,16 @@ body {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 1;
-  width: 100%;
 }
 
-.block-size {
+.block {
   min-height: 300px;
   min-width: 300px;
   flex-basis: calc(100%/3);
-}
-
-.block-content {
   color: #fff;
   text-align: center;
   line-height: 300px;
-  font-weight: 400;
   font-size: 100px;
   font-family: "Arial", "Helvetica", sans-serif;
 }
@@ -53,7 +46,7 @@ body {
 }
 
 @media screen and (max-width: 899px) {
-  .block-size {
+  .block {
     flex-basis: 50%;
   }
 
@@ -75,7 +68,7 @@ body {
 }
 
 @media screen and (max-width: 599px) {
-  .block-size {
+  .block {
     flex-basis: 100%;
   }
 
