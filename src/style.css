@@ -1,8 +1,5 @@
 .body {
   margin: 0;
-}
-
-.wrapper {
   display: flex;
   flex-wrap: wrap;
 }
