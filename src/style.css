@@ -10,7 +10,12 @@ body {
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   box-sizing: border-box;
+
   height: 300px;
   min-width: 300px;
 
@@ -18,11 +23,6 @@ body {
   font-family: Arial, sans-serif;
   line-height: 100px;
   color: #fff;
-  width: 33vw;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .box-1 {
