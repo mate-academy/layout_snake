@@ -1,8 +1,11 @@
 body {
   margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 100px;
+  color: #fff;
 }
 
-.wrap {
+.wrapper {
   display: flex;
   flex-wrap: wrap;
 }
@@ -10,9 +13,6 @@ body {
 .block {
   height: 300px;
   min-width: 300px;
-  color: #fff;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 100px;
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -47,18 +47,6 @@ body {
   .block {
     flex-basis: 300px;
   }
-  .block-1 {
-    order: 1;
-  }
-  .block-2 {
-    order: 2;
-  }
-  .block-3 {
-    order: 3;
-  }
-  .block-4 {
-    order: 4;
-  }
   .block-5 {
     order: 5;
   }
@@ -68,41 +56,17 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .block {
-    flex-basis: 300px;
-  }
-  .block-1 {
-    order: 1;
-  }
-  .block-2 {
-    order: 2;
-  }
   .block-3 {
     order: 4;
   }
   .block-4 {
     order: 3;
   }
-  .block-5 {
-    order: 5;
-  }
-  .block-6 {
-    order: 6;
-  }
 }
 
 @media screen and (min-width: 900px) {
   .block {
     flex-basis: 300px;
-  }
-  .block-1 {
-    order: 1;
-  }
-  .block-2 {
-    order: 2;
-  }
-  .block-3 {
-    order: 3;
   }
   .block-4 {
     order: 6;
