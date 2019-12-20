@@ -3,10 +3,6 @@ body {
   font-family: Arial;
 }
 
-h1 {
-  display: none;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -18,8 +14,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 300px;
-  min-width: 300px;
-
+  width: 300px;
 }
 
 .text {
