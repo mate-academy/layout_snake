@@ -14,7 +14,6 @@ body {
   text-align: center;
   height: 300px;
   color: white;
-  vertical-align: center;
   line-height: 300px;
 }
 
@@ -38,7 +37,7 @@ body {
 }
 
 @media (min-width: 900px) {
-  .container > div {
+  .block {
     flex-basis: 33.33%;
   }
 
