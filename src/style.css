@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  font-family: Arial;
+  font-size: 100px;
+  color: white;
 }
 
 .main-block {
@@ -14,10 +17,6 @@ body {
   flex: 1;
   flex-basis: 300px;
   height: 300px;
-  font-family: Arial;
-  font-size: 100px;
-  color: white;
-  text-align: center;
 }
 
 .block-1 {
