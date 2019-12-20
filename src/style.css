@@ -1,13 +1,11 @@
 body {
   margin: 0;
-  padding: 0;
+  font-family: Arial;
 }
 
-.left,
-.right {
+.block {
   height: 300px;
   min-width: 300px;
-  font-family: Arial;
   font-size: 100px;
   color: white;
   text-align: center;
@@ -20,64 +18,64 @@ body {
   flex-wrap: wrap;
 }
 
-.red {
+.block-1 {
   background-color: hsl(0, 100%, 50%);
 }
 
-.black {
-  background-color: black;
-}
-
-.red-01 {
+.block-2 {
   background-color: hsl(0, 100%, 40%);
 }
 
-.red-02 {
+.block-3 {
   background-color: hsl(0, 100%, 30%);
 }
 
-.red-03 {
+.block-4 {
   background-color: hsl(0, 100%, 20%);
 }
 
-.red-04 {
+.block-5 {
   background-color: hsl(0, 100%, 10%);
+}
+
+.block-6 {
+  background-color: black;
 }
 
 /*Media queries*/
 @media (min-width: 600px) {
-  .red-02 {
+  .block-3 {
     order: 4;
   }
-  .red-03 {
+  .block-4 {
     order: 3;
   }
-  .red-04 {
+  .block-5 {
     order: 5;
   }
-  .black {
+  .block-6 {
     order: 6;
   }
 }
 
 @media (min-width: 900px) {
-  .red-02 {
+  .block-3 {
     order: 3;
   }
-  .red-03 {
+  .block-4 {
     order: 6;
   }
-  .red-04 {
+  .block-5 {
     order: 5;
   }
-  .black {
+  .block-6 {
     order: 4;
   }
 }
 
-/*Что бы на 1200px у нас было 3 картинки в ряде, а не 4*/
-@media (min-width: 1199px) and (max-width: 1200px) {
-  .red-02 {
+/*Что бы на 1200px у нас было три картинки в ряде, а не 4*/
+@media (min-width: 1200px) {
+  .block {
     width: 301px;
   }
 }
