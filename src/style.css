@@ -54,7 +54,7 @@ body {
 @media screen and (max-width: 450px) {
   .block {
     flex-basis: 450px;
-    flex-shrink: 1.2;
+    flex-shrink: 1.5;
   }
 
   .block-4 {
