@@ -7,7 +7,7 @@ body {
   flex-wrap: wrap;
 }
 
-.common-property {
+.snake-element {
   height: 300px;
   color: white;
   font-size: 100px;
@@ -42,14 +42,14 @@ body {
 }
 
 @media (max-width: 599px) {
-  .common-property {
+  .snake-element {
     flex-basis: 100%;
   }
 }
 
 @media (min-width: 600px) {
 
-  .common-property {
+  .snake-element {
     flex-basis: 50%;
   }
 
@@ -72,7 +72,7 @@ body {
 
 @media (min-width: 900px) {
 
-  .common-property {
+  .snake-element {
     flex-basis: calc(100vw / 3);
   }
 
