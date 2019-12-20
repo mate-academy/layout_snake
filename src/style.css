@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.box-container {
+.boxes-container {
   display: flex;
   flex-wrap: wrap;
 }
