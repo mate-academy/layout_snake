@@ -47,49 +47,37 @@ body {
   order: 1;
 }
 
-@media screen and (min-width: 1px) and (max-width: 599px) {
+@media (min-width: 1px) and (max-width: 599px) {
   .block {
     flex-basis: 100%;
   }
-  .first {
-    order: 1;
-  }
-  .second {
-    order: 2;
-  }
-  .third {
-    order: 3;
-  }
+
   .forth {
     order: 4;
   }
+
   .fifth {
     order: 5;
   }
+
   .sixth {
     order: 6;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  .block {
-    flex-basis: 50%;
-  }
-  .first {
-    order: 1;
-  }
-  .second {
-    order: 2;
-  }
+@media (min-width: 600px) and (max-width: 899px) {
   .third {
     order: 4;
   }
+
   .forth {
     order: 3;
   }
+
   .fifth {
     order: 5;
   }
+
   .sixth {
     order: 6;
   }
