@@ -5,7 +5,6 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .block-parameters {
@@ -47,7 +46,7 @@ body {
   order: 4;
 }
 
-@media screen and (max-width: 899px) {
+@media (max-width: 899px) {
   .block-parameters {
     width: 50%;
   }
@@ -69,7 +68,7 @@ body {
   }
 }
 
-@media screen and (max-width: 599px) {
+@media (max-width: 599px) {
   .block-parameters {
     width: 100%;
     order: 0;
