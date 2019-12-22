@@ -53,14 +53,6 @@
     flex-basis: 50%;
   }
 
-  .first-block {
-    order: 1;
-  }
-
-  .second-block {
-    order: 2;
-  }
-
   .third-block {
     order: 4;
   }
@@ -81,18 +73,6 @@
 @media (min-width: 900px) {
   .snake_blocks {
     flex-basis: 33.3%;
-  }
-
-  .first-block {
-    order: 1;
-  }
-
-  .second-block {
-    order: 2;
-  }
-
-  .third-block {
-    order: 3;
   }
 
   .fourth-block {
