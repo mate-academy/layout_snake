@@ -6,12 +6,10 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   line-height: 300px;
   text-align: center;
   font-family: Arial, serif;
   font-size: 100px;
-  flex-basis: 100%;
 }
 
 .block {
@@ -45,17 +43,8 @@ body {
   background-color: #000;
 }
 
-@media screen and (max-width: 450px) {
-  .container {
-    flex-direction: column;
-    flex-basis: 100%;
-  }
-
-}
-
 @media (min-width: 600px) {
-  .container {
-    flex-direction: row;
+  .block {
     flex-basis: 50%;
   }
 
@@ -77,8 +66,7 @@ body {
 }
 
 @media (min-width: 900px) {
-  .container {
-    flex-direction: row;
+  .block {
     flex-basis: 33.3%;
   }
 
