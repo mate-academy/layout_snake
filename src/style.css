@@ -4,7 +4,6 @@ body {
 
 .box {
   display: flex;
-  /* flex: auto; */
   flex: 1 0 33%;
   height: 300px;
   min-width: 300px;
@@ -21,7 +20,7 @@ body {
 span {
   line-height: 300px;
   color: white;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
 }
 
