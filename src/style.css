@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -13,44 +12,38 @@ body {
   align-items: baseline;
   line-height: 300px;
   text-align: center;
-  font-family: "Arial", "serif";
+  font-family: Arial, serif;
   font-size: 100px;
-  color: white;
 }
 
 .block {
-  flex: 1 1 300px;
+  flex: 1 0 33%;
   height: 300px;
   min-width: 300px;
+  color: #fff;
 }
 
 .block-1 {
-  order: 1;
   background-color: #f00;
 }
 
 .block-2 {
-  order: 2;
   background-color: #c00;
 }
 
 .block-3 {
-  order: 3;
   background-color: #900;
 }
 
 .block-4 {
-  order: 4;
   background-color: #600;
 }
 
 .block-5 {
-  order: 5;
   background-color: #300;
 }
 
 .block-6 {
-  order: 6;
   background-color: #000;
 }
 
@@ -63,11 +56,6 @@ body {
     align-content: center;
   }
 
-  .block {
-    padding: 0;
-    margin: 0;
-  }
-
 }
 
 @media (min-width: 600px) {
@@ -75,13 +63,20 @@ body {
     flex-direction: row;
   }
 
-  .block {
-    padding: 0;
-    margin: 0;
-  }
-
   .block-4 {
     order: 2;
+  }
+
+  .block-3 {
+    order: 3;
+  }
+
+  .block-5 {
+    order: 4;
+  }
+
+  .block-6 {
+    order: 5;
   }
 }
 
@@ -89,16 +84,20 @@ body {
   .container {
     flex-direction: row;
   }
-  .block-4 {
-    order: 7;
+
+  .block-3 {
+    order: 2;
   }
-  .block-6 {
+
+  .block-4 {
+    order: 5;
+  }
+
+  .block-5 {
     order: 4;
   }
-}
 
-@media screen and (max-width: 1200px) {
-  .block {
-    flex: 1 0 33%;
+  .block-6 {
+    order: 3;
   }
 }
