@@ -66,10 +66,6 @@ body {
 }
 
 @media (max-width: 599px) {
-  .block-parameters {
-    width: 100%;
-  }
-  
   .item-3 {
     order: 1;
   }
