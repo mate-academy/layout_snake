@@ -1,4 +1,7 @@
 body {
+  height: 300px;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
   margin: 0;
 }
 
@@ -8,12 +11,10 @@ body {
 }
 
 .block {
-  height: 300px;
-  font-family: Arial, sans-serif;
-  font-size: 100px;
   color: white;
   line-height: 300px;
   text-align: center;
+  flex-basis: calc(100% / 3);
 }
 
 .first-block {
@@ -26,27 +27,25 @@ body {
 
 .third-block {
   background-color: #900;
+  order: 1;
 }
 
 .fourth-block {
   background-color: #600;
+  order: 4;
 }
 
 .fifth-block {
   background-color: #300;
+  order: 3;
 }
 
 .sixth-block {
   background-color: #000;
+  order: 2;
 }
 
-@media (max-width: 599px) {
-  .block {
-    flex-basis: 100%;
-  }
-}
-
-@media (min-width: 600px) {
+@media (max-width: 750px) {
   .block {
     flex-basis: 50%;
   }
@@ -68,24 +67,16 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 450px) {
   .block {
-    flex-basis: calc(100% / 3);
+    flex-basis: 100%;
   }
 
   .third-block {
     order: 1;
   }
 
-  .sixth-block {
-    order: 2;
-  }
-
-  .fifth-block {
-    order: 3;
-  }
-
   .fourth-block {
-    order: 4;
+    order: 2;
   }
 }
