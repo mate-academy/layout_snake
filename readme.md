@@ -1,11 +1,14 @@
 # Boilerplate for layout tasks
+
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-    - [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+   - [DEMO LINK](https://Mikhail-88.github.io/layout_snake/)
+   - [TEST REPORT LINK](https://Mikhail-88.github.io/layout_snake/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
-___
+
+---
 
 ## The task
+
 Display six colored blocks on the screen without any extra margins:
 
 - Each block should be `300px` high.
