@@ -4,7 +4,7 @@ body {
 
 .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
