@@ -17,7 +17,7 @@ body {
   align-items: stretch;
 }
 
-span {
+.number {
   line-height: 300px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
