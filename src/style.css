@@ -7,13 +7,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: stretch;
-  align-items: baseline;
   line-height: 300px;
   text-align: center;
   font-family: Arial, serif;
   font-size: 100px;
+  flex-basis: 100%;
 }
 
 .block {
@@ -50,10 +48,7 @@ body {
 @media screen and (max-width: 450px) {
   .container {
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: center;
+    flex-basis: 100%;
   }
 
 }
@@ -61,6 +56,7 @@ body {
 @media (min-width: 600px) {
   .container {
     flex-direction: row;
+    flex-basis: 50%;
   }
 
   .block-4 {
@@ -83,6 +79,7 @@ body {
 @media (min-width: 900px) {
   .container {
     flex-direction: row;
+    flex-basis: 33.3%;
   }
 
   .block-3 {
