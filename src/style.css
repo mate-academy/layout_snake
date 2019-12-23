@@ -7,19 +7,20 @@
   flex-wrap: wrap;
 }
 
-.snake_blocks {
+.main_block {
   height: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
-  color: white;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1 0 300px;
+  min-width: 300px;
+  flex: 1 0 33.33%;
 }
 
 .first-block {
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
 
 .second-block {
@@ -39,20 +40,10 @@
 }
 
 .sixth-block {
-  background-color: black;
+  background-color: #000;
 }
 
-@media (max-width: 599px) {
-  .snake_blocks {
-    flex-basis: 100%;
-  }
-}
-
-@media (min-width: 600px) {
-  .snake_blocks {
-    flex-basis: 50%;
-  }
-
+@media screen and (min-width: 599px) {
   .third-block {
     order: 4;
   }
@@ -70,17 +61,9 @@
   }
 }
 
-@media (min-width: 900px) {
-  .snake_blocks {
-    flex-basis: 33.3%;
-  }
-
+@media screen and (min-width: 899px) {
   .fourth-block {
     order: 6;
-  }
-
-  .fifth-block {
-    order: 5;
   }
 
   .sixth-block {
