@@ -78,6 +78,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .box {
-    flex-basis: 400px;
+    flex-basis: 33.33%;
   }
 }
