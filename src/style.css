@@ -8,9 +8,9 @@ body {
   justify-content: stretch;
 }
 
-.container > div {
+div:not(.container) {
   height: 300px;
-  min-width: 300px;
+  flex-basis: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: white;
@@ -44,7 +44,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  
   .three {
     order: 4;
   }
@@ -63,9 +62,8 @@ body {
 }
   
 @media (min-width: 900px) {
-  .container > div {
-    height: 300px;
-    width: 30%;
+  div:not(.container) {
+    min-width: 33%;
   }
 
   .four {
