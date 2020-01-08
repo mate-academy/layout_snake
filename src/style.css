@@ -1,19 +1,23 @@
 body {
   margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   font-family: Arial, sans-serif;
 }
 
-div {
+.container {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+}
+
+.box {
   height: 300px;
-  font-size: 100px;
-  color: #fff;
-  justify-content: center;
+  min-width: 300px;
+  display: flex;
+  flex: 1 1 33.33%;
   align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
 }
 
 .box-1 {
@@ -47,8 +51,8 @@ div {
 }
 
 @media (min-width: 600px) {
-  div {
-    max-width: 50%;
+  .container {
+    flex: 1 1 100%;
   }
 
   .box-3 {
@@ -61,8 +65,8 @@ div {
 }
 
 @media (min-width: 900px) {
-  div {
-    max-width: 33.33%;
+  .container {
+    flex: 1 1 50%;
   }
 
   .box-4 {
