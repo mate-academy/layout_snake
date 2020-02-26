@@ -24,17 +24,14 @@ body {
 
 .container__block_1 {
   background-color: rgb(255, 0, 0);
-  order: 1;
 }
 
 .container__block_2 {
   background-color: rgb(204, 0, 0);
-  order: 2;
 }
 
 .container__block_3 {
   background-color: rgb(153, 0, 0);
-  order: 3;
 }
 
 .container__block_4 {
