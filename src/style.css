@@ -32,6 +32,7 @@ body {
 
 .container__block_3 {
   background-color: rgb(153, 0, 0);
+  order: 3;
 }
 
 .container__block_4 {
@@ -49,10 +50,7 @@ body {
   order: 6;
 }
 
-@media screen and (min-width:900px) {
-  .container__block_3 {
-    order: 3;
-  }
+@media only screen and (min-width:900px) {
   .container__block_4 {
     order: 6;
   }
@@ -63,7 +61,15 @@ body {
     order: 4;
   }
 }
-
+@media only screen and (min-width:600px) and (max-width:750px) {
+  .container__block_3 {
+    order: 4;
+  }
+  .container__block_4 {
+    order: 3;
+  }
+}
+/*
 @media screen and (min-width:600px) and (max-width: 899px) {
   .container__block_3 {
     order: 4;
@@ -72,3 +78,4 @@ body {
     order: 3;
   }
 }
+*/
