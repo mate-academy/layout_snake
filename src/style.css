@@ -39,7 +39,7 @@ body {
 
 .container__block_4 {
   background-color: rgb(102, 0, 0);
-  order: 6;
+  order: 4;
 }
 
 .container__block_5 {
@@ -49,10 +49,13 @@ body {
 
 .container__block_6 {
   background-color: rgb(0, 0, 0);
-  order: 4;
+  order: 6;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:900px) {
+  .container__block_3 {
+    order: 3;
+  }
   .container__block_4 {
     order: 6;
   }
@@ -64,26 +67,11 @@ body {
   }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (min-width:600px) and (max-width: 899px) {
   .container__block_3 {
     order: 4;
   }
   .container__block_4 {
     order: 3;
-  }
-  .container__block_5 {
-    order: 5;
-  }
-  .container__block_6 {
-    order: 6;
-  }
-}
-
-@media screen and (max-width:450px) {
-  .container__block_3 {
-    order: 3;
-  }
-  .container__block_4 {
-    order: 4;
   }
 }
