@@ -5,7 +5,6 @@ body {
 .snake {
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
 }
 
 .snake-part {
