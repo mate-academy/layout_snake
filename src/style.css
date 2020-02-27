@@ -10,13 +10,14 @@ body {
 .item {
   color: white;
   height: 300px;
-  width: 33.3%;
+  width: calc(100%/3);
   min-width: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 
 }
 
@@ -65,7 +66,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .item-4 {
     order: 2 ;
   }
