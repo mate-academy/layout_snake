@@ -49,7 +49,7 @@ body {
   order: 4;
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media screen and (max-width: 899px) {
   .snake-part {
     width: 50%;
   }
