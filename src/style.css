@@ -15,7 +15,31 @@ body {
   line-height: 300px ;
 }
 
-@media screen and (max-width:900px) and (min-width:600px) {
+#block1 {
+  background-color: hsl(0, 100%, 50%);
+}
+
+#block2 {
+  background-color: hsl(0, 100%, 40%);
+}
+
+#block3 {
+  background-color: hsl(0, 100%, 30%);
+}
+
+#block4 {
+  background-color: hsl(0, 100%, 20%);
+}
+
+#block5 {
+  background-color: hsl(0, 100%, 10%);
+}
+
+#block6 {
+  background-color: black;
+}
+
+@media screen and (min-width:600px) {
   #block1 {
     order: 1;
   }
@@ -36,7 +60,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 900px) {
+@media screen and (min-width: 900px) {
   #block1 {
     order: 1;
   }
@@ -79,28 +103,4 @@ body {
   #block6 {
     order: 4;
   }
-}
-
-#block1 {
-  background-color: hsl(0, 100%, 50%);
-}
-
-#block2 {
-  background-color: hsl(0, 100%, 40%);
-}
-
-#block3 {
-  background-color: hsl(0, 100%, 30%);
-}
-
-#block4 {
-  background-color: hsl(0, 100%, 20%);
-}
-
-#block5 {
-  background-color: hsl(0, 100%, 10%);
-}
-
-#block6 {
-  background-color: black;
 }
