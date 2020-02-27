@@ -4,13 +4,12 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-areas: "b1 b2 b3" "b6 b5 b4";
-  grid-template-rows: 300px 300px;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .block {
+  width: 33.33%;
   min-width: 300px;
   font-size: 100px;
   line-height: 300px;
@@ -20,48 +19,79 @@ body {
 
 .block--1 {
   background-color: rgba(255, 0, 0);
-  grid-area: b1;
 }
 
 .block--2 {
   background-color: rgba(204, 0, 0);
-  grid-area: b2;
 }
 
 .block--3 {
   background-color: rgba(153, 0, 0);
-  grid-area: b3;
 }
 
 .block--4 {
   background-color: rgba(102, 0, 0);
-  grid-area: b4;
+  order: 6;
 }
 
 .block--5 {
   background-color: rgba(51, 0, 0);
-  grid-area: b5;
+  order: 5;
 }
 
 .block--6 {
   background-color: black;
-  grid-area: b6;
+  order: 4;
 }
 
 @media (max-width: 899.8px) {
-  .container {
-    display: grid;
-    grid-template-areas: "b1 b2" "b4 b3" "b5 b6";
-    grid-template-rows: repeat(3, 300px);
-    grid-template-columns: 1fr 1fr;
+  .block {
+    width: 50%;
+  }
+
+  .block--3 {
+    background-color: rgba(153, 0, 0);
+    order: 4;
+  }
+  
+  .block--4 {
+    background-color: rgba(102, 0, 0);
+    order: 3;
+  }
+  
+  .block--5 {
+    background-color: rgba(51, 0, 0);
+    order: 5;
+  }
+  
+  .block--6 {
+    background-color: black;
+    order: 6;
   }
 }
 
 @media (max-width: 599.8px) {
-  .container {
-    display: grid;
-    grid-template-areas: "b1" "b2" "b3" "b4" "b5" "b6";
-    grid-template-rows: repeat(6, 300px);
-    grid-template-columns: 1fr;
+  .block {
+    width: 100%;
+  }
+
+  .block--3 {
+    background-color: rgba(153, 0, 0);
+    order: 3;
+  }
+  
+  .block--4 {
+    background-color: rgba(102, 0, 0);
+    order: 4;
+  }
+  
+  .block--5 {
+    background-color: rgba(51, 0, 0);
+    order: 5;
+  }
+  
+  .block--6 {
+    background-color: black;
+    order: 6;
   }
 }
