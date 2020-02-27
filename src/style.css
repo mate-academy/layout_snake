@@ -1,0 +1,91 @@
+html {
+  font-family: "Arial";
+  font-size: 100px;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 300px;
+  flex-basis: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+
+.block-1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.block-2 {
+  background-color: rgb(calc(4/5*255), 0, 0);
+}
+
+.block-3 {
+  background-color: rgb(calc(3/5*255), 0, 0);
+}
+
+.block-4 {
+  background-color: rgb(calc(2/5*255), 0, 0);
+}
+
+.block-5 {
+  background-color: rgb(calc(1/5*255), 0, 0);
+}
+
+.block-6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width:300px) and (max-width:450px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width:451px) and (max-width:750px) {
+  .block {
+    flex-basis: 50%;
+  }
+
+  .block-3 {
+    order: 4;
+  }
+
+  .block-4 {
+    order: 3;
+
+  }
+  .block-5 {
+    order: 5;
+  }
+
+  .block-6 {
+    order: 6;
+  }
+}
+
+@media screen and (min-width:751px) and (max-width:1200px) {
+  .block {
+    flex-basis: 33.3%;
+  }
+
+  .block-4 {
+    order: 6;
+  }
+
+  .block-6 {
+    order: 4;
+  }
+
+  .block-5 {
+    order: 5;
+  }
+}
