@@ -29,142 +29,42 @@ body {
 
 .third__block {
   background-color: rgb(145, 3, 3);
+  order: 3;
 }
 
 .fourth__block {
   background-color: rgb(105, 4, 4);
+  order: 4;
 }
 
 .fifth__block {
   background-color: rgb(66, 2, 2);
+  order: 5;
 }
 
 .sixth__block {
   background-color: rgb(8, 8, 8);
+  order: 6;
 }
 
-@media (min-width: 1200px) {
-  .container__all {
-    width: 310px;
-  }
-  .fourth__block {
-    order: 6;
-  }
-  .fifth__block {
-    order: 5;
-  }
-  .sixth__block {
-    order: 4;
-  }
-}
+@media (min-width: 600px) {
 
-@media (max-width: 1200px) {
-  .container__all {
-    width: 305px;
-  }
-  .fourth__block {
-    order: 6;
-  }
-  .fifth__block {
-    order: 5;
-  }
-  .sixth__block {
-    order: 4;
-  }
-}
-
-@media (max-width: 1050px) {
-  .container__all {
-    width: 294px;
-  }
-  .fourth__block {
-    order: 6;
-  }
-  .fifth__block {
-    order: 5;
-  }
-  .sixth__block {
-    order: 4;
-  }
-}
-
-@media (max-width: 900px) {
-  .container__all {
-    width: 292px;
-  }
-  .fourth__block {
-    order: 6;
-  }
-  .fifth__block {
-    order: 5;
-  }
-  .sixth__block {
-    order: 4;
-  }
-}
-
-@media (max-width: 750px) {
-  .container__all {
-    width: 295px;
-  }
   .third__block {
     order: 4;
   }
+
   .fourth__block {
     order: 3;
-  }
-  .fifth__block {
-    order: 5;
-  }
-  .sixth__block {
-    order: 6;
   }
 }
 
-@media (max-width: 600px) {
-  .container__all {
-    width: 280px;
-  }
-  .third__block {
-    order: 4;
-  }
-  .fourth__block {
-    order: 3;
-  }
-  .fifth__block {
-    order: 5;
-  }
-  .sixth__block {
-    order: 6;
-  }
-}
+@media (min-width: 900px) {
 
-@media (max-width: 450px) {
-  .third__block {
-    order: 3;
-  }
   .fourth__block {
-    order: 4;
-  }
-  .fifth__block {
-    order: 5;
-  }
-  .sixth__block {
     order: 6;
   }
-}
 
-@media (max-width: 300px) {
-  .third__block {
-    order: 3;
-  }
-  .fourth__block {
-    order: 4;
-  }
-  .fifth__block {
-    order: 5;
-  }
   .sixth__block {
-    order: 6;
+    order: 4;
   }
 }
