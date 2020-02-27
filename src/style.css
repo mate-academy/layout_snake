@@ -43,7 +43,7 @@ body {
   background-color: rgb(8, 8, 8);
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1200px) {
   .container__all {
     width: 310px;
   }
