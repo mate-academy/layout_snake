@@ -9,7 +9,7 @@ body {
 
 .front--block {
   height: 300px;
-  width: 33%;
+  width: 33.3%;
   flex-grow: 1;
   min-width: 300px;
   min-height: 300px;
@@ -32,27 +32,22 @@ body {
 
 #front--block--second {
   background-color: hsl(0, 100%, 40%);
-  flex-basis: 33%;
 }
 
 #front--block--third {
   background-color: hsl(0, 100%, 30%);
-  flex-basis: 33%;
 }
 
 #front--block--fourth {
   background-color: hsl(0, 100%, 20%);
-  flex-basis: 33%;
 }
 
 #front--block--fifth {
   background-color: hsl(0, 100%, 10%);
-  flex-basis: 33%;
 }
 
 #front--block--sixth {
   background-color: hsl(0, 100%, 0%);
-  flex-basis: 33%;
 }
 
 @media screen and (min-width: 599.9px) {
