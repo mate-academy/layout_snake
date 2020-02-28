@@ -71,12 +71,13 @@ body {
   .container__blocks {
     flex-basis: 33.33%;
   }
-
-  .container__blocks_sixth {
-    order: 4;
-  }
   
   .container__blocks_fourth {
     order: 6;
   }
+
+  .container__blocks_sixth {
+    order: 4;
+  }
+
 }
