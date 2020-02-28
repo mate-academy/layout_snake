@@ -15,7 +15,7 @@ body {
 
 .block {
   height: 300px;
-  flex-basis: 300px;
+  flex-basis: 33.3%;
   text-align: center;
   line-height: 300px;
 }
@@ -72,7 +72,7 @@ body {
   }
 }
 
-@media screen and (min-width:751px) and (max-width:1200px) {
+@media screen and (min-width:751px) and (max-width:1620px) {
   .block {
     flex-basis: 33.3%;
   }
