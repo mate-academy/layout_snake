@@ -21,12 +21,10 @@ body {
 
 .box_1 {
   background-color: hsl(0,100%,50%);
-  order: 1;
 }
 
 .box_2 {
   background-color: hsl(0,100%,40%);
-  order: 2;
 }
 
 .box_3 {
@@ -49,7 +47,7 @@ body {
   order: 6;
 }
 
-@media screen and (min-width: 916px) {
+@media screen and (min-width: 917px) {
   .box_4 {
     order: 6;
   }
@@ -59,43 +57,10 @@ body {
 }
 
 @media screen and (min-width: 617px) and (max-width: 916px) {
-  .box_1 {
-    order: 1;
-  }
-  .box_2 {
-    order: 2;
-  }
   .box_3 {
     order: 4;
   }
   .box_4 {
     order: 3;
-  }
-  .box_5 {
-    order: 5;
-  }
-  .box_6 {
-    order: 6;
-  }
-}
-
-@media screen and (max-width: 616px) {
-  .box_1 {
-    order: 1;
-  }
-  .box_2 {
-    order: 2;
-  }
-  .box_3 {
-    order: 3;
-  }
-  .box_4 {
-    order: 4;
-  }
-  .box_5 {
-    order: 5;
-  }
-  .box_6 {
-    order: 6;
   }
 }
