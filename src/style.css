@@ -58,7 +58,26 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 899px) {
+
+  .third__block {
+    order: 4;
+  }
+
+  .fourth__block {
+    order: 6;
+  }
+
+  .sixth__block {
+    order: 4;
+  }
+}
+
+@media (min-width: 1196px) {
+
+  .container__all {
+    width: 400px;
+  }
 
   .fourth__block {
     order: 6;
