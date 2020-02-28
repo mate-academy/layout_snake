@@ -14,7 +14,7 @@ body {
   justify-content: center;
   flex-grow: 1;
   height: 300px;
-  width: 300px;
+  min-width: 300px;
   color: white;
   font-size: 100px;
 }
@@ -58,7 +58,7 @@ body {
   }
 }
 
-@media (min-width: 899px) {
+@media (min-width: 900px) {
 
   .third__block {
     order: 4;
@@ -76,7 +76,7 @@ body {
 @media (min-width: 1196px) {
 
   .container__all {
-    width: 400px;
+    width: calc(100%/3);
   }
 
   .fourth__block {
