@@ -49,7 +49,7 @@ body {
   order: 6;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 916px) {
   .box_4 {
     order: 6;
   }
@@ -58,7 +58,7 @@ body {
   }
 }
 
-@media screen and (min-width: 451px) and (max-width: 899px) {
+@media screen and (min-width: 617px) and (max-width: 916px) {
   .box_1 {
     order: 1;
   }
@@ -70,6 +70,27 @@ body {
   }
   .box_4 {
     order: 3;
+  }
+  .box_5 {
+    order: 5;
+  }
+  .box_6 {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 616px) {
+  .box_1 {
+    order: 1;
+  }
+  .box_2 {
+    order: 2;
+  }
+  .box_3 {
+    order: 3;
+  }
+  .box_4 {
+    order: 4;
   }
   .box_5 {
     order: 5;
