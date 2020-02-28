@@ -44,63 +44,37 @@ body {
 }
 
 @media screen and (min-width: 599px) {
-  .box-1 {
-    background-color: rgb(255,0,0);
-  }
-
-  .box-2 {
-    background-color: rgb(204,0,0);
-
-  }
-
   .box-3 {
-    background-color: rgb(153,0,0);
     order: 2;
   }
 
   .box-4 {
-    background-color: rgb(102,0,0);
     order: 1;
   }
 
   .box-5 {
-    background-color: rgb(51,0,0);
     order: 3;
   }
 
   .box-6 {
-    background-color: rgb(0,0,0);
     order: 4;
   }
 }
 
 @media screen and (min-width: 899px) {
-  .box-1 {
-    background-color: rgb(255,0,0);
-  }
-
-  .box-2 {
-    background-color: rgb(204,0,0);
-
-  }
-
   .box-3 {
-    background-color: rgb(153,0,0);
     order: 1;
   }
 
   .box-4 {
-    background-color: rgb(102,0,0);
     order: 4;
   }
 
   .box-5 {
-    background-color: rgb(51,0,0);
     order: 3;
   }
 
   .box-6 {
-    background-color: rgb(0,0,0);
     order: 2;
   }
 }
