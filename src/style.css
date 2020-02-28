@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-grow: 1;
   height: 300px;
-  min-width: 300px;
+  flex-basis: 300px;
   align-items: center;
   justify-content: center;
   color: white;
@@ -90,7 +90,7 @@ body {
 @media screen and (min-width: 1199px) {
 
   .block-info {
-    min-width: 400px;
+    flex-basis: 30%;
   }
 
 }
