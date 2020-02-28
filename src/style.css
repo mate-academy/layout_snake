@@ -26,7 +26,6 @@ body {
 
 .snake_tail {
   background-color: black;
-  flex-wrap: wrap-reverse;
 }
 
 .part_2 {
