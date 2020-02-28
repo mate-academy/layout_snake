@@ -20,6 +20,18 @@ body {
   line-height: 300px;
 }
 
+.block-4 {
+  order: 6;
+}
+
+.block-5 {
+  order: 5;
+}
+
+.block-6 {
+  order: 4 ;
+}
+
 .block-1 {
   background-color: rgb(255, 0, 0);
 }
@@ -48,6 +60,19 @@ body {
   .block {
     flex-basis: 100%;
   }
+
+  .block-4 {
+    order: 4;
+  }
+
+  .block-5 {
+    order: 5;
+  }
+
+  .block-6 {
+    order: 6;
+  }
+
 }
 
 @media screen and (min-width:451px) and (max-width:750px) {
@@ -61,8 +86,8 @@ body {
 
   .block-4 {
     order: 3;
-
   }
+
   .block-5 {
     order: 5;
   }
@@ -70,22 +95,11 @@ body {
   .block-6 {
     order: 6;
   }
+
 }
 
 @media screen and (min-width:751px) and (max-width:1620px) {
   .block {
     flex-basis: 33.3%;
-  }
-
-  .block-4 {
-    order: 6;
-  }
-
-  .block-6 {
-    order: 4;
-  }
-
-  .block-5 {
-    order: 5;
   }
 }
