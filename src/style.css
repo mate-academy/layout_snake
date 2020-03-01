@@ -64,7 +64,7 @@ body {
   }
 }
 
-@media (max-width: 616px) {
+@media (max-width: 599px) {
   .snake-block-3 {
     order: 1;
   }
