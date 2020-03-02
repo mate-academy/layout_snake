@@ -14,10 +14,10 @@ body {
 }
 
 .block {
-  height: 300px;
-  width: calc(100%/3);
-  min-width: 300px;
   flex-grow: 1;
+  height: 300px;
+  width: 33%;
+  min-width: 300px;
   text-align: center;
   line-height: 300px;
 }
