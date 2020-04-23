@@ -3,45 +3,43 @@ body {
 }
 
 #snake {
-  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1 0 300px;
+  flex: 1 0 33.33%;
+  min-width: 300px;
   color: white;
-  height: 300px;
   font-family: Arial;
   font-size: 100px;
+  text-align: center;
+  line-height: 300px;
 }
 
 .item:nth-child(1) {
   order: 1;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(100%, 0%, 0%);
 }
 
 .item:nth-child(2) {
   order: 1;
-  background-color: rgb(204, 0, 0);
+  background-color: rgb(80%, 0%, 0%);
 }
 
 .item:nth-child(3) {
   order: 3;
-  background-color: rgb(153, 0, 0);
+  background-color: rgb(60%, 0%, 0%);
 }
 
 .item:nth-child(4) {
   order: 4;
-  background-color: rgb(102, 0, 0);
+  background-color: rgb(40%, 0%, 0%);
 }
 
 .item:nth-child(5) {
   order: 5;
-  background-color: rgb(51, 0, 0);
+  background-color: rgb(20%, 0%, 0%);
 }
 
 .item:nth-child(6) {
@@ -70,11 +68,5 @@ body {
   }
   .item:nth-child(6) {
     order: 4;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .item {
-    flex-basis: 350px;
   }
 }
