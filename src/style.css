@@ -78,9 +78,9 @@ body {
   }
 
 }
+
 @media all and (min-width: 1200px) {
   .box {
     flex-basis: 350px;
   }
 }
-  
