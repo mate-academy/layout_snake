@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -23,26 +22,32 @@ body {
 
 .block_1 {
   background-color: hsl(0, 100%, 50%);
+  order: 1;
 }
 
 .block_2 {
   background-color: hsl(0, 100%, 40%);
+  order: 2;
 }
 
 .block_3 {
   background-color: hsl(0, 100%, 30%);
+  order: 3;
 }
 
 .block_4 {
   background-color: hsl(0, 100%, 20%);
+  order: 4;
 }
 
 .block_5 {
   background-color: hsl(0, 100%, 10%);
+  order: 5;
 }
 
 .block_6 {
   background-color: hsl(0, 0%, 0%);
+  order: 6;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -52,40 +57,17 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  .block_1 {
-    order: 1;
-  }
-
-  .block_2 {
-    order: 2;
-  }
-  
-  .block_3 {
-    order: 3;
-  }
-
   .block_4 {
     order: 6;
-  }
-
-  .block_5 {
-    order: 5;
   }
 
   .block_6 {
     order: 4;
   }
+  
 }
 
 @media only screen and (max-width: 899px) {
-  .block_1 {
-    order: 1;
-  }
-
-  .block_2 {
-    order: 2;
-  }
-  
   .block_3 {
     order: 4;
   }
@@ -104,27 +86,11 @@ body {
 }
 
 @media only screen and (max-width: 599px) {
-  .block_1 {
-    order: 1;
-  }
-
-  .block_2 {
-    order: 2;
-  }
-  
   .block_3 {
     order: 3;
   }
 
   .block_4 {
     order: 4;
-  }
-
-  .block_5 {
-    order: 5;
-  }
-
-  .block_6 {
-    order: 6;
   }
 }
