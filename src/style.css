@@ -5,16 +5,13 @@ body {
   color: #fff;
 }
 
-.flex {
-  display: flex;
-}
-
 .items {
+  display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
 }
 
 .item {
+  display: flex;
   height: 300px;
   align-items: center;
   justify-content: center;
