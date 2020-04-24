@@ -9,12 +9,10 @@ body {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  max-width: 1200px;
 }
 
 .box {
   height: 300px;
-  max-width: 599px;
   display: flex;
   flex: 1 1 300px;
   align-items: center;
@@ -87,6 +85,6 @@ body {
   }
 
   .box {
-    flex-basis: 301px;
+    flex-basis: 400px;
   }
 }
