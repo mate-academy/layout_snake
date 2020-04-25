@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+
+.general {
+  display: flex;  /*-- boxes centered*/
+  flex-wrap: wrap;
+  font: 100px Arial, sans-serif;
+  color: white;
+}
+
+.div_num_general {
+  display: flex;  /*-- texts centered*/
+  height: 300px;
+  flex: 1 0 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Box Color:*/
+
+.div_num1 {
+  background-color: #f00;
+}
+
+.div_num2 {
+  background-color: #c00;
+}
+
+.div_num3 {
+  background-color: #900;
+}
+
+.div_num4 {
+  background-color: #600;
+}
+
+.div_num5 {
+  background-color: #300;
+}
+
+.div_num6 {
+  background-color: #000;
+}
+
+/*Snake's order*/
+
+@media screen and (min-width: 600px) {
+  .div_num3 {
+    order: 4;
+  }
+  .div_num4 {
+    order: 3;
+  }
+  .div_num5 {
+    order: 5;
+  }
+  .div_num6 {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .div_num4 {
+    order: 6;
+  }
+  .div_num5 {
+    order: 5;
+  }
+  .div_num6 {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .div_num_general {
+    flex-basis: 350px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .div_num4 {
+    order: 4;
+  }
+  .div_num5 {
+    order: 6;
+  }
+  .div_num6 {
+    order: 5;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .div_num5 {
+    order: 5;
+  }
+  .div_num6 {
+    order: 6;
+  }
+}
