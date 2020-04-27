@@ -2,13 +2,12 @@ body {
   margin: 0;
 }
 
-
-.main-container {
+.container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.container {
+.item {
   display: flex;
   flex: 0 1 33.33%;
   height: 300px;
@@ -52,7 +51,7 @@ body {
 }
 
 @media screen and (min-width: 451px) and (max-width: 750px) {
-  .container {
+  .item {
     display: flex;
     flex: 0 1 50%;
   }
@@ -71,11 +70,11 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .main-container {
+  .container {
     flex-direction: column;
   }
 
-  .container {
+  .item {
     display: flex;
     flex: 0 1 auto;
   }
