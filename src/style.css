@@ -46,7 +46,7 @@ body {
   order: 4;
 }
 
-@media(max-width:899px) {
+@media (max-width: 899px) {
   .block-3 {
     order: 4;
   }
@@ -58,7 +58,7 @@ body {
   }
 }
 
-@media(max-width:599px) {
+@media (max-width: 599px) {
   .block-4 {
     order: 4;
   }
