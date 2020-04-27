@@ -1,5 +1,5 @@
 # Boilerplate for layout tasks
-1. Replace `<your_account>` with your Github username in the links
+1. Replace `<your_account>` with you Github username in the links
     - [DEMO LINK](https://nazmeln.github.io/layout_snake/)
     - [TEST REPORT LINK](https://nazmeln.github.io/layout_snake/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
