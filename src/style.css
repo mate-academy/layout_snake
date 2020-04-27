@@ -4,7 +4,7 @@
 
 .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -19,56 +19,56 @@
   justify-content: center;
 }
 
-.box1 {
+.box:nth-child(1) {
   background-color: rgb(255, 0, 0);
   order: 1;
 }
 
-.box2 {
+.box:nth-child(2) {
   background-color: rgb(204, 0, 0);
   order: 2;
 }
 
-.box3 {
+.box:nth-child(3) {
   background-color: rgb(153, 0, 0);
   order: 3;
 }
 
-.box4 {
+.box:nth-child(4) {
   background-color: rgb(102, 0, 0);
   order: 6;
 }
 
-.box5 {
+.box:nth-child(5) {
   background-color: rgb(51, 0, 0);
   order: 5;
 }
 
-.box6 {
+.box:nth-child(6) {
   background-color: rgb(0, 0, 0);
   order: 4;
 }
 
 @media screen and (max-width: 750px) {
-  .box3 {
+  .box:nth-child(3) {
     order: 4;
   }
 
-  .box4 {
+  .box:nth-child(4) {
     order: 3;
   }
 
-  .box6 {
+  .box:nth-child(6) {
     order: 6;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .box3 {
+  .box:nth-child(3) {
     order: 3;
   }
 
-  .box4 {
+  .box:nth-child(4) {
     order: 4;
   }
 }
