@@ -11,14 +11,11 @@ body {
   flex-wrap: wrap;
 }
 
-.wrapper .item_box {
-  flex-basis: calc(33.33%);
-}
-
 .item_box {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: calc(33.33%);
   min-width: 300px;
   height: 300px;
 
@@ -55,8 +52,8 @@ body {
   order: 4;
 }
 
-@media(max-width: 899px) {
-  .wrapper .item_box {
+@media (max-width: 899px) {
+  .item_box {
     flex-basis: calc(50%);
   }
 
@@ -73,8 +70,8 @@ body {
   }
 }
 
-@media(max-width: 599px) {
-  .wrapper .item_box {
+@media (max-width: 599px) {
+  .item_box {
     flex-basis: calc(100%);
   }
 
