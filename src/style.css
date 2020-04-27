@@ -10,17 +10,12 @@ body {
 .container-box {
   font-family: Arial, sans-serif;
   font-size: 100px;
-
-  display: flex;
+  line-height: 300px;
+  color: rgb(255, 255, 255);
+  text-align: center;
   flex-grow: 1;
-  
   height: 300px;
   min-width: 300px;
-}
-
-.number {
-  color: rgb(255, 255, 255);
-  margin: auto;
 }
 
 .container-box-1 {
