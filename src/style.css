@@ -2,99 +2,81 @@ body {
   margin: 0;
 }
 
-.general {
-  display: flex;  /*-- boxes centered*/
+.container {
+  display: flex;
   flex-wrap: wrap;
   font: 100px Arial, sans-serif;
   color: white;
 }
 
-.div_num_general {
-  display: flex;  /*-- texts centered*/
+.number_general {
+  display: flex;
   height: 300px;
   flex: 1 0 300px;
   justify-content: center;
   align-items: center;
+
 }
 
-/*Box Color:*/
-
-.div_num1 {
+.number_1 {
   background-color: #f00;
+  order: 1;
 }
 
-.div_num2 {
+.number_2 {
   background-color: #c00;
+  order: 2;
 }
 
-.div_num3 {
+.number_3 {
   background-color: #900;
+  order: 3;
 }
 
-.div_num4 {
+.number_4 {
   background-color: #600;
+  order: 4;
 }
 
-.div_num5 {
+.number_5 {
   background-color: #300;
+  order: 5;
 }
 
-.div_num6 {
+.number_6 {
   background-color: #000;
+  order: 6;
 }
-
-/*Snake's order*/
 
 @media screen and (min-width: 600px) {
-  .div_num3 {
+  .number_3 {
     order: 4;
   }
-  .div_num4 {
+  .number_4 {
     order: 3;
   }
-  .div_num5 {
+  .number_5 {
     order: 5;
   }
-  .div_num6 {
+  .number_6 {
     order: 6;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .div_num4 {
+  .number_4 {
     order: 6;
   }
-  .div_num5 {
+  .number_5 {
     order: 5;
   }
-  .div_num6 {
+  .number_6 {
     order: 4;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .div_num_general {
+  .number_general {
     flex-basis: 350px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .div_num4 {
-    order: 4;
-  }
-  .div_num5 {
-    order: 6;
-  }
-  .div_num6 {
-    order: 5;
-  }
-}
-
-@media screen and (min-width: 1750px) {
-  .div_num5 {
-    order: 5;
-  }
-  .div_num6 {
-    order: 6;
   }
 }
