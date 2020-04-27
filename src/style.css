@@ -23,7 +23,7 @@ body {
 }
 
 .block:nth-child(2) {
-  order: 1;
+  order: 2;
   background-color: rgb(80%, 0%, 0%);
 }
 
