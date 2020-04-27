@@ -9,12 +9,12 @@ body {
 }
 
 .item {
-  flex-basis: calc(100%/3);
+  flex-basis: calc(100% / 3);
   height: 300px;
   min-width: 300px;
   color: white;
-  font-size: 100px;
   text-align: center;
+  font-size: 100px;
   line-height: 300px;
 }
 
@@ -53,9 +53,9 @@ body {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media screen and (max-width: 899px) {
   .item {
-    flex-basis: calc(100%/2);
+    flex-basis: calc(100% / 2);
   }
   .item__first {
     order: 0;
@@ -80,5 +80,8 @@ body {
 @media screen and (max-width: 599px) {
   .item {
     flex-basis: 100%;
+  }
+  .item__third {
+    order: 2;
   }
 }
