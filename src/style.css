@@ -1,17 +1,17 @@
 body {
   margin: 0;
-  background-color: red;
-  font-family: Arial;
-  font-size: 100px;
-  color: white;
+
 }
 
 .container {
+  font-family: Arial;
+  font-size: 100px;
+  color: white;
   display: flex;
   flex-wrap: wrap;
 }
 
-.container > div {
+.cell {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,32 +21,32 @@ body {
 }
 
 .one {
-  background-color: #0000;
+  background-color: #f00;
   order: 1;
 }
 
 .two {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #c00;
   order: 2;
 }
 
 .three {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: #900;
   order: 3;
 }
 
 .four {
-  background-color: #0000009a;
+  background-color: #600;
   order: 4;
 }
 
 .five {
-  background-color: hsl(357, 89%, 10%);
+  background-color: #300;
   order: 5;
 }
 
 .six {
-  background-color: black;
+  background-color: #000;
   order: 6;
 }
 
