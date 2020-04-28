@@ -68,6 +68,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .item {
-    flex-basis: 301px;
+    flex-basis: 400px;
   }
 }
