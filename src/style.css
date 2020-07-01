@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font: 100px Arial, sans-serif;
+  color: white;
+}
+
+.number_general {
+  display: flex;
+  height: 300px;
+  flex: 1 0 300px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.number_1 {
+  background-color: #f00;
+  order: 1;
+}
+
+.number_2 {
+  background-color: #c00;
+  order: 2;
+}
+
+.number_3 {
+  background-color: #900;
+  order: 3;
+}
+
+.number_4 {
+  background-color: #600;
+  order: 4;
+}
+
+.number_5 {
+  background-color: #300;
+  order: 5;
+}
+
+.number_6 {
+  background-color: #000;
+  order: 6;
+}
+
+@media screen and (min-width: 600px) {
+  .number_3 {
+    order: 4;
+  }
+  .number_4 {
+    order: 3;
+  }
+  .number_5 {
+    order: 5;
+  }
+  .number_6 {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .number_4 {
+    order: 6;
+  }
+  .number_5 {
+    order: 5;
+  }
+  .number_6 {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .number_general {
+    flex-basis: 350px;
+  }
+}
