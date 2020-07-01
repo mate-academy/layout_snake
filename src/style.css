@@ -41,7 +41,7 @@ div:nth-child(4) {
   background-color: hsl(0, 100%, 0%);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 899px) {
   div {
     flex: 0 0 50%;
   }
@@ -63,7 +63,7 @@ div:nth-child(4) {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
   div {
     flex: 0 0 100%;
   }
