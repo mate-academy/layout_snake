@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -11,8 +13,6 @@ body {
   flex-basis: 300px;
   flex-grow: 1;
   color: white;
-  font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   line-height: 300px;
 
