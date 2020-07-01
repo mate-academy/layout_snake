@@ -1,6 +1,13 @@
 - check your work using basic recommendations [here](https://github.com/mate-academy/layout_colored-blocks/blob/master/checklist.md)
+- follow DRY (Don't Repeat Yourself)
+- make sure you used flexbox in this task
+- check the styles and make sure you don't write default styles (like display: block for `div` or others)
 - if you have 3 or more attributes, place each one on the new line (including the first one)
-- fonts are usually written for `body` tag and inherited by others
+- font family is usually written for `body` tag and inherited by others
+- use alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
 - we preferably use classes for styling, not tags, ids, attributes or something else
 - don't increase specificity of selectors [about selectors specificity](https://www.w3schools.com/css/css_specificity.asp)
 - if you want `box-sizing: border-box` property, use it with `*`-selector because all elements need it so that you don't have to calculate `width - border`
+- check the demo page with different screen sized (including those bigger than 1700px)
+- do not use overcomplicated media conditions (try to follow desktop-driven or mobile-driven development)
+- are you sure you've polished your code? :)
