@@ -1,7 +1,5 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 100px;
   margin: 0;
 }
 
@@ -15,36 +13,38 @@ body {
   display: flex;
   height: 300px;
   flex-basis: 100%;
+  color: white;
+  font-size: 100px;
   align-items: center;
   justify-content: center;
 }
 
-.one {
+.block-1 {
   background-color: rgb(255,0,0);
   order: 1;
 }
 
-.two {
+.block-2 {
   background-color: rgb(204, 0, 0);
   order: 2;
 }
 
-.three {
+.block-3 {
   background-color: rgb(153,0,0);
   order: 3;
 }
 
-.four {
+.block-4 {
   background-color: rgb(102,0,0);
   order: 4;
 }
 
-.five {
+.block-5 {
   background-color: rgb(51,0,0);
   order: 5;
 }
 
-.six {
+.block-6 {
   background-color: rgb(0,0,0);
   order: 6;
 }
@@ -54,11 +54,11 @@ body {
     flex-basis: 50%;
   }
 
-  .three {
+  .block-3 {
     order: 4;
   }
 
-  .four {
+  .block-4 {
     order: 3;
   }
 }
@@ -67,11 +67,11 @@ body {
   .block {
     flex-basis: 33.33%;
   }
-  .four {
+  .block-4 {
     order: 6;
   }
 
-  .six {
+  .block-6 {
     order: 4;
   }
 }
