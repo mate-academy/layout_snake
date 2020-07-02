@@ -18,32 +18,32 @@ body {
   font-size: 100px;
 }
 
-.snake-part__one {
+.block-1 {
   background-color: rgb(255, 0, 0);
   order: 1;
 }
 
-.snake-part__two {
+.block-2 {
   background-color: rgb(204, 0, 0);
   order: 2;
 }
 
-.snake-part__three {
+.block-3 {
   background-color: rgb(153, 0, 0);
   order: 3;
 }
 
-.snake-part__four {
+.block-4 {
   background-color: rgb(102, 0, 0);
   order: 4;
 }
 
-.snake-part__five {
+.block-5 {
   background-color: rgb(51, 0, 0);
   order: 5;
 }
 
-.snake-part__six {
+.block-6 {
   background-color: rgb(0, 0, 0);
   order: 6;
 }
@@ -53,11 +53,11 @@ body {
     flex-basis: 50%;
   }
 
-  .snake-part__three {
+  .block-3 {
     order: 4;
   }
 
-  .snake-part__four {
+  .block-4 {
     order: 3;
   }
 }
@@ -67,11 +67,11 @@ body {
     flex-basis: 33.33%;
   }
 
-  .snake-part__four {
+  .block-4 {
     order: 6;
   }
 
-  .snake-part__six {
+  .block-6 {
     order: 4;
   }
 }
