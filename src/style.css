@@ -13,7 +13,6 @@ body {
 .item {
   height: 300px;
   min-width: 300px;
-  flex-grow: 1;
   flex-basis: calc(100% / 3);
   text-align: center;
   line-height: 300px;
