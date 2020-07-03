@@ -66,11 +66,7 @@ body {
   }
 
   .block5 {
-    order: 5;
-  }
-
-  .block6 {
-    order: 6;
+    order: 4;
   }
 }
 
@@ -78,28 +74,8 @@ body {
   .item {
     flex-basis: 100%;
   }
-
-  .block1 {
-    order: 1;
-  }
-
-  .block2 {
-    order: 2;
-  }
-
-  .block3 {
-    order: 3;
-  }
-
+  
   .block4 {
     order: 4;
-  }
-
-  .block5 {
-    order: 5;
-  }
-
-  .block6 {
-    order: 6;
   }
 }
