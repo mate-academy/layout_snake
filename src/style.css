@@ -3,6 +3,7 @@ body {
   font-size: 100px;
   color: #fff;
   margin: 0;
+  user-select: none;
 }
 
 .container {
@@ -13,7 +14,7 @@ body {
 .item {
   height: 300px;
   min-width: 300px;
-  flex-basis: calc(100% / 3);
+  flex: 1 1 calc(100% / 3);
   text-align: center;
   line-height: 300px;
 }
