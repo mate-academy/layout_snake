@@ -3,9 +3,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 100px;
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -14,6 +12,8 @@ body {
 }
 
 .box {
+  color: white;
+  font-size: 100px;
   height: 300px;
   flex-basis: 100vw;
   display: flex;
@@ -26,19 +26,19 @@ body {
 }
 
 .second {
-  background-color: #c00;
+  background-color: hsl(0, 100%, 40%);
 }
 
 .third {
-  background-color: #900;
+  background-color: hsl(0, 100%, 30%);
 }
 
 .fourth {
-  background-color: #600;
+  background-color: hsl(0, 100%, 20%);
 }
 
 .fifth {
-  background-color: #300;
+  background-color: hsl(0, 100%, 10%);
 }
 
 .sixth {
@@ -49,14 +49,6 @@ body {
 
   .box {
     flex-basis: 50vw;
-  }
-
-  .first {
-    order: 1;
-  }
-
-  .second {
-    order: 2;
   }
 
   .fourth {
@@ -82,24 +74,12 @@ body {
     flex-basis: 33.3vw;
   }
 
-  .first {
-    order: 1;
-  }
-
-  .second {
-    order: 2;
-  }
-
   .fourth {
     order: 6;
   }
 
   .third {
     order: 4;
-  }
-
-  .fifth {
-    order: 5;
   }
 
   .sixth {
