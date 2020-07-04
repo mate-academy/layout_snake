@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, serif;
+  color: white;
 }
 
 .container {
@@ -12,11 +14,6 @@ body {
   display: flex;
   flex: calc(33.33% - 30px);
   min-width: 300px;
-}
-
-.text {
-  color: white;
-  font-family: Arial, Helvetica, serif;
   font-size: 100px;
   line-height: 300px;
 }
@@ -49,7 +46,7 @@ body {
   order: 4;
 }
 
-@media  (max-width: 799px) {
+@media  (max-width: 899px) {
 
   .three {
     order: 4;
