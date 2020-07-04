@@ -5,6 +5,7 @@ body {
 
 .block-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -43,47 +44,32 @@ body {
 }
 
 @media screen and (min-width: 300px) {
-  .block-container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 450px) {
   .block {
-    width: 450px;
+    flex-basis: 100%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .block-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .block {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   .block-3 {
-    order: 2;
-  }
-
-  .block-4 {
     order: 1;
   }
 
   .block-5 {
-    order: 3;
+    order: 2;
   }
 
   .block-6 {
-    order: 4;
+    order: 3;
   }
 }
 
 @media screen and (min-width: 900px) {
   .block {
-    width: 33.33%;
+    flex-basis: 33.33%;
   }
 
   .block-3 {
