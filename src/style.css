@@ -18,7 +18,7 @@ body {
   flex-grow: 1;
   line-height: 300px;
   text-align: center;
-  flex-basis: 33%;
+  flex-basis: 33.33%;
 }
 
 .block-1 {
