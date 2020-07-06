@@ -44,14 +44,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  
-  .item1 {
-    order: 1;
-  }
-
-  .item2 {
-    order: 2;
-  }
 
   .item3 {
     order: 4;
