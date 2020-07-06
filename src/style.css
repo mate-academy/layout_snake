@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.block {
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  text-align: center;
+  line-height: 300px;
+}
+
+.num_1 {
+  background-color: rgb(255, 0, 0);
+  order: 1;
+}
+
+.num_2 {
+  background-color: rgb(204, 0, 0);
+  order: 2;
+}
+
+.num_3 {
+  background-color: rgb(153, 0, 0);
+  order: 3;
+}
+
+.num_4 {
+  background-color: rgb(102, 0, 0);
+  order: 6;
+}
+
+.num_5 {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.num_6 {
+  background-color: rgb(0, 0, 0);
+  order: 4;
+}
+
+@media screen and (max-width: 899px) {
+  .num_1 {
+    order: 1;
+  }
+
+  .num_2 {
+    order: 2;
+  }
+
+  .num_3 {
+    order: 4;
+  }
+
+  .num_4 {
+    order: 3;
+  }
+
+  .num_5 {
+    order: 5;
+  }
+
+  .num_6 {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block {
+    flex-basis: 301px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .num_1 {
+    order: 1;
+  }
+
+  .num_2 {
+    order: 2;
+  }
+
+  .num_3 {
+    order: 3;
+  }
+
+  .num_4 {
+    order: 4;
+  }
+
+  .num_5 {
+    order: 5;
+  }
+
+  .num_6 {
+    order: 6;
+  }
+}
