@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  line-height: 300px;
+  text-align: center;
+  height: 300px;
+  flex-basis: 33.3%;
+  flex-grow: 1;
+  font-size: 100px;
+  color: #fff;
+}
+
+.one {
+  background-color: rgb(255,0,0);
+}
+
+.two {
+  background-color: rgb(204,0,0);
+}
+
+.three {
+  background-color: rgb(153,0,0);
+}
+
+.four {
+  background-color: rgb(102,0,0);
+  order: 6;
+}
+
+.five {
+  background-color: rgb(51,0,0);
+  order: 5;
+}
+
+.six {
+  background-color: rgb(0,0,0);
+  order: 4;
+}
+
+@media screen and (max-width: 899px) {
+  .block {
+    flex-basis: 300px;
+  }
+
+  .three {
+    order: 4;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .block {
+    order: 0;
+  }
+}
