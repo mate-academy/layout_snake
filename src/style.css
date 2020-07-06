@@ -23,17 +23,14 @@ body {
 
 .first-block {
   background-color: hsl(0, 100%, 50%);
-  order: 1;
 }
 
 .second-block {
   background-color: hsl(0, 100%, 40%);
-  order: 2;
 }
 
 .third-block {
   background-color: hsl(0, 100%, 30%);
-  order: 3;
 }
 
 .fourth-block {
@@ -52,33 +49,17 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .fourth-block {
-    order: 3;
-  }
-
   .third-block {
     order: 4;
   }
 
-  .fifth-block {
-    order: 5;
+  .fourth-block {
+    order: 3;
   }
 
   .sixth-block {
     order: 6;
   }
-
-}
-
-@media screen and (max-width: 600px) {
-  .fourth-block {
-    order: 3;
-  }
-
-  .third-block {
-    order: 4;
-  }
-
 }
 
 @media screen and (max-width: 450px) {
