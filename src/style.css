@@ -7,7 +7,7 @@ body {
   font-size: 100px;
   color: white;
   height: 300px;
-  width: 300px;
+  width: 33.3%;
   flex-grow: 1;
   line-height: 300px;
   text-align: center;
@@ -15,22 +15,19 @@ body {
 
 .box1 {
   background-color: rgb(255, 0, 0);
-  order: 1;
 }
 
 .box2 {
   background-color: rgb(204, 0, 0);
-  order: 2;
 }
 
 .box3 {
   background-color: rgb(153, 0, 0);
-  order: 3;
 }
 
 .box4 {
   background-color: rgb(102, 0, 0);
-  order: 4;
+  order: 6;
 }
 
 .box5 {
@@ -40,7 +37,6 @@ body {
 
 .box6 {
   background-color: rgb(0, 0, 0);
-  order: 6;
 }
 
 .flex {
@@ -50,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .box3 {
     order: 4;
   }
@@ -58,18 +54,26 @@ body {
   .box4 {
     order: 3;
   }
-}
 
-@media screen and (min-width: 900px) {
-  .box {
-    flex-basis: 33.33%;
-  }
-
-  .box4 {
-    order: 6;
+  .box5 {
+    order: 5;
   }
 
   .box6 {
-    order: 4;
+    order: 6;
+  }
+
+  .box {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .box {
+    flex-basis: 100%;
+  }
+
+  .box3 {
+    order: 3;
   }
 }
