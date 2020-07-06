@@ -23,41 +23,43 @@ body {
 
 .item__1 {
   background-color: hsl(0, 100%, 50%);
-  order: 1;
 }
 
 .item__2 {
   background-color: hsl(0, 100%, 40%);
-  order: 2;
 }
 
 .item__3 {
   background-color: hsl(0, 100%, 30%);
-  order: 3;
 }
 
 .item__4 {
   background-color: hsl(0, 100%, 20%);
-  order: 4;
 }
 
 .item__5 {
   background-color: hsl(0, 100%, 10%);
-  order: 5;
 }
 
 .item__6 {
   background-color: hsl(0, 100%, 0%);
-  order: 6;
 }
 
 @media screen and (min-width: 600px) {
   .item__3 {
-    order: 4;
+    order: 1;
   }
 
   .item__4 {
-    order: 3;
+    order: 0;
+  }
+
+  .item__5 {
+    order: 2;
+  }
+
+  .item__6 {
+    order: 2;
   }
 }
 
@@ -67,14 +69,14 @@ body {
   }
 
   .item__3 {
-    order: 3;
+    order: 0;
   }
 
   .item__4 {
-    order: 6;
+    order: 3;
   }
 
   .item__6 {
-    order: 4;
+    order: 1;
   }
 }
