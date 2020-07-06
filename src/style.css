@@ -20,17 +20,14 @@ body {
 
 .first-block {
   background-color: rgb(255, 0, 0);
-  order: 1;
 }
 
 .second-block {
   background-color: rgb(204, 0, 0);
-  order: 2;
 }
 
 .third-block {
   background-color: rgb(153, 0, 0);
-  order: 3;
 }
 
 .fourth-block {
