@@ -17,11 +17,10 @@ body {
 
 .block {
   height: 300px;
+  min-width: 300px;
   display: flex;
   flex-basis: 100%;
-  flex-direction: row-reverse;
-
-  font: inherit;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
