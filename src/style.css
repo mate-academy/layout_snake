@@ -16,6 +16,7 @@ body {
 .block {
   height: 300px;
   flex-basis: 300px;
+  flex-grow: 1;
 }
 
 .block-1 {
@@ -49,18 +50,6 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .block {
-    flex-grow: 1;
-  }
-
-  .block-1 {
-    order: 1;
-  }
-
-  .block-2 {
-    order: 2;
-  }
-
   .block-3 {
     order: 4;
   }
@@ -79,10 +68,6 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-  .block {
-    flex-grow: 1;
-  }
-
   .block-4 {
     order: 6;
   }
