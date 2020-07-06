@@ -61,9 +61,14 @@ body {
   }
 }
 
-@media screen and (min-width:600px) and (max-width:899px) {
+@media screen and (max-width:899px) {
   .container {
     justify-content: center;
+  }
+
+  .box {
+    flex-basis: 50%;
+    flex-grow: 1;
   }
 
   .third_container {
@@ -73,6 +78,7 @@ body {
   .fourth_container {
     order: 3;
   }
+
   .fifth_container {
     order: 5;
   }
@@ -80,15 +86,19 @@ body {
   .sixth_container {
     order: 6;
   }
-
-  .box {
-    flex-basis: 50%;
-    flex-grow: 1;
-  }
 }
 
-@media screen and (min-width:450px) and (max-width:599px) {
+@media screen and (max-width:450px) {
   .box {
-    width: 100%;
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+
+  .third_container {
+    order: 3;
+  }
+
+  .fourth_container {
+    order: 4;
   }
 }
