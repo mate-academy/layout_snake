@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -13,7 +14,6 @@ body {
   flex-shrink: 0;
   flex-grow: 1;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   text-align: center;
   line-height: 300px;
@@ -36,7 +36,7 @@ body {
 
 .num_4 {
   background-color: rgb(102, 0, 0);
-  order: 6;
+  order: 4;
 }
 
 .num_5 {
@@ -46,48 +46,40 @@ body {
 
 .num_6 {
   background-color: rgb(0, 0, 0);
-  order: 4;
+  order: 6;
+}
+
+@media screen and (min-width: 900px) {
+  .block {
+    flex-basis: 33.33%;
+  }
+
+  .num_4 {
+    order: 6;
+  }
+
+  .num_6 {
+    order: 4;
+  }
 }
 
 @media screen and (max-width: 899px) {
-  .num_1 {
-    order: 1;
-  }
-
-  .num_2 {
-    order: 2;
-  }
-
-  .num_3 {
-    order: 4;
-  }
-
-  .num_4 {
-    order: 3;
-  }
-
-  .num_5 {
-    order: 5;
-  }
-
-  .num_6 {
-    order: 6;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .block {
-    flex-basis: 301px;
+    flex-basis: 50%;
+  }
+
+  .num_3 {
+    order: 4;
+  }
+
+  .num_4 {
+    order: 3;
   }
 }
 
-@media screen and (max-width: 599px) {
-  .num_1 {
-    order: 1;
-  }
-
-  .num_2 {
-    order: 2;
+@media screen and (max-width: 450px) {
+  .block {
+    flex-basis: 100%;
   }
 
   .num_3 {
@@ -96,13 +88,5 @@ body {
 
   .num_4 {
     order: 4;
-  }
-
-  .num_5 {
-    order: 5;
-  }
-
-  .num_6 {
-    order: 6;
   }
 }
