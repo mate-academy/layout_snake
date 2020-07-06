@@ -11,6 +11,7 @@ body {
 .basic-block {
   display: flex;
   height: 300px;
+  min-width: 300px;
   color: white;
   font-size: 100px;
   align-items: center;
@@ -19,32 +20,26 @@ body {
 }
 
 .block1 {
-  order: 1;
   background-color: red;
 }
 
 .block2 {
-  order: 2;
   background-color: #c00;
 }
 
 .block3 {
-  order: 3;
   background-color: #900;
 }
 
 .block4 {
-  order: 4;
   background-color: #600;
 }
 
 .block5 {
-  order: 5;
   background-color: #300;
 }
 
 .block6 {
-  order: 6;
   background-color: #000;
 }
 
@@ -53,13 +48,23 @@ body {
     flex-basis: 50%;
   }
 
-  .block4 {
-    order: 3;
-  }
-  
   .block3 {
     order: 4;
   }
+
+  .block4 {
+    order: 3;
+  }
+
+  .block5 {
+    order: 5;
+  }
+
+  .block6 {
+    order: 6;
+  }
+
+ 
 }
 
 @media screen and (min-width: 900px) {
