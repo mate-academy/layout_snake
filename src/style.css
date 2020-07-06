@@ -71,7 +71,7 @@ body {
 @media screen and (min-width: 900px) {
 
   .box {
-    flex-basis: 33.3vw;
+    flex-basis: 33.33vw;
   }
 
   .fourth {
