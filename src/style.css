@@ -1,7 +1,9 @@
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -10,13 +12,13 @@ body {
 }
 
 .block {
-  display: flex;
-  min-width: 300px;
   height: 300px;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  flex: 0 0 33.33%;
+  min-width: 300px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  line-height: 300px;
+  text-align: center;
+  flex-basis: 33%;
 }
 
 .block-1 {
@@ -43,19 +45,7 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 900px) {
-  .block-4 {
-    order: 3;
-  }
-  .block-5 {
-    order: 2;
-  }
-}
-
-@media (max-width: 899px) {
-  .block {
-    flex: 0 0 50%;
-  }
+@media screen and (min-width: 600px) {
 
   .block-3 {
     order: 4;
@@ -64,7 +54,7 @@ body {
   .block-4 {
     order: 3;
   }
-
+  
   .block-5 {
     order: 5;
   }
@@ -74,16 +64,21 @@ body {
   }
 }
 
-@media (max-width: 450px) {
-  .block {
-    flex: 0 0 100%;
-  }
+@media screen and (min-width: 900px) {
 
   .block-3 {
     order: 3;
   }
 
   .block-4 {
+    order: 6;
+  }
+
+  .block-5 {
+    order: 5;
+  }
+
+  .block-6 {
     order: 4;
   }
 }
