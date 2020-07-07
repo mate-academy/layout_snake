@@ -19,32 +19,48 @@ body {
 
 .number1 {
   background-color: #f00;
-  order: 1;
 }
 
 .number2 {
   background-color: #c00;
-  order: 2;
 }
 
 .number3 {
   background-color: #900;
-  order: 3;
 }
 
 .number4 {
   background-color: #600;
-  order: 4;
 }
 
 .number5 {
   background-color: #300;
-  order: 5;
 }
 
 .number6 {
   background-color: #000;
-  order: 6;
+}
+
+@media (min-width: 600px) {
+  .box {
+    flex-basis: 50%;
+  }
+
+  .number4 {
+    order: 3;
+  }
+
+  .number3 {
+    order: 4;
+  }
+ 
+  .number5 {
+    order: 5;
+  }
+  
+  .number6 {
+    order: 6;
+  }
 }
 
 @media (min-width: 900px) {
@@ -58,19 +74,5 @@ body {
 
   .number4 {
     order: 6;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
-  .box {
-    flex-basis: 50%;
-  }
-
-  .number4 {
-    order: 3;
-  }
-
-  .number3 {
-    order: 4;
   }
 }
