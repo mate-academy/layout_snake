@@ -45,7 +45,7 @@ body {
   background-color: #000;
 }
 
-@media screen and (min-width: 616px) {
+@media screen and (min-width: 600px) {
   .third {
     order: 4;
   }
