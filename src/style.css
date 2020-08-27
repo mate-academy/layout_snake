@@ -46,6 +46,7 @@ body {
 
 .block-5 {
   background-color: rgb(51, 0, 0);
+  order: 5;
 }
 
 .block-6 {
@@ -76,7 +77,7 @@ body {
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 450px) and (max-width: 599px) {
   .block {
     flex-basis: 100%;
   }
@@ -90,12 +91,16 @@ body {
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 449px) {
+
+  .block {
+    flex-basis: 100%;
+  }
 
   .block-3 {
     order: 3;
   }
-
+  
   .block-4 {
     order: 4;
   }
