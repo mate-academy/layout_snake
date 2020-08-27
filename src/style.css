@@ -16,7 +16,7 @@ body {
 
 .block {
   height: 300px;
-  min-width: 300px;
+  width: 300px;
 
   flex-basis: 33.33%;
   flex-grow: 1;
@@ -37,7 +37,6 @@ body {
 
 .block-3 {
   background-color: rgb(153, 0, 0);
-  order: 3;
 }
 
 .block-4 {
@@ -47,7 +46,6 @@ body {
 
 .block-5 {
   background-color: rgb(51, 0, 0);
-  order: 5;
 }
 
 .block-6 {
@@ -55,29 +53,7 @@ body {
   order: 4;
 }
 
-@media screen and (max-width: 599px) {
-  .block {
-    flex-basis: 100%;
-  }
-
-  .block-3 {
-    order: 4;
-  }
-
-  .block-4 {
-    order: 3;
-  }
-
-  .block-5 {
-    order: 5;
-  }
-
-  .block-6 {
-    order: 6;
-  }
-}
-
-@media screen and (max-width:899) {
+@media screen and (max-width: 899px) {
 
   .block {
     flex-basis: 50%;
@@ -97,5 +73,30 @@ body {
 
   .block-6 {
     order: 6;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .block {
+    flex-basis: 100%;
+  }
+
+  .block-3 {
+    order: 4;
+  }
+
+  .block-4 {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 450px) {
+
+  .block-3 {
+    order: 3;
+  }
+
+  .block-4 {
+    order: 4;
   }
 }
