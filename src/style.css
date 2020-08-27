@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 * {
@@ -16,7 +17,6 @@ body {
   width: 300px;
   min-width: 300px;
   height: 300px;
-  font-family: Arial, sans-serif;
   font-size: 100px;
   text-align: center;
   color: white;
