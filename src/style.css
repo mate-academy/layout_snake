@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex__container {
+  background: black;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.flex__item {
+  height: 300px;
+  min-width: 300px;
+
+  flex: 33.3%;
+}
+
+.flex__item__one {
+  background: rgba(255, 0, 0, 1);
+}
+
+.flex__item__two {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+.flex__item__three {
+  background: rgba(255, 0, 0, 0.6);
+  order: 3;
+}
+
+.flex__item__four {
+  background: rgba(255, 0, 0, 0.4);
+  order: 4;
+}
+
+.flex__item__five {
+  background: rgba(255, 0, 0, 0.2);
+  order: 5;
+}
+
+.flex__item__six {
+  background: rgba(255, 0, 0, 0);
+  order: 6;
+}
+
+@media screen and (min-width: 600px) {
+  .flex__item__three {
+    order: 4;
+  }
+
+  .flex__item__four {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .flex__item__four {
+    order: 6;
+  }
+
+  .flex__item__six {
+    order: 4;
+  }
+}
