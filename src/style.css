@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
 }
 
 * {
@@ -14,8 +16,6 @@ body {
 .block {
   height: 300px;
   width: 300px;
-  font-family: Arial, sans-serif;
-  font-size: 100px;
   text-align: center;
   line-height: 300px;
   color: white;
