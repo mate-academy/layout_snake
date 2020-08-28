@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-.mainBlock {
+.main-block {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -25,29 +25,29 @@ body {
   min-width: 300px;
 }
 
-.firstBlock {
+.first-block {
   background-color: red;
 }
 
-.secondblock {
+.second-block {
   background-color: #c00;
 }
 
-.thirdBlock {
+.third-block {
   background-color: #900;
 }
 
-.fourthBlock {
+.fourth-block {
   background-color: #600;
   order: 3;
 }
 
-.fifthBlock {
+.fifth-block {
   background-color: #300;
   order: 2;
 }
 
-.sixthBlock {
+.sixth-block {
   background-color: #000;
   order: 1;
 }
@@ -57,16 +57,16 @@ body {
     flex-basis: 50%;
   }
 
-  .thirdBlock {
+  .third-block {
     order: 3;
   }
 
-  .fourthBlock {
+  .fourth-block {
     order: 2;
   }
 
-  .fifthBlock,
-  .sixthBlock {
+  .fifth-block,
+  .sixth-block {
     order: 3;
   }
 }
@@ -82,11 +82,11 @@ body {
     flex-basis: 100%;
   }
 
-  .thirdBlock {
+  .third-block {
     order: 2;
   }
 
-  .fourthBlock {
+  .fourth-block {
     order: 3;
   }
 }
