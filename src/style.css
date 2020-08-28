@@ -14,6 +14,7 @@ body {
 .block {
   height: 300px;
   min-width: 300px;
+  line-height: 300px;
   flex-grow: 1;
   align-items: center;
   display: inherit;
@@ -28,58 +29,38 @@ body {
 
 .first {
   background-color: #f00;
+  order: 1;
 }
 
 .second {
   background-color: #c00;
+  order: 2;
 }
 
 .third {
   background-color: #900;
+  order: 3;
 }
 
 .fourth {
   background-color: #600;
+  order: 6;
 }
 
 .fivth {
   background-color: #300;
+  order: 5;
 }
 
 .sixth {
   background-color: #000;
+  order: 4;
 }
 
-@media screen and (max-width:1499px) {
-
-  .fivth {
-    order: 6;
-  }
-
-  .sixth {
-    order: 5;
-  }
-}
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 899px) {
   .block {
-    flex-basis: 33.33%;
+    flex: 0 1 50%;
   }
-  
-  .fourth {
-    order: 6;
-  }
-
-  .fivth {
-    order: 5;
-  }
-
-  .sixth {
-    order: 4;
-  }
-}
-
-@media screen and (max-width:899px) {
 
   .third {
     order: 4;
@@ -94,12 +75,27 @@ body {
   }
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width: 599px) {
+  .block {
+    flex: 0 1 100%;
+    flex-grow: 1;
+  }
+
   .third {
     order: 3;
   }
 
   .fourth {
     order: 4;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block {
+    flex: 0 1 33.33%;
   }
 }
