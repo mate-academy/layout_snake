@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 300px;
+  width: 33.33%;
+  min-width: 300px;
+
+  flex-grow: 1;
+
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+.num {
+  margin: 93px 0;
+}
+
+.color-1 {
+  background: rgb(255, 0, 0);
+}
+
+.color-2 {
+  background: rgb(204, 0, 0);
+}
+
+.color-3 {
+  background: rgb(153, 0, 0);
+}
+
+.color-4 {
+  background: rgb(102, 0, 0);
+}
+
+.color-5 {
+  background: rgb(51, 0, 0);
+}
+
+.color-6 {
+  background: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .color-3 {
+    order: 2;
+  }
+
+  .color-4 {
+    order: 1;
+  }
+
+  .color-5,
+  .color-6 {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .color-4 {
+    order: 2;
+  }
+
+  .color-5 {
+    order: 1;
+  }
+}
