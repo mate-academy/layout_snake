@@ -37,6 +37,7 @@ body {
 
 .block-3 {
   background-color: rgb(153, 0, 0);
+  order: 4;
 }
 
 .block-4 {
@@ -77,22 +78,7 @@ body {
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 599px) {
-  .block {
-    flex-basis: 100%;
-  }
-
-  .block-3 {
-    order: 4;
-  }
-
-  .block-4 {
-    order: 3;
-  }
-}
-
-@media screen and (max-width: 449px) {
-
+@media screen and (max-width: 599px) {
   .block {
     flex-basis: 100%;
   }
@@ -100,8 +86,8 @@ body {
   .block-3 {
     order: 3;
   }
-  
-  .block-4 {
-    order: 4;
+
+  .block-6 {
+    order: 6;
   }
 }
