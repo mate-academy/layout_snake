@@ -53,7 +53,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .item {
-    min-width: 301px;
+    min-width: 400px;
   }
 }
 
