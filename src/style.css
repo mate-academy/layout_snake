@@ -2,26 +2,28 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
 }
 
 .main-block {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   text-align: center;
-  flex-direction: row;
 }
 
 .block {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33.33%;
+  flex-basis: 33.33%;
   height: 300px;
   color: white;
   font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
   min-width: 300px;
 }
 
@@ -57,7 +59,9 @@ body {
     flex-basis: 50%;
   }
 
-  .third-block {
+  .third-block,
+  .fifth-block,
+  .sixth-block {
     order: 3;
   }
 
@@ -65,10 +69,6 @@ body {
     order: 2;
   }
 
-  .fifth-block,
-  .sixth-block {
-    order: 3;
-  }
 }
 
 @media screen and (max-width: 599px) {
