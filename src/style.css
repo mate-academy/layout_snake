@@ -12,7 +12,6 @@ html {
 
 body {
   margin: 0;
-  
 }
 
 .snake_container {
@@ -22,28 +21,23 @@ body {
 
 .block {
   height: 300px;
-
   display: flex;
   flex: 1 1 calc(100% / 3);
   align-items: center;
   justify-content: center;
   min-width: 300px;
-
 }
 
 .first {
   background-color: rgb(255, 0, 0);
-
 }
 
 .second {
   background-color: rgb(204, 0, 0);
-  
 }
 
 .third {
   background-color: rgb(153, 0, 0);
-  
 }
 
 .fourth {
