@@ -11,13 +11,11 @@ html {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .block {
   display: flex;
   height: 300px;
-  min-width: 300px;
   flex-basis: 33.33%;
   justify-content: center;
   align-items: center;
@@ -48,7 +46,21 @@ html {
   background-color: #000;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
+  .fourth {
+    order: 4;
+  }
+
+  .fifth {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .block {
+    flex-basis: 50%;
+  }
+
   .third {
     order: 4;
   }
@@ -66,34 +78,16 @@ html {
   }
 }
 
-@media screen and (min-width: 899px) {
-  .fourth {
-    order: 6;
+@media screen and (max-width: 450px) {
+  .block {
+    flex-basis: 100%;
   }
 
-  .fifth {
-    order: 5;
-  }
-
-  .sixth {
-    order: 4;
-  }
-}
-
-@media screen and (max-width: 599px) {
   .third {
     order: 3;
   }
 
   .fourth {
     order: 4;
-  }
-
-  .fifth {
-    order: 5;
-  }
-
-  .sixth {
-    order: 6;
   }
 }
