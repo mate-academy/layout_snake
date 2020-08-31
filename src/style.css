@@ -18,7 +18,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .box-1 {
@@ -52,12 +51,15 @@ body {
   .box-3 {
     order: 4;
   }
+
   .box-4 {
     order: 3;
   }
+
   .box-5 {
     order: 5;
   }
+
   .box-6 {
     order: 6;
   }
@@ -67,12 +69,15 @@ body {
   .box-3 {
     order: 3;
   }
+
   .box-4 {
     order: 4;
   }
+
   .box-5 {
     order: 5;
   }
+  
   .box-6 {
     order: 6;
   }
