@@ -1,3 +1,9 @@
+html {
+  font-family: "Arial", sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
 body {
   margin: 0;
 }
@@ -5,20 +11,14 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .item {
-  height: 300px;
-  min-width: 300px;
+  flex-basis: 100%;
   flex-grow: 2;
-
   text-align: center;
   line-height: 300px;
-  font-family: "Arial", sans-serif;
-  color: white;
-  font-size: 100px;
-
+  height: 300px;
 }
 
 .first-item {
@@ -51,13 +51,16 @@ body {
   order: 4;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .item {
-    min-width: 400px;
+    flex-basis: 30%;
   }
 }
 
 @media screen and (max-width: 750px) {
+  .item {
+    flex-basis: 50%;
+  }
 
   .third-item {
     order: 4;
@@ -73,8 +76,11 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .item {
+    flex-basis: 100%;
+  }
 
-  .third-item {
-    order: 3;
+  .fourth-item {
+    order: 4;
   }
 }
