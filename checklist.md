@@ -3,7 +3,7 @@
 - make sure you used flexbox in this task
 - check the styles and make sure you don't write default styles (like display: block for `div` or others)
 - if you have 3 or more attributes, place each one on the new line (including the first one)
-- font family is usually written for `body` tag and inherited by others
+- font family is usually written for `html` tag and inherited by others
 - use alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
 - we preferably use classes for styling, not tags, ids, attributes or something else
 - don't increase specificity of selectors [about selectors specificity](https://www.w3schools.com/css/css_specificity.asp)
