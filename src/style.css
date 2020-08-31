@@ -4,7 +4,7 @@ body {
 
 html {
   font-size: 100px;
-  height: 300px;
+  color: white;
   font-family: Arial, sans-serif;
 }
 
@@ -14,8 +14,8 @@ html {
 }
 
 .block {
+  height: 300px;
   flex-basis: 300px;
-  color: white;
   text-align: center;
   line-height: 300%;
   flex-grow: 1;
