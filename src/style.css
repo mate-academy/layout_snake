@@ -14,15 +14,13 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .flex__container {
   background: black;
 
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
@@ -35,50 +33,50 @@ body {
   flex: 33.3%;
 }
 
-.flex__item__one {
+.one {
   background: rgba(255, 0, 0, 1);
 }
 
-.flex__item__two {
+.two {
   background: rgba(255, 0, 0, 0.8);
 }
 
-.flex__item__three {
+.three {
   background: rgba(255, 0, 0, 0.6);
   order: 3;
 }
 
-.flex__item__four {
+.four {
   background: rgba(255, 0, 0, 0.4);
   order: 4;
 }
 
-.flex__item__five {
+.five {
   background: rgba(255, 0, 0, 0.2);
   order: 5;
 }
 
-.flex__item__six {
+.six {
   background: rgba(255, 0, 0, 0);
   order: 6;
 }
 
 @media screen and (min-width: 600px) {
-  .flex__item__three {
+  .three {
     order: 4;
   }
 
-  .flex__item__four {
+  .four {
     order: 3;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .flex__item__four {
+  .four {
     order: 6;
   }
 
-  .flex__item__six {
+  .six {
     order: 4;
   }
 }
