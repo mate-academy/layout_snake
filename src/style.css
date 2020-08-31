@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  
+}
+
+.snake_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 300px;
+
+  display: flex;
+  flex: 1 1 calc(100% / 3);
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+
+}
+
+.first {
+  background-color: rgb(255, 0, 0);
+
+}
+
+.second {
+  background-color: rgb(204, 0, 0);
+  
+}
+
+.third {
+  background-color: rgb(153, 0, 0);
+  
+}
+
+.fourth {
+  background-color: rgb(102, 0, 0);
+  order: 3;
+}
+
+.fifth {
+  background-color: rgb(51, 0, 0);
+  order: 2;
+}
+
+.sixth {
+  background-color: rgb(0, 0, 0);
+  order: 1;
+}
+
+@media screen and (max-width: 899px) {
+  .block {
+    flex-basis: 50%;
+  }
+  
+  .third {
+    order: 2;
+  }
+  
+  .fourth {
+    order: 1;
+  }
+  
+  .fifth {
+    order: 3;
+  }
+
+  .sixth {
+    order: 4;
+  }
+  
+}
+  
+@media screen and (max-width: 599px) {
+  .block {
+    flex-basis: 100%;
+  }
+  
+  .third {
+    order: 1;
+  }
+}
