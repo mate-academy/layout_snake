@@ -1,5 +1,8 @@
 body {
   margin: 0;
+}
+
+html {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
@@ -15,10 +18,10 @@ body {
   display: flex;
   height: 300px;
   min-width: 300px;
-  flex: 1 1 auto;
+  flex-basis: 33.33%;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  text-align: center;
 }
 
 .first {
