@@ -1,6 +1,9 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -9,66 +12,58 @@ body {
 }
 
 .block {
-  height: 300px;
   width: 33.33%;
   min-width: 300px;
 
   flex-grow: 1;
 
-  color: white;
   font-size: 100px;
+  line-height: 3;
   text-align: center;
+  color: white;
 }
 
-.num {
-  margin: 93px 0;
-}
-
-.color-1 {
+.block-1 {
   background: rgb(255, 0, 0);
 }
 
-.color-2 {
+.block-2 {
   background: rgb(204, 0, 0);
 }
 
-.color-3 {
+.block-3 {
   background: rgb(153, 0, 0);
 }
 
-.color-4 {
+.block-4 {
   background: rgb(102, 0, 0);
 }
 
-.color-5 {
+.block-5 {
   background: rgb(51, 0, 0);
 }
 
-.color-6 {
+.block-6 {
   background: rgb(0, 0, 0);
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
-  .color-3 {
-    order: 2;
-  }
-
-  .color-4 {
+  .block-3 {
     order: 1;
   }
 
-  .color-5,
-  .color-6 {
-    order: 3;
+  .block-5,
+  .block-6 {
+    order: 2;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .color-4 {
+  .block-4 {
     order: 2;
   }
 
-  .color-5 {
+  .block-5 {
     order: 1;
   }
 }
