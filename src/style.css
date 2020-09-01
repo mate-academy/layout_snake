@@ -24,29 +24,29 @@ body {
   display: flex;
 }
 
-.full_red {
+.first {
   background-color: red;
 }
 
-.red_four {
+.second {
   background-color: rgb(204,0,0);
 }
 
-.red_three {
+.third {
   background-color: rgb(153,0,0);
 }
 
-.black_three {
+.fourth {
   background-color: rgb(102,0,0) ;
   order: 6;
 }
 
-.black_four {
+.fifth {
   background-color: rgb(51,0,0) ;
   order: 5;
 }
 
-.full_black {
+.sixth {
   background-color: black;
   order: 4;
 }
@@ -55,16 +55,16 @@ body {
   .block {
     flex-basis: 50%;
   }
-  .black_three {
+  .fourth {
     order: 3;
   }
-  .red_three {
+  .third {
     order: 4;
   }
-  .black_four {
+  .fifth {
     order: 5;
   }
-  .full_black {
+  .sixth {
     order: 6;
   }
 }
@@ -72,11 +72,11 @@ body {
   .block {
     flex-basis: 100%;
   }
-  .black_three {
+  .fourth {
     order: 4;
   }
 
-  .black_four {
+  .fifth {
     order: 5;
   }
 }
