@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial , sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.snakeblock {
+  display: flex;
+  flex-basis: 33.33%;
+  height: 300px;
+  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-block {
+  margin: auto;
+}
+
+.red-1 {
+  background-color: red;
+}
+
+.red-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.red-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.red-4 {
+  background-color: rgb(102, 0, 0);
+  order: 6;
+}
+
+.red-5 {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.red-6 {
+  background-color: rgb(0, 0, 0);
+  order: 4;
+}
+
+@media screen and (max-width: 899px) {
+  .snakeblock {
+    flex-basis: 50%;
+  }
+  
+  .red-3 {
+    order: 4;
+  }
+
+  .red-4 {
+    order: 3;
+  }
+
+  .red-5 {
+    order: 5;
+  }
+
+  .red-6 {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .snakeblock {
+    flex-basis: 100%;
+  }
+  
+  .red-3 {
+    order: 3;
+  }
+
+  .red-4 {
+    order: 4;
+  }
+}
