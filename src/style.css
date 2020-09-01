@@ -1,16 +1,21 @@
-body {
+* {
   box-sizing: border-box;
-  margin: 0;
+}
+
+html {
   color: white;
   font-family: Arial, sans-serif;
   font-size: 100px;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 
 .block {
