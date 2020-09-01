@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  margin: 0%;
+  margin: 0;
 }
 
 * {
@@ -27,63 +27,62 @@ body {
   justify-content: center;
 }
 
-.block1 {
+.block-1 {
   background-color: hsl(0, 100%, 50%);
 }
 
-.block2 {
+.block-2 {
   background-color: hsl(0, 100%, 40%);
 }
 
-.block3 {
+.block-3 {
   background-color: hsl(0, 100%, 30%);
 }
 
-.block4 {
+.block-4 {
   background-color: hsl(0, 100%, 20%);
 }
 
-.block5 {
+.block-5 {
   background-color: hsl(0, 100%, 10%);
 }
 
-.block6 {
+.block-6 {
   background-color: hsl(0, 0%, 0%);
 }
 
 @media screen and (min-width: 600px) {
-  .block3 {
+  .block-3 {
     order: 4;
   }
  
-  .block4 {
+  .block-4 {
     order: 3;
   }
  
-  .block5 {
+  .block-5 {
     order: 5;
   }
  
-  .block6 {
+  .block-6 {
     order: 6;
   }
 }
- 
-@media screen and (min-width: 900px) {
 
+@media screen and (min-width: 900px) {
   .item {
     flex-basis: 33.33%;
   }
  
-  .block4 {
+  .block-4 {
     order: 6;
   }
  
-  .block5 {
+  .block-5 {
     order: 5;
   }
  
-  .block6 {
+  .block-6 {
     order: 4;
   }
 }
