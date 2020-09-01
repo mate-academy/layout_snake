@@ -10,15 +10,15 @@ body {
 }
 
 .block {
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1 1 auto;
   font-size: 100px;
   color: white;
-  min-width: 300px;
+  height: 300px;
   width: 30%;
+  min-width: 300px;
 }
 
 .first {
