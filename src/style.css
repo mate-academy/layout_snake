@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.snake {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  min-width: 300px;
+  flex-basis: 33.3%;
+}
+
+.flex-1 {
+  background: rgb(255, 0, 0);
+}
+
+.flex-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.flex-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.flex-4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.flex-5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.flex-6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 900px) {
+  .flex-4 {
+    order: 6;
+  }
+
+  .flex-5 {
+    order: 5;
+  }
+
+  .flex-6 {
+    order: 4;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .snake {
+    flex-basis: 50%;
+  }
+
+  .flex-3 {
+    order: 4;
+  }
+
+  .flex-4 {
+    order: 3;
+  }
+
+  .flex-5 {
+    order: 5;
+  }
+
+  .flex-6 {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .snake {
+    flex-basis: 100%;
+  }
+
+  .flex-1 {
+    order: 1;
+  }
+
+  .flex-2 {
+    order: 2;
+  }
+
+  .flex-3 {
+    order: 3;
+  }
+
+  .flex-4 {
+    order: 4;
+  }
+
+  .flex-5 {
+    order: 5;
+  }
+
+  .flex-6 {
+    order: 6;
+  }
+}
