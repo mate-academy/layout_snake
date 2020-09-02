@@ -1,19 +1,22 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
   font-family: Arial, sans-serif;
   font-size: 100px;
   color: white;
-  justify-content: center;
 }
 
-.conteiner {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .snake {
