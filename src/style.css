@@ -10,9 +10,11 @@ html {
 
 body {
   margin: 0;
+}
+
+.flexwrapper {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .snakeblock {
