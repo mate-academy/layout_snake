@@ -8,18 +8,15 @@
 .snake-box {
   display: flex;
   flex-wrap: wrap;
-  /* max-width: 100%; */
 }
 
 .snake-box__block {
   display: flex;
-  /* height: 300px; */
   align-items: center;
   justify-content: center;
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 100px;
-  /* min-width: 300px; */
   flex-basis: 33.33%;
 }
 
