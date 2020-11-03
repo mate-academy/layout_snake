@@ -1,8 +1,10 @@
 * {
   margin: 0;
-  padding: 0;
-  border: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
 }
 
 .snake-box {
@@ -11,6 +13,7 @@
 }
 
 .snake-box__block {
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
