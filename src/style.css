@@ -1,0 +1,84 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.first {
+  background-color: rgb(255, 0, 0);
+}
+
+.second {
+  background-color: rgb(204, 0, 0);
+}
+
+.third {
+  background-color: rgb(153, 0, 0);
+}
+
+.fourth {
+  background-color: rgb(102, 0, 0);
+}
+
+.fifth {
+  background-color: rgb(51, 0, 0);
+}
+
+.sixth {
+  background-color: black;
+}
+
+.block {
+  display: flex;
+  height: 300px;
+  min-width: 300px;
+  font-size: 100px;
+  color: #fff;
+  flex-basis: 33%;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.snake-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px) {
+  .third {
+    order: 4;
+  }
+
+  .fourth {
+    order: 3;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .third {
+    order: 3;
+  }
+
+  .fourth {
+    order: 6;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 4;
+  }
+}
