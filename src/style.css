@@ -17,7 +17,7 @@ body {
 
 .block {
   height: 300px;
-  width: 300px;
+  min-width: 300px;
   text-align: center;
   color: white;
   font-size: 100px;
