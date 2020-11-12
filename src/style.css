@@ -1,11 +1,5 @@
-html {
+* {
   box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 body {
@@ -31,17 +25,15 @@ body {
 
 .block-1 {
   background-color: #f00;
-  order: 1;
 }
 
 .block-2 {
   background-color: #c00;
-  order: 2;
 }
 
 .block-3 {
   background-color: #900;
-  order: 3;
+  order: 4;
 }
 
 .block-4 {
@@ -68,10 +60,6 @@ body {
     order: 3;
   }
 
-  .block-3 {
-    order: 4;
-  }
-
   .block-6 {
     order: 6;
   }
@@ -88,13 +76,5 @@ body {
 
   .block-4 {
     order: 4;
-  }
-
-  .block-5 {
-    order: 5;
-  }
-
-  .block-6 {
-    order: 6;
   }
 }
