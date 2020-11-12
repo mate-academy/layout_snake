@@ -50,7 +50,7 @@ html {
 
 @media screen and (min-width: 900px) {
   .block {
-    flex-basis: 33%;
+    flex-basis: 33.3%;
   }
 }
 
