@@ -1,68 +1,60 @@
-* {
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  line-height: 300px;
+  color: #fff;
   margin: 0;
-  padding: 0;
 }
 
 .snake {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .block {
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 33.3%;
+  width: 33.33%;
+  text-align: center;
 }
 
 .snake__head {
-  background: red;
-  order: 1;
+  background: #f00;
 }
 
-.snake__body-1 {
+.snake__body--1 {
   background: #c00;
-  order: 2;
 }
 
-.snake__body-2 {
+.snake__body--2 {
   background: #900;
   order: 3;
 }
 
-.snake__body-3 {
+.snake__body--3 {
   background: #600;
   order: 6;
 }
 
-.snake__body-4 {
+.snake__body--4 {
   background: #300;
   order: 4;
 }
 
 .snake__tail {
-  background: black;
+  background: #000;
   order: 3;
-}
-
-.snake__text {
-  font-size: 100px;
-  font-family: Arial, sans-serif;
-  color: #fff;
 }
 
 @media screen and (max-width: 899px) {
   .block {
-    flex-basis: 50%;
+    width: 50%;
   }
 
-  .snake__body-3 {
+  .snake__body--3 {
     order: 3;
   }
 
-  .snake__body-2 {
+  .snake__body--2 {
     order: 4;
   }
 
@@ -73,22 +65,18 @@
 
 @media screen and (max-width: 599px) {
   .block {
-    flex-basis: 100%;
+    width: 100%;
   }
 
-  .snake__body-2 {
+  .snake__body--2 {
     order: 3;
   }
 
-  .snake__body-3 {
+  .snake__body--3 {
     order: 4;
   }
 
-  .snake__body-4 {
+  .snake__body--4 {
     order: 5;
-  }
-
-  .snake__body-5 {
-    order: 6;
   }
 }
