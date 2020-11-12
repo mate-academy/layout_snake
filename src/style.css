@@ -56,13 +56,13 @@ body {
   order: 1;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 599px) {
   .container {
     display: block;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 899px) {
   .item {
     flex-basis: 50%;
   }
