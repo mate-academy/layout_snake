@@ -25,12 +25,10 @@ body {
 
 .block:nth-child(1) {
   background-color: red;
-  order: 1;
 }
 
 .block:nth-child(2) {
   background-color: rgb(204, 0, 0);
-  order: 2;
 }
 
 .block:nth-child(3) {
@@ -69,7 +67,6 @@ body {
   .block:nth-child(6) {
     order: 5;
   }
-
 }
 
 @media (max-width: 599px) {
