@@ -43,10 +43,12 @@ body {
 
 .fifth {
   background-color: hsl(0, 100%, 10%);
+  order: 5;
 }
 
 .sixth {
   background-color: black;
+  order: 6;
 }
 
 @media screen and (min-width: 599px) {
@@ -61,14 +63,6 @@ body {
   .fourth {
     order: 3;
   }
-
-  .fifth {
-    order: 5;
-  }
-  
-  .sixth {
-    order: 6;
-  }
 }
 
 @media screen and (min-width: 899px) {
@@ -79,11 +73,7 @@ body {
   .fourth {
     order: 6;
   }
-  
-  .fifth {
-    order: 5;
-  }
-  
+
   .sixth {
     order: 4;
   }
