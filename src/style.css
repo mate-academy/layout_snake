@@ -8,16 +8,13 @@ body {
 }
 
 .general {
-  height: 300px;
-  min-width: 300px;
   text-align: center;
   line-height: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: white;
-  flex-shrink: 0;
   flex-grow: 1;
-  flex-basis: 300px;
+  flex-basis: 100%;
 }
 
 .general:nth-child(1) {
@@ -45,12 +42,8 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .general:nth-child(1) {
-    order: 1;
-  }
-
-  .general:nth-child(2) {
-    order: 2;
+  .general {
+    flex-basis: 50%;
   }
 
   .general:nth-child(3) {
@@ -74,18 +67,6 @@ body {
 @media screen and (min-width: 900px) {
   .general {
     flex-basis: 33%;
-  }
-
-  .general:nth-child(1) {
-    order: 1;
-  }
-
-  .general:nth-child(2) {
-    order: 2;
-  }
-
-  .general:nth-child(3) {
-    order: 3;
   }
 
   .general:nth-child(4) {
