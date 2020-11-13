@@ -10,18 +10,14 @@ body {
 .general {
   height: 300px;
   min-width: 300px;
+  text-align: center;
+  line-height: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: white;
-
   flex-shrink: 0;
   flex-grow: 1;
   flex-basis: 300px;
-}
-
-.text {
-  margin-top: 95px;
-  text-align: center;
 }
 
 .general:nth-child(1) {
@@ -50,102 +46,57 @@ body {
 
 @media screen and (min-width: 600px) {
   .general:nth-child(1) {
-    background-color: red;
     order: 1;
   }
 
   .general:nth-child(2) {
-    background-color: rgb(204, 0, 0);
     order: 2;
   }
 
   .general:nth-child(3) {
-    background-color: rgb(153,0,0);
     order: 4;
   }
 
   .general:nth-child(4) {
-    background-color: rgb(102,0,0);
     order: 3;
   }
 
   .general:nth-child(5) {
-    background-color: rgb(51,0,0);
     order: 5;
   }
 
   .general:nth-child(6) {
-    background-color: black;
     order: 6;
   }
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
+  .general {
+    flex-basis: 33%;
+  }
 
   .general:nth-child(1) {
-    background-color: red;
     order: 1;
   }
 
   .general:nth-child(2) {
-    background-color: rgb(204, 0, 0);
     order: 2;
   }
 
   .general:nth-child(3) {
-    background-color: rgb(153,0,0);
     order: 3;
   }
 
   .general:nth-child(4) {
-    background-color: rgb(102,0,0);
     order: 6;
   }
 
   .general:nth-child(5) {
-    background-color: rgb(51,0,0);
     order: 5;
   }
 
   .general:nth-child(6) {
-    background-color: black;
     order: 4;
-  }
-
-  @media screen and (min-width: 1100px) {
-    .general {
-      flex-basis: 400px;
-    }
-
-    .general:nth-child(1) {
-      background-color: red;
-      order: 1;
-    }
-
-    .general:nth-child(2) {
-      background-color: rgb(204, 0, 0);
-      order: 2;
-    }
-
-    .general:nth-child(3) {
-      background-color: rgb(153,0,0);
-      order: 3;
-    }
-
-    .general:nth-child(4) {
-      background-color: rgb(102,0,0);
-      order: 6;
-    }
-
-    .general:nth-child(5) {
-      background-color: rgb(51,0,0);
-      order: 5;
-    }
-
-    .general:nth-child(6) {
-      background-color: black;
-      order: 4;
-    }
   }
 }
