@@ -1,0 +1,70 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1 0 33.33%;
+  min-width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+}
+
+.box__1 {
+  background-color: rgb(255,0,0);
+}
+
+.box__2 {
+  background-color: rgb(204,0,0);
+}
+
+.box__3 {
+  background-color: rgb(153,0,0);
+}
+
+.box__4 {
+  background-color: rgb(102,0,0);
+  order: 6;
+}
+
+.box__5 {
+  background-color: rgb(51,0,0);
+  order: 5;
+}
+
+.box__6 {
+  background-color: rgb(05,0,0);
+  order: 4;
+}
+
+@media screen and (max-width:899px) {
+  .box__4 {
+    order: 3;
+  }
+
+  .box__3,
+  .box__5,
+  .box__6 {
+    order: 4;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .box {
+    order: 0;
+  }
+}
