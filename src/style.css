@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+}
+
+.block {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+  height: 300px;
+  min-width: 300px;
+  background-color: red;
+  display: flex;
+  flex-basis: 33.33%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(204, 0, 0);
+}
+
+.three {
+  background-color: rgb(153, 0, 0);
+}
+
+.four {
+  background-color: rgb(102, 0, 0);
+}
+
+.five {
+  background-color: rgb(51, 0, 0);
+}
+
+.six {
+  background-color: rgb(0, 0, 0);
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px) {
+  .three {
+    order: 4;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .four {
+    order: 6;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 4;
+  }
+}
