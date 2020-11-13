@@ -22,17 +22,14 @@ body {
 
 .item_1 {
   background-color: #f00;
-  order: 1;
 }
 
 .item_2 {
   background-color: #c00;
-  order: 2;
 }
 
 .item_3 {
   background-color: #900;
-  order: 3;
 }
 
 .item_4 {
@@ -51,14 +48,6 @@ body {
 }
 
 @media screen and (max-width:899px) {
-  .item_1 {
-    order: 1;
-  }
-
-  .item_2 {
-    order: 2;
-  }
-
   .item_3 {
     order: 4;
   }
@@ -67,12 +56,8 @@ body {
     order: 3;
   }
 
-  .item_5 {
-    order: 5;
-  }
-
   .item_6 {
-    order: 6;
+    order: 5;
   }
 }
 
