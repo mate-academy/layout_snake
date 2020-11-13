@@ -13,7 +13,8 @@ body {
 }
 
 .box {
-  flex: 1 0 300px;
+  flex: 1 0 33.33%;
+  min-width: 300px;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -47,12 +48,7 @@ body {
 
 .box__6 {
   background-color: rgb(05,0,0);
-}
-
-@media screen and (min-width:900px) {
-  .box {
-    flex: 1 0 33.33%;
-  }
+  order: 4;
 }
 
 @media screen and (max-width:899px) {
