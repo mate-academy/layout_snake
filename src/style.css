@@ -49,9 +49,9 @@ body {
   background-color: rgb(05,0,0);
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:900px) {
   .box {
-    flex: 1 0 33%;
+    flex: 1 0 33.33%;
   }
 }
 
