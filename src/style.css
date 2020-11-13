@@ -25,17 +25,14 @@ body {
 
 .block-1 {
   background-color: rgb(255, 0, 0);
-  order: 1;
 }
 
 .block-2 {
   background-color: rgb(204, 0, 0);
-  order: 2;
 }
 
 .block-3 {
   background-color: rgb(153, 0, 0);
-  order: 3;
 }
 
 .block-4 {
@@ -54,7 +51,7 @@ body {
 }
 
 @media screen and (max-width: 899px) {
-  .container div {
+  .container .block {
     flex-basis: 300px;
   }
 
