@@ -63,9 +63,12 @@ body {
     order: 2;
   }
 
-  .item-5,
-  .item-6 {
+  .item-5 {
     order: 3;
+  }
+
+  .item-6 {
+    order: 4;
   }
 }
 
