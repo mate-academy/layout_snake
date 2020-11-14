@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.block {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 300px;
+  flex-basis: 33.33%;
+  min-width: 300px;
+  font-size: 100px;
+  color: white;
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(204, 0, 0);
+
+}
+
+.three {
+  background-color: rgb(153, 0, 0);
+}
+
+.four {
+  background-color: rgb(102, 0, 0);
+}
+
+.five {
+  background-color: rgb(51, 0, 0);
+}
+
+.six {
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 900px) {
+  .four {
+    order: 3;
+  }
+  
+  .five {
+    order: 2;
+  }
+  
+  .six {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .block {
+    flex-basis: 50%;
+  }
+
+  .three {
+    order: 4;
+  }
+  
+  .four {
+    order: 3;
+  }
+  
+  .five {
+    order: 5;
+  }
+  
+  .six {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .block {
+    flex-basis: 100%;
+  }
+
+  .three {
+    order: 3;
+  }
+}
