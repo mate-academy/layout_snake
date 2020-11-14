@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocks {
+  height: 300px;
+  min-width: 300px;
+  font: 100px Arial, sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+  flex-grow: 1;
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(204, 0, 0);
+}
+
+.three {
+  background-color: rgb(153, 0, 0);
+}
+
+.four {
+  background-color: rgb(102, 0, 0);
+}
+
+.five {
+  background-color: rgb(51, 0, 0);
+}
+
+.six {
+  background-color: #000;
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .one {
+    order: 1;
+  }
+  .two {
+    order: 2;
+  }
+  .three {
+    order: 4;
+  }
+  .four {
+    order: 3;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .one {
+    order: 1;
+  }
+  .two {
+    order: 2;
+  }
+  .three {
+    order: 3;
+  }
+  .four {
+    order: 6;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blocks {
+    min-width: 33%;
+  }
+}
