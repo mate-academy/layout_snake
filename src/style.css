@@ -1,0 +1,103 @@
+body {
+  margin: 0%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake {
+  height: 300px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  background-color: red;
+  flex-grow: 1;
+}
+
+.snake1 {
+  background-color: red;
+}
+
+.snake2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.snake3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.snake4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.snake5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.snake6 {
+  background-color: black;
+}
+
+@media screen and (min-width: 900px) {
+  .snake1 {
+    order: 1;
+  }
+
+  .snake2 {
+    order: 2;
+  }
+
+  .snake3 {
+    order: 3;
+  }
+
+  .snake4 {
+    order: 6;
+  }
+
+  .snake5 {
+    order: 5;
+  }
+
+  .snake6 {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .snake1 {
+    order: 1;
+  }
+
+  .snake2 {
+    order: 2;
+  }
+
+  .snake3 {
+    order: 4;
+  }
+
+  .snake4 {
+    order: 3;
+  }
+
+  .snake5 {
+    order: 5;
+  }
+
+  .snake6 {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .snake {
+    min-width: 30%;
+  }
+}
