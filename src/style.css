@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.html {
+html {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -25,7 +25,6 @@ body {
   flex: 0 0 33.3%;
   text-align: center;
   line-height: 300px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .one {
