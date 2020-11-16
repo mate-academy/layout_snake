@@ -21,7 +21,6 @@ body {
 
 .block1 {
   background-color: red;
-  order: 1;
 }
 
 .block2 {
@@ -55,24 +54,12 @@ body {
     width: 50%;
   }
 
-  .block1 {
-    order: 1;
-  }
-
-  .block2 {
-    order: 2;
-  }
-
   .block3 {
     order: 4;
   }
 
   .block4 {
     order: 3;
-  }
-
-  .block5 {
-    order: 5;
   }
 
   .block6 {
