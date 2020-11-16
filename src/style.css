@@ -9,19 +9,19 @@ body {
 
 .snake {
   height: 300px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 300px;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   flex-grow: 1;
 }
 
 .snake1 {
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
 
 .snake2 {
@@ -41,18 +41,10 @@ body {
 }
 
 .snake6 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 @media screen and (min-width: 900px) {
-  .snake1 {
-    order: 1;
-  }
-
-  .snake2 {
-    order: 2;
-  }
-
   .snake3 {
     order: 3;
   }
