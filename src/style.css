@@ -30,17 +30,14 @@ body {
 
 .one {
   background: red;
-  order: 1;
 }
 
 .two {
   background: hsl(0, 100%, 40%);
-  order: 2;
 }
 
 .three {
   background: hsl(0, 100%, 30%);
-  order: 3;
 }
 
 .four {
@@ -62,20 +59,11 @@ body {
   .block {
     flex-basis: 50%;
   }
-  .one {
-    order: 1;
-  }
-  .two {
-    order: 2;
-  }
   .three {
     order: 4;
   }
   .four {
     order: 3;
-  }
-  .five {
-    order: 5;
   }
   .six {
     order: 6;
@@ -86,22 +74,7 @@ body {
   .block {
     flex-basis: 100%;
   }
-  .one {
-    order: 1;
-  }
-  .two {
-    order: 2;
-  }
   .three {
     order: 3;
-  }
-  .four {
-    order: 4;
-  }
-  .five {
-    order: 5;
-  }
-  .six {
-    order: 6;
   }
 }
