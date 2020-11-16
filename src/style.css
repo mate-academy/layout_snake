@@ -27,29 +27,29 @@ html {
 }
 
 .box_1 {
-  background-color: #ed3833;
+  background-color: #f00;
 }
 
 .box_2 {
-  background-color: #cd2f2a;
+  background-color: #c00;
 }
 
 .box_3 {
-  background-color: #9a211d;
+  background-color: #900;
 }
 
 .box_4 {
-  background-color: #661210;
+  background-color: #600;
   order: 6;
 }
 
 .box_5 {
-  background-color: #330504;
+  background-color: #300;
   order: 5;
 }
 
 .box_6 {
-  background-color: black;
+  background-color: #000;
   order: 4;
 }
 
