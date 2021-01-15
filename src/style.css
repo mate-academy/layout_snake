@@ -56,7 +56,6 @@ body {
 }
 
 @media screen and (max-width: 899px) {
-
   .third {
     order: 4;
   }
@@ -68,13 +67,10 @@ body {
   .sixth {
     order: 5;
   }
-
 }
 
 @media screen and (max-width: 599px) {
-
   .third {
     order: 3;
   }
-  
 }
