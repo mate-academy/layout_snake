@@ -1,3 +1,7 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,25 +18,20 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-
   .box {
-    width: calc(100% / 2);
+    flex-basis: calc(100% / 2);
     min-width: var(--height);
     height: var(--height);
   }
-
   .box--3 {
     order: 4;
   }
-
   .box--4 {
     order: 3;
   }
-
   .box--5 {
     order: 5;
   }
-
   .box--6 {
     order: 6;
   }
@@ -42,17 +41,14 @@ body {
 
 @media screen and (min-width: 900px) {
   .box {
-    width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
   }
-
   .box--4 {
     order: 6;
   }
-
   .box--5 {
     order: 5;
   }
-
   .box--6 {
     order: 4;
   }
@@ -83,7 +79,6 @@ body {
 }
 
 .box__text {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: calc(var(--height) / 3);
   line-height: var(--height);
   text-align: center;
