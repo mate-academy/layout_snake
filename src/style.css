@@ -7,9 +7,8 @@ body {
   flex-wrap: wrap;
 }
 
-.container > div {
+.item {
   display: flex;
-
   width: 33.3%;
   min-width: 300px;
   height: 300px;
@@ -22,57 +21,65 @@ body {
   align-items: center;
 }
 
-.item-1 {
+.item:first-child {
   background-color: red;
 }
 
-.item-2 {
+.item:nth-child(2) {
   background-color: rgb(204, 0, 0);
 }
 
-.item-3 {
+.item:nth-child(3) {
   background-color: rgb(153, 0, 0);
 }
 
-.item-4 {
+.item:nth-child(4) {
   background-color: rgb(102, 0, 0);
 }
 
-.item-5 {
+.item:nth-child(5) {
   background-color: rgb(51, 0, 0);
 }
 
-.item-6 {
+.item:nth-child(6) {
   background-color: rgb(0, 0, 0);
 }
 
 @media screen and (min-width: 900px) {
-  .item-4 {
+  .item:nth-child(4) {
     order: 6;
   }
-  .item-5 {
+  .item:nth-child(5) {
     order: 5;
   }
 }
 
 @media screen and (max-width: 899px) {
-  .container > div {
+  .item {
     width: 50%;
   }
-  .item-3 {
+  .item:nth-child(3) {
     order: 4;
   }
-  .item-5 {
+  .item:nth-child(5) {
     order: 4;
   }
-  .item-6 {
+  .item:nth-child(6) {
     order: 6;
   }
 }
 
 @media screen and (max-width: 599px) {
-  .container > div {
-    width: 100%;
-    order: 0;
+  .item {
+    width: 100vw;
+  }
+  .item:nth-child(4) {
+    order: 6;
+  }
+  .item:nth-child(5) {
+    order: 6;
+  }
+  .item:nth-child(6) {
+    order: 6;
   }
 }
