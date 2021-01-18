@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  line-height: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box {
+  height: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (width: 600px) {
+  .box {
+    width: 300px;
+  }
+
+  .container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .box-1 {
+    order: 4;
+  }
+
+  .box-2 {
+    order: 4;
+  }
+
+  .box-3 {
+    order: 3;
+  }
+
+  .box-4 {
+    order: 2;
+  }
+
+  .box-5 {
+    order: 0;
+  }
+
+  .box-6 {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .box {
+    min-width: 300px;
+    max-width: 450px;
+  }
+
+  .container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .box-1 {
+    order: 4;
+  }
+
+  .box-2 {
+    order: 4;
+  }
+
+  .box-3 {
+    order: 3;
+  }
+
+  .box-4 {
+    order: 2;
+  }
+
+  .box-5 {
+    order: 0;
+  }
+
+  .box-6 {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .box {
+    min-width: 300px;
+    max-width: 400px;
+  }
+
+  .container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .box-1 {
+    order: 2;
+  }
+
+  .box-2 {
+    order: 2;
+  }
+
+  .box-3 {
+    order: 2;
+  }
+
+  .box-4 {
+    order: 1;
+  }
+
+  .box-5 {
+    order: 0;
+  }
+
+  .box-6 {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    min-width: 400px;
+  }
+
+  .container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .box-1 {
+    order: 2;
+  }
+
+  .box-2 {
+    order: 2;
+  }
+
+  .box-3 {
+    order: 2;
+  }
+
+  .box-4 {
+    order: 1;
+  }
+
+  .box-5 {
+    order: 0;
+  }
+
+  .box-6 {
+    order: -1;
+  }
+}
+
+.box-1 {
+  background-color: #fe0000;
+}
+
+.box-2 {
+  background-color: #cc0001;
+}
+
+.box-3 {
+  background-color: #9a0000;
+}
+
+.box-4 {
+  background-color: #600;
+}
+
+.box-5 {
+  background-color: #300;
+}
+
+.box-6 {
+  background-color: black;
+}
