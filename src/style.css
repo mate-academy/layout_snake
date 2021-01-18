@@ -97,7 +97,7 @@ body {
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   .box {
     min-width: 300px;
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .container {
@@ -131,7 +131,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .box {
-    width: 400px;
+    min-width: 400px;
   }
 
   .container {
