@@ -18,6 +18,10 @@ body {
   flex-wrap: wrap;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .flex {
   text-align: center;
   line-height: 300px;
