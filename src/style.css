@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex {
+  text-align: center;
+  line-height: 300px;
+  height: 300px;
+  color: #fff;
+  flex-basis: 500px;
+  flex-grow: 1;
+}
+
+.item_1 {
+  background-color: red;
+}
+
+.item_2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.item_3 {
+  background-color: rgb(154, 0, 0);
+}
+
+.item_4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.item_5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.item_6 {
+  background-color: black;
+}
