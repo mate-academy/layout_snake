@@ -13,21 +13,18 @@ body {
 }
 
 .container-flex {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
-.reverse {
-  flex-direction: row-reverse;
-}
-
 .flex {
+  width: 33.3%;
   text-align: center;
   line-height: 300px;
-  height: 300px;
+  min-width: 300px;
+  max-width: 100%;
   color: #fff;
-  flex-basis: 500px;
   flex-grow: 1;
 }
 
@@ -45,12 +42,40 @@ body {
 
 .item_4 {
   background-color: rgb(102, 0, 0);
+  order: 2;
 }
 
 .item_5 {
   background-color: rgb(51, 0, 0);
+  order: 1;
 }
 
 .item_6 {
   background-color: black;
+}
+
+@media screen and (max-width:750px) {
+  .item_3 {
+    order: 1;
+  }
+  .item_4 {
+    order: 0;
+  }
+
+  .item_6 {
+    order: 2;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .item_3 {
+    order: 0;
+  }
+  .item_4 {
+    order: 0;
+  }
+
+  .item_6 {
+    order: 1;
+  }
 }
