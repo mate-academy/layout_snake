@@ -18,7 +18,7 @@ body {
   flex-wrap: wrap;
 }
 
-.flex {
+.block {
   width: 33.3%;
   text-align: center;
   line-height: 300px;
@@ -28,29 +28,29 @@ body {
   flex-grow: 1;
 }
 
-.item_1 {
+.block:nth-child(1) {
   background-color: red;
 }
 
-.item_2 {
+.block:nth-child(2) {
   background-color: rgb(204, 0, 0);
 }
 
-.item_3 {
+.block:nth-child(3) {
   background-color: rgb(154, 0, 0);
 }
 
-.item_4 {
+.block:nth-child(4) {
   background-color: rgb(102, 0, 0);
   order: 2;
 }
 
-.item_5 {
+.block:nth-child(5) {
   background-color: rgb(51, 0, 0);
   order: 1;
 }
 
-.item_6 {
+.block:nth-child(6) {
   background-color: black;
 }
 
