@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .container {
@@ -14,13 +14,12 @@ body {
   justify-content: center;
   align-content: stretch;
   flex-wrap: wrap;
-  max-width: 1200px;
 }
 
 .block {
   flex-grow: 1;
   height: 300px;
-  min-width: 400px;
+  flex-basis: 33.3%;
   text-align: center;
   line-height: 300px;
 }
@@ -50,12 +49,6 @@ body {
 .block__sixth {
   background-color: black;
   order: 1;
-}
-
-@media screen and (max-width: 1200px) {
-  .block {
-    min-width: 350px;
-  }
 }
 
 @media screen and (max-width: 900px) {
