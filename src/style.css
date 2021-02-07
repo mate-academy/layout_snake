@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-basis: 33.33%;
+  min-width: 300px;
+  flex-grow: 1;
+  height: 300px;
+  background-color: red;
+}
+
+.box:nth-child(1) {
+  order: 1;
+}
+
+.box:nth-child(2) {
+  background-color: #c00;
+  order: 2;
+}
+
+.box:nth-child(3) {
+  background-color: #900;
+  order: 3;
+}
+
+.box:nth-child(4) {
+  background-color: #600;
+  order: 4;
+}
+
+.box:nth-child(5) {
+  background-color: #300;
+  order: 5;
+}
+
+.box:nth-child(6) {
+  background-color: black;
+  order: 6;
+}
+
+@media screen and (min-width: 600px) {
+  .box:nth-child(n) {
+    flex-basis: 50%;
+  }
+
+  .box:nth-child(3) {
+    order: 4;
+  }
+  
+  .box:nth-child(4) {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .box:nth-child(n) {
+    flex-basis: 33.33%;
+  }
+
+  .box:nth-child(3) {
+    order: 3;
+  }
+  
+  .box:nth-child(4) {
+    order: 6;
+  }
+  
+  .box:nth-child(5) {
+    order: 5;
+  }
+  
+  .box:nth-child(6) {
+    order: 4;
+  }
+}
