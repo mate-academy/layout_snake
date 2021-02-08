@@ -12,12 +12,13 @@ html {
 }
 
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1 0 33%;
   height: 300px;
   min-width: 300px;
   font-size: 100px;
-  line-height: 300px;
-  text-align: center;
   color: white;
 }
 
@@ -46,24 +47,33 @@ html {
 }
 
 @media (min-width: 600px) {
-  .box-3,
-  .box-5,
-  .box-6 {
+  .box-3 {
     order: 2;
   }
 
   .box-4 {
-    order: 1  ;
+    order: 1;
+  }
+
+  .box-5 {
+    order: 3;
+  }
+
+  .box-6 {
+    order: 4;
   }
 }
 
 @media (min-width: 900px) {
-  .box-3,
-  .box-6 {
+  .box-3 {
     order: 1;
   }
 
   .box-4 {
-    order: 3;
+    order: 4;
+  }
+
+  .box-6 {
+    order: 2;
   }
 }
