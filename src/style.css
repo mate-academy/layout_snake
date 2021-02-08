@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 html {
@@ -22,12 +21,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-basis: 33.3%;
 }
 
 .block-1 {
-  background-color: red;
+  background-color: hsl(0, 100%, 50%);
 }
 
 .block-2 {
