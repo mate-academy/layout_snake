@@ -48,16 +48,13 @@ body {
   order: 6;
 }
 
-@media (max-width: 599px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -74,21 +71,9 @@ body {
   .block4 {
     order: 3;
   }
-
-  .block6 {
-    order: 6;
-  }
 }
 
 @media (min-width: 900px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
   .block {
     width: calc(100% / 3);
   }
