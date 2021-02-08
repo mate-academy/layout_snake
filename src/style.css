@@ -21,14 +21,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   height: 300px;
   min-width: 300px;
   flex-basis: 33%;
 }
 
 .color1 {
-  background-color: red;
+  background-color: hsl(0, 100%, 50%);
 }
 
 .color2 {
@@ -48,7 +47,7 @@ body {
 }
 
 .color6 {
-  background-color: black;
+  background-color: hsl(0, 100%, 0%);
 }
 
 @media screen and (min-width: 900px) {
@@ -79,10 +78,16 @@ body {
     order: 1;
   }
 
-  .color3,
-  .color5,
-  .color6 {
+  .color3 {
     order: 2;
+  }
+
+  .color5 {
+    order: 3;
+  }
+
+  .color6 {
+    order: 4;
   }
 }
 
