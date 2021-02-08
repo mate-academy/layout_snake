@@ -23,12 +23,13 @@ body {
   height: 300px;
   min-width: 300px;
   flex: 0 0 33.3%;
-  text-align: center;
-  line-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .block-1 {
-  background-color: red;
+  background: hsl(0, 100%, 50%);
 }
 
 .block-2 {
