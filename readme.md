@@ -8,11 +8,11 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 ## The task
 Display six colored blocks on the screen without any extra margins:
 
-![1050px image](./reference/1050.png)
+![1050px image](./references/1050.png)
 
 ___
 
-![750px image](./reference/750.png)
+![750px image](./references/750.png)
 
 ___
 
