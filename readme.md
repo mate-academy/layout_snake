@@ -24,10 +24,15 @@ Display six colored blocks on the screen without any extra margins:
 
 --> [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md)
 
-___
+## Screenshots
 
 ![1050px image](./references/1050.png)
 
 ___
 
 ![750px image](./references/750.png)
+
+___
+
+![450px image](./references/450.png)
+
