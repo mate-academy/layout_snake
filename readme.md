@@ -4,10 +4,18 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 - [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
-___
 
 ## The task
 Display six colored blocks on the screen without any extra margins:
+
+![1050px image](./reference/1050.png)
+
+___
+
+![750px image](./reference/750.png)
+
+___
+
 - Use `flexbox`
 - Each block should be `300px` high.
 - Each block should have its number (1 to 6) placed in its center in white Arial 100px font.
