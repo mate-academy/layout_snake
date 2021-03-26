@@ -26,6 +26,6 @@ Display six colored blocks on the screen without any extra margins:
 
 ## Screenshots
 
-|3 columns|2columns|1 column|
------------------------------
-|![1050px image](./references/1050.png)|![750px image](./references/750.png)|![450px image](./references/450.png)|
+| 3 columns |2columns | 1 column |
+| --------- |:-------:| --------:|
+| ![1050px image](./references/1050.png) | ![750px image](./references/750.png) | ![450px image](./references/450.png) |
