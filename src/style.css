@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  flex-wrap: wrap;
 }
 
 body {
@@ -9,6 +8,7 @@ body {
 
 .conteiner {
   display: flex;
+  flex-wrap: wrap;
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
