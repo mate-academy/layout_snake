@@ -1,0 +1,83 @@
+
+body {
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.bone {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sniky,
+.bone:nth-child(3)::before,
+.bone:nth-child(3)::after {
+  height: 200px;
+  min-width: 300px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+}
+
+.bone:nth-child(1) :nth-child(1) {
+  background-color: #f00;
+}
+
+.bone:nth-child(1) :nth-child(2) {
+  background-color: #c00;
+}
+
+.bone:nth-child(2) :nth-child(1) {
+  background-color: #900;
+}
+
+.bone:nth-child(2) :nth-child(2) {
+  background-color: #600;
+}
+
+.bone:nth-child(3) :nth-child(1) {
+  background-color: #300;
+}
+
+.bone:nth-child(3) :nth-child(2) {
+  background-color: #000;
+}
+
+@media (min-width: 900px) and (max-width: 1800px) {
+  .bone:nth-child(2) :nth-child(2),
+  .bone:nth-child(3) :nth-child(2) {
+    display: none;
+  }
+  .bone:nth-child(3)::before {
+    content: "6";
+    background-color: #000;
+  }
+  .bone:nth-child(3)::after {
+    content: "4";
+    background-color: #600;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .bone:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 599px) {
+  .bone {
+    display: contents;
+  }
+}
