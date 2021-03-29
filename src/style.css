@@ -19,7 +19,7 @@ body {
 
 .container__block {
   display: flex;
-  flex-basis: 25.1%;
+  flex-basis: 51%;
   height: 300px;
   flex-grow: 1;
   flex-shrink: 0;
