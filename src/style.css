@@ -1,10 +1,15 @@
 
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
-body * {
-  box-sizing: border-box;
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
 }
 
 .snake {
@@ -15,69 +20,65 @@ body * {
   width: 100vw;
 }
 
-.bone {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sniky,
-.bone:nth-child(3)::before,
-.bone:nth-child(3)::after {
-  height: 200px;
+.sniky {
+  height: 300px;
   min-width: 300px;
-  font-size: 40px;
   text-align: center;
-  line-height: 200px;
+  flex-grow: 1;
+  line-height: 300px;
   color: #fff;
 }
 
-.bone:nth-child(1) :nth-child(1) {
+.snake :nth-child(1) {
   background-color: #f00;
+  order: 1;
 }
 
-.bone:nth-child(1) :nth-child(2) {
+.snake :nth-child(2) {
   background-color: #c00;
+  order: 2;
 }
 
-.bone:nth-child(2) :nth-child(1) {
+.snake :nth-child(3) {
   background-color: #900;
+  order: 3;
 }
 
-.bone:nth-child(2) :nth-child(2) {
+.snake :nth-child(4) {
   background-color: #600;
+  order: 4;
 }
 
-.bone:nth-child(3) :nth-child(1) {
+.snake :nth-child(5) {
   background-color: #300;
+  order: 5;
 }
 
-.bone:nth-child(3) :nth-child(2) {
+.snake :nth-child(6) {
   background-color: #000;
+  order: 6;
 }
 
 @media (min-width: 900px) and (max-width: 1800px) {
-  .bone:nth-child(2) :nth-child(2),
-  .bone:nth-child(3) :nth-child(2) {
-    display: none;
+  .snake :nth-child(4) {
+    order: 6;
   }
-  .bone:nth-child(3)::before {
-    content: "6";
-    background-color: #000;
-  }
-  .bone:nth-child(3)::after {
-    content: "4";
-    background-color: #600;
+  .snake :nth-child(6) {
+    order: 4;
   }
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
-  .bone:nth-child(2) {
-    flex-direction: row-reverse;
+@media (min-width: 600px) and (max-width: 899px) {
+  .snake :nth-child(3) {
+    order: 4;
+  }
+  .snake :nth-child(4) {
+    order: 3;
   }
 }
 
-@media (max-width: 599px) {
-  .bone {
-    display: contents;
+@media (min-width: 1200px) {
+  .sniky {
+    min-width: 400px;
   }
 }
