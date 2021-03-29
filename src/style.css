@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  width: 33.3%;
+  flex-basis: 33.3%;
   min-width: 300px;
   height: 300px;
   font-family: Arial, Helvetica, sans-serif;
