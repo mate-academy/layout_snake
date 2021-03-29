@@ -13,10 +13,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 300px;
-  flex-shrink: 0;
   flex-grow: 1;
   height: 300px;
+  width: 33.3%;
   min-width: 300px;
   text-align: center;
   color: #fff;
@@ -46,27 +45,45 @@ body {
   background-color: #000;
 }
 
-@media screen and (min-width: 300px) and (max-width: 599px) {
-  .content {
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 750px) {
-  .flexbox1 {
-    order: 1;
-  }
-
-  .flexbox2 {
-    order: 2;
-  }
-
-  .flexbox4 {
+@media (max-width: 899px) {
+  .content :last-child {
     order: 3;
   }
 
+  .content :nth-child(5) {
+    order: 2;
+  }
+
+  .content :nth-child(4) {
+    order: 0;
+  }
+
+  .content :nth-child(3) {
+    order: 1;
+  }
+}
+
+@media (max-width: 599px) {
+  .content :nth-child(3) {
+    order: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .flexbox1 {
+    order: 0;
+  }
+
+  .flexbox2 {
+    order: 1;
+  }
+
   .flexbox3 {
-    order: 4;
+    order: 3;
+  }
+
+  .flexbox4 {
+    order: 6;
   }
 
   .flexbox5 {
@@ -74,39 +91,6 @@ body {
   }
 
   .flexbox6 {
-    order: 6;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-
-  .flexbox1 {
-    order: 1;
-  }
-
-  .flexbox2 {
-    order: 2;
-  }
-
-  .flexbox3 {
-    order: 3;
-  }
-
-  .flexbox6 {
     order: 4;
-  }
-
-  .flexbox5 {
-    order: 5;
-  }
-
-  .flexbox4 {
-    order: 6;
-  }
-}
-
-@media (min-width: 1200px) {
-  .box {
-    flex-basis: 400px;
   }
 }
