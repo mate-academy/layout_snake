@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.block {
+  height: 300px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 100px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .block {
+    min-width: 400px;
+  }
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(204, 0, 0);
+}
+
+.three {
+  background-color: rgb(153, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .three {
+    order: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .three {
+    order: 1;
+  }
+}
+
+.four {
+  background-color: rgb(102, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .four {
+    order: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .four {
+    order: 3;
+  }
+}
+
+.five {
+  background-color: rgb(51, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .five {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .five {
+    order: 2;
+  }
+}
+
+.six {
+  background-color: #000;
+}
+
+@media (min-width: 600px) {
+  .six {
+    order: 4;
+  }
+}
+
+@media (min-width: 900px) {
+  .six {
+    order: 1;
+  }
+}
