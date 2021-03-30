@@ -16,6 +16,7 @@ body {
 
 .box {
   height: 300px;
+  min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +53,7 @@ body {
   order: 3;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 899px) {
   .box {
     flex-basis: 50%;
   }
@@ -70,7 +71,7 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
   .box {
     flex-basis: 100%;
   }
