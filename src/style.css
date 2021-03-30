@@ -10,15 +10,14 @@ html {
 body {
   margin: 0;
   --min-box-height: 300px;
-  --max-row-width: 1199px;
 }
 
 .row {
   display: flex;
+  flex-grow: 1;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: var(--max-row-width);
 }
 
 .box {
@@ -28,11 +27,15 @@ body {
   text-align: center;
   height: var(--min-box-height);
   flex-grow: 1;
+  flex-shrink: 0;
   min-width: var(--min-box-height);
   color: #fff;
 }
 
 @media (min-width: 900px) {
+  .box {
+    flex-basis: 33.3%;
+  }
   .box-6 {
     order: 1;
   }
