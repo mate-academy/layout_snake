@@ -53,25 +53,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-@media all and (min-width: 900px) {
-  .block {
-    width: calc(100% / 3);
-  }
-
-  .block4 {
-    order: 3;
-  }
-
-  .block5 {
-    order: 2;
-  }
-
-  .block6 {
-    order: 1;
-  }
-}
-
-@media all and (min-width: 600px) and (max-width: 750px) {
+@media all and (min-width: 600px) {
   .block3 {
     order: 2;
   }
@@ -86,5 +68,27 @@ body {
 
   .block6 {
     order: 4;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .block {
+    width: calc(100% / 3);
+  }
+
+  .block3 {
+    order: 0;
+  }
+
+  .block4 {
+    order: 3;
+  }
+
+  .block5 {
+    order: 2;
+  }
+
+  .block6 {
+    order: 1;
   }
 }
