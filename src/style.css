@@ -10,7 +10,7 @@ body {
   flex-wrap: wrap;
 }
 
-div [class|="block"] {
+.block {
   display: flex;
   height: 300px;
   flex-basis: 300px;
@@ -46,7 +46,7 @@ div [class|="block"] {
 }
 
 @media (min-width: 900px) {
-  div [class|="block"] {
+  .block {
     flex-basis: 33.3%;
   }
 
@@ -82,7 +82,7 @@ div [class|="block"] {
 }
 
 @media (max-width: 599px) {
-  div [class|="block"] {
+  .block {
     order: 6;
   }
 }
