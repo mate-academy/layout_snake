@@ -12,11 +12,11 @@ body {
 
 .box__with__num {
   height: 300px;
-  flex-basis: 300px;
+  flex-basis: 33.3%;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 
 .box_1 {
@@ -46,10 +46,14 @@ body {
 }
 
 @media (max-width: 899px) {
+  .box__with__num {
+    flex-basis: 50%;
+  }
+
   .box_4 {
     order: 3;
   }
-  
+
   .box_6 {
     order: 6;
   }
@@ -64,6 +68,9 @@ body {
 }
 
 @media (max-width: 599px) {
+  .box__with__num {
+    flex-basis: 100%;
+  }
   .box_4 {
     order: 4;
   }
@@ -74,11 +81,5 @@ body {
 
   .box_6 {
     order: 6;
-  }
-}
-
-@media (min-width: 1199px) {
-  .boxes {
-    max-width: 1199px;
   }
 }
