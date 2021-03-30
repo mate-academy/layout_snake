@@ -17,7 +17,6 @@ body {
   flex-wrap: wrap;
   align-content: center;
   flex-direction: row;
-  width: 100vw;
 }
 
 .sniky {
@@ -77,8 +76,14 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
   .sniky {
     min-width: 400px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+  .sniky {
+    min-width: 534px;
   }
 }
