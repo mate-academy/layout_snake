@@ -18,10 +18,11 @@ main {
 }
 
 .main__box {
-  display: flex;
   height: 300px;
-  flex: 1 0 300px;
+  display: flex;
   justify-content: center;
+  flex: 1 0 300px;
+  
   align-items: center;
 }
 
