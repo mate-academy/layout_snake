@@ -71,7 +71,11 @@ body {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
+@media (min-width: 900px) {
+  .box {
+    flex-basis: 33.33%;
+  }
+
   .box-4 {
     order: 3;
   }
@@ -82,25 +86,5 @@ body {
 
   .box-6 {
     order: 1;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1499px) {
-  .box-5 {
-    order: 2;
-  }
-
-  .box-6 {
-    order: 1;
-  }
-}
-
-@media (min-width: 1500px) {
-  .box-5 {
-    order: 1;
-  }
-
-  .box-6 {
-    order: 2;
   }
 }
