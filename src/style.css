@@ -14,7 +14,6 @@ body {
 .box {
   order: 0;
   height: 300px;
-  min-width: 300px;
   color: #fff;
   text-align: center;
   line-height: 300px;
@@ -46,12 +45,16 @@ body {
 }
 
 @media (max-width: 599px) {
-  .container {
-    flex-direction: column;
+  .box {
+    width: 100%;
   }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+  .box {
+    width: 50%;
+  }
+
   .third {
     order: 2;
   }
@@ -70,6 +73,9 @@ body {
 }
 
 @media (min-width: 900px) {
+  .box {
+    width: 33%;
+  }
   .fourth {
     order: 3;
   }
@@ -80,11 +86,5 @@ body {
 
   .sixth {
     order: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .box {
-    width: 400px;
   }
 }
