@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1199px;
 }
 
 .block {
@@ -25,7 +24,6 @@ body {
   height: 300px;
 
   color: #fff;
-  background-color: grey;
 }
 
 @media (min-width: 600px) {
@@ -47,7 +45,11 @@ body {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1700px) {
+@media (min-width: 900px) {
+  .snake :nth-child(n) {
+    flex-basis: 33.3%;
+  }
+  
   .block-3 {
     order: 0;
   }
