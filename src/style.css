@@ -1,7 +1,7 @@
 .block {
   height: 300px;
   min-width: 300px;
-  width: 33%;
+  width: 33.3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@
   order: 1;
 }
 
-@media (max-width: 916px) {
+@media (max-width: 899px) {
   .block {
     width: 50%;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 616px) {
+@media (max-width: 599px) {
   .block {
     width: 100%;
   }
