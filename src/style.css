@@ -22,7 +22,6 @@ main {
   display: flex;
   justify-content: center;
   flex: 1 0 300px;
-  
   align-items: center;
 }
 
