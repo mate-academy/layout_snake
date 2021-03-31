@@ -64,7 +64,7 @@ body {
 
 @media (min-width: 900px) {
   .box {
-    flex: 0 0 calc(100% / 3);
+    flex-basis: 33.3%;
   }
   .box-4 {
     order: 3;
