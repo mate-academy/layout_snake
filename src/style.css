@@ -41,19 +41,7 @@ body {
   background-color: #000;
 }
 
-@media(min-width: 300px) {
-  .container {
-    flex-direction: column;
-  }
-  .box {
-    flex-basis: 100%;
-  }
-}
-
 @media (min-width:600px) {
-  .container {
-    flex-direction: row;
-  }
   .box {
     flex-basis: 50%;
   }
@@ -72,9 +60,6 @@ body {
 }
 
 @media (min-width:900px) {
-  .container {
-    flex-direction: row;
-  }
   .box {
     flex-basis: 33.33%;
   }
