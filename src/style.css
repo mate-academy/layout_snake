@@ -55,10 +55,6 @@ body {
 /* #region media from 600px to 900px*/
 @media (max-width: 899px) {
 
-  .snake {
-    flex-direction: row;
-  }
-
   .square {
     flex-basis: 50%;
   }
@@ -83,10 +79,6 @@ body {
 
 /* #region media less than 600px*/
 @media (max-width: 599px) {
-
-  .snake {
-    flex-direction: row;
-  }
 
   .square {
     flex-basis: 100%;
