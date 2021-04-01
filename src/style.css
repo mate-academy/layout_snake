@@ -9,7 +9,7 @@ body {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flex-item {
@@ -55,11 +55,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  .flex-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .flex-item-4 {
     order: 3;
   }
@@ -71,7 +66,7 @@ body {
 
 @media (min-width: 900px) {
   .flex-item {
-    min-width: calc(100vw / 3);
+    flex-basis: 33.33%;
   }
 
   .flex-item-6 {
