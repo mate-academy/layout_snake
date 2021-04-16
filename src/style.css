@@ -1,4 +1,4 @@
-* {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,8 +16,8 @@
   display: flex;
   height: 300px;
   align-items: center;
-  /* border: 1px solid black; */
-  width: 33.33%;
+  width: 33%;
+  flex-grow: 1;
   justify-content: center;
  
 }
@@ -27,7 +27,7 @@
 }
 
 .box-2 {
-  background-color: hsl(0, 100%, 40%);
+  background-color: rgb(204, 0, 0);
 }
 
 .box-3 {
@@ -55,22 +55,18 @@
   }
 
   .box-3 {
-    background-color: rgb(153, 0, 0);
     order: 4;
   }
 
   .box-4 {
-    background-color: rgb(102, 0, 0);
     order: 3;
   }
 
   .box-5 {
-    background-color: rgb(51, 0, 0);
     order: 5;
   }
  
   .box-6 {
-    background-color: black;
     order: 6;
   }
 }
@@ -80,30 +76,15 @@
     width: 100%;
   }
 
-  .box-1 {
-    background-color: red;
-  }
-
-  .box-2 {
-    background-color: hsl(0, 100%, 40%);
-  }
-
-  .box-3 {
-    background-color: rgb(153, 0, 0);
-  }
-
   .box-4 {
-    background-color: rgb(102, 0, 0);
     order: 4;
   }
 
   .box-5 {
-    background-color: rgb(51, 0, 0);
     order: 5;
   }
 
   .box-6 {
-    background-color: black;
     order: 6;
   }
 }
