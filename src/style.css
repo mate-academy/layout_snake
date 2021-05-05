@@ -14,17 +14,18 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .block {
-  height: 300px;
-  flex: 300px;
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 300px;
+  flex-basis: 300px;
   font-size: 100px;
   color: #fff;
+  flex-wrap: wrap;
 }
 
 .item-1 {
@@ -56,6 +57,21 @@ body {
   background-color: #000;
   order: 6;
 }
+
+@media (min-width: 900px) {
+  .item-4 {
+    order: 6;
+  }
+
+  .item-6 {
+    order: 4;
+  }
+
+  .block {
+    flex-basis: 33.33%;
+  }
+}
+
 @media (min-width: 600px) and (max-width:899px) {
   .item-3 {
     order: 4;
@@ -63,28 +79,5 @@ body {
 
   .item-4 {
     order: 3;
-  }
-}
-
-@media (min-width: 900px) and (max-width:1200px) {
-  .item-4 {
-    order: 6;
-  }
-
-  .item-6 {
-    order: 4;
-  }
-}
-
-@media (min-width:1200px) {
-  .block {
-    flex: 400px;
-  }
-  .item-4 {
-    order: 6;
-  }
-
-  .item-6 {
-    order: 4;
   }
 }
