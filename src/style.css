@@ -6,7 +6,6 @@
 .snake {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
 }
 
 .block {
