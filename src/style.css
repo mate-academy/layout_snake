@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  min-width: 300px;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.one {
+  background-color: #f00;
+}
+
+.two {
+  background-color: #c00;
+}
+
+.three {
+  background-color: #900;
+}
+
+.for {
+  background-color: #600;
+}
+
+.five {
+  background-color: #340000;
+}
+
+.six {
+  background-color: #000;
+}
+
+@media (min-width: 600px) {
+  .wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .one {
+    order: 1;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .three {
+    order: 4;
+  }
+
+  .for {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .three {
+    order: 3;
+  }
+
+  .for {
+    order: 6;
+  }
+
+  .six {
+    order: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block {
+    width: calc(100% / 3);
+  }
+}
