@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  max-width: 1199px;
 }
 
 .row {
@@ -13,6 +12,7 @@ body {
   display: flex;
   height: 300px;
   min-width: 300px;
+  flex-basis: 33.33%;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
