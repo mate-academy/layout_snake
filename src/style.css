@@ -98,7 +98,7 @@ body {
 
 @media (min-width: 1200px) {
   .snake-container {
-    max-width: 1200px;
+    max-width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
   }
