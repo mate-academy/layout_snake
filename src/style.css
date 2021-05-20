@@ -104,7 +104,7 @@ body {
   }
 
   .snake-square {
-    min-width: 400px;
+    min-width: 33.33%;
     order: initial;
   }
 
