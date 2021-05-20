@@ -67,9 +67,9 @@ body {
   }
 }
 
-.container > div:nth-child(0) {
+.container > div:nth-child(1) {
   background: rgb(255, 0, 0);
-  order: 1;
+  order: 0;
 }
 
 @media (min-width: 900px) {
@@ -83,13 +83,13 @@ body {
 }
 
 @media (min-width: 900px) {
-  .container > div {
+  .container > .block {
     flex-basis: 33.33%;
   }
 }
 
 @media (max-width: 899px) and (min-width: 600px) {
-  .container > div {
+  .container > .block {
     flex-basis: 50%;
   }
 }
