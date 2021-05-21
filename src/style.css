@@ -5,7 +5,7 @@ body {
 
 .snake-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .snake-square {
@@ -45,20 +45,14 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-@media (min-width: 600px) {
+@media (max-width: 599px) {
   .snake-container {
-    flex-direction: row;
+    flex-direction: column;
   }
 
 }
 
 @media (min-width: 600px) {
-  .snake-container {
-    max-width: 900px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .snake-square-3 {
     order: 4;
   }
@@ -78,29 +72,7 @@ body {
 
 @media (min-width: 900px) {
   .snake-container {
-    max-width: 1200px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .snake-square {
-    min-width: 300px;
-    order: initial;
-  }
-   
-  .snake-square-4 {
-    order: 2;
-  }
-  .snake-square-5 {
-    order: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .snake-container {
     max-width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .snake-square {
