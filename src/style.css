@@ -23,7 +23,6 @@ html {
   align-items: center;
   text-align: center;
   flex-grow: 1;
-  flex-shrink: 0;
 }
 
 .box-1 {
@@ -88,6 +87,6 @@ html {
 
 @media (min-width: 1200px) {
   .box {
-    min-width: 400px;
+    min-width: 33.33%;
   }
 }
