@@ -1,0 +1,90 @@
+
+body {
+  margin: 0;
+}
+
+.snake-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake-square {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+  min-height: 300px;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.snake-square-1 {
+  background-color: red;
+}
+
+.snake-square-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.snake-square-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.snake-square-4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.snake-square-5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.snake-square-6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 599px) {
+  .snake-container {
+    flex-direction: column;
+  }
+
+}
+
+@media (min-width: 600px) {
+  .snake-square-3 {
+    order: 4;
+  }
+
+  .snake-square-4 {
+    order: 3;
+  }
+  
+  .snake-square-5 {
+    order: 5;
+  }
+
+  .snake-square-6 {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .snake-container {
+    max-width: 100%;
+  }
+
+  .snake-square {
+    min-width: 33.33%;
+    order: initial;
+  }
+
+  .snake-square-4 {
+    order: 2;
+  }
+
+  .snake-square-5 {
+    order: 1;
+  }
+}
