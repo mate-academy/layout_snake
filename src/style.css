@@ -9,9 +9,7 @@ body {
 
 .box {
   height: 300px;
-  flex-basis: 300px;
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 1 0 300px;
   text-align: center;
   line-height: 300px;
 }
@@ -52,9 +50,14 @@ body {
 }
 
 @media (min-width: 900px) {
+  .box {
+    flex-basis: 33.33%;
+  }
+
   .box-4 {
     order: 2;
   }
+
   .box-5 {
     order: 1;
   }
@@ -62,11 +65,5 @@ body {
   .box-3,
   .box-6 {
     order: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .box {
-    flex-basis: 350px;
   }
 }
