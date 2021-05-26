@@ -1,0 +1,46 @@
+html {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  min-width: 300px;
+}
+
+.box__1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.box__2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.box__3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.box__4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.box__5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.box__6 {
+  background-color: rgb(0, 0, 0);
+}
