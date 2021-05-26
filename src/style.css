@@ -4,6 +4,9 @@
 
 html {
   font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
 }
 
 body {
@@ -47,12 +50,6 @@ body {
 
 .box_6 {
   background-color: black;
-}
-
-.box_num {
-  font-size: 100px;
-  color: #fff;
-  text-align: center;
 }
 
 @media (min-width:600px) {
