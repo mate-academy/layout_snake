@@ -1,0 +1,83 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_container_block {
+  display: flex;
+  min-width: 300px;
+  height: 300px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .main_container_block {
+    flex-basis: 50%;
+  }
+  .block_elem_third {
+    order: 1;
+  }
+  .block_elem_fifth {
+    order: 1;
+  }
+  .block_elem_sixth {
+    order: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .main_container_block {
+    flex-basis: 33%;
+  }
+  .block_elem_forth {
+    order: 3;
+  }
+  .block_elem_fifth {
+    order: 2;
+  }
+  .block_elem_sixth {
+    order: 1;
+  }
+}
+
+@media (max-width: 599px) {
+  .main_container_block {
+    flex-basis: 100%;
+  }
+}
+
+.main_container .main_container_block:nth-child(1) {
+  background-color: rgb(255, 0, 0);
+}
+
+.main_container .main_container_block:nth-child(2) {
+  background-color: rgb(204, 0, 0);
+}
+
+.main_container .main_container_block:nth-child(3) {
+  background-color: rgb(153, 0, 0);
+}
+
+.main_container .main_container_block:nth-child(4) {
+  background-color: rgb(102, 0, 0);
+}
+
+.main_container .main_container_block:nth-child(5) {
+  background-color: rgb(51, 0, 0);
+}
+
+.main_container .main_container_block:nth-child(6) {
+  background-color: rgb(0, 0, 0);
+}
