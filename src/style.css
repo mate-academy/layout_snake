@@ -59,22 +59,18 @@ html {
   }
 
   .color--box--third {
-    background-color: rgb(153, 0, 0);
     order: 3;
   }
 
   .color--box--fourth {
-    background-color: rgb(102, 0, 0);
     order: 2;
   }
 
   .color--box--fifth {
-    background-color: rgb(51, 0, 0);
     order: 4;
   }
 
   .color--box--sixth {
-    background-color: rgb(0, 0, 0);
     order: 5;
   }
 }
@@ -85,12 +81,10 @@ html {
   }
 
   .color--box--third {
-    background-color: rgb(153, 0, 0);
     order: 1;
   }
 
   .color--box--fourth {
-    background-color: rgb(102, 0, 0);
     order: 2;
   }
 }
