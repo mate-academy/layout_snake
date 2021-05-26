@@ -10,7 +10,6 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
@@ -55,6 +54,10 @@ body {
   .fifth-block {
     order: 1;
   }
+
+  .block {
+    flex-basis: 33%;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -70,10 +73,8 @@ body {
   .sixth-block {
     order: 3;
   }
-}
 
-@media (max-width: 599px) {
   .block {
-    order: 1;
+    flex-basis: 50%;
   }
 }
