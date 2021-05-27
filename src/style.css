@@ -82,7 +82,7 @@ body {
 
 @media (min-width: 1200px) {
   .block {
-    width: 350px;
+    width: 400px;
   }
 
   .snake :nth-child(4) {
@@ -91,5 +91,22 @@ body {
 
   .snake :nth-child(5) {
     order: 1;
+  }
+}
+
+@media (min-width: 1600px)
+  and (max-width: 1799px) {
+  .block {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .block {
+    width: 300px;
+  }
+
+  .snake :nth-child(n) {
+    order: 0;
   }
 }
