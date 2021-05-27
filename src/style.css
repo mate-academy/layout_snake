@@ -1,11 +1,11 @@
-* {
-  margin: 0;
-}
-
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: #fff;
+}
+
+body {
+  margin: 0;
 }
 
 .box {
@@ -44,12 +44,6 @@ html {
 
 .box-6 {
   background-color: rgb(0, 0, 0);
-}
-
-@media (min-width: 1200px) {
-  .box {
-    min-width: 375px;
-  }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
