@@ -1,0 +1,111 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container_box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 100px;
+  flex-wrap: wrap;
+   
+}
+
+.box {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-width: 300px;
+  height: 300px;
+}
+
+.box_1 {
+  background: #f00;
+}
+
+.box_2 {
+  background: #ce0101;
+}
+
+.box_3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.box_4 {
+  background: #710000;
+}
+
+.box_5 {
+  background: #3b0000;
+}
+
+.box_6 {
+  background: #000;
+}
+
+@media (min-width: 1200px) {
+  .box {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .box {
+    min-width: 500px;
+  }
+}
+
+@media screen and (min-width:600px ) and (max-width:900px) {
+  .box_1 {
+    order: 1;
+  }
+
+  .box_2 {
+    order: 2;
+  }
+
+  .box_3 {
+    order: 4;
+  }
+
+  .box_4 {
+    order: 3;
+  }
+
+  .box_5 {
+    order: 5;
+  }
+
+  .box_6 {
+    order: 6;
+  }
+
+}
+
+@media screen and (min-width: 900px ) and (max-width: 1200px) {
+  .box_1 {
+    order: 1;
+  }
+  .box_2 {
+    order: 2;
+  }
+  .box_3 {
+    order: 3;
+  }
+  .box_4 {
+    order: 6;
+  }
+  .box_5 {
+    order: 5;
+  }
+  .box_6 {
+    order: 4;
+  }
+}
