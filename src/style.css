@@ -49,12 +49,6 @@ body {
   background-color: #080404;
 }
 
-@media (min-width: 300px) {
-  .box {
-    flex-basis: 100%;
-  }
-}
-
 @media (min-width: 600px) {
   .box {
     flex-basis: 50%;
