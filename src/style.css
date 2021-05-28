@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: Arial, sans-serif;
   font-size: 100px;
   line-height: 300px;
@@ -43,7 +43,7 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  body {
+  .body {
     flex-direction: row;
   }
 
@@ -65,7 +65,7 @@ body {
 }
 
 @media (min-width: 900px) {
-  body {
+  .body {
     flex-direction: row;
   }
 
