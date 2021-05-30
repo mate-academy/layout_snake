@@ -51,14 +51,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  .box--1 {
-    order: 1;
-  }
-
-  .box--2 {
-    order: 2;
-  }
-
   .box--3 {
     order: 4;
   }
@@ -77,18 +69,6 @@ body {
 }
 
 @media (min-width: 900px) {
-  .box--1 {
-    order: 1;
-  }
-
-  .box--2 {
-    order: 2;
-  }
-
-  .box--3 {
-    order: 3;
-  }
-
   .box--4 {
     order: 6;
   }
