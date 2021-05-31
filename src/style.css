@@ -16,7 +16,7 @@ body {
   align-content: stretch;
 }
 
-[class*="block"] {
+.block {
   display: flex;
   min-width: 300px;
   height: 300px;
@@ -69,13 +69,13 @@ body {
 }
 
 @media (min-width: 1200px) {
-  [class*="block"] {
-    min-width: 400px;
+  .block {
+    min-width: 33%;
   }
 }
 
 @media (min-width: 900px) {
-  [class*="block"] {
+  .block {
     order: initial;
   }
 
@@ -89,5 +89,15 @@ body {
 
   .block--6 {
     order: 2;
+  }
+}
+
+@media (min-width: 1800px) {
+  .block {
+    min-width: 300px;
+  }
+
+  .block:nth-child(n) {
+    order: 1;
   }
 }
