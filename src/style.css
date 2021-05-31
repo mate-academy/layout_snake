@@ -15,7 +15,6 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
-  /* background-color: black; */
   height: 300px;
 }
 
