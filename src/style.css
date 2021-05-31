@@ -9,7 +9,7 @@
 }
 
 .flex_block {
-  flex-basis: 33%;
+  flex-basis: 33.33%;
   height: 300px;
   color: #fff;
   font-family: Arial, serif;
@@ -61,7 +61,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 599px) {
   .flex_block {
     flex-basis: 100%;
   }
