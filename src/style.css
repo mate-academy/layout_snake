@@ -58,7 +58,6 @@ body {
   .number-6 {
     order: 4;
   }
-
 }
 
 @media (min-width: 900px) {
@@ -77,5 +76,4 @@ body {
   .number-6 {
     order: 4;
   }
-
 }
