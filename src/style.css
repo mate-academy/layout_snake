@@ -91,13 +91,3 @@ body {
     order: 2;
   }
 }
-
-@media (min-width: 1800px) {
-  .block {
-    min-width: 300px;
-  }
-
-  .block:nth-child(n) {
-    order: 1;
-  }
-}
