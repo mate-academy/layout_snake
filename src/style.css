@@ -63,7 +63,8 @@ body {
 
 @media (min-width: 900px) {
   .snake > div {
-    flex-basis: 33.3%;
+    flex-basis: 33.33%;
+
   }
 
   .snake > div:nth-child(4) {
