@@ -11,7 +11,7 @@ body {
   flex-wrap: wrap;
 }
 
-.snake > div {
+.snake__block {
   color: white;
   font-size: 100px;
   text-align: center;
@@ -19,59 +19,56 @@ body {
   height: 300px;
   line-height: 300px;
   background: red;
-  order: 1;
 }
 
-.snake > div:nth-child(2) {
+.snake__block:nth-child(2) {
   background: #c00;
-  order: 2;
 }
 
-.snake > div:nth-child(3) {
+.snake__block:nth-child(3) {
   background: #900;
   order: 3;
 }
 
-.snake > div:nth-child(4) {
+.snake__block:nth-child(4) {
   background: #600;
   order: 4;
 }
 
-.snake > div:nth-child(5) {
+.snake__block:nth-child(5) {
   background: #300;
-  order: 5;
 }
 
-.snake > div:nth-child(6) {
+.snake__block:nth-child(6) {
   background: #000;
   order: 6;
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .snake > div {
+  .snake__block {
     flex-basis: 50%;
   }
 
-  .snake > div:nth-child(3) {
+  .snake__block:nth-child(3) {
     order: 4;
   }
 
-  .snake > div:nth-child(4) {
+  .snake__block:nth-child(4) {
     order: 3;
   }
 }
 
 @media (min-width: 900px) {
-  .snake > div {
+  .snake__block {
     flex-basis: 33.33%;
 
   }
 
-  .snake > div:nth-child(4) {
+  .snake__block:nth-child(4) {
     order: 6;
   }
 
-  .snake > div:nth-child(6) {
+  .snake__block:nth-child(6) {
     order: 4;
   }
 }
