@@ -26,12 +26,10 @@ html {
 
 .block:first-child {
   background-color: #f00;
-  order: 1;
 }
 
 .block:nth-child(2) {
   background-color: #c00;
-  order: 2;
 }
 
 .block:nth-child(3) {
