@@ -51,32 +51,6 @@
   }
 }
 
-@media (min-width:900px) {
-  .block_1 {
-    order: 1;
-  }
-
-  .block_2 {
-    order: 2;
-  }
-
-  .block {
-    order: 3;
-  }
-
-  .block_4 {
-    order: 6;
-  }
-
-  .block_5 {
-    order: 5;
-  }
-
-  .block_6 {
-    order: 4;
-  }
-}
-
 @media (min-width: 600px) {
   .block_3 {
     order: 2;
