@@ -15,7 +15,6 @@ html {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
@@ -75,5 +74,21 @@ html {
 
   .block-6 {
     order: 4;
+  }
+}
+
+@media (min-width: 1800px) {
+  .block-4 {
+    order: 4;
+  }
+
+  .block-6 {
+    order: 6;
+  }
+}
+
+@media (max-width: 1799px) {
+  .container {
+    max-width: 1199px;
   }
 }
