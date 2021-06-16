@@ -49,6 +49,10 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+  .block {
+    min-width: 50%;
+  }
+  
   .block:nth-child(4) {
     order: 1;
   }
@@ -58,27 +62,18 @@ body {
   .block:nth-child(6) {
     order: 2;
   }
-  
 }
 
 @media (min-width: 900px) {
+  .block {
+    min-width: 33.33%;
+  }
+
   .block:nth-child(4) {
     order: 3;
   }
 
   .block:nth-child(5) {
     order: 2;
-  }
-}
-
-@media (min-width: 600px) {
-  .block {
-    min-width: 50%;
-  }
-}
-
-@media (min-width: 900px) {
-  .block {
-    min-width: 33.33%;
   }
 }
