@@ -25,6 +25,9 @@ html {
   justify-content: center;
   align-items: center;
   height: 300px;
+  min-width: 300px;
+  flex-basis: calc(100vw / 3);
+  flex-grow: 1;
 }
 
 .block:nth-child(1) {
@@ -41,20 +44,38 @@ html {
 
 .block:nth-child(4) {
   background-color: rgb(102, 0, 0);
+  order: 6;
 }
 
 .block:nth-child(5) {
   background-color: rgb(51, 0, 0);
+  order: 5;
 }
 
 .block:nth-child(6) {
   background-color: rgb(0, 0, 0);
+  order: 4;
 }
 
-@media screen {
+@media screen and (max-width: 600px) {
   .block {
     flex-basis: 100vw;
     flex-grow: 1;
+  }
+
+  .block:nth-child(4) {
+    background-color: rgb(102, 0, 0);
+    order: 4;
+  }
+  
+  .block:nth-child(5) {
+    background-color: rgb(51, 0, 0);
+    order: 5;
+  }
+  
+  .block:nth-child(6) {
+    background-color: rgb(0, 0, 0);
+    order: 6;
   }
 }
 
@@ -85,7 +106,6 @@ html {
   .block {
     flex-basis: calc(100vw / 3);
     flex-grow: 1;
-    height: 300px;
   }
   
   .block:nth-child(4) {
