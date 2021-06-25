@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .block-box {
   display: flex;
   flex-wrap: wrap;
@@ -16,12 +20,10 @@
 
 .box:nth-child(1) {
   background: rgb(255, 0, 0);
-  order: 1;
 }
 
 .box:nth-child(2) {
   background: rgb(204, 0, 0);
-  order: 2;
 }
 
 .box:nth-child(3) {
@@ -44,36 +46,25 @@
   order: 6;
 }
 
-@media (min-width: 900px) {
-  .box {
-    flex-basis: 33.33%;
-  }
-}
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .box {
     flex-basis: 50%;
   }
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
   .box:nth-child(4) {
     order: 3;
   }
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
   .box:nth-child(3) {
     order: 4;
   }
 }
 
 @media (min-width: 900px) {
+  .box {
+    flex-basis: 33.33%;
+  }
   .box:nth-child(6) {
     order: 4;
   }
-}
-
-@media (min-width: 900px) {
   .box:nth-child(4) {
     order: 6;
   }
