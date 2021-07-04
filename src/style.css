@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+}
+
+.general {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+html {
+  font-size: 100px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block {
+  height: 300px;
+  flex-basis: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(191, 0, 0);
+}
+
+.three {
+  background-color: rgb(153, 0, 0);
+}
+
+.four {
+  background-color: rgb(102, 0, 0);
+}
+
+.five {
+  background-color: rgb(64, 0, 0);
+}
+
+.six {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 300px) {
+  .general {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) {
+  .general {
+    flex-direction: row;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .three {
+    order: 4;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .block {
+    flex-basis: 33%;
+  }
+
+  .four {
+    order: 6;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 4;
+  }
+}
