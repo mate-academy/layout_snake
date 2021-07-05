@@ -13,7 +13,8 @@ body {
 .block {
   display: flex;
   height: 300px;
-  min-width: 300px;
+  width: 300px;
+  /* min-width: 300px; */
   flex-grow: 1;
   align-items: center;
   justify-content: center;
@@ -46,11 +47,11 @@ body {
 
 @media (min-width:450px) {
   .block {
-    max-width: 300px;
+    min-width: 300px;
   }
   .container {
     display: flex;
-    width: 450px;
+    min-width: 300px;
   }
   .block-4 .block-5 .block-6 {
     align-items: flex-end;
@@ -58,25 +59,32 @@ body {
 }
 
 @media (min-width:750px) {
-  .block {
-    max-width: 300px;
-  }
-
   .container {
     display: flex;
     flex-direction: row;
-    width: 750px;
+    min-width: 1050px;
+    
   }
+  .block {
+    /* max-width: 300px; */
+    flex-grow: 1;
+  }
+
+  
 }
 
 @media (min-width:1050px) {
   .block {
-    max-width: 300px;
+    min-width: 300px;
+    flex-grow: 1;
+    
   }
   .container {
     display: flex;
-    flex-direction: row;
-    width: 1050px;
+    /* flex-direction: row; */
+    
+    max-width: 1200px;
+        
   }
   .block-5 {
     order: 1;
