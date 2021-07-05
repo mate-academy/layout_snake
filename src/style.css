@@ -78,7 +78,7 @@ body {
 
 @media (min-width: 1200px) {
   .block {
-    min-width: 380px;
+    min-width: 33.3%;
   }
 
   .block:nth-child(4) {
