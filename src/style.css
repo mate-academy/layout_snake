@@ -7,7 +7,7 @@ body {
 
 .container {
   flex-wrap: wrap;
-  max-width: 1200px;
+  
   
 }
 
@@ -54,8 +54,7 @@ body {
   }
   .block {
     flex-grow: 1;
-    min-width: 300px;
-    max-width: 450px;
+    
   }
   .block-4 .block-5 .block-6 {
     align-items: flex-end;
@@ -66,8 +65,7 @@ body {
   .container {
     display: flex;
     flex-basis: 60%;
-    min-width: 600px;
-    max-width: 750px;
+    
     
   }
   .block {
@@ -76,12 +74,11 @@ body {
   
 }
 
-@media (min-width:900px) {
+/* @media (min-width:900px) {
   .container {
     display: flex;
     flex-basis: 33.3%;
-    min-width: 900px;
-    max-width: 1050px;
+    
   }
   .block {
     flex-grow: 1;
@@ -117,4 +114,4 @@ body {
   .block-6 {
     order: 0;
   }
-}
+} */
