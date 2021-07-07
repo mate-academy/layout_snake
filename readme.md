@@ -1,9 +1,9 @@
 # Boilerplate for layout tasks
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://denyschemeriakov.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+- [TEST REPORT LINK](https://denyschemeriakov.github.io/layout_snake/report/html_report/)
 
-> Follow [this instructions](denyschemeriakov://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
+> Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 
 ## The task
 Display six colored blocks on the screen without any extra margins:
