@@ -1,0 +1,81 @@
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.snake-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.snake-1 {
+  background-color: #f00;
+}
+
+.snake-2 {
+  background-color: #c00;
+}
+
+.snake-3 {
+  background-color: #900;
+}
+
+.snake-4 {
+  background-color: #600;
+}
+
+.snake-5 {
+  background-color: #300;
+}
+
+.snake-6 {
+  background-color: #000;
+}
+
+@media (min-width: 900px) {
+  .snake-block {
+    flex-basis: 33%;
+  }
+
+  .snake-4 {
+    order: 3;
+  }
+
+  .snake-5 {
+    order: 2;
+  }
+
+  .snake-6 {
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .snake-6 {
+    order: 3;
+  }
+
+  .snake-5 {
+    order: 2;
+  }
+
+  .snake-3 {
+    order: 1;
+  }
+}
