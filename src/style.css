@@ -2,6 +2,11 @@
   --main-box-height: 300px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -42,7 +47,10 @@
   background-color: hsl(0, 100%, 0%);
 }
 
-@media all and (max-width: 1232px) {
+@media all and (min-width: 1200px) {
+  .box {
+    min-width: 33.3%;
+  }
   .box_1 {
     order: 1;
   }
@@ -63,7 +71,28 @@
   }
 }
 
-@media all and (max-width: 932px) {
+@media all and (max-width: 1200px) {
+  .box_1 {
+    order: 1;
+  }
+  .box_2 {
+    order: 2;
+  }
+  .box_3 {
+    order: 3;
+  }
+  .box_4 {
+    order: 6;
+  }
+  .box_5 {
+    order: 5;
+  }
+  .box_6 {
+    order: 4;
+  }
+}
+
+@media all and (max-width: 900px) {
   .box_1 {
     order: 1;
   }
@@ -84,7 +113,7 @@
   }
 }
 
-@media all and (max-width: 632px) {
+@media all and (max-width: 600px) {
   .box_1 {
     order: 1;
   }
