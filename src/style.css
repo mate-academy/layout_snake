@@ -21,7 +21,7 @@ body {
   align-items: center;
   height: 300px;
   color: #fff;
-  flex-basis: 300px;
+  flex-basis: 33%;
   text-align: center;
   justify-content: center;
   flex-grow: 1;
