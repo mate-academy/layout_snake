@@ -71,7 +71,7 @@ html {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
   .snake__block {
     flex-basis: 100%;
   }
