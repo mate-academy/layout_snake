@@ -1,0 +1,106 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  height: 300px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (min-width:600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .box {
+    width: 50%;
+  }
+
+  .box-num-4 {
+    order: 1;
+  }
+
+  .box-num-3 {
+    order: 2;
+  }
+
+  .box-num-5,
+  .box-num-6 {
+    order: 3;
+  }
+
+}
+
+@media (min-width:750px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .box {
+    width: 50%;
+  }
+
+}
+
+@media (min-width:900px) {
+  .container {
+    flex-direction: row;
+  }
+  
+  .box {
+    width: 33.3%;
+    order: 0;
+  }
+
+  .box-num-4 {
+    order: 3;
+  }
+
+  .box-num-5 {
+    order: 2;
+  }
+  .box-num-6 {
+    order: 1;
+  }
+  
+}
+
+.box-num-1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.box-num-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.box-num-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.box-num-4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.box-num-5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.box-num-6 {
+  background-color: rgb(0, 0, 0);
+}
