@@ -78,3 +78,9 @@ body {
     order: 2;
   }
 }
+
+@media (min-width:1200px) and (max-width:1500px) {
+  .block-5 {
+    order: 1;
+  }
+}
