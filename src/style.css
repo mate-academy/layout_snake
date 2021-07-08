@@ -3,12 +3,12 @@ html {
   font-size: 100px;
 }
 
-.body {
+body {
   margin: 0;
 }
 
 .container {
-  margin: auto;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -51,7 +51,7 @@ html {
   background-color: #000;
 }
 
-@media (min-width:916px) and (max-width:1200px) {
+@media (min-width:900px) and (max-width:1199px) {
   .block-4 {
     order: 2;
   }
@@ -61,7 +61,7 @@ html {
   }
 }
 
-@media (min-width:600px) and (max-width: 916px) {
+@media (min-width:600px) and (max-width: 900px) {
   .block-6 {
     order: 4;
   }
