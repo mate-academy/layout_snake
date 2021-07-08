@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
 }
 
 .container {
@@ -13,7 +12,7 @@ body {
   height: 300px;
   flex-basis: 33.33%;
   min-width: 300px;
-  color: white;
+  color: #fff;
   line-height: 300px;
   font-family: Arial, sans-serif;
   font-size: 100px;
