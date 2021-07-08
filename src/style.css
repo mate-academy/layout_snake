@@ -6,9 +6,7 @@ body {
 }
 
 .container {
-  flex-wrap: wrap;
-  
-  
+  flex-wrap: wrap; 
 }
 
 .block {
