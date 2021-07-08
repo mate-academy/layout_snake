@@ -81,6 +81,10 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+  .block {
+    flex-basis: 33%;
+  }
+
   .block--3 {
     order: 1;
   }
@@ -95,26 +99,5 @@ body {
 
   .block--4 {
     order: 4;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .block--3 {
-    order: 1;
-  }
-  
-  .block--6 {
-    order: 2;
-    min-width: 400px;
-  }
-
-  .block--5 {
-    order: 3;
-    min-width: 400px;
-  }
-
-  .block--4 {
-    order: 4;
-    min-width: 400px;
   }
 }
