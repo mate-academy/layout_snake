@@ -24,29 +24,29 @@ body {
   color: #fff;
 }
 
-.container > :nth-child(1) {
+.box-1 {
   background-color: #f00;
 }
  
-.container > :nth-child(2) {
+.box-2 {
   background-color: #c00;
 }
 
-.container > :nth-child(3) {
+.box-3 {
   background-color: #900;
 }
 
-.container > :nth-child(4) {
+.box-4 {
   background-color: #600;
   order: 2;
 }
 
-.container > :nth-child(5) {
+.box-5 {
   background-color: #300;
   order: 1;
 }
 
-.container > :nth-child(6) {
+.box-6 {
   background-color: #000;
 }
 
@@ -54,12 +54,13 @@ body {
   .box {
     width: 50%;
   }
-
-  .container > :nth-child(n + 3) {
+  .box-3,
+  .box-5,
+  .box-6 {
     order: 1;
   }
 
-  .container > :nth-child(4) {
+  .box-4 {
     order: 0;
   }
 }
@@ -71,7 +72,10 @@ body {
 }
 
 @media (max-width: 451px) {
-  .container > :nth-child(n + 3) {
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
     order: 0;
   }
 }
