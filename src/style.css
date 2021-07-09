@@ -1,24 +1,28 @@
+* {
+  margin: 0;
+}
+
 html {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 100px;
-  margin: 0;
 }
 
-.conteiner {
-  width: 100vw;
+.container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .block {
   display: flex;
+  flex-basis: 33%;
   min-width: 300px;
   height: 300px;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-grow: 1;
+   
 }
 
 .block-1 {
@@ -45,55 +49,35 @@ html {
   background-color: rgb(0, 0, 0);
 }
 
-@media (min-width:900px) and (max-width:1200px) {
-  .conteiner {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .block {
-    width: 33vw;
-  }
-
+@media (min-width:900px) {
   .block-4 {
-    order: 2;
+    order: 3;
   }
 
   .block-5 {
-    order: 1;
+    order: 2;
   }
 
   .block-6 {
-    order: 0;
+    order: 1;
   }
 
 }
 
 @media (min-width:600px) and (max-width:899px) {
-  .conteiner {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .block {
-    max-width: 50vw;
-  }
-
   .block-3 {
-    order: 1;
+    order: 2;
   }
 
   .block-4 {
-
-    order: 0;
+    order: 1;
   }
 
   .block-5 {
-
-    order: 1;
+    order: 3;
   }
 
   .block-6 {
-    order: 1;
+    order: 4;
   }
 }
