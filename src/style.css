@@ -50,7 +50,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-@media (max-width:751px) {
+@media (max-width:899px) {
   .box {
     flex-basis: 300px;
   }
