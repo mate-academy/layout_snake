@@ -74,23 +74,24 @@ body {
   .block--6 {
     order: 6;
   }
-  @media (max-width:599px) {
-    .block {
-      flex-basis: 300px;
-      flex-grow: 1;
-      flex-shrink: 0;
-    }
-    .block--3 {
-      order: 1;
-    }
-    .block--4 {
-      order: 2;
-    }
-    .block--5 {
-      order: 3;
-    }
-    .block--6 {
-      order: 4;
-    }
+}
+
+@media (max-width:599px) {
+  .block {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .block--3 {
+    order: 1;
+  }
+  .block--4 {
+    order: 2;
+  }
+  .block--5 {
+    order: 3;
+  }
+  .block--6 {
+    order: 4;
   }
 }
