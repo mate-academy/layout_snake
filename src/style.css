@@ -19,7 +19,6 @@ body {
 
 .block {
   display: flex;
-  width: 33%;
   flex-basis: 33%;
   min-height: 300px;
   flex-grow: 1;
