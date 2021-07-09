@@ -46,27 +46,7 @@ body {
   background-color: #000;
 }
 
-@media (max-width: 750px) {
-
-  .block {
-    flex-basis: 300px;
-  }
-
-  .third {
-    order: 2;
-  }
-
-  .fourth {
-    order: 1;
-  }
-
-  .sixth {
-    order: 4;
-  }
-
-}
-
-@media (max-width: 600px) {
+@media (max-width: 899px) {
 
   .block {
     flex-basis: 50%;
@@ -86,7 +66,7 @@ body {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
 
   .block {
     flex-basis: 300px;
