@@ -1,23 +1,25 @@
 html {
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 .main {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  max-width: 1190px;
 }
 
 .block {
   flex-grow: 1;
   height: 300px;
   min-width: 300px;
-
-  text-align: center;
-  line-height: 300px;
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 100px;
   color: #fff;
 }
@@ -50,7 +52,7 @@ html {
 
 /* #endregion colors */
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .box--3 {
     order: 2;
   }
@@ -68,7 +70,7 @@ html {
   }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 900px) {
   .box--3 {
     order: 0;
   }
