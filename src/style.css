@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -42,17 +41,43 @@ body {
 
 .block-4 {
   background-color: #600;
-  order: 4;
 }
 
 .block-5 {
   background-color: #300;
-  order: 3;
 }
 
 .block-6 {
   background-color: #000;
-  order: 2;
+}
+
+@media (max-width: 1200px) {
+  .block-1 {
+    background-color: #f00;
+  }
+  
+  .block-2 {
+    background-color: #c00;
+  }
+  
+  .block-3 {
+    background-color: #900;
+  }
+  
+  .block-4 {
+    background-color: #600;
+    order: 4;
+  }
+  
+  .block-5 {
+    background-color: #300;
+    order: 3;
+  }
+  
+  .block-6 {
+    background-color: #000;
+    order: 2;
+  }
 }
 
 @media (max-width: 900px) {
