@@ -10,12 +10,12 @@ html {
 
 body {
   margin: 0;
-  max-width: 1199px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1199px;
 }
 
 .box {
