@@ -11,6 +11,7 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  /* flex-direction: column; */
 }
 
 .box {
@@ -72,3 +73,36 @@ body {
     order: 0;
   }
 }
+
+/* @media  (min-width:900px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .box {
+    flex-basis: 33%;
+  }
+
+  .box:nth-child(4) {
+    order: 2;
+  }
+
+  .box:nth-child(5) {
+    order: 1;
+  }
+}
+  
+@media (min-width: 600px) and (max-width:899px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box:nth-child(3) {
+    order: 1;
+  }
+
+  .box:nth-child(n+5) {
+    order: 2;
+  }
+} */
