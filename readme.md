@@ -1,8 +1,8 @@
 # Boilerplate for layout tasks
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
-
+- [DEMO LINK](https://andrii-hryhoruk.github.io/layout_snake/)
+- [TEST REPORT LINK](https://andrii-hryhoruk.github.io/layout_snake/report/html_report/)
+andrii-hryhoruk
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 
 ## The task
