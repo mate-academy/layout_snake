@@ -49,18 +49,6 @@ body {
   background-color: rgb(0%,0%,0%);
 }
 
-@media (min-width: 900px) {
-  .box:nth-child(6) {
-    order: 1;
-  }
-  .box:nth-child(5) {
-    order: 2;
-  }
-  .box:nth-child(4) {
-    order: 3;
-  }
-}
-
 @media (min-width: 600px) and (max-width: 899px) {
   .box:nth-child(4) {
     order: 1;
