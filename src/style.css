@@ -14,6 +14,8 @@ html {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  min-width: 300px;
+  
 }
 
 .snake__box {
@@ -23,6 +25,8 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 
 .snake__box--1 {
@@ -51,23 +55,9 @@ html {
 }
 
 @media (max-width: 600px) {
-  .snake__box--4 {
-    order: 1;
-  }
-
-  .snake__box--5 {
-    order: 3;
-  }
-
-  .snake__box--6 {
-    order: 4;
-  }
-
-  .snake__box--3,
-  .snake__box--4,
-  .snake__box--5,
-  .snake__box--6 {
+  .snake__box {
     order: 0;
+    /* flex-grow: 1; */
   }
 }
 
