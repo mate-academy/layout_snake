@@ -1,0 +1,84 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  max-width: 1199px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  font-size: 100px;
+  color: white;
+}
+
+.container {
+  height: 300px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 300px;
+}
+
+.num1 {
+  background-color: red;
+}
+
+.num2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.num3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.num4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.num5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.num6 {
+  background-color: black;
+}
+
+@media all {
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 600px) {
+  .num4 {
+    order: 2;
+  }
+  .num3 {
+    order: 3;
+  }
+  .num5 {
+    order: 4;
+  }
+  .num6 {
+    order: 5;
+  }
+}
+
+@media (min-width: 900px) {
+  .num3 {
+    order: 1;
+  }
+  .num6 {
+    order: 2;
+  }
+  .num5 {
+    order: 3;
+  }
+  .num4 {
+    order: 4;
+  }
+}
