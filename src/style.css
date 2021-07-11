@@ -52,7 +52,7 @@ body {
 
 @media (min-width: 1200px) {
   .block {
-    flex-basis: 305px;
+    flex-basis: 33%;
   }
 
   .block-4 {
