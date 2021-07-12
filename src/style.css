@@ -51,27 +51,19 @@ body {
   .block {
     flex-basis: 50%;
   }
-}
 
-@media (min-width: 600px) and (max-width: 899px) {
   .block-3 {
     order: 2;
   }
-}
 
-@media (min-width: 600px) and (max-width: 899px) {
   .block-4 {
     order: 1;
   }
-}
 
-@media (min-width: 600px) and (max-width: 899px) {
   .block-5 {
     order: 3;
   }
-}
 
-@media (min-width: 600px) and (max-width: 899px) {
   .block-6 {
     order: 4;
   }
@@ -81,21 +73,15 @@ body {
   .block {
     flex-basis: 33%;
   }
-}
 
-@media (min-width: 900px) {
   .block-4 {
     order: 3;
   }
-}
 
-@media (min-width: 900px) {
   .block-5 {
     order: 2;
   }
-}
 
-@media (min-width: 900px) {
   .block-6 {
     order: 1;
   }
