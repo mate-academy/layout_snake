@@ -54,11 +54,12 @@
 body {
   color: rgb(255,255,255);
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
 }
 
 .snake {
   display: flex;
-  flex-direction: row;
   list-style: none;
   flex-wrap: wrap;
 
@@ -70,12 +71,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
+  flex-basis: 33%;
   height: 300px;
-  width: 300px;
 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
 }
 
 .part--1 {
