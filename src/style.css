@@ -17,14 +17,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 
   height: 300px;
   min-width: 300px;
   flex-basis: 33%;
   
   flex-grow: 1;
-  flex-shrink: 0;
 }
 
 @media (min-width:600px) {
