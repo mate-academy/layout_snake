@@ -42,25 +42,25 @@ body {
   order: 1;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 899px) {
   .box {
     flex-basis: 50%;
-  }
-  .box:nth-child(1n) {
     order: 0;
   }
 
-  .box:nth-child(1n+3):not(.box4) {
+  .box3,
+  .box5,
+  .box6 {
     order: 1;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 599px) {
   .box {
     flex-basis: 100%;
   }
 
-  .box:nth-child(1n+3) {
+  .box4 {
     order: 1;
   }
 }
