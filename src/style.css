@@ -97,13 +97,7 @@ html {
 }
 
 @media (min-width: 1200px) {
-  .snake__box--4 {
-    order: 0;
-  }
-}
-
-@media (min-width: 1500px) {
-  .snake__box--5 {
-    order: 0;
+  .snake__box {
+    min-width: 30%;
   }
 }
