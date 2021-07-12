@@ -1,0 +1,102 @@
+@media (min-width: 600px) {
+
+  .snake__part {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .part--1 {
+    order: 1;
+  }
+  .part--2 {
+    order: 2;
+  }
+  .part--3 {
+    order: 4;
+  }
+  .part--4 {
+    order: 3;
+  }
+  .part--5 {
+    order: 5;
+  }
+  .part--6 {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .snake__part {
+    flex-basis: 33%;
+    flex-grow: 1;
+  }
+
+  .part--1 {
+    order: 1;
+  }
+  .part--2 {
+    order: 2;
+  }
+  .part--3 {
+    order: 3;
+  }
+  .part--4 {
+    order: 6;
+  }
+  .part--5 {
+    order: 5;
+  }
+  .part--6 {
+    order: 4;
+  }
+}
+
+body {
+  color: rgb(255,255,255);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+.snake {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.snake__part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-basis: 33%;
+  height: 300px;
+
+}
+
+.part--1 {
+  background-color: rgb(255,0,0);
+}
+
+.part--2 {
+  background-color: rgb(204,0,0);
+}
+
+.part--3 {
+  background-color: rgb(153,0,0);
+}
+
+.part--4 {
+  background-color: rgb(102,0,0);
+}
+
+.part--5 {
+  background-color: rgb(51,0,0);
+}
+
+.part--6 {
+  background-color: rgb(0,0,0);
+}
