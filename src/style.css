@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 300px;
   flex-basis: 33%;
   flex-shrink: 0;
   flex-grow: 1;
@@ -49,7 +50,7 @@ body {
   background-color: #000;
 }
 
-@media (max-width: 751px) {
+@media (max-width: 899px) {
   .snake__block {
     flex-basis: 300px;
   }
@@ -68,7 +69,16 @@ body {
 }
 
 @media (max-width: 599px) {
-  .snake__block:nth-child(n) {
-    order: 0;
+  .snake__block:nth-child(3) {
+    order: 2;
+  }
+  .snake__block:nth-child(4) {
+    order: 3;
+  }
+  .snake__block:nth-child(5) {
+    order: 4;
+  }
+  .snake__block:nth-child(6) {
+    order: 5;
   }
 }
