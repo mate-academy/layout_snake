@@ -16,13 +16,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .item {
   height: 300px;
   min-width: 300px;
   
-  flex-basis: 33%;
+  width: 33.33%;
   text-align: center;
   line-height: 300px;
 }
@@ -55,10 +56,10 @@ body {
   order: 4;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .item {
     flex-grow: 1;
-    flex-basis: 20%;
+    width: 50%;
   }
   .block--3,
   .block--5 {
@@ -73,7 +74,7 @@ body {
 @media (max-width: 600px) {
   .item {
     flex-grow: 1;
-    flex-basis: 10%;
+    width: 60%;
   }
   .block--4 {
     order: 3;
