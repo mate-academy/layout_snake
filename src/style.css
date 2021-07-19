@@ -69,6 +69,7 @@ body {
     order: 3;
   }
 }
+
 @media screen and (max-width: 450px){
   .block {
     width: 100%;
