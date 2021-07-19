@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.block:nth-child(1) {
+.block:first-child {
   background-color: red;
 }
 
@@ -43,7 +43,7 @@ body {
   order: 2;
 }
 
-.block:nth-child(6) {
+.block:last-child {
   background-color: #000;
   order: 1;
 }
@@ -65,7 +65,7 @@ body {
     order: 2;
   }
   
-  .block:nth-child(6) {
+  .block:last-child {
     order: 3;
   }
 }
