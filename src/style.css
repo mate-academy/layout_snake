@@ -26,32 +26,32 @@ body {
 
 /* .block styles */
 
-.block--1 {
+.block:first-child {
   background-color: red;
   order: 1;
 }
 
-.block--2 {
+.block:nth-child(2) {
   background-color: rgb(204, 0, 0);
   order: 2;
 }
 
-.block--3 {
+.block:nth-child(3) {
   background-color: rgb(153, 0, 0);
   order: 3;
 }
 
-.block--4 {
+.block:nth-child(4) {
   background-color: rgb(102, 0, 0);
   order: 4;
 }
 
-.block--5 {
+.block:nth-child(5) {
   background-color: rgb(51, 0, 0);
   order: 5;
 }
 
-.block--6 {
+.block:nth-child(6) {
   background-color: rgb(0, 0, 0);
   order: 6;
 }
@@ -64,25 +64,25 @@ body {
     flex-wrap: wrap;
   }
 
-  .block--3 {
+  .block:nth-child(3) {
     order: 4;
   }
 
-  .block--4 {
+  .block:nth-child(4) {
     order: 3;
   }
 }
 
 @media (min-width: 900px) {
-  .block--3 {
+  .block:nth-child(3) {
     order: 3;
   }
 
-  .block--4 {
+  .block:nth-child(4) {
     order: 6;
   }
 
-  .block--6 {
+  .block:nth-child(6) {
     order: 4;
   }
 }
