@@ -12,7 +12,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-flow: wrap;
-  
 }
 
 .square {
@@ -25,7 +24,6 @@ body {
   flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  
 }
 
 .square:nth-child(1) {
@@ -73,17 +71,17 @@ body {
       width: 50%;
     }
 
-    .square:nth-child(1),
-    .square:nth-child(2) {
+  .square:nth-child(1),
+  .square:nth-child(2) {
       order: -2;
     }
 
-    .square:nth-child(3) {
+  .square:nth-child(3) {
       order: 1;
     }
 
-    .square:nth-child(5),
-    .square:nth-child(6) {
+  .square:nth-child(5),
+  .square:nth-child(6) {
       order: 1;
     }
     
