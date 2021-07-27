@@ -11,6 +11,8 @@ body {
   flex-direction: column;
 }
 
+/* .block styles */
+
 .block {
   display: flex;
   align-items: center;
@@ -23,8 +25,6 @@ body {
   min-width: 300px;
   height: 300px;
 }
-
-/* .block styles */
 
 .block:first-child {
   background-color: red;
@@ -74,6 +74,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .block {
+    flex-basis: 33%;
+  }
+
   .block:nth-child(3) {
     order: 3;
   }
@@ -84,11 +88,5 @@ body {
 
   .block:nth-child(6) {
     order: 4;
-  }
-}
-
-@media (min-width: 1200px) {
-  .block {
-    min-width: 400px;
   }
 }
