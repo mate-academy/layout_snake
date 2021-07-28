@@ -66,7 +66,7 @@ body {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .square {
       width: 50%;
     }
@@ -88,7 +88,7 @@ body {
 
 }
 
-@media  screen and (max-width: 450px) {
+@media  screen and (max-width: 600px) {
   .container {
     flex-direction: column;
   }
