@@ -7,8 +7,6 @@ body {
 }
 
 .container {
-  padding-top: 50px;
-  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-flow: wrap;
@@ -16,7 +14,7 @@ body {
 
 .square {
   height: 300px;
-  width: 30.33%;
+  width: 33.33333%;
   background-color: red;
   color: white;
   
