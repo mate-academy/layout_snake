@@ -14,7 +14,7 @@ body {
 
 .square {
   height: 300px;
-  width: 33.33333%;
+  width: 33.33%;
   background-color: red;
   color: white;
   
@@ -52,15 +52,19 @@ body {
   .square:nth-child(1),
   .square:nth-child(2),
   .square:nth-child(3) {
-    order: -3;
+    order: 1;
+  }
+
+  .square:nth-child(4) {
+    order: 5;
   }
 
   .square:nth-child(6) {
-    order: -2;
+    order: 4;
   }
 
   .square:nth-child(5) {
-    order: -1;
+    order: 5;
   }
 }
 
@@ -69,21 +73,17 @@ body {
       width: 50%;
     }
 
-  .square:nth-child(1),
-  .square:nth-child(2) {
-      order: -2;
-    }
-
   .square:nth-child(3) {
-      order: 1;
+      order: 4;
     }
 
-  .square:nth-child(5),
+  .square:nth-child(4) {
+    order: 3;
+  }
+
   .square:nth-child(6) {
-      order: 1;
-    }
-    
-
+    order: 5;
+  }
 }
 
 @media  screen and (max-width: 600px) {
@@ -95,15 +95,7 @@ body {
     width: 100%;
   }
 
-  .square:nth-child(4) {
-    order: 4;
-  }
-
-  .square:nth-child(5) {
-    order: 5;
-  }
-  
-  .square:nth-child(6) {
-    order: 6;
+  .square:nth-child(3) {
+    order: 3;
   }
 }
