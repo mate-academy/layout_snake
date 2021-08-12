@@ -11,7 +11,6 @@ html {
 
 .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -23,7 +22,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .block:first-child {
@@ -50,32 +48,16 @@ html {
   background: black;
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (min-width: 300px) {
   .container {
-    width: 300px;
-  }
-}
-
-@media screen and (min-width: 450px) and (max-width: 599px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .block {
-    flex-basis: 33%;
+    flex-direction: column;
+    flex-grow: 1;
   }
 }
 
 @media screen and (min-width: 600px) {
   .container {
+    width: 100%;
     flex-direction: row;
   }
 
@@ -97,6 +79,9 @@ html {
 }
 
 @media screen and (min-width: 900px) {
+  .block {
+    width: 33%;
+  }
 
   .block:nth-child(3) {
     order: 0;
