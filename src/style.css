@@ -57,7 +57,6 @@ html {
 
 @media screen and (min-width: 600px) {
   .container {
-    width: 100%;
     flex-direction: row;
   }
 
