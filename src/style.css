@@ -13,7 +13,8 @@ body {
 .box {
   display: flex;
   height: 300px;
-  width: 300px;
+  min-width: 300px;
+  width: 33%;
   justify-content: center;
   align-items: center;
   color: white;
@@ -53,6 +54,26 @@ body {
   order: 6;
 }
 
+@media (min-width: 600px) {
+  .box--3 {
+    order: 4;
+  }
+
+  .box--4 {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .box--4 {
+    order: 6;
+  }
+
+  .box--6 {
+    order: 4;
+  }
+}
+
 @media (min-width: 1200px) {
   .box--4 {
     order: 6;
@@ -60,25 +81,5 @@ body {
 
   .box--6 {
     order: 4;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1199px) {
-  .box--4 {
-    order: 6;
-  }
-
-  .box--6 {
-    order: 4;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  .box--3 {
-    order: 4;
-  }
-
-  .box--4 {
-    order: 3;
   }
 }
