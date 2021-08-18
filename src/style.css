@@ -14,10 +14,10 @@ body {
 
 .block {
   display: flex;
-  flex: 1 0 200px;
+  flex: 1 0 300px;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 300px;
   color: white;
 }
 
