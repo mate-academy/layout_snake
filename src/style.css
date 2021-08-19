@@ -7,10 +7,8 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
   font-size: 100px;
   color: #fff;
-  flex-shrink: 0;
 }
 
 .block {
@@ -48,7 +46,17 @@ body {
   background-color: #000;
 }
 
+@media (max-width: 599px) {
+  .block {
+    flex-basis: 100%;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 899px) {
+  .block {
+    flex-basis: 50%;
+  }
+
   .block-3 {
     order: 1;
   }
@@ -60,6 +68,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .block {
+    flex-basis: 33.33%;
+  }
+
   .block-3 {
     order: 0;
   }
