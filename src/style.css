@@ -15,23 +15,24 @@ body {
   color: #fff;
   height: 300px;
   min-width: 300px;
-  flex-basis: 33%;
   flex-grow: 0;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
   .block {
     flex-grow: 1;
+    flex-basis: 100%;
   }
 }
 
-@media (min-width: 461px) and (max-width: 750px) {
+@media (min-width: 600px) and (max-width: 899px) {
 
   .block {
     flex-grow: 1;
+    flex-basis: 50%;
   }
 
   .block-3 {
@@ -51,10 +52,11 @@ body {
   }
 }
 
-@media (min-width: 751px) {
+@media (min-width: 900px) {
 
   .block {
     flex-grow: 1;
+    flex-basis: 33.3%;
   }
 
   .block-3 {
