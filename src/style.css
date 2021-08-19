@@ -65,7 +65,6 @@ body {
   .allBlocks {
     flex-wrap: wrap;
   }
-
 }
 
 @media (min-width: 600px) {
@@ -87,8 +86,10 @@ body {
 @media (min-width: 900px) {
   .allBlocks {
     flex-wrap: wrap;
-    max-width: 1199px;
-    margin: 0 auto;
+  }
+
+  .allBlocks > .blocks {
+    flex-basis: 33%;
   }
 
   .blocks.block4 {
