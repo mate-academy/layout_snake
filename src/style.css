@@ -6,8 +6,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .box {
@@ -18,7 +18,9 @@ body {
   font-size: 100px;
   color: #fff;
   flex-basis: 300px;
+  min-width: 300px;
   flex-grow: 1;
+  flex-shrink: 0;
   height: 300px;
 }
 
@@ -49,7 +51,6 @@ body {
 @media (min-width: 600px) {
   .container {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .box-3 {
@@ -66,6 +67,14 @@ body {
 }
 
 @media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .box {
+    flex-basis: 33%;
+  }
+  
   .box-4 {
     order: 3;
   }
@@ -76,11 +85,5 @@ body {
 
   .box-6 {
     order: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1199px;
   }
 }
