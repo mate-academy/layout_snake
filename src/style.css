@@ -6,8 +6,8 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   flex-wrap: wrap;
   max-width: 1199px;
   font-size: 100px;
@@ -50,7 +50,7 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 560px) and (max-width: 849px) {
+@media (min-width: 560px) and (max-width: 899px) {
   .block-3 {
     order: 1;
   }
@@ -61,7 +61,7 @@ body {
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 900px) {
   .block-3 {
     order: 0;
   }
