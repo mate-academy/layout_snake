@@ -7,98 +7,84 @@ body {
 .blocks {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.allBlocks {
+  flex-wrap: wrap;
 }
 
 .blocks {
   height: 300px;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 300px;
+  flex-grow: 1;
   font-size: 100px;
   color: white;
 }
 
-.blocks.block1,
-.blocks.block2,
-.blocks.block3,
-.blocks.block4,
-.blocks.block5,
-.blocks.block6 {
-  flex-basis: 300px;
-  flex-grow: 1;
-}
-
-.blocks.block1 {
+.block1 {
   background-color: red;
-
 }
 
-.blocks.block2 {
+.block2 {
   background-color: #c00;
-  flex-basis: 300px;
-  flex-grow: 1;
 }
 
-.blocks.block3 {
+.block3 {
   background-color: #900;
-  flex-basis: 300px;
-  flex-grow: 1;
 }
 
-.blocks.block4 {
+.block4 {
   background-color: #600;
-  flex-basis: 300px;
-  flex-grow: 1;
 }
 
-.blocks.block5 {
+.block5 {
   background-color: #300;
-  flex-basis: 300px;
-  flex-grow: 1;
 }
 
-.blocks.block6 {
+.block6 {
   background-color: #000;
-  flex-basis: 300px;
-  flex-grow: 1;
 }
 
-@media (min-width: 0) {
-  .allBlocks {
-    flex-wrap: wrap;
+@media (min-width: 300px) {
+  .blocks {
+    flex-basis: 100%;
   }
 }
 
 @media (min-width: 600px) {
+
   .allBlocks {
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
 
-  .blocks.block1,
-  .blocks.block2 {
+  .blocks {
+    flex-basis: 50%;
+  }
+
+  .block1,
+  .block2 {
     order: -2;
   }
-  .blocks.block4 {
+  .block4 {
     order: -1;
   }
 }
 
 @media (min-width: 900px) {
-  .allBlocks {
-    flex-wrap: wrap;
+
+  .blocks {
+    flex-basis: 33.3%;
   }
 
-  .allBlocks > .blocks {
-    flex-basis: 33%;
-  }
-
-  .blocks.block4 {
+  .block4 {
     order: 4;
   }
-  .blocks.block5 {
+  .block5 {
     order: 3;
   }
-  .blocks.block6 {
+  .block6 {
     order: 2;
   }
 }
