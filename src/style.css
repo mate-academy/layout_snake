@@ -1,6 +1,5 @@
 body {
-  margin: 0 auto;
-  max-width: 1199px;
+  margin: 0;
 }
 
 .blocks {
@@ -19,7 +18,6 @@ body {
   font-size: 100px;
   height: 300px;
   min-width: 300px;
-  flex-shrink: 0;
 }
 
 .block1 {
@@ -67,7 +65,8 @@ body {
   .block4 {
     order: 3;
   }
+
   .block {
-    max-width: 1200px;
+    min-width: 33.33%;
   }
 }
