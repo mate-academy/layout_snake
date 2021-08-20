@@ -14,8 +14,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-grow: 1;
   height: 300px;
+  min-width: 0;
 
 }
 
