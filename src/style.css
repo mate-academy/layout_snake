@@ -16,9 +16,10 @@ body {
   align-items: center;
   flex-grow: 1;
   height: 300px;
+
 }
 
-@media (min-width: 300px) {
+@media (min-width: 0) {
   .snake {
     flex-basis: 100%;
   }
