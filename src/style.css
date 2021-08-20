@@ -3,20 +3,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.allBlocks,
-.blocks {
+.blocks,
+.block {
   display: flex;
   justify-content: center;
-}
-
-.allBlocks {
   flex-wrap: wrap;
 }
 
-.blocks {
-  height: 300px;
+.block {
   align-items: center;
   justify-content: center;
+  height: 300px;
   flex-basis: 300px;
   flex-grow: 1;
   font-size: 100px;
@@ -48,18 +45,18 @@ body {
 }
 
 @media (min-width: 300px) {
-  .blocks {
+  .block {
     flex-basis: 100%;
   }
 }
 
 @media (min-width: 600px) {
 
-  .allBlocks {
+  .blocks {
     flex-wrap: wrap;
   }
 
-  .blocks {
+  .block {
     flex-basis: 50%;
   }
 
@@ -74,7 +71,7 @@ body {
 
 @media (min-width: 900px) {
 
-  .blocks {
+  .block {
     flex-basis: 33.3%;
   }
 
