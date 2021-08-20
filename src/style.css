@@ -73,7 +73,13 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .number {
-    min-width: 400px;
+  .number-4 {
+    order: 2;
+  }
+}
+
+@media (min-width: 1500px) {
+  .number-6 {
+    order: 4;
   }
 }
