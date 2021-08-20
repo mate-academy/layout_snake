@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.snake {
+.block {
   color: #fff;
   margin: auto;
   height: 300px;
@@ -48,13 +48,13 @@ body {
 }
 
 @media(min-width: 300px) {
-  .snake {
+  .block {
     flex-basis: 100%;
   }
 }
 
 @media(min-width: 600px) {
-  .snake {
+  .block {
     flex-basis: 50%;
   }
 
@@ -76,7 +76,7 @@ body {
 }
 
 @media(min-width: 900px) {
-  .snake {
+  .block {
     flex-basis: 33.3%;
   }
 
