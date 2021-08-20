@@ -17,43 +17,60 @@ body {
   text-align: center;
   flex-grow: 1;
   height: 300px;
-  min-width: 0;
-
+  width: 300px;
 }
 
-@media (min-width: 0) {
+.snake-1 {
+  background-color: red;
+}
+
+.snake-2 {
+  background-color: rgb(80%, 0%, 0%);
+}
+
+.snake-3 {
+  background-color: rgb(60%, 0%, 0%);
+}
+
+.snake-4 {
+  background-color: rgb(40%, 0%, 0%);
+}
+
+.snake-5 {
+  background-color: rgb(20%, 0%, 0%);
+}
+
+.snake-6 {
+  background-color: #000;
+}
+
+@media (min-width: 300px) {
   .snake {
     flex-basis: 100%;
   }
 
   .snake-1 {
     order: 1;
-    background-color: red;
   }
 
   .snake-2 {
     order: 2;
-    background-color: rgb(80%, 0%, 0%);
   }
 
   .snake-3 {
     order: 3;
-    background-color: rgb(60%, 0%, 0%);
   }
 
   .snake-4 {
     order: 4;
-    background-color: rgb(40%, 0%, 0%);
   }
 
   .snake-5 {
     order: 5;
-    background-color: rgb(20%, 0%, 0%);
   }
 
   .snake-6 {
     order: 6;
-    background-color: #000;
   }
 }
 
