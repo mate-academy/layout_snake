@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.flex-child {
+  flex: 1 1 100%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.first {
+  background-color: #f00;
+}
+
+.second {
+  background-color: #c00;
+}
+
+.third {
+  background-color: #900;
+}
+
+.fourth {
+  background-color: #670000;
+}
+
+.fifth {
+  background-color: #300;
+}
+
+.sixth {
+  background-color: #000;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex-child {
+    flex: 1 1 50%;
+  }
+
+  .third {
+    order: 4;
+  }
+
+  .fourth {
+    order: 3;
+  }
+
+  .fifth {
+    order: 5;
+  }
+
+  .sixth {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  /* .container {
+    max-width: 1200px;
+  } */
+
+  .flex-child {
+    flex: 1 1 33.33%;
+  }
+
+  .sixth {
+    order: 4;
+  }
+
+  .fourth {
+    order: 6;
+  }
+}
