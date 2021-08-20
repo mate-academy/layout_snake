@@ -73,6 +73,10 @@ body {
     height: 600px;
   }
 
+  .block {
+    flex-basis: 30vw;
+  }
+
   .block--6 {
     order: 1;
   }
@@ -87,11 +91,5 @@ body {
 
   .block--3 {
     order: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .block {
-    flex-basis: 400px;
   }
 }
