@@ -73,6 +73,8 @@ h1 {
 @media screen and (min-width: 900px) {
   .container {
     flex-direction: row;
+  }
+  .block {
     flex-basis: 33.3%;
   }
   .block:nth-child(6) {
