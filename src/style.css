@@ -7,9 +7,10 @@ html {
 body {
   margin: 0;
   background-color: #ccc;
+  box-sizing: border-box;
 }
 
-.conteiner {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,36 +21,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
+  flex-basis: 300px;
   height: 300px;
-  box-sizing: border-box;
   flex-grow: 1;
 }
 
-.number-1 {
+.number--1 {
   background-color: #f00;
 }
 
-.number-2 {
+.number--2 {
   background-color: #c00;
 }
 
-.number-3 {
+.number--3 {
   order: 1;
   background-color: #900;
 }
 
-.number-4 {
+.number--4 {
   order: 2;
   background-color: #600;
 }
 
-.number-5 {
+.number--5 {
   order: 3;
   background-color: #300;
 }
 
-.number-6 {
+.number--6 {
   order: 4;
   background-color: #000;
 }
@@ -71,6 +71,6 @@ body {
     order: 2;
   }
   .number {
-    min-width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
   }
 }
