@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+html {
+  font-family: Arial, serif;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +13,6 @@
 
 .box {
   min-width: 300px;
-  font-family: Arial, serif;
   font-size: 100px;
   color: white;
   text-align: center;
