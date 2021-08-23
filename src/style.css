@@ -1,7 +1,10 @@
-body {
-  margin: 0;
+html {
   font-family: Arial, sans-serif;
   font-size: 100px;
+}
+
+body {
+  margin: 0;
   color: #fff;
 }
 
@@ -15,6 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-basis: 100%;
   flex-grow: 1;
   height: 300px;
   width: 300px;
@@ -42,36 +46,6 @@ body {
 
 .snake-6 {
   background-color: #000;
-}
-
-@media (min-width: 300px) {
-  .snake {
-    flex-basis: 100%;
-  }
-
-  .snake-1 {
-    order: 1;
-  }
-
-  .snake-2 {
-    order: 2;
-  }
-
-  .snake-3 {
-    order: 3;
-  }
-
-  .snake-4 {
-    order: 4;
-  }
-
-  .snake-5 {
-    order: 5;
-  }
-
-  .snake-6 {
-    order: 6;
-  }
 }
 
 @media (min-width: 600px) {
