@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+.number {
+  display: flex;
+  flex-grow: 1;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-1 {
+  background-color: red;
+  order: 1;
+}
+
+.number-2 {
+  background-color: rgb(205, 0, 0);
+  order: 2;
+}
+
+.number-3 {
+  background-color: rgb(154, 0, 0);
+  order: 3;
+}
+
+.number-4 {
+  background-color: rgb(103, 0, 0);
+  order: 4;
+}
+
+.number-5 {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.number-6 {
+  background-color: rgb(0, 0, 0);
+  order: 6;
+}
+
+@media (max-width: 1200px) {
+  .number {
+    flex-basis: 33.3%;
+  }
+  .number-4 {
+    order: 8;
+  }
+  .number-5 {
+    order: 7;
+  }
+}
+
+@media (max-width: 750px) {
+  .number {
+    flex-basis: 50%;
+  }
+  .number-3 {
+    order: 5;
+  }
+  .number-4 {
+    order: 4;
+  }
+  .number-5 {
+    order: 5;
+  }
+}
+
+@media (max-width: 450px) {
+  .number {
+    flex-basis: 100%;
+  }
+  .number-3 {
+    order: 3;
+  }
+}
