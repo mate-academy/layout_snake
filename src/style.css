@@ -55,13 +55,13 @@ body {
   order: 6;
 }
 
-@media (min-width: 600px) and (max-width:900px) {
+@media (min-width: 600px) {
   .box-3 {
     order: 5;
   }
 }
 
-@media (min-width: 900px) and (max-width:1200px) {
+@media (min-width: 900px) {
   .box-3 {
     order: 3;
   }
@@ -76,7 +76,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .box-3 {
-    min-width: 301px;
+  .box {
+    min-width: 33%;
   }
 }
