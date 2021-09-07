@@ -49,15 +49,6 @@ body {
   order: 6;
 }
 
-@media (min-width: 450px) {
-  .number {
-    flex-basis: 100%;
-  }
-  .number-3 {
-    order: 3;
-  }
-}
-
 @media (min-width: 600px) {
   .number {
     flex-basis: 50%;
@@ -67,9 +58,6 @@ body {
   }
   .number-4 {
     order: 4;
-  }
-  .number-5 {
-    order: 5;
   }
 }
 
