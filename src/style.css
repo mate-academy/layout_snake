@@ -49,19 +49,16 @@ body {
   order: 6;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 450px) {
   .number {
-    flex-basis: 33.3%;
+    flex-basis: 100%;
   }
-  .number-4 {
-    order: 8;
-  }
-  .number-5 {
-    order: 7;
+  .number-3 {
+    order: 3;
   }
 }
 
-@media (max-width: 750px) {
+@media (min-width: 600px) {
   .number {
     flex-basis: 50%;
   }
@@ -76,11 +73,14 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 900px) {
   .number {
-    flex-basis: 100%;
+    flex-basis: 33.3%;
   }
-  .number-3 {
-    order: 3;
+  .number-4 {
+    order: 8;
+  }
+  .number-5 {
+    order: 7;
   }
 }
