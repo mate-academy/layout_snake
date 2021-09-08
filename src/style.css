@@ -52,40 +52,44 @@ body {
   order: 6;
 }
 
+@media (min-width: 600px) {
+  .third_block {
+    order: 4;
+  }
+  
+  .fourth_block {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .third_block {
+    order: 3;
+  }
+
+  .fourth_block {
+    order: 6;
+  }
+
+  .sixth_block {
+    order: 4;
+  }
+}
+
 @media (min-width: 1200px) {
   .block {
     width: 400px;
   }
 
-  .sixth_block {
-    order: 3;
-  }
-
-  .fourth_block {
-    order: 6;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1199px) {
-  .sixth_block {
-    order: 3;
-  }
-
-  .fourth_block {
-    order: 6;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
-  .block {
-    max-width: 400px;
-  }
-
   .third_block {
-    order: 4;
+    order: 3;
   }
 
   .fourth_block {
-    order: 3;
+    order: 6;
+  }
+
+  .sixth_block {
+    order: 4;
   }
 }
