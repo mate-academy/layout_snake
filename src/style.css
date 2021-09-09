@@ -37,7 +37,7 @@ body {
     order: 3;
   }
   .box:nth-child(6) {
-    order: 3;
+    order: 4;
   }
 }
 
