@@ -9,13 +9,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   color: white;
-  
 }
 
 .item {
   height: 300px;
-  line-height: 300px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: 33.33%;
   flex-shrink: 0;
   flex-grow: 0;
