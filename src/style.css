@@ -14,7 +14,6 @@ body {
   text-align: center;
   align-items: center;
   flex-basis: 300px;
-  flex-shrink: 0;
   flex-grow: 1;
   height: 300px;
   font-size: 100px;
@@ -45,13 +44,11 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 1201px) and (max-width: 1499px) {
-  .block:nth-child(5) {
-    order: 2;
+@media (min-width: 900px) {
+  .block {
+    flex-basis: 33%;
   }
-}
 
-@media (min-width: 900px) and (max-width: 1200px) {
   .block:nth-child(5) {
     order: 2;
   }
@@ -73,5 +70,4 @@ body {
   .block:last-child {
     order: 4;
   }
-
 }
