@@ -23,38 +23,6 @@ body {
   height: 300px;
   z-index: 0;
 }
-/* Оставлю себе на будущее */
-
-/* .colourBlock::after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-} 
-
-.colourBlock:nth-child(1)::after {
-  opacity: 0%;
-}
-
-.colourBlock:nth-child(2)::after {
-  opacity: 20%;
-}
-
-.colourBlock:nth-child(3)::after {
-  opacity: 40%;
-}
-
-.colourBlock:nth-child(4)::after {
-  opacity: 60%;
-}
-
-.colourBlock:nth-child(5)::after {
-  opacity: 80%;
-} */
 
 .colourBlock:nth-child(2) {
   background-color: rgb(204,0,0);
