@@ -1,0 +1,93 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.colourWrap {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.colourBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: red;
+  height: 300px;
+  min-width: 300px;
+  flex-basis: 33.33%;
+  z-index: 0;
+}
+
+.colourBlock::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.colourBlock:nth-child(1)::after {
+  opacity: 0%;
+}
+
+.colourBlock:nth-child(2)::after {
+  opacity: 20%;
+}
+
+.colourBlock:nth-child(3)::after {
+  opacity: 40%;
+}
+
+.colourBlock:nth-child(4)::after {
+  opacity: 60%;
+}
+
+.colourBlock:nth-child(5)::after {
+  opacity: 80%;
+}
+
+.colourBlock:nth-child(5) {
+  order: 1;
+}
+
+.colourBlock:nth-child(4) {
+  order: 2;
+}
+
+@media (max-width: 899px) {
+  .colourBlock {
+    flex-basis: 50%;
+  }
+
+  .colourBlock:nth-child(3) {
+    order: 3;
+  }
+
+  .colourBlock:nth-child(5) {
+    order: 4;
+  }
+
+  .colourBlock:nth-child(6) {
+    order: 5;
+  }
+}
+
+@media (max-width: 599px) {
+  .colourBlock {
+    flex-basis: 100%;
+  }
+
+  .colourBlock:nth-child(3) {
+    order: 0;
+  }
+}
