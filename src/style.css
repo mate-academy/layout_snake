@@ -19,9 +19,8 @@ body {
   align-items: center;
   position: relative;
   background-color: red;
-  height: 300px;
-  min-width: 300px;
   flex-basis: 33.33%;
+  height: 300px;
   z-index: 0;
 }
 
