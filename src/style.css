@@ -18,13 +18,14 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: red;
+  background-color: rgb(255,0,0);
   flex-basis: 33.33%;
   height: 300px;
   z-index: 0;
 }
+/* Оставлю себе на будущее */
 
-.colourBlock::after {
+/* .colourBlock::after {
   content: "";
   position: absolute;
   background-color: black;
@@ -33,7 +34,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-}
+} 
 
 .colourBlock:nth-child(1)::after {
   opacity: 0%;
@@ -53,14 +54,28 @@ body {
 
 .colourBlock:nth-child(5)::after {
   opacity: 80%;
+} */
+
+.colourBlock:nth-child(2) {
+  background-color: rgb(204,0,0);
 }
 
-.colourBlock:nth-child(5) {
-  order: 1;
+.colourBlock:nth-child(3) {
+  background-color: rgb(153,0,0);
 }
 
 .colourBlock:nth-child(4) {
+  background-color: rgb(102,0,0);
   order: 2;
+}
+
+.colourBlock:nth-child(5) {
+  background-color: rgb(51,0,0);
+  order: 1;
+}
+
+.colourBlock:nth-child(6) {
+  background-color: rgb(0,0,0);
 }
 
 @media (max-width: 899px) {
