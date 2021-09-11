@@ -54,11 +54,6 @@ body {
     flex-basis: 50%;
   }
 
-  .block1,
-  .block2 {
-    order: -1;
-  }
-
   .block4 {
     order: 0;
   }
@@ -67,9 +62,12 @@ body {
     order: 1;
   }
 
-  .block5,
-  .block6 {
+  .block5 {
     order: 2;
+  }
+
+  .block6 {
+    order: 3;
   }
 }
 
@@ -78,21 +76,19 @@ body {
     flex-basis: 33.33%;
   }
 
-  .block1,
-  .block2,
   .block3 {
-    order: -1;
-  }
-
-  .block6 {
     order: 0;
   }
 
-  .block5 {
+  .block6 {
     order: 1;
   }
 
-  .block4 {
+  .block5 {
     order: 2;
+  }
+
+  .block4 {
+    order: 3;
   }
 }
