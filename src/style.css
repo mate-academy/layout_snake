@@ -59,7 +59,7 @@ html {
 
 @media( min-width: 1200px) {
   .block {
-    min-width: 400px;
+    min-width: 33.33vw;
   }
 }
 
