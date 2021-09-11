@@ -63,6 +63,12 @@ body {
   }
 }
 
+@media (min-width: 1600px) {
+  .block {
+    flex-basis: 500px;
+  }
+}
+
 .block-1 {
   background-color: rgb(100%, 0%, 0%);
 }
