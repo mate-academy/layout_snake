@@ -4,14 +4,18 @@ html {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
 
 .six-blocks {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
+  left: 0;
+  right: 0;
 }
 
 .block {
