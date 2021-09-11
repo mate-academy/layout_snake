@@ -57,9 +57,9 @@ html {
  
 }
 
-@media(width: 1200px) {
+@media( min-width: 1200px) {
   .block {
-    width: 400px;
+    min-width: 400px;
   }
 }
 
