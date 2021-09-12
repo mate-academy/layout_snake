@@ -21,47 +21,38 @@ body {
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
-  .block__one,
-  .block__two {
-    order: -1;
-  }
-
-  .block__three,
-  .block__five,
-  .block__six {
-    order: 1;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1199px) {
-  .block__six {
-    order: 1;
-  }
-
-  .block__five {
+  .block__three {
     order: 2;
   }
 
   .block__four {
+    order: 1;
+  }
+
+  .block__five {
     order: 3;
+  }
+
+  .block__six {
+    order: 4;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .block {
-    flex-basis: 400px;
-  }
-
-  .block__six {
-    order: 1;
-  }
-
-  .block__five {
-    order: 2;
+    flex-basis: 30%;
   }
 
   .block__four {
-    order: 3;
+    order: 7;
+  }
+
+  .block__five {
+    order: 6;
+  }
+
+  .block__six {
+    order: 5;
   }
 }
 
