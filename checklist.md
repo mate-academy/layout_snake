@@ -1,13 +1,44 @@
-- check your work using basic recommendations [here](https://github.com/mate-academy/layout_colored-blocks/blob/master/checklist.md)
-- follow DRY (Don't Repeat Yourself)
-- make sure you used flexbox in this task
-- check the styles and make sure you don't write default styles (like display: block for `div` or others)
-- if you have 3 or more attributes, place each one on the new line (including the first one)
-- font family is usually written for `html` tag and inherited by others
-- use alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
-- we preferably use classes for styling, not tags, ids, attributes or something else
-- don't increase specificity of selectors [about selectors specificity](https://www.w3schools.com/css/css_specificity.asp)
-- if you want `box-sizing: border-box` property, use it with `*`-selector because all elements need it so that you don't have to calculate `width - border`
-- check the demo page with different screen sizes (including those bigger than 1700px)
-- do not use overcomplicated media conditions (try to follow desktop-driven or mobile-driven development)
-- are you sure you've polished your code? :)
+1. [STYLES] - Make sure you used `flexbox` in your solution.
+2. [STYLES] - Don't write too many media queries. You have 3 base scenarios, so
+chose the approach - mobile-first or desktop-first - and use it as starting
+(default) case.
+3. [STYLES] - Be careful using flex `order` rule. If you set order manually -
+don't set same order value to several items, use unique numbers.
+4. [STYLES] - Check the styles and make sure you don't write default styles
+(like `display: block` for `div` or others).
+5. [TASK] - Check your work on wide resolution (>1600px). There should be
+maximum 3 blocks in a row.
+6. [STYLES] - Get used to style all elements using classes. And don't increase
+   selectors specificity unless completely necessary.
+
+```html
+<!--index.html:-->
+<div
+  class="container"
+>
+  <div class="block block--1">1</div>
+  ...
+</div>
+```
+GOOD example:
+```css
+/* style.css */
+.block {
+  height: 300px;
+}
+```
+
+BAD example:
+```css
+/* style.css */
+.container div {
+  height: 300px;
+}
+```
+
+7. [STYLES] - use alternative font-family in case the main one doesn't work
+[like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+8. [STYLES] - if you use `box-sizing: border-box` property, use it with `*`
+selector.
+9. [TESTS] - Make sure to reset default margins for `body`
+10. [TESTS] - Check your breakpoints - should it be at 600px or 599px?
