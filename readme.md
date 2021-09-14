@@ -22,8 +22,10 @@ Display six colored blocks on the screen without any extra margins:
   See the screenshots [here](./references).
 - The first row is to be read from left ro right, the second row from right to left, the third row again from left to right (this way we have a zigzag, or a snake).
 
+---
 --> [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md)
 
+---
 ## Screenshots
 
 | 3 columns |2columns | 1 column |
