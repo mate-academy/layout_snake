@@ -63,22 +63,8 @@ body {
 }
 
 @media (min-width: 900px) {
-  .third_block {
-    order: 3;
-  }
-
-  .fourth_block {
-    order: 6;
-  }
-
-  .sixth_block {
-    order: 4;
-  }
-}
-
-@media (min-width: 1200px) {
   .block {
-    width: 400px;
+    width: 33%;
   }
 
   .third_block {
