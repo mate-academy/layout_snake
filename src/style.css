@@ -93,6 +93,7 @@ body {
 }
 
 @media (min-width: 1200px) {
+
   .container {
     display: flex;
     flex-direction: row;
@@ -100,7 +101,7 @@ body {
   }
 
   .box {
-    flex-basis: 400px;
+    flex-basis: 33.3%;
   }
 
 }
