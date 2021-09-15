@@ -1,5 +1,6 @@
-.body {
+body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -9,6 +10,7 @@
   font-size: 100px;
   font-family: Arial, sans-serif;
   color: white;
+  margin: 0;
 }
 
 .box {
