@@ -15,7 +15,6 @@ body {
   display: flex;
   flex-grow: 1;
   height: 300px;
-  max-width: 450px;
   min-width: 300px;
   align-items: center;
   justify-content: center;
@@ -53,6 +52,10 @@ body {
 }
 
 @media (min-width: 600px) {
+  .block {
+    width: 50%;
+  }
+  
   .third_block {
     order: 4;
   }
