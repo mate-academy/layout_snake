@@ -14,9 +14,7 @@
   height: 300px;
   min-width: 300px;
   flex-basis: 33.33%;
-  flex-shrink: 0;
-  background-color: red;
-  flex-grow: 0;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
