@@ -42,7 +42,6 @@ body {
 
 @media (max-width: 599px) {
   .snake {
-    /* display: flex; */
     flex-direction: column;
   }
 
@@ -54,7 +53,6 @@ body {
 @media (min-width: 600px) {
 
   .snake {
-    /* display: flex; */
     flex-flow: row wrap;
   }
 
@@ -78,7 +76,6 @@ body {
 
 @media (min-width: 900px) {
   .snake {
-    /* display: flex; */
     flex-flow: row wrap;
   }
 
