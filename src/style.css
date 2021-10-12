@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 100px;
+  text-align: center;
+  line-height: 300px;
+  color: #fff;
+}
+
+.block {
+  height: 300px;
+  flex-basis: 33.33%;
+}
+
+.snake :nth-child(1) {
+  background: rgb(100%, 0%, 0%);
+}
+
+.snake :nth-child(2) {
+  background: rgb(80%, 0%, 0%);
+}
+
+.snake :nth-child(3) {
+  background: rgb(60%, 0%, 0%);
+  order: 3;
+}
+
+.snake :nth-child(4) {
+  background: rgb(40%, 0%, 0%);
+  order: 6;
+}
+
+.snake :nth-child(5) {
+  background: rgb(20%, 0%, 0%);
+  order: 5;
+}
+
+.snake :nth-child(6) {
+  background: rgb(0%, 0%, 0%);
+  order: 4;
+}
+
+@media screen and (max-width: 900px) {
+  .snake :nth-child(6) {
+    order: 4;
+  }
+
+  .snake :nth-child(4) {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .block {
+    flex-basis: 50%;
+  }
+
+  .snake :nth-child(6) {
+    order: 6;
+  }
+
+  .snake :nth-child(3) {
+    order: 3;
+  }
+
+  .snake :nth-child(4) {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .block {
+    flex-basis: 100%;
+  }
+
+  .snake :nth-child(3) {
+    order: 3;
+  }
+
+  .snake :nth-child(4) {
+    order: 4;
+  }
+}
