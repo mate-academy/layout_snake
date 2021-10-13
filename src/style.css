@@ -50,17 +50,7 @@ body {
   order: 4;
 }
 
-@media screen and (max-width: 900px) {
-  .snake :nth-child(6) {
-    order: 4;
-  }
-
-  .snake :nth-child(4) {
-    order: 6;
-  }
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 899px) {
   .block {
     flex-basis: 50%;
   }
@@ -78,7 +68,7 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 599px) {
   .block {
     flex-basis: 100%;
   }
