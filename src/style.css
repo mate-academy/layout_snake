@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Arial, sans-serif;
+}
+
 body {
   margin: 0;
 }
@@ -10,11 +14,11 @@ body {
   --height-block: 300px;
   display: flex;
   flex-flow: row wrap;
-  max-width: calc(var(--height-block) * 3.99);
+  width: 100%;
 }
 
 .block {
-  font-family: Arial, sans-serif;
+  flex-basis: 33%;
   font-size: 100px;
   color: white;
   display: flex;
