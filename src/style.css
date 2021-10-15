@@ -1,5 +1,8 @@
-body {
+html {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
@@ -68,7 +71,7 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    flex-basis: 33.33%;
+    flex-basis: calc(100% / 3);
   }
   .block--6 {
     order: 5;
