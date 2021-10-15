@@ -10,20 +10,18 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  /* width: 900px */
 }
 
 .box {
   display: flex;
   height: 300px;
-  width: 300px;
+  min-width: 300px;
+  flex-basis: 100%;
   flex-shrink: 0;
   background-color: rgb(0%, 0%, 0%);
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .box-1 {
@@ -40,39 +38,19 @@ body {
 
 .box-4 {
   background-color: rgb(40%, 0%, 0%);
-  order: 3;
 }
 
 .box-5 {
   background-color: rgb(20%, 0%, 0%);
-  order: 2;
 }
 
-.box-6 {
-  order: 1;
-}
-
-@media (min-width: 600px and max-width: 899px) {
-  .container {
-    flex-direction: column;
+@media (min-width: 600px) {
+  .box {
+    flex-basis: 50%;
   }
 
   .box-3 {
-    order: 1;
-  }
-
-  .box-5 {
     order: 2;
-  }
-
-  .box-6 {
-    order: 3;
-  }
-}
-
-@media (max-width: 599px) {
-  .container {
-    flex-direction: column;
   }
 
   .box-4 {
@@ -80,10 +58,28 @@ body {
   }
 
   .box-5 {
-    order: 2;
+    order: 3;
   }
 
   .box-6 {
+    order: 4;
+  }
+}
+
+@media (min-width: 900px) {
+  .box {
+    flex-basis: 33.3%;
+  }
+
+  .box-6 {
+    order: 2;
+  }
+
+  .box-5 {
     order: 3;
+  }
+
+  .box-4 {
+    order: 4;
   }
 }
