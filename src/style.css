@@ -65,7 +65,7 @@
 
 @media (min-width: 900px) {
   .box {
-    flex-basis: calc(33.3%);
+    flex-basis: calc(100% / 3);
   }
 
   .box:nth-child(3) {
