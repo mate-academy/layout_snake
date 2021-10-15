@@ -11,22 +11,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   height: 300px;
   min-width: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
-  color: white;
-  
+  color: #fff;
 }
 
 .container__box:nth-child(1) {
   background-color: rgb(100%, 0%, 0%);
-  order: 1;
 }
 
 .container__box:nth-child(2) {
   background-color: rgb(80%, 0%, 0%);
-  order: 2;
 }
 
 .container__box:nth-child(3) {
@@ -49,12 +47,6 @@ body {
   order: 6;
 }
 
-@media (min-width: 0) {
-  .container__box {
-    flex-basis: 100%;
-  }
-}
-
 @media (min-width: 600px) {
   .container__box {
     flex-basis: 50%;
@@ -71,7 +63,7 @@ body {
 
 @media (min-width: 900px) {
   .container__box {
-    flex-basis: 33.3%;
+    flex-basis: calc(100% / 3);
   }
 
   .container__box:nth-child(6) {
