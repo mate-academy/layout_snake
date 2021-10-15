@@ -25,7 +25,7 @@ body {
 }
 
 .block--1 {
-  background-color: red;
+  background-color: rgb(100%, 0%, 0%);
 }
 
 .block--2 {
@@ -47,7 +47,7 @@ body {
 }
 
 .block--6 {
-  background-color: black;
+  background-color: rgb(0%, 0%, 0%);
   order: 1;
 }
 
