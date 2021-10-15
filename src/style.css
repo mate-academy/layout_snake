@@ -2,7 +2,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+.body {
   display: flex;
   flex-wrap: wrap;
 }
@@ -12,8 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  flex-basis: calc(100% / 3);
   height: 300px;
-  width: calc(100% / 3);
   min-width: 300px;
   font-size: 100px;
   color: #fff;
