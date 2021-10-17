@@ -18,7 +18,7 @@ html {
   justify-content: center;
   align-items: center;
   color: #fff;
-  flex-basis: 33.33%;
+  flex-basis: calc(100/3);
 }
 
 .block:nth-child(1) {
