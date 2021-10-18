@@ -2,28 +2,26 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-div {
-  display: block;
+body {
+  margin: 0;
 }
 
 .blocks {
   display: flex;
   flex-wrap: wrap;
-  font-size: 100px;
-  text-align: center;
-  color: white;
-  line-height: 300px;
 }
 
 .block {
   height: 300px;
-  flex-basis: 33.3%;
+  flex-basis: calc(100% / 3);
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  line-height: 300px;
 }
 
 .block_1 {
@@ -54,7 +52,7 @@ div {
   order: 4;
 }
 
-@media screen and (max-width: 899px) {
+@media (max-width: 899px) {
   .block {
     flex-basis: 50%;
   }
@@ -72,7 +70,7 @@ div {
   }
 }
 
-@media screen and (max-width: 599px) {
+@media (max-width: 599px) {
   .block {
     flex-basis: 100%;
   }
