@@ -19,7 +19,7 @@ html {
 .block {
   height: 300px;
   min-width: 300px;
-  flex-basis: 33.33%;
+  flex-basis: calc(100% / 3);
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -48,12 +48,6 @@ html {
 
 .block:nth-child(6) {
   background-color: #000;
-}
-
-@media (max-width: 599px) {
-  .block {
-    flex-basis: 100%;
-  }
 }
 
 @media (min-width: 600px) {
