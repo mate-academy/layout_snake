@@ -4,7 +4,6 @@
 
 .body_box {
   display: flex;
-  height: 300px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -66,6 +65,7 @@
 }
 
 @media(min-width:900px) {
+
   .box-3 {
     order: 0;
   }
@@ -80,11 +80,5 @@
 
   .box-6 {
     order: 1;
-  }
-}
-
-@media(min-width:1200px) {
-  .div_box {
-    flex-basis: 400px;
   }
 }
