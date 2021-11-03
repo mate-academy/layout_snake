@@ -10,6 +10,45 @@
   min-width: 300px;
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 916px) {
+  .block--4 {
+    order: 2;
+  }
+
+  .block--5 {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 615px) and (max-width:915px) {
+  .block--3 {
+    order: 2;
+  }
+
+  .block--4 {
+    order: 1;
+  }
+
+  .block--5 {
+    order: 3;
+  }
+
+  .block--6 {
+    order: 4;
+  }
+}
+
+@media screen and (max-width:615px) {
+  .block {
+    order: 0;
+  }
+}
+
 .block--1 {
   background-color: #f00;
 }
