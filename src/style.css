@@ -1,0 +1,76 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+  background-color: #ccc;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 300px;
+  height: 300px;
+  flex-grow: 1;
+}
+
+.number--1 {
+  background-color: #f00;
+}
+
+.number--2 {
+  background-color: #c00;
+}
+
+.number--3 {
+  order: 1;
+  background-color: #900;
+}
+
+.number--4 {
+  order: 2;
+  background-color: #600;
+}
+
+.number--5 {
+  order: 3;
+  background-color: #300;
+}
+
+.number--6 {
+  order: 4;
+  background-color: #000;
+}
+
+@media (min-width: 600px) {
+  .number-3 {
+    order: 2;
+  }
+  .number-4 {
+    order: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .number-4 {
+    order: 4;
+  }
+  .number-6 {
+    order: 2;
+  }
+  .number {
+    flex-basis: calc(100% / 3);
+  }
+}
