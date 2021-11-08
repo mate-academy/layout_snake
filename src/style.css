@@ -81,3 +81,21 @@ body {
     min-width: 400px;
   }
 }
+
+@media (min-width: 1600px) {
+  .block {
+    min-width: 500px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .block {
+    min-width: 600px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .block {
+    min-width: 800px;
+  }
+}
