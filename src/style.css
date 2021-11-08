@@ -13,38 +13,33 @@ body {
   align-content: center;
   align-items: center;
   min-width: 300px;
+  flex-basis: 33%;
 }
 
 .block:nth-child(1) {
   background-color: #f00;
-  flex-basis: 33%;
 }
 
 .block:nth-child(2) {
   background-color: #c00;
-  flex-basis: 33%;
 }
 
 .block:nth-child(3) {
   background-color: #900;
-  flex-basis: 33%;
 }
 
 .block:nth-child(4) {
   background-color: #600;
-  flex-basis: 33%;
   order: 3;
 }
 
 .block:nth-child(5) {
   background-color: #300;
-  flex-basis: 33%;
   order: 2;
 }
 
 .block:nth-child(6) {
   background-color: #000;
-  flex-basis: 33%;
   order: 1;
 }
 
