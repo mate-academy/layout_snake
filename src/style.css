@@ -14,36 +14,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: white;
-}
-
-.cell1 {
+  width: 100%;
   background-color: hsl(0, 100%, 50%);
 }
 
-.cell2 {
+.container :nth-child(2) {
   background-color: hsl(0, 100%, 40%);
 }
 
-.cell3 {
+.container :nth-child(3) {
   background-color: hsl(0, 100%, 30%);
 }
 
-.cell4 {
+.container :nth-child(4) {
   background-color: hsl(0, 100%, 20%);
 }
 
-.cell5 {
+.container :nth-child(5) {
   background-color: hsl(0, 100%, 10%);
 }
 
-.cell6 {
+.container :nth-child(6) {
   background-color: hsl(0, 100%, 0%);
-}
-
-@media screen and (min-width: 300px) {
-  .column-33 {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 600px) {
