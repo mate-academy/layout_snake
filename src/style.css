@@ -66,6 +66,10 @@
 
 @media(min-width:900px) {
 
+  .div_box {
+    flex-basis: 33.3%;
+  }
+
   .box-3 {
     order: 0;
   }
