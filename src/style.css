@@ -30,14 +30,6 @@ body {
     width: 50%;
   }
 
-  .block__1 {
-    order: 1;
-  }
-
-  .block__2 {
-    order: 2;
-  }
-
   .block__3 {
     order: 4;
   }
@@ -46,30 +38,16 @@ body {
     order: 3;
   }
 
-  .block__5 {
+  .block__5,
+  .block__6 {
     order: 5;
   }
 
-  .block__6 {
-    order: 6;
-  }
 }
 
 @media (min-width: 900px) {
   .block {
     width: 33.33%;
-  }
-
-  .block__1 {
-    order: 1;
-  }
-
-  .block__2 {
-    order: 2;
-  }
-
-  .block__3 {
-    order: 3;
   }
 
   .block__4 {
