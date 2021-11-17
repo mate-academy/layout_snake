@@ -4,20 +4,18 @@ body {
 
 .container {
   display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
 }
 
 .box {
   display: flex;
   height: 300px;
-  min-width: 300px;
+  flex-basis: 300px;
   font-size: 100px;
   color: #fff;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  flex-shrink: 0;
 }
 
 .box-1 {
@@ -56,11 +54,9 @@ body {
   .box-6 {
     order: 1;
   }
-
 }
 
 @media (max-width: 902px) {
-
   .box-3 {
     order: 4;
   }
