@@ -10,7 +10,7 @@ body {
 .box {
   display: flex;
   height: 300px;
-  flex-basis: 300px;
+  min-width: 300px;
   font-size: 100px;
   color: #fff;
   justify-content: center;
@@ -42,7 +42,7 @@ body {
   background-color: #000;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 903px) {
   .box-4 {
     order: 3;
   }
@@ -54,6 +54,14 @@ body {
   .box-6 {
     order: 1;
   }
+
+  .box {
+    width: 33.33%;
+  }
+
+  /* .container {
+    flex-wrap: nowrap;
+  } */
 }
 
 @media (max-width: 902px) {
