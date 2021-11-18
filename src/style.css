@@ -58,10 +58,6 @@ body {
   .box {
     width: 33.33%;
   }
-
-  /* .container {
-    flex-wrap: nowrap;
-  } */
 }
 
 @media (max-width: 902px) {
