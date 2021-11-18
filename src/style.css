@@ -29,6 +29,7 @@
 
   .block {
     width: 100%;
+    order: 0;
   }
 }
 
