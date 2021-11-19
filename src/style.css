@@ -33,8 +33,7 @@
   align-items: center;
 
   height: 300px;
-  min-width: 300px;
-  width: 100%;
+  flex-basis: 100%;
 
   font-size: 100px;
   font-weight: 100;
@@ -49,7 +48,7 @@
 
 @media (min-width: 600px) {
   .box {
-    width: calc(100% / 2);
+    flex-basis: 50%;
   }
 
   .box-3 {
@@ -71,7 +70,7 @@
 
 @media (min-width: 900px) {
   .box {
-    width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
   }
 
   .box-4 {
