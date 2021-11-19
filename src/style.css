@@ -56,6 +56,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .box {
+    flex-basis: 33.33%;
+  }
+
   .box-4 {
     order: 3;
   }
@@ -66,11 +70,5 @@ body {
 
   .box-6 {
     order: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .box {
-    flex-basis: 33.3%;
   }
 }
