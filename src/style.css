@@ -14,7 +14,7 @@ body {
 }
 
 .snake {
-  flex-basis: 33.33%;
+  flex-basis: 33.3%;
   line-height: 300px;
   text-align: center;
   color: #fff;
