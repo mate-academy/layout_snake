@@ -71,6 +71,6 @@ body {
 
 @media (min-width: 1200px) {
   .box {
-    flex-basis: 350px;
+    flex-basis: 33.3%;
   }
 }
