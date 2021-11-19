@@ -57,9 +57,12 @@ html {
     order: 2;
   }
 
-  .box--5,
-  .box--6 {
+  .box--5 {
     order: 3;
+  }
+
+  .box--6 {
+    order: 4;
   }
 }
 
@@ -79,9 +82,7 @@ html {
   .box--4 {
     order: 3;
   }
-}
 
-@media (min-width: 1200px) {
   .box {
     flex-basis: 33.3%;
   }
