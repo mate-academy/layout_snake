@@ -9,7 +9,7 @@ html {
 
 .part-of-snake {
   height: 300px;
-  width: 33%;
+  flex-basis: 33%;
   text-align: center;
   line-height: 300px;
   font-size: 100px;
@@ -48,7 +48,7 @@ html {
 
 @media (max-width: 899px) {
   .part-of-snake {
-    width: 50%;
+    flex-basis: 50%;
   }
   .part-of-snake:nth-child(3) {
     order: 4;
@@ -69,7 +69,7 @@ html {
 
 @media (max-width: 599px) {
   .part-of-snake {
-    width: 100%;
+    flex-basis: 100%;
   }
   .part-of-snake:nth-child(3) {
     order: 3;
