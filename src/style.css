@@ -2,10 +2,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  margin: 0;
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +17,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .box-2 {
@@ -49,7 +44,7 @@ main {
   order: 3;
 }
 
-@media (max-width:750px) {
+@media (max-width:900px) {
   .box {
     flex-basis: 50%;
   }
@@ -70,7 +65,7 @@ main {
   }
 }
 
-@media (max-width:450px) {
+@media (max-width:618px) {
   .box {
     flex-basis: 100%;
     order: 0;
