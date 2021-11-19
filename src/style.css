@@ -60,12 +60,8 @@ body {
 }
 
 @media (min-width: 900px) {
-  .block1 {
-    order: 1;
-  }
-  .block2 {
-    order: 1;
-  }
+  .block1,
+  .block2,
   .block3 {
     order: 1;
   }
