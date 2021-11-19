@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -10,7 +9,6 @@ body {
 
 .block {
   height: 300px;
-  width: 300px;
   color: white;
   text-align: center;
   line-height: 300px;
@@ -50,13 +48,16 @@ body {
 
 @media (max-width: 899px) {
   .block--3 {
-    order: 3;
+    order: 9;
   }
   .block--4 {
-    order: 2;
+    order: 8;
   }
   .block--5 {
-    order: 3;
+    order: 10;
+  }
+  .block--6 {
+    order: 11;
   }
 }
 
