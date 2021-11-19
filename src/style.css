@@ -1,6 +1,5 @@
 .mainBlock {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -15,45 +14,42 @@
   text-align: center;
   align-items: center;
   width: 30%;
+  flex-grow: 1;
 }
 
 .one {
   background-color: rgb(255,0,0);
   order: 1;
-  flex-grow: 1;
 }
 
 .two {
   background-color: rgb(204,0,0);
   order: 2;
-  flex-grow: 1;
 }
 
 .three {
   background-color: rgb(153,0,0);
   order: 3;
-  flex-grow: 1;
 }
 
 .four {
   background-color: rgb(102,0,0);
   order: 6;
-  flex-grow: 1;
+
 }
 
 .five {
   background-color: rgb(51,0,0);
   order: 5;
-  flex-grow: 1;
+
 }
 
 .six {
   background-color: rgb(0,0,0);
   order: 4;
-  flex-grow: 1;
 }
 
-.body {
+body {
   margin: 0;
 }
 
