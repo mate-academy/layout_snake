@@ -35,7 +35,9 @@ BAD example:
   height: 300px;
 }
 ```
-7. [STYLES] - if you use `box-sizing: border-box` property, use it with `*`
+7. [STYLES] - use alternative font-family in case the main one doesn't work
+[like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+8. [STYLES] - if you use `box-sizing: border-box` property, use it with `*`
 selector.
-8. [TESTS] - Make sure to reset default margins for `body`
-9. [TESTS] - Check your breakpoints - should it be at 600px or 599px?
+9. [TESTS] - Make sure to reset default margins for `body`
+10. [TESTS] - Check your breakpoints - should it be at 600px or 599px?
