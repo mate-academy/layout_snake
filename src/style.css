@@ -53,6 +53,10 @@ body {
     flex-flow: row wrap;
   }
 
+  .block {
+    flex-basis: 33%;
+  }
+
   .block-3 {
     order: 1;
   }
@@ -79,16 +83,5 @@ body {
 
   .block-6 {
     order: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .block-1,
-  .block-2,
-  .block-3,
-  .block-4,
-  .block-5,
-  .block-6 {
-    flex-basis: 33%;
   }
 }
