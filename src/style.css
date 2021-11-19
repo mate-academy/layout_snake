@@ -10,7 +10,7 @@ body {
 .box {
   display: flex;
   height: 300px;
-  min-width: 300px;
+  flex-basis: 300px;
   font-size: 100px;
   color: #fff;
   justify-content: center;
@@ -56,12 +56,8 @@ body {
   }
 
   .box {
-    width: 33.33%;
+    flex-basis: 33.33%;
   }
-
-  /* .container {
-    flex-wrap: nowrap;
-  } */
 }
 
 @media (max-width: 902px) {
