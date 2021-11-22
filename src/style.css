@@ -7,21 +7,17 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .column {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  flex-basis: 300px;
+  min-height: 300px;
+  flex-basis: 33%;
+  min-width: 300px;
   flex-grow: 1;
-  flex-shrink: 0;
   color: white;
   background-color: red;
 }
@@ -46,23 +42,39 @@ body {
   background-color: black;
 }
 
-@media (max-width: 599px) {
-  .secondVariant,
-  .thirdVariant {
-    display: none;
-  }
-}
-
 @media (min-width: 600px) and (max-width: 899px) {
-  .firstVariant,
-  .thirdVariant {
-    display: none;
+  .container {
+    flex-direction: row;
+  }
+
+  .third {
+    order: 2;
+  }
+
+  .fourth {
+    order: 1;
+  }
+
+  .fifth,
+  .sixth {
+    order: 3;
   }
 }
 
 @media (min-width: 900px) {
-  .firstVariant,
-  .secondVariant {
-    display: none;
+  .container {
+    flex-direction: row;
+  }
+
+  .fourth {
+    order: 3;
+  }
+
+  .fifth {
+    order: 2;
+  }
+
+  .sixth {
+    order: 1;
   }
 }
