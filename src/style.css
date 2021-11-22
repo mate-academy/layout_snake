@@ -5,20 +5,17 @@ body {
   color: #fff;
 }
 
-.row {
+.blocks {
   display: flex;
   flex-wrap: wrap;
 }
 
-.column {
-  box-sizing: border-box;
+.block {
+  flex: 30%;
+  /* box-sizing: border-box; */
   width: 100%;
   text-align: center;
   line-height: 300px;
-}
-
-.row > div {
-  flex: 30%;
 }
 
 .box-1 {
@@ -49,7 +46,7 @@ body {
 }
 
 @media (max-width: 899px) {
-  .row > div {
+  .block {
     flex: 50%;
   }
 
@@ -75,7 +72,7 @@ body {
 }
 
 @media (max-width: 599px) {
-  .row {
+  .blocks {
     flex-direction: column;
   }
 
