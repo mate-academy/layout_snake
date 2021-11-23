@@ -1,5 +1,5 @@
 :root {
-  --sizeOfBlock: 300px;
+  --size-of-block: 300px;
 }
 
 html {
@@ -14,8 +14,8 @@ html {
 
 .box {
   display: flex;
-  min-width: var(--sizeOfBlock);
-  line-height: var(--sizeOfBlock);
+  min-width: var(--size-of-block);
+  line-height: var(--size-of-block);
   font-size: 100px;
   color: white;
   flex-direction: column;
