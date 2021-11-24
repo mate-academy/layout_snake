@@ -40,7 +40,7 @@ body {
   background-color: #555;
 }
 
-@media screen and (min-width: 300px) and (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .wrapper {
     display: block;
     flex-wrap: nowrap;
@@ -52,6 +52,11 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .div300 {
+    width: 100%;
+  }
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
@@ -94,13 +99,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 1199px;
   }
 
   .red-block {
     flex-grow: 1;
     height: 300px;
-    min-width: 300px;
+    min-width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
