@@ -10,8 +10,8 @@ body {
 
 .block {
   display: flex;
-  height: 300px;
-  width: 300px;
+  min-height: 300px;
+  min-width: 300px;
   flex-basis: 100%;
   font-size: 100px;
   justify-content: center;
