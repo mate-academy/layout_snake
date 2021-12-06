@@ -8,7 +8,7 @@ body {
   flex-wrap: wrap;
 }
 
-.snake-container > div {
+.snake-container > .snake-block {
   flex: 0 0 100%;
   height: 300px;
   color: #fff;
@@ -18,56 +18,59 @@ body {
   line-height: 300px;
 }
 
-.snake-container > div:nth-child(1) {
+.snake-container > .snake-block:nth-child(1) {
   background-color: rgb(255,0,0);
-  order: 1;
 }
 
-.snake-container > div:nth-child(2) {
+.snake-container > .snake-block:nth-child(2) {
   background-color: rgb(204,0,0);
-  order: 2;
 }
 
-.snake-container > div:nth-child(3) {
+.snake-container > .snake-block:nth-child(3) {
   background-color: rgb(153,0,0);
-  order: 3;
 }
 
-.snake-container > div:nth-child(4) {
+.snake-container > .snake-block:nth-child(4) {
   background-color: rgb(102,0,0);
-  order: 4;
 }
 
-.snake-container > div:nth-child(5) {
+.snake-container > .snake-block:nth-child(5) {
   background-color: rgb(51,0,0);
-  order: 5;
 }
 
-.snake-container > div:nth-child(6) {
+.snake-container > .snake-block:nth-child(6) {
   background-color: rgb(0,0,0);
-  order: 6;
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .snake-container > div {
+  .snake-container > .snake-block {
     flex-basis: 50%;
   }
-  .snake-container > div:nth-child(3) {
+  .snake-container > .snake-block:nth-child(3) {
     order: 4;
   }
-  .snake-container > div:nth-child(4) {
+  .snake-container > .snake-block:nth-child(4) {
     order: 3;
+  }
+  .snake-container > .snake-block:nth-child(5) {
+    order: 5;
+  }
+  .snake-container > .snake-block:nth-child(6) {
+    order: 6;
   }
 }
 
 @media (min-width: 900px) {
-  .snake-container > div {
+  .snake-container > .snake-block {
     flex-basis: 33.33%;
   }
-  .snake-container > div:nth-child(4) {
+  .snake-container > .snake-block:nth-child(4) {
     order: 6;
   }
-  .snake-container > div:nth-child(6) {
+  .snake-container > .snake-block:nth-child(5) {
+    order: 5;
+  }
+  .snake-container > .snake-block:nth-child(6) {
     order: 4;
   }
 }
