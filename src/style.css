@@ -13,12 +13,10 @@
 .block {
   display: flex;
   height: 300px;
-  flex-shrink: 0;
   font-size: 100px;
   color: #fff;
   justify-content: center;
   align-items: center;
-  flex-flow: wrap;
 }
 
 .block--1 {
