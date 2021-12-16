@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 300px;
-  width: 300px;
+  min-width: 300px;
   text-align: center;
   font-size: 100px;
   font-family: Arial, Helvetica, sans-serif;
@@ -43,44 +43,24 @@ body {
   background-color: black;
 }
 
-@media screen and (min-width: 300px) and (max-width: 599px) {
+@media (max-width: 599px) {
   .container {
-    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
   .block {
     flex-grow: 1;
-    height: 300px;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .container {
-    display: flex;
     flex-wrap: wrap;
   }
 
   .block {
     flex-grow: 1;
-    height: 300px;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .block--1 {
-    order: 1;
-  }
-
-  .block--2 {
-    order: 2;
   }
 
   .block--3 {
@@ -100,37 +80,14 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
   .container {
-    display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1199px;
   }
 
   .block {
     flex-grow: 1;
-    height: 300px;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .block--1 {
-    order: 1;
-  }
-
-  .block--2 {
-    order: 2;
-  }
-
-  .block--3 {
-    order: 3;
-  }
-
-  .block--6 {
-    order: 4;
+    flex-basis: 33.33%;
   }
 
   .block--5 {
