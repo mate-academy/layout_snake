@@ -64,17 +64,14 @@
 }
 
 @media (min-width: 900px) {
+  .block {
+    min-width: 33%;
+  }
   .block--4 {
     order: 6;
   }
 
   .block--6 {
     order: 4;
-  }
-}
-
-@media (min-width: 1100px) {
-  .block {
-    min-width: 33%;
   }
 }
