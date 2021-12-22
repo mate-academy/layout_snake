@@ -23,7 +23,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
 
   .block-3 {
     order: 4;
@@ -61,12 +61,6 @@ body {
     order: 4;
   }
 }
-
-/* @media screen and (min-width: 1200px) {
-  .block {
-    min-width: 350px;
-  }
-} */
 
 /* #region background colors */
 
