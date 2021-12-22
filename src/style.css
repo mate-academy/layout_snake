@@ -16,7 +16,7 @@ body {
 
 .block {
   height: 300px;
-  width: 300px;
+  flex-basis: 300px;
   flex-grow: 1;
   text-align: center;
   line-height: 300px;
@@ -56,10 +56,6 @@ body {
   and (min-width: 600px)
   and (max-width: 900px) {
 
-  .block {
-    height: 33%;
-  }
-
   .block_3 {
     order: 4;
   }
@@ -79,6 +75,10 @@ body {
 
 @media screen
   and (min-width: 900px) {
+
+  .block {
+    flex-basis: 33%;
+  }
 
   .block_4 {
     order: 6;
