@@ -87,3 +87,25 @@ body {
     order: 2;
   }
 }
+
+@media (min-width: 1200px) {
+  .block {
+    flex-basis: 33%;
+  }
+
+  .third__block {
+    order: 1;
+  }
+
+  .fourth__block {
+    order: 4;
+  }
+
+  .fifth__block {
+    order: 3;
+  }
+
+  .sixth-block {
+    order: 2;
+  }
+}
