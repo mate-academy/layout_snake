@@ -19,6 +19,7 @@ body {
   color: white;
   height: 300px;
   line-height: 300px;
+  flex-basis: 100%;
 }
 
 .block-1 {
@@ -43,12 +44,6 @@ body {
 
 .block-6 {
   background-color: black;
-}
-
-@media screen and (min-width: 300px) {
-  .block {
-    flex-basis: 100%;
-  }
 }
 
 @media screen and (min-width: 600px) {
