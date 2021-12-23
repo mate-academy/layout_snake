@@ -82,9 +82,9 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
 
   .column {
-    min-width: 33%;
+    min-width: 400px;
   }
 }
