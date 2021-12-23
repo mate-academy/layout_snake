@@ -71,10 +71,6 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .container {
-    /* width: 560px; */
-  }
-
   .block {
     order: 0;
     width: 80%;
