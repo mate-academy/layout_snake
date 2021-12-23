@@ -65,7 +65,7 @@
 
 @media (min-width: 900px) {
   .block {
-    min-width: 33%;
+    min-width: 32%;
   }
   .block--4 {
     order: 6;
