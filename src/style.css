@@ -56,8 +56,8 @@ body {
 }
 
 @media screen and (min-width: 300px) {
-  .container {
-    max-width: 100%;
+  .block {
+    flex-basis: 300px;
   }
 
   .block--3,
@@ -70,8 +70,8 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .container {
-    max-width: 899px;
+  .block {
+    flex-basis: 300px;
   }
 
   .block--3 {
@@ -91,8 +91,8 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-  .container {
-    max-width: 1049px;
+  .block {
+    flex-basis: 33.33%;
   }
 
   .block--3 {
@@ -109,15 +109,5 @@ body {
 
   .block--6 {
     order: 1;
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  .container {
-    max-width: 1200px;
-  }
-
-  .block {
-    flex-basis: 33.33%;
   }
 }
