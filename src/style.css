@@ -44,8 +44,16 @@ body {
 }
 
 @media (min-width: 600px) {
-  .laptop_order {
+  .block--3 {
     order: 2;
+  }
+
+  .block--5 {
+    order: 3;
+  }
+
+  .block--6 {
+    order: 4;
   }
 }
 
@@ -53,8 +61,9 @@ body {
   .block {
     flex-basis: 33%;
   }
-  .block--5 {
-    order: 3;
+
+  .block--6 {
+    order: 2;
   }
 
   .block--4 {
