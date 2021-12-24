@@ -20,7 +20,7 @@ body {
   flex-grow: 1;
   text-align: center;
   line-height: 300px;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 /* #region background colors */
