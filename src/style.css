@@ -30,36 +30,38 @@ body {
 
 .block--3 {
   background-color: rgb(60%, 0%, 0%);
-  order: 3;
 }
 
 .block--4 {
   background-color: rgb(40%, 0%, 0%);
-  order: 4;
 }
 
 .block--5 {
   background-color: rgb(20%, 0%, 0%);
-  order: 5;
 }
 
 .block--6 {
   background-color: black;
-  order: 6;
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-  .blocks {
+  .blocks__block {
     flex-basis: 50%;
   }
 
-  .block--4 {
-    order: 2;
+  .block--3 {
+    order: 3;
+  }
+  .block--5 {
+    order: 5;
+  }
+  .block--6 {
+    order: 6;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-  .blocks {
+  .blocks__block {
     flex-basis: 33%;
   }
 
@@ -77,7 +79,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .blocks {
+  .blocks__block {
     flex-basis: 33%;
   }
 
