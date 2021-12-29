@@ -63,7 +63,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 906px) {
   .general {
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 599.9px) {
   .general {
     display: flex;
     flex-direction: column;
