@@ -9,12 +9,12 @@
 }
 
 .blocks__block {
-  width: calc(100% / 3);
   min-width: 300px;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 300px;
   flex-grow: 1;
   background: red;
   color: #fff;
@@ -44,12 +44,12 @@
 
 @media (min-width:600px) {
   .blocks__block:nth-child(3) {
-    order: 5;
+    order: 1;
   }
 
   .blocks__block:nth-child(5),
   .blocks__block:nth-child(6) {
-    order: 10;
+    order: 2;
   }
 }
 
@@ -61,10 +61,16 @@
   }
 
   .blocks__block:nth-child(4) {
-    order: 10;
+    order: 2;
   }
 
   .blocks__block:nth-child(5) {
-    order: 5;
+    order: 1;
+  }
+}
+
+@media (min-width:1200px) {
+  .blocks__block {
+    flex-basis: calc(100% / 3);
   }
 }
