@@ -13,7 +13,6 @@ html {
 .main {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
@@ -68,6 +67,9 @@ html {
 }
 
 @media (min-width: 900px) {
+  .block {
+    flex-basis: 33%;
+  }
   .block-1 {
     order: 1;
   }
