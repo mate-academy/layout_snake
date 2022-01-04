@@ -1,89 +1,69 @@
 body {
   margin: 0;
-}
-
-.container {
   font-size: 100px;
   font-family: Arial, sans-serif;
   color: white;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
+  align-items: flex-start;
 }
 
 .block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 300px;
-  flex-shrink: 0;
-  flex-basis: 300px;
   flex-grow: 1;
+  min-width: 300px;
+  height: 300px;
+  width: 33%;
+  text-align: center;
+  line-height: 300px;
 }
 
-.first {
+.block:nth-child(n) {
   background-color: red;
 }
 
-.second {
+.block:nth-child(n+2) {
   background-color: rgb(80%, 0%, 0%);
 }
 
-.third {
+.block:nth-child(n+3) {
   background-color: rgb(60%, 0%, 0%);
 }
 
-.fourth {
+.block:nth-child(n+4) {
   background-color: rgb(40%, 0%, 0%);
 }
 
-.fifth {
+.block:nth-child(n+5) {
   background-color: rgb(20%, 0%, 0%);
 }
 
-.sixth {
+.block:nth-child(n+6) {
   background-color: black;
 }
 
 @media (max-width: 900px) {
-  .first {
-    order: 1;
-  }
-  .second {
-    order: 2;
-  }
-  .third {
+  .block:nth-child(n+3) {
     order: 4;
   }
-  .fourth {
+  .block:nth-child(n+4) {
     order: 3;
   }
-  .fifth {
+  .block:nth-child(n+5) {
     order: 5;
-  }
-  .sixth {
-    order: 6;
   }
 }
 
 @media (min-width: 900px) {
-  .first {
-    order: 1;
-  }
-  .second {
-    order: 2;
-  }
-  .third {
-    order: 3;
-  }
-  .fourth {
+  .block:nth-child(n+4) {
     order: 6;
   }
-  .fifth {
+  .block:nth-child(n+5) {
     order: 5;
   }
-  .sixth {
+  .block:nth-child(n+6) {
     order: 4;
   }
 }
