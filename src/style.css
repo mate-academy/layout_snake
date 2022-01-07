@@ -11,34 +11,35 @@ body {
   flex-direction: column;
 }
 
-.block {
+span {
+  display: block;
   height: 300px;
   min-width: 300px;
   line-height: 300px;
   text-align: center;
 }
 
-.first {
+span:first-child {
   background-color: rgba(255, 0, 0, 100%);
 }
 
-.second {
+span:nth-child(2) {
   background-color: rgba(255, 0, 0, 80%);
 }
 
-.third {
+span:nth-child(3) {
   background-color: rgba(255, 0, 0, 60%);
 }
 
-.fourth {
+span:nth-child(4) {
   background-color: rgba(255, 0, 0, 40%);
 }
 
-.fifth {
+span:nth-child(5) {
   background-color: rgba(255, 0, 0, 20%);
 }
 
-.sixth {
+span:nth-child(6) {
   background-color: rgba(255, 0, 0, 0);
 }
 
@@ -48,33 +49,33 @@ body {
     flex-wrap: wrap;
   }
 
-  .block {
+  span {
     flex-grow: 1;
   }
 
-  .sixth {
+  span:nth-child(6) {
     order: 3;
   }
   
-  .fifth {
+  span:nth-child(5) {
     order: 2;
   }
 
-  .third {
+  span:nth-child(3) {
     order: 1;
   }
 }
 
 @media (min-width: 900px) {
-  .fourth {
+  span {
+    flex-basis: 33.3%;
+  }
+  
+  span:nth-child(4) {
     order: 5;
   }
 
-  .fifth {
+  span:nth-child(5) {
     order: 4;
-  }
-
-  .block {
-    width: calc(100vw / 3);
   }
 }
