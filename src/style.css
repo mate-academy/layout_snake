@@ -1,0 +1,74 @@
+html,
+body {
+  margin: 0;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.snake {
+  display: flex;
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .snake {
+    flex-shrink: 0;
+  }
+}
+
+.part_1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.part_2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.part_3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.part_4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.part_5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.part_6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .part_3,
+  .part_5,
+  .part_6 {
+    order: 1;
+  }
+}
+/*я підганяла медіа запити під developer tools, 
+і там все добре, але у браузері вони працюють 
+інакше і іноді порядок збивається. як це виправити?*/
+
+@media (min-width: 1200px) {
+  .part_4 {
+    order: 6;
+  }
+
+  .part_5 {
+    order: 5;
+  }
+}
