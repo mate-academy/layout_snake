@@ -1,89 +1,96 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+.columm {
   display: flex;
+  flex-flow: row;
   flex-wrap: wrap;
-}
-
-.block {
-  display: flex;
-  min-height: 300px;
-  min-width: 300px;
-  flex-basis: 100%;
-  font-size: 100px;
   justify-content: center;
-  align-items: center;
+}
+
+.number {
+  height: 300px;
   text-align: center;
-  color: white;
+  line-height: 300px;
+  min-width: 33.33%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #ffff;
 }
 
-.block-1 {
-  background-color: red;
+.number:nth-child(1) {
+  background-color: rgb(255, 0, 0);
+  order: 1;
+  flex-grow: 1;
 }
 
-.block-2 {
+.number:nth-child(2) {
   background-color: rgb(204, 0, 0);
+  order: 2;
+  flex-grow: 1;
 }
 
-.block-3 {
+.number:nth-child(3) {
   background-color: rgb(153, 0, 0);
+  order: 3;
+  flex-grow: 1;
 }
 
-.block-4 {
+.number:nth-child(4) {
   background-color: rgb(102, 0, 0);
+  order: 6;
+  flex-grow: 1;
 }
 
-.block-5 {
+.number:nth-child(5) {
   background-color: rgb(51, 0, 0);
+  order: 5;
+  flex-grow: 1;
 }
 
-.block-6 {
+.number:nth-child(6) {
   background-color: rgb(0, 0, 0);
+  order: 4;
+  flex-grow: 1;
 }
 
-@media(min-width:600px) {
-  .block {
-    flex-basis: 50%;
+@media (min-width: 600px) and (max-width: 899px) {
+  .number {
+    min-width: 50%;
   }
-
-  .block-3 {
-    order: 2;
+  .number:nth-child(6) {
+    order: 6;
   }
-
-  .block-4 {
-    order: 1;
+  .number:nth-child(5) {
+    order: 5;
   }
-
-  .block-5 {
+  .number:nth-child(4) {
     order: 3;
   }
-
-  .block-6 {
+  .number:nth-child(3) {
     order: 4;
   }
 }
 
-@media(min-width:900px) {
-  .block {
-    flex-basis: calc(100% / 3);
+@media (max-width: 599px) {
+  .columm {
+    flex-flow: column;
   }
-
-  .block-3 {
-    order: 0;
+  .number {
+    min-width: 100%;
   }
-
-  .block-4 {
+  .number:nth-child(6) {
+    order: 6;
+  }
+  .number:nth-child(5) {
+    order: 5;
+  }
+  .number:nth-child(4) {
+    order: 4;
+  }
+  .number:nth-child(3) {
     order: 3;
-  }
-
-  .block-5 {
-    order: 2;
-  }
-
-  .block-6 {
-    order: 1;
   }
 }
