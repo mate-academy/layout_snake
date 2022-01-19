@@ -1,0 +1,120 @@
+html,
+body {
+  margin: 0;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+/*для body ж обнулила margin чи ви 
+маєте на увазі лише для body треба обнулити?*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.snake {
+  display: flex;
+  height: 300px;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .snake {
+    flex-shrink: 0;
+  }
+}
+/*цей медіа запит я створила, 
+щоб при 420 пікселях і менше блоки 
+вже не звужувались далі, краще видалити?*/
+
+.part_1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.part_2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.part_3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.part_4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.part_5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.part_6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 599px) {
+  .snake {
+    width: 100%;
+  }
+  
+  .container .snake {
+    order: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  /*Я ж правильно розумію, що потрібно 
+  об'єднувати медіа запити оператором and?*/
+  .snake {
+    width: 50%;
+  }
+  
+  .part_3 {
+    order: 4;
+  }
+
+  .part_4 {
+    order: 3;
+  }
+
+  .part_5,
+  .part_6 {
+    order: 5;
+  }
+  /*задала для двох блоків однаковий ордер, 
+  тому що чим більший ордер у флекс-блока, тим
+  далі він розташовується. А якщо у двох елементів
+  однаковий order, то далі буде той, який з самого 
+  початку був далі. В моєму випадку 6 далі п'ятірки
+  з самого початку, тому при однаковому ордері 6 все
+  одно стане за п'ятіркою, а я вирішила таким чином
+  хоча б трішки скоротити код, але це моє сприйняття,
+  може я щось і не зрозуміла*/
+}
+
+@media (min-width: 900px) {
+  .snake {
+    width: 33%;
+  }
+
+  .part_3 {
+    order: 3;
+  }
+
+  .part_4 {
+    order: 6;
+  }
+
+  .part_5 {
+    order: 5;
+  }
+
+  .part_6 {
+    order: 4;
+  }
+}
