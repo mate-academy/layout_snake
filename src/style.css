@@ -13,7 +13,7 @@ body {
   align-items: center;
   flex-basis: 33.3%;
 
-  min-width: 300px;
+  width: 300px;
   height: 300px;
 
   color: #fff;
