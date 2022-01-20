@@ -14,6 +14,7 @@ body {
 
 .block {
   display: flex;
+  flex-basis: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -44,13 +45,6 @@ body {
 
 .blockSix {
   background-color: #000;
-}
-
-@media (min-width: 300px) {
-
-  .block {
-    flex-basis: 100%;
-  }
 }
 
 @media (min-width: 600px) {
