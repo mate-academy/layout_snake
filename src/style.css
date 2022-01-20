@@ -16,7 +16,7 @@ body {
   min-width: 300px;
 
   display: flex;
-  flex-basis: 33%;
+  flex-basis: calc(100% / 3);
   justify-content: center;
   align-items: center;
   text-align: center;
