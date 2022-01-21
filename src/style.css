@@ -1,7 +1,11 @@
+html {
+  color: white;
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+}
 
 body {
   margin: 0 auto;
-  /* padding: 0; */
 }
 
 * {
@@ -15,14 +19,11 @@ body {
 }
 
 .part {
-  width: max(100%/3, 300px);
+  flex-basis: max(100%/3, 300px);
   height: 300px;
 }
 
 .part-number {
-  color: white;
-  font-size: 100px;
-  font-family: Arial, sans-serif;
   text-align: center;
   display: block;
   line-height: 300px;
@@ -61,7 +62,7 @@ body {
 
 @media screen and (max-width: 899px) {
   .part {
-    width: max(100%/2, 300px);
+    flex-basis: max(100%/2, 300px);
   }
   .part1 {
     order: 1;
@@ -86,6 +87,6 @@ body {
 @media screen and (max-width: 599px) {
   .part {
     order: 0;
-    width: max(100%, 300px);
+    flex-basis: max(100%, 300px);
   }
 }
