@@ -50,16 +50,16 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-@media (min-width:898px) {
-  .block:nth-of-type(4) {
-    order: 6;
-  }
-  .block:nth-of-type(5) {
-    order: 5;
-  }
-  .block:nth-of-type(6) {
-    order: 4;
-  }
+.block:nth-of-type(4) {
+  order: 6;
+}
+
+.block:nth-of-type(5) {
+  order: 5;
+}
+
+.block:nth-of-type(6) {
+  order: 4;
 }
 
 @media (max-width: 898px) and (min-width: 599px) {
@@ -79,8 +79,15 @@ body {
     order: 6;
   }
 }
+
 @media (max-width: 599px) {
   .block {
     flex-basis: 100%;
+  }
+  .block:nth-of-type(4) {
+    order: 4;
+  }
+  .block:nth-of-type(6) {
+    order: 6;
   }
 }
