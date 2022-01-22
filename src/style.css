@@ -24,34 +24,34 @@ html {
   line-height: 300px;
 }
 
-.block--1 {
+.block:nth-child(1) {
   background-color: #f00;
 }
 
-.block--2 {
+.block:nth-child(2) {
   background-color: rgb(80%, 0%, 0%);
 }
 
-.block--3 {
+.block:nth-child(3) {
   background-color: rgb(60%, 0%, 0%);
 }
 
-.block--4 {
+.block:nth-child(4) {
   background-color: rgb(40%, 0%, 0%);
 }
 
-.block--5 {
+.block:nth-child(5) {
   background-color: rgb(20%, 0%, 0%);
 }
 
-.block--6 {
+.block:nth-child(6) {
   background-color: black;
 }
 
 @media screen and (max-width: 900px) {
-  .block--3,
-  .block--5,
-  .block--6 {
+  .block:nth-child(3),
+  .block:nth-child(5),
+  .block:nth-child(6) {
     order: 2;
   }
 }
@@ -60,10 +60,10 @@ html {
   .block {
     min-width: 30%;
   }
-  .block--4 {
+  .block:nth-child(4) {
     order: 4;
   }
-  .block--5 {
+  .block:nth-child(5) {
     order: 3;
   }
 
@@ -71,6 +71,6 @@ html {
 
 @media screen and (max-width: 599px) {
   .block {
-    order: 1;
+    order: 2;
   }
 }
