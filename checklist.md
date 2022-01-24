@@ -22,7 +22,7 @@ maximum 3 blocks in a row.
 ```
 GOOD example:
 ```css
-/* style.css */
+/* index.css */
 .block {
   height: 300px;
 }
@@ -30,7 +30,7 @@ GOOD example:
 
 BAD example:
 ```css
-/* style.css */
+/* index.css */
 .container div {
   height: 300px;
 }
