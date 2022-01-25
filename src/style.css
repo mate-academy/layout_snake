@@ -47,6 +47,20 @@ body {
   background-color: rgb(0,0,0);
 }
 
+@media (min-width: 1200px) {
+  .block_6 {
+    order: 4;
+  }
+
+  .block_5 {
+    order: 5;
+  }
+
+  .block_4 {
+    order: 6;
+  }
+}
+
 @media (max-width: 1200px) {
   .block_6 {
     order: 4;
