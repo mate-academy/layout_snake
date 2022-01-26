@@ -1,15 +1,15 @@
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .flex_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
 
-  max-width: 1199px;
   font-size: 100px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -27,14 +27,17 @@ body {
 
 .screen_1 {
   background-color: rgb(255,0,0);
+
 }
 
 .screen_2 {
   background-color: rgb(200,0,0);
+
 }
 
 .screen_3 {
   background-color: rgb(150,0,0);
+
 }
 
 .screen_4 {
@@ -50,6 +53,14 @@ body {
 .screen_6 {
   order: 4;
   background-color: rgb(0,0,0);
+}
+
+@media (min-width: 1200px) {
+
+  .sqr {
+    flex-basis: 400px;
+  }
+
 }
 
 @media (max-width: 899px) {
