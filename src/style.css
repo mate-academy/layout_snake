@@ -22,27 +22,27 @@
   line-height: var(--height-block);
 }
 
-.block-1 {
+.block:nth-child(1) {
   background-color: red;
 }
 
-.block-2 {
+.block:nth-child(2) {
   background-color: #cc0100;
 }
 
-.block-3 {
+.block:nth-child(3) {
   background-color: #990100;
 }
 
-.block-4 {
+.block:nth-child(4) {
   background-color: #600;
 }
 
-.block-5 {
+.block:nth-child(5) {
   background-color: #300;
 }
 
-.block-6 {
+.block:nth-child(6) {
   background-color: #000;
 }
 
@@ -55,13 +55,10 @@
     flex-basis: 50%;
   }
 
-  .block-1,
-  .block-2 {
-    order: -2;
-  }
-
-  .block-4 {
-    order: -1;
+  .block:nth-child(3),
+  .block:nth-child(5),
+  .block:nth-child(6) {
+    order: 1;
   }
 
 }
@@ -71,18 +68,16 @@
     flex-basis: 33%;
   }
 
-  .block-1,
-  .block-2,
-  .block-3,
-  .block-6 {
-    order: -2;
+  .block:nth-child(3),
+  .block:nth-child(6) {
+    order: 1;
   }
 
-  .block-4 {
-    order: 0;
+  .block:nth-child(4) {
+    order: 3;
   }
 
-  .block-5 {
-    order: -1;
+  .block:nth-child(5) {
+    order: 2;
   }
 }
