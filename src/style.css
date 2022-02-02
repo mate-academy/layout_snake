@@ -9,12 +9,11 @@
 .container-block {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+
 }
 
 .block {
   height: var(--height-block);
-  flex: 1 0 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 100px;
@@ -22,7 +21,7 @@
   line-height: var(--height-block);
 }
 
-.block:nth-child(1) {
+.block:first-child {
   background-color: red;
 }
 
@@ -44,6 +43,12 @@
 
 .block:nth-child(6) {
   background-color: #000;
+}
+
+@media (max-width: 600px) {
+  .block {
+    flex: 1 0 300px;
+  }
 }
 
 @media (min-width: 600px) {
