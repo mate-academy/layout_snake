@@ -53,7 +53,7 @@
   .small__block:nth-child(4) {
     order: 3;
   }
-    .small__block:nth-child(5) {
+  .small__block:nth-child(5) {
     order: 5;
   }
   .small__block:nth-child(6) {
