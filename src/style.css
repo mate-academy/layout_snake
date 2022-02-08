@@ -53,6 +53,12 @@
   .small__block:nth-child(4) {
     order: 3;
   }
+    .small__block:nth-child(5) {
+    order: 5;
+  }
+  .small__block:nth-child(6) {
+    order: 6;
+  }
 }
 
 @media (min-width: 900px) {
