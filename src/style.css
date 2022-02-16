@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /*flex-wrap задає правила виводу flex-елементів
+  wrap розміщення в декілька ліній.*/
+}
+
+.block {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 100px;
+  display: flex;
+  flex-grow: 1; /*всі блоки отримають одинаковий вільний простір*/
+  flex-basis: 26%;/* встановлює ширину блоку, % від головного флекс контейнера*/
+  height: 300px;
+  min-width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.block--1 {
+  background-color: hsl(0, 100%, 50%);
+  /*hsl(hue(відтінок в градусах на кольоровому колі),
+  saturation -насиченість, lightness -яскравість)*/
+}
+
+.block--2 {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.block--3 {
+  background-color: hsl(0, 100%, 30%);
+}
+
+.block--4 {
+  background-color: hsl(0, 100%, 20%);
+}
+
+.block--5 {
+  background-color: hsl(0, 100%, 10%);
+}
+
+.block--6 {
+  background-color: hsl(0, 100%, 0%);
+}
+
+@media (min-width: 900px) { /*більше 900 буде такий порядок боксів
+  в другому рядку */
+  .block--6 {
+    order: 1;
+  }
+  .block--5 {
+    order: 2;
+  }
+  .block--4 {
+    order: 3;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {/*в діапазоні від 600 до 900
+  порядок елементів буде таким*/
+  .block--4 {
+    order: 4; /*дефолтне значення ордера 0*/
+  }
+  .block--3 { /*елементи розміщуються по зростанню значення ордер*/
+    order: 5;
+  }
+  .block--5 {
+    order: 6;
+  }
+  .block--6 {
+    order: 7;
+  }
+}
+/*менше 600 буде 1 стовпчик від 1 по 6*/
