@@ -37,9 +37,6 @@ body {
 
 .block {
   display: flex;
-  /* width: 33%; */
-  /* width: 33%; */
-  /* text center */
   justify-content: center;
   text-align: center;
   align-items: center;
