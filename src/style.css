@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks {
+  height: 300px;
+  min-width: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+}
+
+@media (max-width: 899px) {
+  .container2 > .blocks {
+    height: 0;
+    font-size: 0;
+    width: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: black;
+    text-align: center;
+    line-height: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 900px) {
+  .container > .blocks {
+    height: 0;
+    font-size: 0;
+    width: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: black;
+    text-align: center;
+    line-height: 0;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .reverse2 {
+    flex-direction: row-reverse;
+  }
+}
+
+.color1 {
+  background-color: red;
+}
+
+.color2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.color3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.color4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.color5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.color6 {
+  background-color: rgb(0, 0, 0);
+}
