@@ -4,8 +4,7 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: wrap; /*flex-wrap задає правила виводу flex-елементів
-  wrap розміщення в декілька ліній.*/
+  flex-wrap: wrap;
 }
 
 .block {
@@ -13,8 +12,8 @@ body {
   color: #fff;
   font-size: 100px;
   display: flex;
-  flex-grow: 1; /*всі блоки отримають одинаковий вільний простір*/
-  flex-basis: 26%;/* встановлює ширину блоку, % від головного флекс контейнера*/
+  flex-grow: 1;
+  flex-basis: 26%;
   height: 300px;
   min-width: 300px;
   justify-content: center;
@@ -23,8 +22,6 @@ body {
 
 .block--1 {
   background-color: hsl(0, 100%, 50%);
-  /*hsl(hue(відтінок в градусах на кольоровому колі),
-  saturation -насиченість, lightness -яскравість)*/
 }
 
 .block--2 {
@@ -47,8 +44,7 @@ body {
   background-color: hsl(0, 100%, 0%);
 }
 
-@media (min-width: 900px) { /*більше 900 буде такий порядок боксів
-  в другому рядку */
+@media (min-width: 900px) {
   .block--6 {
     order: 1;
   }
@@ -60,12 +56,11 @@ body {
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {/*в діапазоні від 600 до 900
-  порядок елементів буде таким*/
+@media (min-width: 600px) and (max-width: 899px) {
   .block--4 {
-    order: 4; /*дефолтне значення ордера 0*/
+    order: 4;
   }
-  .block--3 { /*елементи розміщуються по зростанню значення ордер*/
+  .block--3 {
     order: 5;
   }
   .block--5 {
@@ -75,4 +70,3 @@ body {
     order: 7;
   }
 }
-/*менше 600 буде 1 стовпчик від 1 по 6*/
