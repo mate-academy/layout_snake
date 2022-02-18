@@ -5,34 +5,35 @@ body {
   color: #fff;
 }
 
+.container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .block--1 {
   background-color: red;
 }
 
 .block--2 {
-  background-color: #c00;
+  background-color: rgb(255, 0, 0, 0.8);
 }
 
 .block--3 {
-  background-color: #900;
+  background-color: rgb(255, 0, 0, 0.6);
 }
 
 .block--4 {
-  background-color: #600;
+  background-color: rgb(255, 0, 0, 0.4);
 }
 
 .block--5 {
-  background-color: #300;
+  background-color: rgb(255, 0, 0, 0.2);
 }
 
 .block--6 {
-  background-color: black;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  background-color: rgb(255, 0, 0, 0);
 }
 
 .block {
