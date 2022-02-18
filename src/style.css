@@ -5,19 +5,15 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  flex-basis: 300px;
-  flex-grow: 1;
-  flex-shrink: 0;
 }
 
 .block {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 
   height: 300px;
-  width: 100%;
   min-width: 300px;
 
   font-family: Arial, Helvetica, sans-serif;
