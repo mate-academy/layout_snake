@@ -21,7 +21,6 @@ body {
 
   height: var(--min_height);
   min-width: var(--min_height);
-  /* flex-basis: 100%; */
 
   flex-shrink: 0;
 
