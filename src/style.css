@@ -5,89 +5,90 @@ body {
   color: white;
 }
 
-.row {
+.container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.column {
+.box {
   display: flex;
+  min-width: 300px;
   height: 300px;
   flex: 1 1 33%;
   justify-content: center;
   text-align: center;
   align-items: center;
-  min-width: 300px;
+
 }
 
-.first {
+.box-1 {
   background-color: red;
   order: 1;
 }
 
-.second {
+.box-2 {
   background-color: rgb(204, 1, 1);
   order: 2;
 }
 
-.thirtd {
+.box-3 {
   background-color: rgb(153, 0, 0);
   order: 3;
 }
 
-.fourth {
+.box-4 {
   background-color: rgb(102, 0, 0);
   order: 6;
 }
 
-.fifth {
+.box-5 {
   background-color: rgb(51, 0, 0);
   order: 5;
 }
 
-.sixth {
+.box-6 {
   background-color: black;
   order: 4;
 }
 
 @media (min-width: 600px) {
-  .first {
+  .box-1 {
     order: 1;
   }
-  .second {
+  .box-2 {
     order: 2;
   }
-  .thirtd {
+  .box-3 {
     order: 4;
   }
-  .fourth {
+  .box-4 {
     order: 3;
   }
-  .fifth {
+  .box-5 {
     order: 5;
   }
-  .sixth {
+  .box-6 {
     order: 6;
   }
 }
 
 @media (min-width: 300px) {
-  .first {
+  .box-1 {
     order: 1;
   }
-  .second {
+  .box-2 {
     order: 2;
   }
-  .thirtd {
+  .box-3 {
     order: 3;
   }
-  .fourth {
+  .box-4 {
     order: 4;
   }
-  .fifth {
+  .box-5 {
     order: 5;
   }
-  .sixth {
+  .box-6 {
     order: 6;
   }
 }
