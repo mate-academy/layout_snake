@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.column {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+  width: 300px;
+  display: flex;
+  height: 300px;
+  
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 300px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 600px) {
+  .fourth {
+    order: 3;
+  }
+  .fifth {
+    order: 2;
+  }
+  .sixth {
+    order: 1;
+  }
+}
+
+.first {
+  background-color: red;
+}
+
+.second {
+  background-color: rgb(204, 1, 1);
+}
+
+.thirtd {
+  background-color: rgb(153, 0, 0);
+}
+
+.fourth {
+  background-color: rgb(102, 0, 0);
+}
+
+.fifth {
+  background-color: rgb(51, 0, 0);
+}
+
+.sixth {
+  background-color: black;
+}
