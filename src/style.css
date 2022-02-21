@@ -10,18 +10,19 @@ body {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .block {
   font-size: 100px;
   color: #fff;
   height: 300px;
-  width: 300px;
   text-align: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: 300px;
   flex-grow: 1;
   flex-shrink: 0;
 }
@@ -56,7 +57,7 @@ body {
   order: 6;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .bl__3 {
     order: 4;
   }
@@ -66,9 +67,9 @@ body {
   }
 }
 
-@media (min-width: 900px) {
-  .wrapper {
-    max-width: 1199px;
+@media screen and (min-width: 900px) {
+  .block {
+    flex-basis: 33.33%;
   }
 
   .bl__3 {
