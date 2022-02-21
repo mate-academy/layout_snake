@@ -79,7 +79,6 @@ body {
   .six {
     order: 6;
   }
-
 }
 
 @media (max-width: 599px) {
