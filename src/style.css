@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .block {
@@ -68,9 +67,10 @@ body {
 }
 
 @media (min-width: 900px) {
-  .container {
-    max-width: 1199px;
+  .block {
+    flex-basis: 33%;
   }
+
   .block:nth-child(4) {
     order: 5;
   }
