@@ -12,7 +12,7 @@ body {
 }
 
 .block {
-  flex-basis: 300px;
+  flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 0;
   height: 300px;
@@ -47,7 +47,7 @@ body {
 
 @media screen and (min-width: 600px) {
   .block {
-    flex-basis: 50;
+    flex-basis: 50%;
   }
 
   .block--4 {
