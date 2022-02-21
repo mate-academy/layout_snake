@@ -86,8 +86,12 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .snake-section {
-    max-width: 1199px;
-    margin: auto;
+  .snake-block-1,
+  .snake-block-2,
+  .snake-block-3,
+  .snake-block-4,
+  .snake-block-5,
+  .snake-block-6 {
+    flex-basis: 33%;
   }
 }
