@@ -1,0 +1,83 @@
+/* stylelint-disable CssSyntaxError */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.box {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 300px;
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  background-color: rgb(100%, 0%, 0%);
+}
+
+.box-2 {
+  background-color: rgb(80%, 0%, 0%);
+}
+
+.box-3 {
+  background-color: rgb(60%, 0%, 0%);
+}
+
+.box-4 {
+  background-color: rgb(40%, 0%, 0%);
+}
+
+.box-5 {
+  background-color: rgb(20%, 0% , 0%);
+}
+
+.box-6 {
+  background-color: rgb(0, 0 , 0);
+}
+
+@media (min-width: 600px) {
+  .flex-container {
+    flex-direction: row;
+  }
+  .box {
+    flex-basis: 50%;
+  }
+  .box-3 {
+    order: 2;
+  }
+  .box-4 {
+    order: 1;
+  }
+  .box-5 {
+    order: 3;
+  }
+  .box-6 {
+    order: 4;
+  }
+}
+
+@media (min-width: 900px) {
+  .box {
+    flex-basis: 33%;
+  }
+  .box-4 {
+    order: 4;
+  }
+  .box-5 {
+    order: 3;
+  }
+  .box-6 {
+    order: 2;
+  }
+}
