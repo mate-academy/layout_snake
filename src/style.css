@@ -9,9 +9,8 @@ body {
 
 .block {
   height: 300px;
-  flex-basis: 300px;
+  width: 100%;
   flex-grow: 1;
-  /* flex-shrink: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +45,10 @@ body {
 }
 
 @media (min-width: 600px) {
+  .block {
+    width: 50%;
+  }
+
   .block--1 {
     order: 1;
   }
@@ -72,6 +75,9 @@ body {
 }
 
 @media (min-width: 900px) {
+  .block {
+    width: 33.3%;
+  }
   .block--1 {
     order: 1;
   }
@@ -94,17 +100,5 @@ body {
 
   .block--6 {
     order: 4;
-  }
-}
-
-@media (min-width: 1200px) {
-  .block {
-    flex-basis: 400px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .block {
-    flex-basis: 500px;
   }
 }
