@@ -16,7 +16,7 @@ body {
 
 .blocks {
   height: 300px;
-  flex-basis: 300px;
+  flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 0;
   color: white;
@@ -49,29 +49,25 @@ body {
 }
 
 @media (min-width: 600px) {
-  /* .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
   .color3,
   .color5,
   .color6 {
     order: 1;
   }
+  .blocks {
+    flex-basis: 50%;
+  }
 }
 
 @media (min-width: 900px) {
+  .blocks {
+    flex-basis: 33%;
+  }
   .color4 {
     order: 2;
   }
   .color3,
   .color6 {
     order: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .blocks {
-    flex-basis: 301px;
   }
 }
