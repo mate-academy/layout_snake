@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 300px;
-  flex-basis: 300px;
+  flex-basis: 100%;
   flex-grow: 1;
 }
 
@@ -44,6 +44,10 @@ body {
 }
 
 @media (min-width: 600px) {
+  .colum {
+    flex-basis: 50%;
+  }
+
   .colum-3 {
     order: 4;
   }
