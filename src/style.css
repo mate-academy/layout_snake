@@ -8,14 +8,14 @@ body {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 300px;
+  min-width: 300px;
+  flex-basis: 33%;
   flex-grow: 1;
   height: 300px;
 }
