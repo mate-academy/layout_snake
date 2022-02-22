@@ -70,16 +70,6 @@ body {
 }
 
 @media (min-width: 900px) {
-  .block--5 {
-    order: 5;
-  }
-
-  .block--4 {
-    order: 6;
-  }
-}
-
-@media (min-width: 1200px) {
   .block {
     flex-basis: 33%;
   }
