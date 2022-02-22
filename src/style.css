@@ -9,7 +9,7 @@ body {
 }
 
 .conteiner {
-  flex-basis: 1800px;
+  flex-basis: 100%;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
