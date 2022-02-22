@@ -45,6 +45,21 @@ body {
   background-color: #000;
 }
 
+@media (min-width: 600px) {
+  .block--3 {
+    order: 4;
+  }
+  .block--4 {
+    order: 3;
+  }
+  .block--5 {
+    order: 5;
+  }
+  .block--6 {
+    order: 6;
+  }
+}
+
 @media (min-width: 900px) {
   .block {
     flex-basis: calc(100% / 3);
@@ -56,21 +71,6 @@ body {
     order: 5;
   }
   .block--4 {
-    order: 6;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
-  .block--3 {
-    order: 4;
-  }
-  .block--4 {
-    order: 3;
-  }
-  .block--5 {
-    order: 5;
-  }
-  .block--6 {
     order: 6;
   }
 }
