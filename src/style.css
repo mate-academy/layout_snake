@@ -15,10 +15,10 @@ body {
   min-width: 300px;
   height: 300px;
   flex-basis: 33%;
+  flex-grow: 1;
   justify-content: center;
   text-align: center;
   align-items: center;
-
 }
 
 .box-1 {
