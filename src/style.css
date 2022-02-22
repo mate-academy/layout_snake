@@ -41,15 +41,18 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-
+  flex-basis: 300px;
   flex-grow: 1;
+  flex-shrink: 0;
   height: 300px;
-  min-width: 300px;
 }
 
-@media (min-width: 599px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .container {
     flex-direction: row;
+  }
+  .block {
+    flex-basis: 50%;
   }
   .block--4 {
     order: 1;
@@ -70,15 +73,15 @@ body {
     flex-direction: row;
   }
   .block {
-    width: 33%;
+    flex-basis: 33%;
   }
-  .block--4 {
-    order: 3;
-  }
-  .block--5 {
-    order: 2;
+  .block--3 {
+    order: 1;
   }
   .block--6 {
-    order: 1;
+    order: 2;
+  }
+  .block--4 {
+    order: 4;
   }
 }
