@@ -7,12 +7,7 @@ body {
   flex-direction: column;
 }
 
-.snake-block-1,
-.snake-block-2,
-.snake-block-3,
-.snake-block-4,
-.snake-block-5,
-.snake-block-6 {
+.block--properties {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,21 +40,13 @@ body {
   background: hsl(0, 100%, 0%);
 }
 
-@media (min-width: 450px) {
-  .snake-block-1,
-  .snake-block-2,
-  .snake-block-3,
-  .snake-block-4,
-  .snake-block-5,
-  .snake-block-6 {
-    flex-grow: 1;
-  }
-}
-
 @media (min-width: 600px) {
   .snake-section {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .block--properties {
+    flex-grow: 1;
   }
   .snake-block-1 {
     order: -3
@@ -83,15 +70,7 @@ body {
   .snake-block-4 {
     order: 3;
   }
-}
-
-@media (min-width: 1200px) {
-  .snake-block-1,
-  .snake-block-2,
-  .snake-block-3,
-  .snake-block-4,
-  .snake-block-5,
-  .snake-block-6 {
+  .block--properties {
     flex-basis: 33%;
   }
 }
