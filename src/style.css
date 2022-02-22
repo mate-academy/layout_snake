@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .wrapper {
@@ -70,7 +69,7 @@ body {
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media(max-width: 899px) {
   .wrapper__block-4 {
     order: 1;
   }
@@ -85,5 +84,12 @@ body {
 
   .wrapper__block-6 {
     order: 4;
+  }
+}
+
+@media(max-width: 599px) {
+  .wrapper__block-3,
+  .wrapper__block-4 {
+    order: 0;
   }
 }
