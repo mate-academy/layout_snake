@@ -48,7 +48,7 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 600px) and (max-width: 899.99px) {
+@media (min-width: 600px) {
   .div3 {
     order: 4;
   }
@@ -75,7 +75,7 @@ body {
     order: 6;
   }
 
-  .div5 {
-    order: 5;
+  .div6 {
+    order: 4;
   }
 }
