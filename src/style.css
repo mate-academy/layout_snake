@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
@@ -8,14 +12,13 @@ body {
   margin: 0;
 }
 
-.container,
-.block {
+.container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .block {
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -26,7 +29,7 @@ body {
 }
 
 .block-1 {
-  background-color: rgb(100% 0% 0%);
+  background-color: red;
 }
 
 .block-2 {
@@ -50,15 +53,22 @@ body {
 }
 
 @media (min-width: 600px) {
+  .block {
+    flex-basis: 50%;
+  }
+
   .block-4 {
     order: 1;
   }
+
   .block-3 {
     order: 2;
   }
+
   .block-5 {
     order: 3;
   }
+
   .block-6 {
     order: 4;
   }
@@ -66,7 +76,7 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    flex-basis: calc(100% / 3);
+    flex-basis: 33%;
   }
 
   .block-3 {
