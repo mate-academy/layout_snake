@@ -17,15 +17,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  min-width: 300px;
   height: 300px;
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
 @media (min-width: 600px) {
   .boxes {
-    min-width: 300px;
+    flex-basis: 33%;
     width: auto;
-    flex: 1;
   }
   .box3 {
     order: 2;
@@ -39,29 +40,14 @@ body {
 }
 
 @media (min-width: 900px) {
+  .boxes {
+    flex-basis: 33%;
+  }
   .box4 {
     order: 6;
   }
   .box5 {
     order: 5;
-  }
-}
-
-@media (min-width: 1200px) {
-  .boxes {
-    min-width: 400px;
-  }
-  .box4 {
-    order: 6;
-  }
-  .box6 {
-    order: 4;
-  }
-}
-
-@media (min-width: 1600px) {
-  .boxes {
-    flex-basis: 33%;
   }
 }
 
