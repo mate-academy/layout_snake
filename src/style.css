@@ -11,16 +11,15 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   justify-content: center;
   align-items: center;
+  flex-basis: 100%;
 
-  width: 300px;
   height: 300px;
   color: white;
   text-align: center;
@@ -56,6 +55,10 @@ body {
   .block-6 {
     order: 2;
   }
+
+  .block {
+    flex-basis: 50%;
+  }
 }
 
 @media (min-width:900px) {
@@ -65,5 +68,9 @@ body {
 
   .block-4 {
     order: 3;
+  }
+
+  .block {
+    flex-basis: 33.33%;
   }
 }
