@@ -9,9 +9,7 @@ body {
 .container {
   display: flex;
   /* justify-content: center; */
-  flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1199px;
   /* align-items: center; */
 }
 
@@ -22,8 +20,9 @@ body {
   height: 300px;
   font-size: 100px;
   flex-grow: 1;
-  flex-basis: 300px;
+  flex-basis: 100%;
   color: rgb(255, 255, 255);
+  width: 100%;
 }
 
 .block--1 {
@@ -51,8 +50,8 @@ body {
 }
 
 @media (min-width: 600px) {
-  .container {
-    flex-direction: row;
+  .block {
+    flex-basis: 50%;
   }
 
   .block--3 {
@@ -69,8 +68,8 @@ body {
 }
 
 @media (min-width: 900px) {
-  .container {
-    flex-direction: row;
+  .block {
+    flex-basis: 33%;
   }
 
   .block--3 {
