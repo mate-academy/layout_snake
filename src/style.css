@@ -11,7 +11,7 @@ body {
   flex-wrap: wrap;
 }
 
-.block {
+.container__block {
   height: 300px;
   min-width: 300px;
   flex-shrink: 0;
@@ -20,69 +20,69 @@ body {
   align-items: center;
 }
 
-.block1 {
+.container :first-child {
   background-color: red;
 }
 
-.block2 {
+.container :nth-child(2) {
   background-color: rgb(204,0,0);
 }
 
-.block3 {
+.container :nth-child(3) {
   background-color: rgb(153,0,0);
 }
 
-.block4 {
+.container :nth-child(4) {
   background-color: rgb(102,0,0);
 }
 
-.block5 {
+.container :nth-child(5) {
   background-color: rgb(51,0,0);
 }
 
-.block6 {
+.container :last-child {
   background-color: black;
 }
 
 @media (min-width: 900px) {
-  .block {
+  .container__block {
     flex-basis: 33.33%;
   }
 
-  .block4 {
+  .container :nth-child(4) {
     order: 3;
   }
 
-  .block5 {
+  .container :nth-child(5) {
     order: 2;
   }
 
-  .block6 {
+  .container :nth-child(6) {
     order: 1;
   }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .block {
+  .container__block {
     flex-basis: 50%;
   }
 
-  .block3 {
+  .container :nth-child(3) {
     order: 2;
   }
 
-  .block4 {
+  .container :nth-child(4) {
     order: 1;
   }
 
-  .block5,
-  .block6 {
+  .container :nth-child(5),
+  .container :last-child {
     order: 3;
   }
 }
 
 @media (max-width: 599px) {
-  .block {
+  .container__block {
     flex-basis: 100%;
   }
 }
