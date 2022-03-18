@@ -60,32 +60,23 @@ body {
     flex-basis: 25%;
   }
 
-  .block--1 {
-    background-color: red;
-  }
-
   .block--2 {
-    background-color: rgb(204,1,1);
     order: 1;
   }
 
   .block--3 {
-    background-color: rgb(153,1,1);
     order: 4;
   }
 
   .block--4 {
-    background-color: rgb(103,1,0);
     order: 3;
   }
 
   .block--5 {
-    background-color: rgb(51,1,1);
     order: 5;
   }
 
   .block--6 {
-    background-color: black;
     order: 6;
   }
 
@@ -100,32 +91,26 @@ body {
   }
 
   .block--1 {
-    background-color: red;
     order: 1;
   }
 
   .block--2 {
-    background-color: rgb(204,1,1);
     order: 2;
   }
 
   .block--3 {
-    background-color: rgb(153,1,1);
     order: 3;
   }
 
   .block--4 {
-    background-color: rgb(103,1,0);
     order: 4;
   }
 
   .block--5 {
-    background-color: rgb(51,1,1);
     order: 5;
   }
 
   .block--6 {
-    background-color: black;
     order: 6;
   }
 }
