@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+  min-width: 300px;
+  height: 300px;
+  flex-grow: 1;
+}
+
+.block--1 {
+  background-color: red;
+}
+
+.block--2 {
+  background-color: rgb(204,1,1);
+  order: 1;
+}
+
+.block--3 {
+  background-color: rgb(153,1,1);
+  order: 2;
+}
+
+.block--4 {
+  background-color: rgb(103,1,0);
+  order: 5;
+}
+
+.block--5 {
+  background-color: rgb(51,1,1);
+  order: 4;
+}
+
+.block--6 {
+  background-color: black;
+  order: 3;
+}
+
+.text {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 899px) {
+  .block {
+    flex-basis: 25%;
+  }
+
+  .block--1 {
+    background-color: red;
+  }
+
+  .block--2 {
+    background-color: rgb(204,1,1);
+    order: 1;
+  }
+
+  .block--3 {
+    background-color: rgb(153,1,1);
+    order: 4;
+  }
+
+  .block--4 {
+    background-color: rgb(103,1,0);
+    order: 3;
+  }
+
+  .block--5 {
+    background-color: rgb(51,1,1);
+    order: 5;
+  }
+
+  .block--6 {
+    background-color: black;
+    order: 6;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 599px) {
+  .block {
+    flex-basis: 50%;
+  }
+
+  .block--1 {
+    background-color: red;
+    order: 1;
+  }
+
+  .block--2 {
+    background-color: rgb(204,1,1);
+    order: 2;
+  }
+
+  .block--3 {
+    background-color: rgb(153,1,1);
+    order: 3;
+  }
+
+  .block--4 {
+    background-color: rgb(103,1,0);
+    order: 4;
+  }
+
+  .block--5 {
+    background-color: rgb(51,1,1);
+    order: 5;
+  }
+
+  .block--6 {
+    background-color: black;
+    order: 6;
+  }
+}
