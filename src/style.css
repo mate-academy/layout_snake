@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.boxes {
+  display: flex;
+  flex-grow: 1;
+
+  height: 300px;
+  min-width: 300px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #f00;
+  color: #fff;
+}
+
+.box1 {
+  order: 1;
+}
+
+.box2 {
+  background-color: #c00;
+  order: 2;
+}
+
+.box3 {
+  background-color: #900;
+  order: 3;
+}
+
+.box4 {
+  background-color: #600;
+  order: 4;
+}
+
+.box5 {
+  background-color: #300;
+  order: 5;
+}
+
+.box6 {
+  background-color: #000;
+  order: 6;
+}
+
+@media (min-width: 600px) {
+  .box3 {
+    order: 4;
+  }
+
+  .box4 {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .boxes {
+    min-width: 30vw;
+    /* i have no idea why 30vw works but 33vw doesn't */
+  }
+
+  .box4 {
+    order: 6;
+  }
+
+  .box6 {
+    order: 4;
+  }
+}
