@@ -13,11 +13,11 @@ body {
 .common_block {
   display: flex;
   flex: 1 0 33%;
+  justify-content: center;
+  align-items: center;
   height: 300px;
   max-height: 300px;
   min-width: 300px;
-  justify-content: center;
-  align-items: center;
 }
 
 .first_block {
