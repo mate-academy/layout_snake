@@ -7,7 +7,9 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  font-size: 100px;
+  text-align: center;
+  color: white;
 }
 
 .block {
@@ -49,12 +51,6 @@ body {
   order: 3;
 }
 
-.text {
-  font-size: 100px;
-  text-align: center;
-  color: white;
-}
-
 @media (max-width: 899px) {
   .block {
     flex-basis: 25%;
@@ -78,10 +74,6 @@ body {
 
   .block--6 {
     order: 6;
-  }
-
-  .container {
-    max-width: 900px;
   }
 }
 
