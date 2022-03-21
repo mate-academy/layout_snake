@@ -15,7 +15,6 @@ body {
 .container,
 .block {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -36,6 +35,7 @@ body {
 
 .block-3 {
   background-color: rgb(153, 0, 0);
+
 }
 
 .block-4 {
@@ -51,12 +51,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .block-3 {
     order: 4;
   }
