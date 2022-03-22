@@ -1,0 +1,68 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 900px;
+
+}
+
+@media (min-width: 300px) {
+  .container {
+    height: 1800px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    height: 900px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    height: 600px;
+  }
+}
+
+.block {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+
+  flex-basis: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.block-1 {
+  background-color: rgb(255, 0, 0);
+
+}
+
+.block-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.block-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.block-4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.block-5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.block-6 {
+  background-color: rgb(0, 0, 0);
+}
