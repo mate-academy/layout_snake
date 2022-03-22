@@ -23,7 +23,6 @@ body {
   align-items: center;
   height: 300px;
   flex-basis: 100%;
-  flex-grow: 1;
 }
 
 .block--1 {
@@ -76,10 +75,6 @@ body {
 @media (min-width: 900px) {
   .block {
     flex-basis: calc(100% / 3);
-  }
-
-  .block--3 {
-    order: 3;
   }
 
   .block--4 {
