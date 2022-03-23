@@ -1,0 +1,43 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+
+.box {
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: white;
+}
+
+.box-1 {
+  background-color: rgba(255, 0, 0, 100%);
+}
+
+.box-2 {
+  background-color: rgba(255, 0, 0, 80%);
+}
+
+.box-3 {
+  background-color: rgba(255, 0, 0, 60%);
+}
+
+.box-4 {
+  background-color: rgba(255, 0, 0, 40%);
+}
+
+.box-5 {
+  background-color: rgba(255, 0, 0, 20%);
+}
+
+.box-6 {
+  background-color: rgba(255, 0, 0, 0%);
+}
