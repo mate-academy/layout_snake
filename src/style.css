@@ -63,7 +63,6 @@ body {
   }
 
   .block-6 {
-    background-color: #000;
     order: 6;
   }
 }
@@ -81,7 +80,6 @@ body {
   }
 
   .block-6 {
-    background-color: black;
     order: 6;
   }
 }
