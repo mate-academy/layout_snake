@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
-  color: white;
+  color: #fff;
 }
 
 .wrap {
@@ -12,26 +12,21 @@ body {
 
 .block {
   height: 300px;
-  width: 33.33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 300px;
+  flex-basis: calc(100% / 3);
+  line-height: 300px;
+  text-align: center;
 }
 
 .block-one {
   background-color: #f00;
-  order: 1;
 }
 
 .block-two {
   background-color: #c00;
-  order: 2;
 }
 
 .block-three {
   background-color: #900;
-  order: 3;
 }
 
 .block-four {
@@ -49,9 +44,9 @@ body {
   order: 4;
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (max-width: 899px) {
   .block {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   .block-one {
@@ -81,7 +76,7 @@ body {
 
 @media (max-width: 599px) {
   .block {
-    width: 100%;
+    flex-basis: 100%;
   }
   .block-one {
     order: 1;
