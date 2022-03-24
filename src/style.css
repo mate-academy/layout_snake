@@ -7,15 +7,9 @@
 .snake {
   display: flex;
   flex-wrap: wrap;
-  /* margin: 0 200px; */
 }
 
-.block__one,
-.block__two,
-.block__three,
-.block__four,
-.block__five,
-.block__six {
+.block__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,29 +20,27 @@
   color: white;
 }
 
-.block__one {
+.block__text:nth-child(1) {
   background-color: rgba(255,0,0,255);
 }
 
-.block__two {
+.block__text:nth-child(2) {
   background-color: rgba(204,0,0,255);
 }
 
-.block__three {
+.block__text:nth-child(3) {
   background-color: rgba(153,0,0,255);
 }
 
-.block__four {
+.block__text:nth-child(4) {
   background-color: rgba(102,0,0,255);
-  /* order: 5; */
 }
 
-.block__five {
+.block__text:nth-child(5) {
   background-color: rgba(51,0,0,255);
-  /* order: 4; */
 }
 
-.block__six {
+.block__text:nth-child(6) {
   background-color: rgba(0,0,0,255);
 }
 
@@ -58,20 +50,15 @@
     flex-direction: row;
   }
 
-  .block__one,
-  .block__two,
-  .block__three,
-  .block__four,
-  .block__five,
-  .block__six {
+  .block__text {
     flex: 33%;
   }
 
-  .block__four {
+  .block__text:nth-child(4) {
     order: 5;
   }
 
-  .block__five {
+  .block__text:nth-child(5) {
     order: 4;
   }
 }
@@ -82,36 +69,31 @@
     flex-direction: row;
   }
 
-  .block__one,
-  .block__two,
-  .block__three,
-  .block__four,
-  .block__five,
-  .block__six {
+  .block__text {
     flex: 50%;
   }
 
-  .block__one {
+  .block__text:nth-child(1) {
     order: 1;
   }
 
-  .block__two {
+  .block__text:nth-child(2) {
     order: 2;
   }
 
-  .block__three {
+  .block__text:nth-child(3) {
     order: 4;
   }
 
-  .block__four {
+  .block__text:nth-child(4) {
     order: 3;
   }
 
-  .block__five {
+  .block__text:nth-child(5) {
     order: 5;
   }
 
-  .block__six {
+  .block__text:nth-child(6) {
     order: 6;
   }
 }
@@ -122,20 +104,15 @@
     flex-direction: column;
   }
 
-  .block__one,
-  .block__two,
-  .block__three,
-  .block__four,
-  .block__five,
-  .block__six {
+  .block__text {
     width: 100vw;
   }
 
-  .block__four {
+  .block__text:nth-child(4) {
     order: 0;
   }
 
-  .block__five {
+  .block__text:nth-child(5) {
     order: 0;
   }
 }
