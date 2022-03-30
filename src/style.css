@@ -1,13 +1,14 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
-  padding: 0;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-
   width: 100%;
 }
 
@@ -15,7 +16,6 @@ body {
   min-width: 300px;
   height: 300px;
   font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: center;
   line-height: 300px;
@@ -51,37 +51,31 @@ body {
   }
 
   .block1 {
-    background-color: red;
     order: 1;
     flex-grow: 1;
   }
   
   .block2 {
-    background-color: rgb(204, 0, 0);
     order: 1;
     flex-grow: 1;
   }
   
   .block3 {
-    background-color: rgb(153, 0, 0);
     order: 1;
     flex-grow: 1;
   }
   
   .block4 {
-    background-color: rgb(102, 0, 0);
     order: 4;
     flex-grow: 1;
   }
   
   .block5 {
-    background-color: rgb(51, 0, 0);
     order: 3;
     flex-grow: 1;
   }
   
   .block6 {
-    background-color: rgb(0, 0, 0);
     order: 2;
     flex-grow: 1;
   }
@@ -93,37 +87,31 @@ body {
     min-width: 300px;
   }
   .block1 {
-    background-color: red;
     order: 1;
     flex-grow: 1;
   }
   
   .block2 {
-    background-color: rgb(204, 0, 0);
     order: 1;
     flex-grow: 1;
   }
   
   .block3 {
-    background-color: rgb(153, 0, 0);
     order: 1;
     flex-grow: 1;
   }
   
   .block4 {
-    background-color: rgb(102, 0, 0);
     order: 4;
     flex-grow: 1;
   }
   
   .block5 {
-    background-color: rgb(51, 0, 0);
     order: 3;
     flex-grow: 1;
   }
   
   .block6 {
-    background-color: rgb(0, 0, 0);
     order: 2;
     flex-grow: 1;
   }
@@ -131,37 +119,31 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
   .block1 {
-    background-color: red;
     order: 1;
     flex-grow: 1;
   }
   
   .block2 {
-    background-color: rgb(204, 0, 0);
     order: 1;
     flex-grow: 1;
   }
   
   .block3 {
-    background-color: rgb(153, 0, 0);
     order: 3;
     flex-grow: 1;
   }
   
   .block4 {
-    background-color: rgb(102, 0, 0);
     order: 2;
     flex-grow: 1;
   }
   
   .block5 {
-    background-color: rgb(51, 0, 0);
     order: 4;
     flex-grow: 1;
   }
   
   .block6 {
-    background-color: rgb(0, 0, 0);
     order: 5;
     flex-grow: 1;
   }
