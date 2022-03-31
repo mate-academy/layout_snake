@@ -1,3 +1,7 @@
+html {
+   font-family: Arial , sans-serif;
+}
+
 body {
   margin: 0;
 }
@@ -20,7 +24,6 @@ body {
   min-width: 300px;
   flex: 33% 1 0 ;
 
-  font-family: Arial , sans-serif;
   font-size: 100px;
   color: white;
 }
