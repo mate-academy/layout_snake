@@ -1,8 +1,12 @@
-body {
-  margin: 0;
+html {
   font-family: Arial, sans-serif;
   color: white;
   font-size: 100px;
+}
+
+body {
+  margin: 0;
+
 }
 
 .container {
