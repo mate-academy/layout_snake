@@ -1,4 +1,8 @@
-* {
+html {
+  font-family: Arial, sans-serif;
+}
+
+body {
   margin: 0;
 }
 
@@ -13,43 +17,37 @@
   min-width: 300px;
   flex-basis: calc(100% / 3);
   font-size: 100px;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
   justify-content: center;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .box__1 {
   background-color: red;
-  color: white;
-
 }
 
 .box__2 {
   background-color: #c00;
-  color: white;
 }
 
 .box__3 {
   background-color: #900;
-  color: white;
 }
 
 .box__4 {
   background-color: #600;
-  color: white;
   order: 6;
 }
 
 .box__5 {
   background-color: #300;
-  color: white;
   order: 5;
 }
 
 .box__6 {
   background-color: #000;
-  color: white;
   order: 4;
 }
 
