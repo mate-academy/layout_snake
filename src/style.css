@@ -5,20 +5,21 @@ html {
 
 body {
   margin: 0;
+  width: 900px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 900px;
 }
 
 .box {
+  display: flex;
   height: 300px;
   width: 300px;
   color: white;
-  text-align: center;
-  line-height: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-1 {
@@ -45,22 +46,33 @@ body {
   background-color: black;
 }
 
+@media (min-width: 900px) {
+  .box-6 {
+    order: 1;
+  }
+
+  .box-5 {
+    order: 2;
+  }
+
+  .box-4 {
+    order: 3;
+  }
+}
+
 @media (max-width: 900px) {
   .container {
     width: 600px;
   }
-  .second {
-    flex-direction: row;
-  }
-  .third {
-    top: 0;
-  }
+
   .box-3 {
     order: 1;
   }
+
   .box-5 {
     order: 2;
   }
+
   .box-6 {
     order: 3;
   }
@@ -70,11 +82,7 @@ body {
   .container {
     display: block;
   }
-  .first,
-  .second,
-  .third {
-    flex-direction: column;
-  }
+
   .box-4 {
     order: 1;
   }
