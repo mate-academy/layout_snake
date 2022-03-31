@@ -5,7 +5,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .color__snake {
@@ -18,12 +17,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 
-  flex: 1 300px;
   height: 300px;
-  max-height: 300px;
-  max-width: 300px;
+  min-width: 300px;
 }
 
 .num_block {
@@ -63,6 +59,10 @@ body {
     max-width: 600px;
   }
 
+  .color_block {
+    flex-basis: 33%;
+  }
+
   .color_block:nth-child(3) {
     order: 4;
   }
@@ -84,6 +84,10 @@ body {
   .color__snake {
     flex-direction: row;
     max-width: 900px;
+  }
+
+  .color_block {
+    flex-basis: 33%;
   }
 
   .color_block:nth-child(4) {
