@@ -5,7 +5,6 @@ html {
 
 body {
   margin: 0;
-  width: 900px;
 }
 
 .container {
@@ -16,7 +15,6 @@ body {
 .box {
   display: flex;
   height: 300px;
-  width: 300px;
   color: white;
   justify-content: center;
   align-items: center;
@@ -47,6 +45,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .box {
+    width: calc(100% / 3);
+  }
+
   .box-6 {
     order: 1;
   }
@@ -60,9 +62,9 @@ body {
   }
 }
 
-@media (max-width: 900px) {
-  .container {
-    width: 600px;
+@media (min-width: 600px) and (max-width: 900px) {
+  .box {
+    width: calc(100% / 2);
   }
 
   .box-3 {
@@ -81,9 +83,5 @@ body {
 @media (max-width: 600px) {
   .container {
     display: block;
-  }
-
-  .box-4 {
-    order: 1;
   }
 }
