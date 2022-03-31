@@ -3,25 +3,14 @@ html {
   font-size: 100px;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   width: 900px;
-}
-
-.first,
-.second,
-.third {
-  display: flex;
-}
-
-.second {
-  flex-direction: column;
-}
-
-.third {
-  position: relative;
-  top: -300px;
 }
 
 .box {
@@ -50,7 +39,6 @@ html {
 
 .box-5 {
   background-color: rgb(20%, 0%, 0%);
-  order: 1;
 }
 
 .box-6 {
@@ -59,7 +47,7 @@ html {
 
 @media (max-width: 900px) {
   .container {
-    display: flex;
+    width: 600px;
   }
   .second {
     flex-direction: row;
@@ -70,8 +58,11 @@ html {
   .box-3 {
     order: 1;
   }
+  .box-5 {
+    order: 2;
+  }
   .box-6 {
-    order: 1;
+    order: 3;
   }
 }
 
