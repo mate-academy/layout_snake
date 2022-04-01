@@ -63,9 +63,12 @@ body {
     flex-wrap: wrap;
   }
 
-  .colored__block1,
+  .colored__block1 {
+    order: -5;
+  }
+
   .colored__block2 {
-    order: -3;
+    order: -5;
   }
 
   .colored__block3 {
@@ -83,17 +86,18 @@ body {
     height: 100vh;
   }
 
-  .colored__block1,
-  .colored__block2,
   .colored__block3 {
     order: -4;
   }
+
   .colored__block4 {
     order: -1;
   }
+
   .colored__block5 {
     order: -2;
   }
+
   .colored__block6 {
     order: -3;
   }
