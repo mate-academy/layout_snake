@@ -1,6 +1,5 @@
 .html {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
 }
 
 body {
@@ -10,16 +9,15 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
 }
 
 .box {
   display: flex;
-
+  flex: 1 0 33%;
   justify-content: center;
   align-items: center;
-
-  width: 300px;
+  font-size: 100px;
+  min-width: 300px;
   height: 300px;
   color: white;
 }
@@ -49,10 +47,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  .container {
-    width: 700px;
-  }
-
   .box--4 {
     order: 1;
   }
@@ -65,10 +59,6 @@ body {
 }
 
 @media (min-width: 900px) {
-  .container {
-    width: 1000px;
-  }
-
   .box--6 {
     order: 2;
   }
@@ -80,5 +70,4 @@ body {
   .box--4 {
     order: 4;
   }
-
 }
