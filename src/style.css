@@ -1,3 +1,8 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+}
+
 body {
   margin: 0;
 }
@@ -15,12 +20,9 @@ body {
 
   height: 300px;
   min-width: 300px;
-  width: 33%;
+  flex-basis: 33.3%;
 
-  font-family: Arial, sans-serif;
-  font-size: 100px;
   text-align: center;
-
   color: white;
 }
 
