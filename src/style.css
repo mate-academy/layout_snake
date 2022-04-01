@@ -28,32 +28,32 @@ body {
   font-family: inherit;
 }
 
-.box-1 {
+.box--1 {
   background-color: red;
   order: 0;
 }
 
-.box-2 {
+.box--2 {
   background-color: #cc0200;
   order: 1;
 }
 
-.box-3 {
+.box--3 {
   background-color: #990001;
   order: 2;
 }
 
-.box-4 {
+.box--4 {
   background-color: #600;
   order: 5;
 }
 
-.box-5 {
+.box--5 {
   background-color: #330100;
   order: 4;
 }
 
-.box-6 {
+.box--6 {
   background-color: black;
   order: 3;
 }
