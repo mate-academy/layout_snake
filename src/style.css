@@ -29,27 +29,27 @@ body {
   color: white;
 }
 
-.block:nth-child(1) {
+.block--1 {
   background-color: rgb(255, 0, 0);
 }
 
-.block:nth-child(2) {
+.block--2 {
   background-color: rgb(204, 0, 0);
 }
 
-.block:nth-child(3) {
+.block--3 {
   background-color: rgb(153, 0, 0);
 }
 
-.block:nth-child(4) {
+.block--4 {
   background-color: rgb(102, 0, 0);
 }
 
-.block:nth-child(5) {
+.block--5 {
   background-color: rgb(51, 0, 0);
 }
 
-.block:nth-child(6) {
+.block--6 {
   background-color: rgb(0, 0, 0);
 }
 
@@ -58,19 +58,19 @@ body {
     max-width: 50%;
   }
 
-  .block:nth-child(3) {
+  .block--3 {
     order: 4;
   }
 
-  .block:nth-child(4) {
+  .block--4 {
     order: 3;
   }
 
-  .block:nth-child(5) {
+  .block--5 {
     order: 5;
   }
 
-  .block:nth-child(6) {
+  .block--6 {
     order: 6;
   }
 }
@@ -80,15 +80,15 @@ body {
     max-width: 33.33%;
   }
 
-  .block:nth-child(4) {
+  .block--4 {
     order: 6;
   }
 
-  .block:nth-child(5) {
+  .block--5 {
     order: 5;
   }
 
-  .block:nth-child(6) {
+  .block--6 {
     order: 4;
   }
 }
