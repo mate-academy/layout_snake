@@ -17,54 +17,39 @@ html {
 
 .block {
   flex-basis: 33.3%;
-
   height: 300px;
+
+  color: white;
+  text-align: center;
+  line-height: 300px;
 }
 
 .block--1 {
   background-color: red;
-  color: white;
-  text-align: center;
-  line-height: 300px;
 }
 
 .block--2 {
   background-color: rgb(204, 0, 0);
-  color: white;
-  text-align: center;
-  line-height: 300px;
 }
 
 .block--3 {
   background-color: rgb(153, 0, 0);
-  color: white;
-  text-align: center;
-  line-height: 300px;
 }
 
 .block--4 {
   background-color: rgb(102, 0, 0);
-  color: white;
-  text-align: center;
-  line-height: 300px;
-
+  
   order: 3;
 }
 
 .block--5 {
   background-color: rgb(51, 0, 0);
-  color: white;
-  text-align: center;
-  line-height: 300px;
 
   order: 2;
 }
 
 .block--6 {
   background-color: rgb(0, 0, 0);
-  color: white;
-  text-align: center;
-  line-height: 300px;
 
   order: 1;
 }
