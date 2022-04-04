@@ -1,7 +1,5 @@
 html {
-  color: white;
   font-family: Arial, sans-serif;
-  font-size: 100px;
 }
 
 body {
@@ -23,6 +21,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
+  font-size: 100px;
 }
 
 @media (max-width: 599px) {
