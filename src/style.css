@@ -49,7 +49,7 @@ body {
   }
 }
 
-@media (min-width: 600px ) and  (max-width: 900px) {
+@media (min-width: 600px ) and  (max-width: 899px) {
   .box__4 {
     order: 0;
   }
