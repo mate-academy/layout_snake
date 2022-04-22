@@ -6,15 +6,17 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
 .block {
   height: 300px;
   flex-basis: 300px;
+  flex-grow: 1;
   flex-shrink: 0;
   text-align: center;
   line-height: 300px;
@@ -22,24 +24,67 @@
 
 .block--1 {
   background-color: rgb(255, 0, 0);
+  order: 1;
 }
 
 .block--2 {
   background-color: rgb(204, 0, 0);
+  order: 2;
 }
 
 .block--3 {
   background-color: rgb(153, 0, 0);
+  order: 3;
 }
 
 .block--4 {
   background-color: rgb(102, 0, 0);
+  order: 4;
 }
 
 .block--5 {
   background-color: rgb(51, 0, 0);
+  order: 5;
 }
 
 .block--6 {
   background-color: rgb(0, 0, 0);
+  order: 6;
+}
+
+@media only screen and (min-width: 481px) {
+  .container {
+    flex-direction: row;
+  }
+  
+  .block {
+    max-width: 500px;
+  }
+  
+  .block--4 {
+    order: 3;
+  }
+
+  .block--3 {
+    order: 4;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .block {
+    max-width: none;
+    flex-basis: 30%;
+  }
+  
+  .block--3 {
+    order: 3;
+  }
+
+  .block--4 {
+    order: 6;
+  }
+
+  .block--6 {
+    order: 4;
+  }
 }
