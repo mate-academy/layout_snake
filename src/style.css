@@ -49,19 +49,7 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 900px) {
-  .box-4 {
-    order: 2;
-  }
-}
-
-@media (min-width: 900px) {
-  .box-5 {
-    order: 1;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 890px) {
+@media (min-width: 600px) {
   .box-3 {
     order: 1;
   }
@@ -69,5 +57,16 @@ body {
   .box-5,
   .box-6 {
     order: 2;
+  }
+}
+
+@media (min-width: 900px) {
+
+  .box-6 {
+    order: 1;
+  }
+
+  .box-4 {
+    order: 3;
   }
 }
