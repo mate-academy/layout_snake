@@ -6,12 +6,10 @@
 .flex-container {
   font-family: Arial, sans-serif;
   display: flex;
-  /*flex-wrap: wrap;*/
 }
 
 .item {
   color: white;
-  /*flex-basis: 50%;*/
   height: 300px;
   text-align: center;
   line-height: 300px;
