@@ -21,17 +21,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 900px) {
-  .block--5 {
-    order: 4;
-  }
-  .block--4 {
-    order: 6;
-  }
-
-}
-
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media screen and (min-width: 600px) {
   .block--3 {
     order: 4;
   }
@@ -43,6 +33,18 @@ body {
   }
   .block--6 {
     order: 6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .block--3 {
+    order: 3;
+  }
+  .block--4 {
+    order: 6;
+  }
+  .block--6 {
+    order: 4;
   }
 }
 
