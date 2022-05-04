@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .column {
@@ -45,13 +46,12 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 1200px) {
-  .column {
-    flex-basis: 400px;
-  }
-}
+@media (min-width: 900px) {
 
-@media (min-width: 900px) and (max-width: 1200px) {
+  .row > * {
+    flex: 1 1 33.33%;
+  }
+
   .block-4 {
     order: 3;
   }
