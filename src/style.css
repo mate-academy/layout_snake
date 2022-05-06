@@ -8,6 +8,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
 }
 
 .block {
@@ -46,18 +47,9 @@ body {
   background-color: #000;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 599px) {
   .container {
-    flex-direction: column;
-  }
-
-  .block {
-    flex-grow: 1;
-  }
-}
-
-@media screen and (min-width: 599px) and (max-width: 900px) {
-  .container {
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
@@ -93,6 +85,7 @@ body {
 @media screen and (min-width: 900px) {
   .container {
     flex-wrap: wrap;
+    flex-direction: row;
   }
  
   .block {
