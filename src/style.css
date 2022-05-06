@@ -89,10 +89,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 0;
     height: 300px;
     min-width: 400px;
-    flex-basis: 300px;
+    flex-basis: 33.33%;
     font-size: 100px;
   }
   .container__block1 {
