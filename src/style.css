@@ -46,13 +46,11 @@ html {
   background-color: rgb(0%, 0%, 0%);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .block {
-    flex-basis: 301px;
+    flex-basis: 33%;
   }
-}
 
-@media (min-width: 751px) {
   .block-4 {
     order: 2;
   }
@@ -62,7 +60,7 @@ html {
   }
 }
 
-@media (min-width: 451px) and (max-width: 750px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .block-3,
   .block-5,
   .block-6 {
