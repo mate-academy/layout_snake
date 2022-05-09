@@ -11,14 +11,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 300px;
+  min-width: 300px;
+  flex-basis: calc(100% / 3);
   flex-grow: 1;
   flex-shrink: 0;
   height: 300px;
