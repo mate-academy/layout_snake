@@ -46,7 +46,6 @@ body {
 }
 
 @media (min-width: 600px) {
-
   .block-3 {
     order: 1;
   }
