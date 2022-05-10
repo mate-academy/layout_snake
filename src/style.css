@@ -11,7 +11,6 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .block {
@@ -48,9 +47,9 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 599px) and (max-width: 899px) {
-  .block--2,
-  .block--1 {
+@media (min-width: 600px) and (max-width: 899px) {
+
+  .block--2 {
     order: 1;
   }
 
