@@ -4,7 +4,8 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -44,10 +45,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   .box4 {
     order: 1;
   }
@@ -65,10 +62,6 @@ body {
 @media (min-width: 900px) {
   .box {
     flex-basis: 33%;
-  }
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
   .box3 {
     order: 1;
