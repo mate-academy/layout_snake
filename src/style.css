@@ -25,32 +25,26 @@ body {
 }
 
 .block__1 {
-  order: 1;
-  background-color: rgb(255 0 0);
+  background-color: rgb(255, 0, 0);
 }
 
 .block__2 {
-  order: 2;
   background-color: rgb(204 0 0);
 }
 
 .block__3 {
-  order: 3;
   background-color: rgb(153 0 0);
 }
 
 .block__4 {
-  order: 4;
   background-color: rgb(102 0 0);
 }
 
 .block__5 {
-  order: 5;
   background-color: rgb(51 0 0);
 }
 
 .block__6 {
-  order: 6;
   background-color: #000;
 }
 
@@ -60,20 +54,28 @@ body {
   }
 
   .block__3 {
-    order: 4;
+    order: 1;
   }
 
-  .block__4 {
+  .block__5 {
+    order: 2;
+  }
+
+  .block__6 {
     order: 3;
   }
 }
 
 @media (min-width: 900px) {
   .block__4 {
-    order: 6;
+    order: 3;
+  }
+
+  .block__5 {
+    order: 2;
   }
 
   .block__6 {
-    order: 4;
+    order: 1;
   }
 }
