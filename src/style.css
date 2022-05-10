@@ -43,7 +43,7 @@ body {
 /*#endregion*/
 
 /*#region mediaWidth*/
-@media (min-width:600px) and (max-width:750px) {
+@media (min-width:600px) {
   .block-3 {
     order: 1;
   }
@@ -56,12 +56,10 @@ body {
 
 }
 
-@media (min-width:900px) and (max-width:1200px) {
+@media (min-width:900px) {
   .block {
     flex-basis: 30%;
   }
-  .block-1,
-  .block-2,
   .block-3 {
     order: 1;
   }
