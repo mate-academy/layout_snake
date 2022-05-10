@@ -24,7 +24,6 @@ body {
 
 .block-1 {
   background-color: rgb(100%, 0%, 0%);
-
 }
 
 .block-2 {
@@ -47,7 +46,7 @@ body {
   background-color: rgb(0%, 0%, 0%);
 }
 
-@media (min-width:617px) {
+@media (min-width:600px) {
   .block-3 {
     order: 1;
   }
