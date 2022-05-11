@@ -16,7 +16,7 @@ body {
   line-height: var(--height);
   text-align: center;
   flex-grow: 1;
-  flex-basis: 33.3%;
+  flex-basis: calc(100% / 3);
 }
 
 .block1 {
@@ -50,30 +50,24 @@ body {
   .block2 {
     order: 2;
   }
-
   .block3 {
     order: 4;
   }
-
   .block4 {
     order: 3;
   }
-
   .block5 {
     order: 5;
   }
-
   .block6 {
     order: 6;
   }
 }
 
 @media (min-width: 900px) {
-
   .block4 {
     order: 6;
   }
-
   .block5 {
     order: 5;
   }
