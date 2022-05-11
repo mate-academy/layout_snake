@@ -48,13 +48,7 @@ body {
 
 /* #endregion */
 
-@media screen and (max-width: 599px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 599px) and (max-width: 900px) {
+@media (min-width: 599px) {
   .block--3 {
     order: 1;
   }
@@ -72,7 +66,7 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
   .block {
     flex-basis: 30%;
   }
