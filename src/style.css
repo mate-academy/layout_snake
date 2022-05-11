@@ -16,44 +16,43 @@ body {
   flex-basis: 300px;
   line-height: 300px;
   text-align: center;
-  
 }
 
-.container > div:nth-child(1) {
+.container > .box:nth-child(1) {
   background-color: rgb(255,0,0);
 }
 
-.container > div:nth-child(2) {
+.container > .box:nth-child(2) {
   background-color: rgb(204,0,0);
 }
 
-.container > div:nth-child(3) {
+.container > .box:nth-child(3) {
   background-color: rgb(153,0,0);
 }
 
-.container > div:nth-child(4) {
+.container > .box:nth-child(4) {
   background-color: rgb(102,0,0);
 }
 
-.container > div:nth-child(5) {
+.container > .box:nth-child(5) {
   background-color: rgb(51,0,0);
 }
 
-.container > div:nth-child(6) {
+.container > .box:nth-child(6) {
   background-color: rgb(0,0,0);
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
 
-  .container > div:nth-child(6) {
+  .container > .box:nth-child(6) {
     order: 4;
   }
 
-  .container > div:nth-child(5) {
+  .container > .box:nth-child(5) {
     order: 3;
   }
 
-  .container > div:nth-child(3) {
+  .container > .box:nth-child(3) {
     order: 2;
   }
 }
@@ -64,11 +63,11 @@ body {
     flex-basis: 30%;
   }
 
-  .container > div:nth-child(4) {
+  .container > .box:nth-child(4) {
     order: 2;
   }
 
-  .container > div:nth-child(5) {
+  .container > .box:nth-child(5) {
     order: 1;
   }
 }
