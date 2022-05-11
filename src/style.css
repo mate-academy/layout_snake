@@ -25,31 +25,19 @@ body {
 }
 
 @media (min-width: 600px) {
-  .block {
-    min-width: 300px;
-  }
-
-  .block--1 {
-    order: 1;
-  }
-
-  .block--2 {
+  .block:nth-child(2) {
     order: 4;
   }
 
-  .block--3 {
+  .block:nth-child(3) {
     order: 5;
   }
 
-  .block--4 {
-    order: 2;
-  }
-
-  .block--5 {
+  .block:nth-child(5) {
     order: 3;
   }
 
-  .block--6 {
+  .block:nth-child(6) {
     order: 6;
   }
 
@@ -59,60 +47,46 @@ body {
 }
 
 @media (min-width: 900px) {
-  .block {
-    min-width: 300px;
-  }
-
-  .block--1 {
-    order: 1;
-  }
-
-  .block--2 {
-    order: 3;
-  }
-
-  .block--3 {
+  .block:nth-child(3) {
     order: 5;
   }
-
-  .block--4 {
+  .block:nth-child(4) {
     order: 6;
   }
 
-  .block--5 {
+  .block:nth-child(5) {
     order: 4;
   }
 
-  .block--6 {
+  .block:nth-child(6) {
     order: 2;
   }
 
   .container {
     height: 600px;
-    max-width: 1200px;
   }
 }
 
-.block--1 {
+.block:nth-child(1) {
   background-color: hsl(0, 100%, 50%);
 }
 
-.block--2 {
+.block:nth-child(2) {
   background-color: hsl(0, 100%, 40%);
 }
 
-.block--3 {
+.block:nth-child(3) {
   background-color: hsl(0, 100%, 30%);
 }
 
-.block--4 {
+.block:nth-child(4) {
   background-color: hsl(0, 100%, 20%);
 }
 
-.block--5 {
+.block:nth-child(5) {
   background-color: hsl(0, 100%, 10%);
 }
 
-.block--6 {
+.block:nth-child(6) {
   background-color: hsl(0, 100%, 0%);
 }
