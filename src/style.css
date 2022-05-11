@@ -12,6 +12,7 @@ body {
 
 .block {
   height: 300px;
+  min-width: 300px;
   flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 0;
