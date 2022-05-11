@@ -11,8 +11,6 @@ body {
 .blocks {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  max-width: 1199px;
 }
 
 .block {
@@ -67,6 +65,9 @@ body {
 }
 
 @media (min-width: 900px) {
+  .block {
+    flex-basis: 33%;
+  }
   .block-3 {
     order: 1;
   }
