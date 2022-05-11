@@ -45,7 +45,7 @@ body {
 
 @media (min-width:600px) {
   .block {
-    flex-basis: 50%;
+    flex-basis: calc(100% / 2);
   }
   .block-3 {
     order: 1;
@@ -62,7 +62,7 @@ body {
 
 @media (min-width:900px) {
   .block {
-    flex-basis: 33.3%;
+    flex-basis: calc(100% / 3);
   }
 
   .block-4 {
