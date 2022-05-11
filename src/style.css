@@ -1,10 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -78,15 +78,11 @@ html {
   .block_4 {
     order: 6;
   }
-}
 
-@media screen and (min-width: 900px) {
   .block_5 {
     order: 5;
   }
-}
 
-@media screen and (min-width: 900px) {
   .block_6 {
     order: 4;
   }
