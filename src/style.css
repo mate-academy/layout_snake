@@ -14,15 +14,14 @@ body {
 
 .block {
   height: 300px;
+  min-width: 300px;
   display: flex;
   flex-grow: 1;
-  flex-basis: 300px;
   color: white;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 100px;
-  line-height: 300px;
 }
 
 .block_1 {
@@ -49,12 +48,6 @@ body {
   background-color: rgb(0, 0, 0) ;
 }
 
-@media screen and (min-width: 900px) {
-  .block {
-    flex-basis: 33%;
-  }
-}
-
 @media screen and (min-width: 600px) {
 
   .block_3 {
@@ -75,6 +68,7 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+
   .block_4 {
     order: 6;
   }
@@ -85,5 +79,9 @@ body {
 
   .block_6 {
     order: 4;
+  }
+
+  .block {
+    flex-basis: calc(100% / 3);
   }
 }
