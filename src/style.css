@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  
+
   min-width: 300px;
   height: 300px;
 
@@ -37,18 +37,6 @@ body {
 }
 
 @media (min-width: 900px) {
-  .blok3 {
-    order: 3;
-  }
-  .blok4 {
-    order: 6;
-  }
-  .blok6 {
-    order: 3;
-  }
-}
-
-@media (min-width: 1200px) {
   .blok {
     flex-basis: 33%;
   }
