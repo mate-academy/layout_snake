@@ -7,9 +7,6 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-
-  /* width: 600px;
-  height: 900px; */
   color: white;
 }
 
@@ -19,7 +16,6 @@ body {
   align-items: center;
   flex-grow: 1;
   flex-basis: 300px;
-
   height: 300px;
 }
 
@@ -63,7 +59,7 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    flex-basis: 33%;
+    flex-basis: calc(100% / 3);
   }
 
   .block_4 {
