@@ -9,8 +9,11 @@ body {
   justify-content: center;
 }
 
-.block__small {
+._row {
   flex: 1 0 33%;
+}
+
+.block__small {
   min-width: 300px;
   height: 300px;
   text-align: center;
@@ -32,27 +35,18 @@ body {
 }
 
 .block__small:nth-child(4) {
+  order: 6;
   background-color: rgb(102, 0, 0);
 }
 
 .block__small:nth-child(5) {
+  order: 5;
   background-color: rgb(51, 0, 0);
 }
 
 .block__small:nth-child(6) {
-  background-color: black;
-}
-
-@media (min-width: 768px) {
-  .block__small:nth-child(4) {
-    order: 6;
-  }
-  .block__small:nth-child(5) {
-    order: 5;
-  }
-  .block__small:nth-child(6) {
-    order: 4;
-  }
+  order: 4;
+  background-color: rgb(0, 0, 0);
 }
 
 @media (max-width: 768px) {
