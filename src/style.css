@@ -20,8 +20,6 @@ body {
   text-align: center;
 }
 
-/* #region blocks bgColor */
-
 .block--1 {
   background-color: #f00;
 }
@@ -46,9 +44,7 @@ body {
   background-color: #000;
 }
 
-/* #endregion */
-
-@media (min-width: 599px) {
+@media (min-width: 600px) {
   .block--3 {
     order: 1;
   }
