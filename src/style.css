@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-grow: 1;
   height: 300px;
-  flex-basis: 300px;
+  min-width: 300px;
   justify-content: center;
   align-items: center;
   background-color: #000;
