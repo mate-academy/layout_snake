@@ -19,7 +19,7 @@ body {
   text-align: center;
   line-height: 300px;
   font-size: 100px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .block__small:nth-child(1) {
