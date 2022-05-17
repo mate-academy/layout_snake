@@ -138,3 +138,30 @@
     order: 0;
   }
 }
+
+@media (min-width: 2600px) {
+  .snake {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    min-width: 500px;
+  }
+
+  .block:nth-child(3) {
+    order: 0;
+  }
+
+  .block:nth-child(4) {
+    order: 3;
+  }
+
+  .block:nth-child(5) {
+    order: 2;
+  }
+
+  .block:nth-child(6) {
+    order: 0;
+  }
+}
