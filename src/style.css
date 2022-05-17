@@ -139,7 +139,7 @@
   }
 }
 
-@media (min-width: 100%) {
+@media (min-width: 5000px) {
   .snake {
     display: flex;
     flex-wrap: wrap;
