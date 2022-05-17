@@ -109,7 +109,7 @@
   }
 
   .block {
-    min-width: 400px;
+    min-width: 33%;
   }
 }
 
@@ -120,7 +120,7 @@
   }
 
   .block {
-    min-width: 500px;
+    min-width: 33%;
   }
 
   .block:nth-child(3) {
@@ -147,7 +147,7 @@
   }
 
   .block {
-    min-width: 600px;
+    min-width: 33%;
   }
 
   .block:nth-child(3) {
