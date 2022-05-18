@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 0 300px ;
+  flex: 1 0 300px;
   min-height: 300px;
   min-width: 300px;
   justify-content: center;
@@ -21,39 +21,42 @@ body {
 
 .block--1 {
   background-color: hsl(0, 100%, 50%);
+  order: 1;
 }
 
 .block--2 {
   background-color: hsl(0, 100%, 40%);
+  order: 2;
 }
 
 .block--3 {
   background-color: hsl(0, 100%, 30%);
+  order: 3;
 }
 
 .block--4 {
   background-color: hsl(0, 100%, 20%);
+  order: 4;
 }
 
 .block--5 {
   background-color: hsl(0, 100%, 10%);
+  order: 5;
 }
 
 .block--6 {
   background-color: hsl(0, 100%, 0%);
+  order: 6;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) {
+  .block > div {
+    flex-basis: 50%;
+  }
   .block--4 {
-    order: 1;
-  }
-  .block--3 {
-    order: 2;
-  }
-  .block--5 {
     order: 3;
   }
-  .block--6 {
+  .block--3 {
     order: 4;
   }
 }
@@ -63,12 +66,9 @@ body {
     flex-basis: 33.33%;
   }
   .block--6 {
-    order: 1;
-  }
-  .block--5 {
-    order: 2;
+    order: 4;
   }
   .block--4 {
-    order: 3;
+    order: 6;
   }
 }
