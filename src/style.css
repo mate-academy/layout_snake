@@ -13,7 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 300px;
-  flex-basis: 300px;
+  min-width: 300px;
+  flex-basis: 100%;
   flex-grow: 1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
@@ -45,6 +46,10 @@ body {
 }
 
 @media (min-width: 600px) {
+  .block {
+    flex-basis: calc(100% / 2);
+  }
+
   .block--4 {
     order: 1;
   }
