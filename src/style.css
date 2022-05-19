@@ -17,7 +17,7 @@
   justify-content: center;
   text-justify: center;
   align-items: center;
-  flex-basis: 300px;
+  min-width: 300px;
   flex-grow: 1;
 
   color: white;
@@ -51,6 +51,9 @@
 }
 
 @media (min-width:600px) {
+  .coloredBlock {
+    flex-basis: 50%;
+  }
   .block-3 {
     order: 1;
   }
@@ -63,13 +66,13 @@
 }
 
 @media (min-width:900px) {
+  .coloredBlock {
+    flex-basis: 33%;
+  }
   .block-4 {
     order: 4;
   }
   .block-6 {
     order: 2;
-  }
-  .coloredBlock {
-    flex-basis: 33%;
   }
 }
