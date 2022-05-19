@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 300px;
+  flex-grow: 1;
+  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+.one {
+  background-color: #F00;
+}
+.two {
+  background-color: #C00;
+}
+.three {
+  background-color: #900;
+}
+.four {
+  background-color: #600;
+}
+.five {
+  background-color: #300;
+}
+.six {
+  background-color: #000;
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .container {
+      flex-wrap: wrap;
+  }
+  .four {
+     order: 3;
+  }
+  .five {
+    order: 2;
+  }
+  .six {
+    order: 1;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 950px) {
+  .item {
+    flex-basis: 240px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 750px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .three {
+    order: 1;
+  }
+  .four {
+    order: 0;
+  }
+  .five {
+    order: 2;
+  }
+  .six {
+    order: 3;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 650px) {
+  .item {
+    flex-basis: 215px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    flex-direction: column;
+  }
+}
