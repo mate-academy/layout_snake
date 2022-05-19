@@ -54,13 +54,6 @@
   }
 }
 
-@media (min-width: 450px) {
-  .snake {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
 @media (min-width: 600px) {
   .snake {
     flex-direction: row;
