@@ -1,3 +1,8 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
 body {
   margin: 0;
 }
@@ -6,11 +11,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
 }
 
-.box {
+.cont__block {
   flex-grow: 1;
   height: 300px;
   flex-basis: 300px;
@@ -18,56 +21,50 @@ body {
   text-align: center;
 }
 
-.container > .box:nth-child(1) {
+.container .cont__block:nth-child(1) {
   background-color: rgb(255,0,0);
 }
 
-.container > .box:nth-child(2) {
+.container .cont__block:nth-child(2) {
   background-color: rgb(204,0,0);
 }
 
-.container > .box:nth-child(3) {
+.container .cont__block:nth-child(3) {
   background-color: rgb(153,0,0);
 }
 
-.container > .box:nth-child(4) {
+.container .cont__block:nth-child(4) {
   background-color: rgb(102,0,0);
 }
 
-.container > .box:nth-child(5) {
+.container .cont__block:nth-child(5) {
   background-color: rgb(51,0,0);
 }
 
-.container > .box:nth-child(6) {
+.container .cont__block:nth-child(6) {
   background-color: rgb(0,0,0);
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-
-  .container > .box:nth-child(6) {
+  .container > .cont__block:nth-child(6) {
     order: 4;
   }
-
-  .container > .box:nth-child(5) {
+  .container > .cont__block:nth-child(5) {
     order: 3;
   }
-
-  .container > .box:nth-child(3) {
+  .container > .cont__block:nth-child(3) {
     order: 2;
   }
 }
 
 @media (min-width: 900px) {
-
-  .box {
+  .cont__block {
     flex-basis: 30%;
   }
-
-  .container > .box:nth-child(4) {
+  .container > .cont__block:nth-child(4) {
     order: 2;
   }
-
-  .container > .box:nth-child(5) {
+  .container > .cont__block:nth-child(5) {
     order: 1;
   }
 }
