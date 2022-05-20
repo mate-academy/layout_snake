@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  --field-width: 100%;
+}
+
+@media (min-width: 900px) {
+  .field-box {
+    width: calc(var(--field-width) / 3);
+  }
+
+  .field-box-1 {
+    order: 1;
+  }
+
+  .field-box-2 {
+    order: 2;
+  }
+
+  .field-box-3 {
+    order: 3;
+  }
+
+  .field-box-4 {
+    order: 6;
+  }
+
+  .field-box-5 {
+    order: 5;
+  }
+
+  .field-box-6 {
+    order: 4;
+  }
+}
+
+@media (max-width: 899px) {
+  .field-box {
+    width: calc(var(--field-width) / 2);
+  }
+
+  .field-box-1 {
+    order: 1;
+  }
+
+  .field-box-2 {
+    order: 2;
+  }
+
+  .field-box-3 {
+    order: 4;
+  }
+
+  .field-box-4 {
+    order: 3;
+  }
+
+  .field-box-5 {
+    order: 5;
+  }
+
+  .field-box-6 {
+    order: 6;
+  }
+}
+
+@media (max-width: 599px) {
+  .field-box {
+    width: var(--field-width);
+  }
+
+  .field-box-1 {
+    order: 1;
+  }
+
+  .field-box-2 {
+    order: 2;
+  }
+
+  .field-box-3 {
+    order: 3;
+  }
+
+  .field-box-4 {
+    order: 4;
+  }
+
+  .field-box-5 {
+    order: 5;
+  }
+
+  .field-box-6 {
+    order: 6;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.field-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+  height: 300px;
+  min-width: 300px;
+  /* border: 1px solid black; */
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 100px;
+}
+
+.field-box--color_red100 {
+  background-color: rgb(100%,0%,0%);
+}
+
+.field-box--color_red80 {
+  background-color: rgb(80%,0%,0%);
+}
+
+.field-box--color_red60 {
+  background-color: rgb(60%,0%,0%);
+}
+
+.field-box--color_red40 {
+  background-color: rgb(40%,0%,0%);
+}
+
+.field-box--color_red20 {
+  background-color: rgb(20%,0%,0%);
+}
+
+.field-box--color_red0 {
+  background-color: rgb(0%,0%,0%);
+}
