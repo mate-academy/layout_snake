@@ -77,6 +77,6 @@
 
 @media (min-width: 1200px) {
   .block {
-    min-width: 400px;
+    min-width: calc(100vw / 3);
   }
 }
