@@ -26,27 +26,27 @@
   font-weight: normal;
 }
 
-.block-1 {
+.coloredBlock:nth-child(1) {
   background-color: rgba(255, 0, 0, 1);
 }
 
-.block-2 {
+.coloredBlock:nth-child(2) {
   background-color: rgba(255, 0, 0, 0.8);
 }
 
-.block-3 {
+.coloredBlock:nth-child(3) {
   background-color: rgba(255, 0, 0, 0.6);
 }
 
-.block-4 {
+.coloredBlock:nth-child(4) {
   background-color: rgba(255, 0, 0, 0.4);
 }
 
-.block-5 {
+.coloredBlock:nth-child(5) {
   background-color: rgba(255, 0, 0, 0.2);
 }
 
-.block-6 {
+.bcoloredBlock:nth-child(6) {
   background-color: rgba(255, 0, 0, 0);
 }
 
