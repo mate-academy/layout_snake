@@ -42,7 +42,7 @@
   background: #000;
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .block {
     width: 50%;
   }
