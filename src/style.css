@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
   height: 300px;
-  flex-basis: 33.3%;
+  min-width: 300px;
   flex-grow: 1;
 }
 
@@ -51,7 +51,7 @@
 
 @media (max-width: 899px) {
   .block {
-    flex-basis: 50%;
+    min-width: 300px;
   }
 
   .block:nth-child(6) {
@@ -69,7 +69,7 @@
 
 @media (max-width:450px) {
   .block {
-    flex-basis: 100%;
+    min-width: 300px;
   }
 
   .block:nth-child(3) {
