@@ -27,32 +27,32 @@ body {
   font-size: 100px;
 }
 
-.field__box-1 {
+.field__box--1 {
   background-color: rgb(100%,0%,0%);
   order: 1;
 }
 
-.field__box-2 {
+.field__box--2 {
   background-color: rgb(80%,0%,0%);
   order: 2;
 }
 
-.field__box-3 {
+.field__box--3 {
   background-color: rgb(60%,0%,0%);
   order: 3;
 }
 
-.field__box-4 {
+.field__box--4 {
   background-color: rgb(40%,0%,0%);
   order: 4;
 }
 
-.field__box-5 {
+.field__box--5 {
   background-color: rgb(20%,0%,0%);
   order: 5;
 }
 
-.field__box-6 {
+.field__box--6 {
   background-color: rgb(0%,0%,0%);
   order: 6;
 }
@@ -62,11 +62,11 @@ body {
     width: calc(var(--field-width) / 2);
   }
 
-  .field__box-3 {
+  .field__box--3 {
     order: 4;
   }
-  
-  .field__box-4 {
+
+  .field__box--4 {
     order: 3;
   }
 }
@@ -76,11 +76,11 @@ body {
     width: calc(var(--field-width) / 3);
   }
 
-  .field__box-6 {
+  .field__box--6 {
     order: 4;
   }
-  
-  .field__box-4 {
+
+  .field__box--4 {
     order: 6;
   }
 }
