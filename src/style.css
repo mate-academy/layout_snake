@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -11,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   flex-basis: 100%;
+  min-width: 300px;
   height: 300px;
   font-family: Arial, sans-serif;
   font-size: 100px;
@@ -42,21 +44,6 @@ body {
   background-color: #000;
 }
 
-/* @media (min-width: 900px) {
-  .block {
-    flex-basis: 33.3%;
-  }
-  .block:nth-child(6) {
-    order: 1;
-  }
-  .block:nth-child(5) {
-    order: 2;
-  }
-  .block:nth-child(4) {
-    order: 3;
-  }
-} */
-
 @media (min-width: 600px) {
   .block {
     flex-basis: 50%;
@@ -70,7 +57,7 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    flex-basis: 33.3%;
+    flex-basis: 33.33%;
   }
   .block:nth-child(6) {
     order: 1;
