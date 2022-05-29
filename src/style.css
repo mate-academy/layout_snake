@@ -46,7 +46,7 @@
   background-color: rgba(255, 0, 0, 0.2);
 }
 
-.bcoloredBlock:nth-child(6) {
+.coloredBlock:nth-child(6) {
   background-color: rgba(255, 0, 0, 0);
 }
 
@@ -54,13 +54,13 @@
   .coloredBlock {
     flex-basis: 50%;
   }
-  .block-3 {
+  .coloredBlock:nth-child(3) {
     order: 1;
   }
-  .block-5 {
+  .coloredBlock:nth-child(5) {
     order: 3;
   }
-  .block-6 {
+  .coloredBlock:nth-child(6) {
     order: 4;
   }
 }
@@ -69,10 +69,10 @@
   .coloredBlock {
     flex-basis: 33%;
   }
-  .block-4 {
+  .coloredBlock:nth-child(4) {
     order: 4;
   }
-  .block-6 {
+  .coloredBlock:nth-child(6) {
     order: 2;
   }
 }
