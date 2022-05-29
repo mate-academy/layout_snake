@@ -70,6 +70,10 @@
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+  .col {
+    flex-basis: 50%;
+  }
+
   .col:first-child {
     order: 1;
   }
