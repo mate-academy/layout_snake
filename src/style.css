@@ -48,16 +48,26 @@ body {
   .block {
     flex-basis: 50%;
   }
-  .block--1,
-  .block--2,
+  .block--3 {
+    order: 2;
+  }
   .block--4 {
-    order: -1;
+    order: 1;
+  }
+  .block--5 {
+    order: 3;
+  }
+  .block--6 {
+    order: 4;
   }
 }
 
 @media (min-width: 900px) {
   .block {
     flex-basis: 33.33%;
+  }
+  .block--3 {
+    order: 0;
   }
   .block--4 {
     order: 3;
