@@ -19,54 +19,54 @@ body {
   min-width: 300px;
 }
 
-.container div:first-child {
+.container :first-child {
   background-color: red;
 }
 
-.container div:nth-child(2) {
+.container :nth-child(2) {
   background-color: rgb(80%, 0%, 0%);
 }
 
-.container div:nth-child(3) {
+.container :nth-child(3) {
   background-color: rgb(60%, 0%, 0%);
   order: 1;
 }
 
-.container div:nth-child(4) {
+.container :nth-child(4) {
   background-color: rgb(40%, 0%, 0%);
   order: 2;
 }
 
-.container div:nth-child(5) {
+.container :nth-child(5) {
   background-color: rgb(20%, 0%, 0%);
   order: 3;
 }
 
-.container div:last-child {
+.container :last-child {
   background-color: rgb(0%, 0%, 0%);
   order: 4;
 }
 
 @media (min-width: 600px) {
-  .container div:nth-child(3) {
+  .container :nth-child(3) {
     order: 2;
   }
-  .container div:nth-child(4) {
+  .container :nth-child(4) {
     order: 1;
   }
 }
 
 @media (min-width: 900px) {
-  .container div:nth-child(3) {
+  .container :nth-child(3) {
     order: 1;
   }
-  .container div:nth-child(4) {
+  .container :nth-child(4) {
     order: 4;
   }
-  .container div:nth-child(5) {
+  .container :nth-child(5) {
     order: 3;
   }
-  .container div:last-child {
+  .container :last-child {
     order: 2;
   }
 }
