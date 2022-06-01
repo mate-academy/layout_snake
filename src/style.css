@@ -1,0 +1,101 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.square {
+  height: 300px;
+  width: 33.33%;
+  background-color: red;
+  color: white;
+  
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:nth-child(1) {
+  background-color: red;
+}
+
+.square:nth-child(2) {
+  background-color: #d11507;
+}
+
+.square:nth-child(3) {
+  background-color: #a51b0b;
+}
+
+.square:nth-child(4) {
+  background-color: #7a1b0c;
+}
+
+.square:nth-child(5) {
+  background-color: #52170b;
+}
+
+.square:nth-child(6) {
+  background-color: #2d1106;
+}
+
+@media screen and (max-width: 1200px) {
+  .square:nth-child(1),
+  .square:nth-child(2),
+  .square:nth-child(3) {
+    order: 1;
+  }
+
+  .square:nth-child(4) {
+    order: 5;
+  }
+
+  .square:nth-child(6) {
+    order: 4;
+  }
+
+  .square:nth-child(5) {
+    order: 5;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .square {
+      width: 50%;
+    }
+
+  .square:nth-child(3) {
+      order: 4;
+    }
+
+  .square:nth-child(4) {
+    order: 3;
+  }
+
+  .square:nth-child(6) {
+    order: 5;
+  }
+}
+
+@media  screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .square {
+    width: 100%;
+  }
+
+  .square:nth-child(3) {
+    order: 3;
+  }
+}
