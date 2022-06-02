@@ -17,7 +17,7 @@ body {
   min-width: 300px;
   justify-content: center;
   align-items: center;
-  flex-basis: 33.3%;
+  flex-basis: 33%;
   flex-grow: 1;
 }
 
@@ -61,7 +61,7 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
   .block {
     flex-basis: 100%;
   }
