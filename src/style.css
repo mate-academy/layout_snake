@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+}
+
+.blocs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocs__bloc {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: calc(100% / 3);
+}
+
+@media (min-width: 900px) {
+  .bloc__color-4 {
+    order: 2;
+  }
+
+  .bloc__color-5 {
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .blocs__bloc {
+    min-width: 50%;
+  }
+
+  .bloc__color-3 {
+    order: 1;
+  }
+
+  .bloc__color-5,
+  .bloc__color-6 {
+    order: 2;
+  }
+}
+
+@media (max-width: 599px) {
+  .blocs__bloc {
+    min-width: 100%;
+  }
+}
+
+.bloc__color-1 {
+  background: #f00;
+}
+
+.bloc__color-2 {
+  background: #cb0001;
+}
+
+.bloc__color-3 {
+  background: #980001;
+}
+
+.bloc__color-4 {
+  background: #660001;
+}
+
+.bloc__color-5 {
+  background: #330001;
+}
+
+.bloc__color-6 {
+  background: #000;
+}
