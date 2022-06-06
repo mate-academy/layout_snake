@@ -31,7 +31,7 @@
 
 @media (min-width: 600px) and (max-width: 899px) {
   .blocs__bloc {
-    min-width: 50%;
+    flex-basis: 50%;
   }
 
   .bloc__color-3 {
@@ -46,7 +46,7 @@
 
 @media (max-width: 599px) {
   .blocs__bloc {
-    min-width: 100%;
+    flex-basis: 100%;
   }
 }
 
