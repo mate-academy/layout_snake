@@ -10,7 +10,6 @@
   color: #fff;
   font-size: 100px;
   flex-wrap: wrap;
-
 }
 
 .bloc {
@@ -56,30 +55,24 @@
 
 @media (max-width: 899px) {
   .color-3 {
-    background-color: #9a0000;
     order: 4;
   }
   .color-4 {
-    background-color: #600;
     order: 3;
   }
   .color-6 {
     order: 6;
-    background-color: #000;
   }
   .color-5 {
-    background-color: #300;
     order: 5;
   }
 }
 
 @media (max-width: 599px) {
   .color-4 {
-    background-color: #600;
     order: 4;
   }
   .color-3 {
-    background-color: #9a0000;
     order: 3;
   }
 }
