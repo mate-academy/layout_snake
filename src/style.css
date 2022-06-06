@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: calc(100% / 3);
+  flex-basis: calc(100% / 3);
 }
 
 @media (min-width: 900px) {
