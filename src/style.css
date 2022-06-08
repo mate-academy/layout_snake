@@ -80,6 +80,10 @@ body {
     flex-direction: row;
   }
 
+  .snake__part {
+    width: 33.3%;
+  }
+
   .snake__part--4 {
     order: 8;
   }
