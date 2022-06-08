@@ -1,4 +1,4 @@
-body {
+.body {
   margin: 0;
 }
 
@@ -45,17 +45,55 @@ body {
   background: rgb(0, 0, 0);
 }
 
-@media (min-width: 600px) {
-  .block--3 {
+@media (max-width: 599px) {
+  .block--1 {
+    order: 0;
+  }
+
+  .block--2 {
     order: 1;
   }
 
-  .block--5 {
+  .block--3 {
     order: 2;
   }
 
-  .block--6 {
+  .block--4 {
     order: 3;
+  }
+
+  .block--5 {
+    order: 4;
+  }
+
+  .block--6 {
+    order: 5;
+  }
+}
+
+@media (min-width: 600px) {
+  .block--1 {
+    order: 0;
+  }
+
+  .block--2 {
+    order: 1;
+  }
+
+  .block--3 {
+    order: 3;
+  }
+
+  .block--4 {
+    order: 2;
+  }
+
+  .block--5 {
+    order: 4;
+  }
+
+  .block--6 {
+    order: 5;
   }
 }
 
@@ -64,19 +102,27 @@ body {
     flex-basis: 33vw;
   }
 
-  .block--3 {
+  .block--1 {
     order: 0;
   }
 
-  .block--4 {
-    order: 2;
-  }
-
-  .block--5 {
+  .block--2 {
     order: 1;
   }
 
+  .block--3 {
+    order: 2;
+  }
+
+  .block--4 {
+    order: 5;
+  }
+
+  .block--5 {
+    order: 4;
+  }
+
   .block--6 {
-    order: 0;
+    order: 3;
   }
 }
