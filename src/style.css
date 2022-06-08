@@ -49,12 +49,10 @@
 }
 
 @media (min-width: 600px) {
-  .container {
-    height: 100vh;
-  }
 
   .block {
     width: 50%;
+    height: 33.3vh;
   }
 
   .block--2 {
