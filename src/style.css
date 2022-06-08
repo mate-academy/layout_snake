@@ -1,0 +1,143 @@
+
+.body {
+  margin: 0;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake-tile {
+  height: 300px;
+  font-family: Arial, sans-serif;
+  flex-direction: row;
+  font-size: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width:900px) {
+
+  .snake-tile:first-child {
+    background-color: #f00;
+    flex-grow: 1;
+    flex-basis: 33%;
+  }
+
+  .snake-tile:nth-child(2) {
+    background-color: #c00;
+    flex-grow: 1;
+    flex-basis: 33%;
+  }
+
+  .snake-tile:nth-child(3) {
+    background-color: #900;
+    flex-grow: 1;
+    flex-basis: 33%;
+  }
+
+  .snake-tile:nth-child(4) {
+    background-color: #600;
+    flex-grow: 1;
+    flex-basis: 33%;
+    order: 2;
+  }
+
+  .snake-tile:nth-child(5) {
+    background-color: #300;
+    flex-grow: 1;
+    flex-basis: 33%;
+    order: 1;
+  }
+
+  .snake-tile:nth-child(6) {
+    background-color: #000;
+    flex-grow: 1;
+    flex-basis: 33%;
+  }
+}
+
+@media (max-width:899px) {
+  .snake-tile:first-child {
+    background-color: #f00;
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+
+  .snake-tile:nth-child(2) {
+    background-color: #c00;
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+
+  .snake-tile:nth-child(3) {
+    background-color: #900;
+    flex-grow: 1;
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .snake-tile:nth-child(4) {
+    background-color: #600;
+    flex-grow: 1;
+    flex-basis: 50%;
+    order: 1;
+  }
+
+  .snake-tile:nth-child(5) {
+    background-color: #300;
+    flex-grow: 1;
+    flex-basis: 50%;
+    order: 3;
+  }
+
+  .snake-tile:nth-child(6) {
+    background-color: #000;
+    flex-grow: 1;
+    flex-basis: 50%;
+    order: 4;
+  }
+}
+
+@media (max-width:599px) {
+  .snake-tile:nth-child(n) {
+    order: 0;
+  }
+  .snake-tile:first-child {
+    background-color: #f00;
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .snake-tile:nth-child(2) {
+    background-color: #c00;
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .snake-tile:nth-child(3) {
+    background-color: #900;
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .snake-tile:nth-child(4) {
+    background-color: #600;
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .snake-tile:nth-child(5) {
+    background-color: #300;
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .snake-tile:nth-child(6) {
+    background-color: #000;
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+}
