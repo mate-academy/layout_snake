@@ -44,7 +44,7 @@
 }
 
 @media (min-width:900px) {
-  .snake-tile:nth-child(n) {
+  .snake-tile {
     flex-basis: 33%;
   }
 
@@ -57,8 +57,8 @@
   }
 }
 
-@media (max-width:899px) {
-  .snake-tile:nth-child(n) {
+@media (min-width:600px) and (max-width:899px) {
+  .snake-tile {
     flex-basis: 50%;
   }
 
@@ -80,7 +80,7 @@
 }
 
 @media (max-width:599px) {
-  .snake-tile:nth-child(n) {
+  .snake-tile {
     order: 0;
     flex-basis: 100%;
   }
