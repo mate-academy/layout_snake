@@ -47,7 +47,7 @@ body {
   background: #000;
 }
 
-.content {
+.block_content--color {
   text-align: center;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -61,28 +61,23 @@ body {
   }
 
   .block:nth-child(2) {
-    background: rgb(204, 0, 0);
     order: 2;
   }
 
   .block:nth-child(3) {
-    background: rgb(153, 0, 0);
     order: 4;
   }
 
   .block:nth-child(4) {
     order: 3;
-    background: rgb(102, 0, 0);
   }
 
   .block:nth-child(5) {
-    background: rgb(51, 0, 0);
     order: 5;
   }
 
   .block:nth-child(6) {
     order: 6;
-    background: #000;
   }
 }
 
@@ -93,27 +88,22 @@ body {
   }
 
   .block:nth-child(2) {
-    background: rgb(204, 0, 0);
     order: 2;
   }
 
   .block:nth-child(3) {
-    background: rgb(153, 0, 0);
     order: 3;
   }
 
   .block:nth-child(4) {
     order: 4;
-    background: rgb(102, 0, 0);
   }
 
   .block:nth-child(5) {
-    background: rgb(51, 0, 0);
     order: 5;
   }
 
   .block:nth-child(6) {
     order: 6;
-    background: #000;
   }
 }
