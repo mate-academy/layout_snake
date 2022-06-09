@@ -64,7 +64,6 @@ body {
 }
 
 @media (min-width: 900px) {
-
   .red,
   .red80,
   .red60 {
@@ -74,9 +73,11 @@ body {
   .black {
     order: 1;
   }
+
   .red20 {
     order: 2;
   }
+  
   .red40 {
     order: 3;
   }
