@@ -17,7 +17,7 @@ body {
 .block {
   display: flex;
   flex-grow: 1;
-  flex-basis: 300px;
+  flex-basis: 33%;
   height: 300px;
   align-items: center;
   justify-content: center;
@@ -58,6 +58,10 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+  .block {
+    flex-basis: 50%;
+  }
+
   .block-6 {
     order: 3;
   }
@@ -68,5 +72,15 @@ body {
 
   .block-3 {
     order: 1;
+  }
+
+  .block-4 {
+    order: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .block {
+    flex-basis: 100%;
   }
 }
