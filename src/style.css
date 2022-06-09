@@ -15,7 +15,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33.33%;
+  min-width: 300px;
+  flex-basis: calc(100% / 3);
+  flex-grow: 1;
 }
 
 .block__color-1 {
@@ -52,20 +54,11 @@ body {
 }
 
 @media (min-width:600px) and (max-width:899px) {
-  .blocks__block {
-    min-width: 50%;
-  }
   .block__color-3 {
     order: 1;
   }
   .block__color-5,
   .block__color-6 {
     order: 2;
-  }
-}
-
-@media (max-width:599px) {
-  .blocks__block {
-    min-width: 100%;
   }
 }
