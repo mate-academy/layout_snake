@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  max-width: 1600px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -80,5 +79,11 @@ body {
   }
   .red40 {
     order: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    min-width: 400px;
   }
 }
