@@ -99,7 +99,7 @@
 
 @media (min-width: 900px) {
   .block {
-    flex-basis: 33vw;
+    flex-basis: 33%;
   }
 
   .block--1 {
