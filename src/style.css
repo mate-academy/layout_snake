@@ -53,26 +53,27 @@
 @media screen and (max-width:751px) {
 
   .block {
-    flex-basis: 50%;
+    flex-basis: 50vw;
   }
 
-  .block:nth-child(3) {
+  .container.block:nth-child(3) {
     order: 2;
   }
 
-  .block:nth-child(4) {
+  .container.block:nth-child(4) {
     order: 1;
   }
 
-  .block:nth-child(5) {
+  .container.block:nth-child(5) {
     order: 3;
   }
 
-  .block:nth-child(6) {
+  .container.block:nth-child(6) {
     order: 4;
   }
 
 }
+
 
 @media screen and (max-width:451px) {
 
