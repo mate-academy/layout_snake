@@ -1,8 +1,11 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
   color: white;
   font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
 }
   
 .block {
