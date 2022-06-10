@@ -16,7 +16,7 @@ body {
 .block {
   height: var(--height);
   color: #fff;
-  flex-basis: 33%;
+  flex-basis: calc(100% / 3);
   min-width: 300px;
   font-size: 100px;
   line-height: var(--height);
