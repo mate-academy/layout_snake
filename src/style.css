@@ -89,6 +89,6 @@ body {
 
 @media (min-width: 1200px) {
   .block {
-    width: 33%;
+    flex-basis: 33%;
   }
 }
