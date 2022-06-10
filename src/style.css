@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  flex-basis: 30%;
+  flex-basis: 33.33%;
   min-width: 300px;
   height: 300px;
   color: white;
@@ -44,13 +44,10 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 890px) {
   .box-4 {
     order: 2;
   }
-}
-
-@media (min-width: 900px) {
   .box-5 {
     order: 1;
   }
@@ -60,7 +57,6 @@ body {
   .box-3 {
     order: 1;
   }
-
   .box-5,
   .box-6 {
     order: 2;
