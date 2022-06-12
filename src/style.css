@@ -9,19 +9,18 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: stretch;
-  /* min-height: 900px; */
 }
 
 .block {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
   font-size: 100px;
   font-family: Arial, sans-serif;
   min-height: 300px;
   width: 100%;
   color: white;
+  flex-grow: 1;
 }
 
 .block--1 {
@@ -51,12 +50,7 @@
 @media (min-width: 600px) {
 
   .block {
-    width: 50%;
-    height: 33.3vh;
-  }
-
-  .block--2 {
-    order: 1;
+    flex-basis: 50%;
   }
 
   .block--3 {
@@ -78,15 +72,7 @@
 
 @media (min-width: 900px) {
   .block {
-    width: 33.3%;
-  }
-
-  .block--2 {
-    order: 0;
-  }
-
-  .block--3 {
-    order: 0;
+    flex-basis: 33.3%;
   }
 
   .block--4 {
