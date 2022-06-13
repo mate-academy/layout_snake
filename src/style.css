@@ -48,7 +48,7 @@
   background-color: #000;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .snake__item {
     width: 50%;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .snake__item {
     width: 100%;
     order: 0 !important;
