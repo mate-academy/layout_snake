@@ -23,27 +23,27 @@ body {
 }
 
 .bloc--1 {
-  background-color: hwb(0 0% 0%);
+  background-color: rgb(255, 0, 0);
 }
 
 .bloc--2 {
-  background-color: hwb(0 0% 20%);
+  background-color: rgb(204, 0, 0);
 }
 
 .bloc--3 {
-  background-color: hwb(0 0% 40%);
+  background-color: rgb(153, 0, 0);
 }
 
 .bloc--4 {
-  background-color: hwb(0 0% 60%);
+  background-color: rgb(102, 0, 0);
 }
 
 .bloc--5 {
-  background-color: hwb(0 0% 80%);
+  background-color: rgb(51, 0, 0);
 }
 
 .bloc--6 {
-  background-color: hwb(0 0% 100%);
+  background-color: rgb(0, 0, 0);
 }
 
 @media (min-width: 900px) {
