@@ -58,7 +58,7 @@ body {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width:899px) {
   .number--4 {
     order: 1;
   }
