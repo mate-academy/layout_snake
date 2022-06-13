@@ -22,36 +22,36 @@ body {
 
 }
 
-.bloc1 {
+.bloc--1 {
   background-color: hwb(0 0% 0%);
 }
 
-.bloc2 {
+.bloc--2 {
   background-color: hwb(0 0% 20%);
 }
 
-.bloc3 {
+.bloc--3 {
   background-color: hwb(0 0% 40%);
 }
 
-.bloc4 {
+.bloc--4 {
   background-color: hwb(0 0% 60%);
 }
 
-.bloc5 {
+.bloc--5 {
   background-color: hwb(0 0% 80%);
 }
 
-.bloc6 {
+.bloc--6 {
   background-color: hwb(0 0% 100%);
 }
 
 @media (min-width: 900px) {
-  .bloc4 {
+  .bloc--4 {
     order: 2;
   }
 
-  .bloc5 {
+  .bloc--5 {
     order: 1;
   }
 }
@@ -61,12 +61,12 @@ body {
     flex-basis: 50%;
   }
 
-  .bloc3 {
+  .bloc--3 {
     order: 1;
   }
 
-  .bloc5,
-  .bloc6 {
+  .bloc--5,
+  .bloc--6 {
     order: 2;
   }
 }
