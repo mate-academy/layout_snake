@@ -44,7 +44,7 @@ body {
   background: black;
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
 
   .box-3 {
     order: 1;
