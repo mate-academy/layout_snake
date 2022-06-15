@@ -52,8 +52,6 @@
   .container {
     flex-direction: row;
     flex-basis: 100%;
-    min-width: 300px;
-
   }
 }
 
