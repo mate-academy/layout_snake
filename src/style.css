@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 100px;
 }
 
 .container {
@@ -13,10 +15,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 300px;
-  flex-basis: 300px;
+  
   flex-grow: 1;
-  color: #fff;
-  font-size: 100px;
 }
 
 .block--1 {
@@ -61,14 +61,22 @@ body {
   .block--3 {
     order: 2;
   }
+
+  .block {
+    width: 300px;
+  }
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
+@media (min-width: 900px) {
   .block--4 {
     order: 2;
   }
 
   .block--5 {
     order: 1;
+  }
+
+  .block {
+    width: 33.3%;
   }
 }
