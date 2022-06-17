@@ -54,10 +54,6 @@ body {
 }
 
 @media (max-width:899px) {
-  .snake {
-    min-width: 600px;
-  }
-
   .block3 {
     order: 2;
   }
@@ -76,10 +72,6 @@ body {
 }
 
 @media (max-width:450px) {
-  .snake {
-    min-width: 300px;
-  }
-
   .block {
     order: 0;
   }
