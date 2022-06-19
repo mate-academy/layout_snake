@@ -15,9 +15,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  flex-basis: 300px;
   height: 300px;
-  width: 300px;
   flex-grow: 1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
@@ -77,6 +76,6 @@ body {
 
 @media (min-width: 1200px) {
   .block {
-    width: 320px;
+    flex-basis: 33.3%;
   }
 }
