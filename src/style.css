@@ -1,4 +1,4 @@
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .block--3 {
     order: 1;
   }
@@ -18,11 +18,15 @@
 
 @media (min-width: 900px) {
   .block--4 {
-    order: 2;
+    order: 3;
   }
 
   .block--5 {
-    order: 1;
+    order: 2;
+  }
+
+  .container .blocks {
+    min-width: 30%;
   }
 }
 
@@ -33,7 +37,6 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .blocks {
