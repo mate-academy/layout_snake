@@ -3,10 +3,10 @@
   box-sizing: border-box;
 }
 
-.snake {
+/* .snake {
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 .snake__row {
   display: flex;
@@ -57,7 +57,7 @@
   order: 4;
 }
 
-@media (max-width: 870.98px) {
+@media (max-width: 899.98px) {
   .snake__block {
     flex: 0 0 50%;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 580.98px) {
+@media (max-width: 599.98px) {
   .snake__row {
     flex-direction: column;
   }
