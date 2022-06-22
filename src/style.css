@@ -18,32 +18,32 @@ body {
   line-height: 300px;
 }
 
-.container > div:nth-child(1) {
+.container :nth-child(1) {
   background: rgb(255, 0, 0);
   order: 1;
 }
 
-.container > div:nth-child(2) {
+.container :nth-child(2) {
   background: rgb(204, 0, 0);
   order: 2;
 }
 
-.container > div:nth-child(3) {
+.container :nth-child(3) {
   background: rgb(153, 0, 0);
   order: 3;
 }
 
-.container > div:nth-child(4) {
+.container :nth-child(4) {
   background: rgb(102, 0, 0);
   order: 4;
 }
 
-.container > div:nth-child(5) {
+.container :nth-child(5) {
   background: rgb(51, 0, 0);
   order: 5;
 }
 
-.container > div:nth-child(6) {
+.container :nth-child(6) {
   background: rgb(0, 0, 0);
   order: 6;
 }
@@ -53,11 +53,11 @@ body {
     flex-basis: 50%;
   }
 
-  .container > div:nth-child(3) {
+  .container :nth-child(3) {
     order: 4;
   }
 
-  .container > div:nth-child(4) {
+  .container :nth-child(4) {
     order: 3;
   }
 }
@@ -67,11 +67,11 @@ body {
     flex-basis: 33.33%;
   }
 
-  .container > div:nth-child(4) {
+  .container :nth-child(4) {
     order: 6;
   }
 
-  .container > div:nth-child(6) {
+  .container :nth-child(6) {
     order: 4;
   }
 }
