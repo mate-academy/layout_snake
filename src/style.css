@@ -46,7 +46,7 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    min-width: 33%;
+    flex-basis: 33.33%;
   }
   .block:nth-child(4) {
     order: 2;
