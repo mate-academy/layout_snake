@@ -19,6 +19,7 @@ body {
   align-items: center;
   text-align: center;
   flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .block--1 {
@@ -45,7 +46,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-@media (max-width: 1200px) and (min-width: 900px) {
+@media (min-width: 1200px) {
   .blocks {
     width: 33.33%;
   }
@@ -58,7 +59,16 @@ body {
   }
 }
 
-@media (max-width: 899px) and (min-width: 600px) {
+@media (max-width: 1199px) {
+  .block--4 {
+    order: 6;
+  }
+  .block--5 {
+    order: 4;
+  }
+}
+
+@media (max-width: 899px) {
   .block--3 {
     order: 2;
   }
@@ -76,5 +86,13 @@ body {
 @media (max-width: 599px) {
   .snake {
     flex-direction: column;
+  }
+
+  .block--3 {
+    order: 2;
+  }
+
+  .block--4 {
+    order: 3;
   }
 }
