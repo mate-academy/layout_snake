@@ -12,6 +12,7 @@ body {
   flex-basis: 300px;
   flex-grow: 1;
   flex-shrink: 0;
+  align-items: stretch;
   color: white;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 100px;
@@ -50,7 +51,7 @@ body {
   }
 }
 
-@media (min-width: 600px), (max-width: 750px) {
+@media (min-width: 600px), (min-width: 750px) {
   .box_4 {
     order: 1;
   }
@@ -83,5 +84,11 @@ body {
 
   .box_4 {
     order: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1199px;
   }
 }
