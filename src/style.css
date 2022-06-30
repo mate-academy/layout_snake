@@ -6,7 +6,6 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
@@ -48,6 +47,12 @@ body {
 .block--6 {
   background-color: rgb(0, 0, 0);
   order: 4;
+}
+
+@media (min-width: 1200px) {
+  .block {
+    min-width: 30%;
+  }
 }
 
 @media (max-width: 899px) and (min-width: 600px) {
