@@ -50,9 +50,11 @@ body {
     order: 1;
   }
 
-  .block--5,
-  .block--6 {
+  .block--5 {
     order: 2;
+  }
+  .block--6 {
+    order: 3;
   }
 }
 
