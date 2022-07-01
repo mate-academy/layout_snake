@@ -88,7 +88,12 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1199px;
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4,
+  .box_5,
+  .box_6 {
+    flex-basis: 33%;
   }
 }
