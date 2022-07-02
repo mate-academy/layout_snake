@@ -55,11 +55,11 @@ body {
   font-family: Arial, sans-serif;
   font-size: 100px;
   margin: auto;
-  color: rgb(225, 225, 225);
+  color: white;
 }
 
 .one {
-  background-color: rgb(225, 0, 0);
+  background-color: red;
 }
 
 .two {
