@@ -5,11 +5,12 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .block {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 100px;
   color: white;
   height: 300px;
@@ -51,98 +52,25 @@ body {
   order: 5;
 }
 
-@media (min-width:450px) {
-  .container {
-    max-width: 450px;
-    height: 1800px;
-    flex-wrap: nowrap;
-  }
+@media (min-width: 600px) {
   .block {
-    min-width: 450px;
+    flex-basis: 50%;
+  }
+  .block-4 {
+    order: 1;
   }
 }
 
-@media (min-width:600px) {
-  .container {
-    width: 600px;
-    height: 900px;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+@media (min-width: 900px) {
   .block {
-    min-width: 300px;
-  }
-
-  .block-2 {
-    order: 4;
-  }
-  .block-3 {
-    order: 4;
-  }
-  .block-5 {
-    order: 3;
-  }
-}
-
-@media (min-width:750px) {
-  .container {
-    max-width: 750px;
-    height: 900px;
-    flex-wrap: wrap;
-  }
-  .block {
-    min-width: 375px;
-  }
-}
-
-@media (min-width:900px) {
-  .container {
-    max-width: 900px;
-    height: 600px;
-    flex-wrap: wrap;
-  }
-  .block {
-    min-width: 300px;
-  }
-
-  .block-2 {
-    order: 2;
+    flex-basis: 33%;
   }
   .block-4 {
     order: 5;
   }
-  .block-5 {
-    order: 3;
-  }
+
   .block-6 {
-    order: 1;
-  }
-
-}
-
-@media (min-width:1050px) {
-  .container {
-    max-width: 1050px;
-    height: 600px;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .block {
-    min-width: 350px;
-  }
-
-}
-
-@media (min-width:1200px) {
-  .container {
-    max-width: 1200px;
-    height: 600px;
-    flex-wrap: wrap;
-  }
-  .block {
-    flex-grow: 1;
-    flex-shrink: 1;
-    min-width: 400px;
+    order: 2;
   }
 
 }
