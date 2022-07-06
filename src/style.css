@@ -8,7 +8,7 @@ body {
   flex-wrap: wrap;
 }
 
-.small {
+.block {
   height: 300px;
   min-width: 300px;
   display: flex;
@@ -45,27 +45,7 @@ body {
   background-color: black;
 }
 
-@media(min-width:1200px) {
-  .small {
-    flex-basis: 33.33%;
-  }
-}
-
-@media(min-width:900px)and (max-width:1600px) {
-  .color4 {
-    order: 3;
-  }
-   
-  .color5 {
-    order: 2;
-  }
-
-  .color6 {
-    order: 1;
-  }
-}
-
-@media(min-width:600px) and (max-width:899px) {
+@media(min-width:600px) {
   .color4 {
     order: 1;
   }
@@ -83,8 +63,33 @@ body {
   }
 }
 
-@media(min-width:300px)and (max-width:599px) {
-  .main {
-    flex-direction: column;
+@media(min-width:900px) {
+  .color1 {
+    order: 1;
   }
+   
+  .color2 {
+    order: 2;
+  }
+
+  .color3 {
+    order: 3;
+  }
+
+  .color4 {
+    order: 6;
+  }
+   
+  .color5 {
+    order: 5;
+  }
+
+  .color6 {
+    order: 4;
+  }
+
+  .block {
+    flex-basis: 33.33%;
+  }
+
 }
