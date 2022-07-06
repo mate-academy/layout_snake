@@ -1,8 +1,11 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
+
 }
 
 .container {
@@ -11,13 +14,15 @@ body {
 }
 
 .bloks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 300px;
   min-width: 300px;
   line-height: 300px;
   color: white;
-  text-align: center;
   flex-basis: 33%;
-  /* flex-grow: 1; */
+
 }
 
 .bloks-1 {
