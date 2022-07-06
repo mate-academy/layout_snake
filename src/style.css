@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  min-width: 600px;
+  min-width: 900px;
   display: flex;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
@@ -69,6 +69,7 @@ body {
 @media (max-width:899px) {
   .container {
     min-width: 600px;
+    flex-basis: 50%;
   }
   .block--3 {
     order: 2;
@@ -87,6 +88,7 @@ body {
 @media (max-width:450px) {
   .container {
     min-width: 300px;
+    flex-basis: 100%;
   }
   .block {
     order: 0;
