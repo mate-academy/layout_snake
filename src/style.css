@@ -5,6 +5,7 @@
 .main_content {
   display: flex;
   flex-shrink: 0;
+  flex-direction: column;
 }
 
 .block {
@@ -12,6 +13,7 @@
   flex-basis: 300px;
   display: flex;
   flex-shrink: 0;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -43,86 +45,7 @@
   background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 300px) {
-  .main_content {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 301px) and (max-width: 450px) {
-  .main_content {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 451px) and (max-width: 600px) {
-  .main_content {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 451px) and (max-width: 600px) {
-  .main_content {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .block_1,
-  .block_2 {
-    order: 0;
-  }
-
-  .block_4 {
-    order: 1;
-  }
-
-  .block_3 {
-    order: 2;
-  }
-
-  .block_5 {
-    order: 3;
-  }
-
-  .block_6 {
-    order: 3;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 750px) {
-  .main_content {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .block {
-    flex-grow: 1;
-  }
-
-  .block_1,
-  .block_2 {
-    order: 0;
-  }
-
-  .block_4 {
-    order: 1;
-  }
-
-  .block_3 {
-    order: 2;
-  }
-
-  .block_5 {
-    order: 3;
-  }
-
-  .block_6 {
-    order: 3;
-  }
-}
-
-@media screen and (min-width: 751px) and (max-width: 900px) {
+@media screen and (min-width: 600px) {
   .main_content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,67 +53,23 @@
 
   .block_1,
   .block_2,
-  .block_3 {
+  .block_4 {
     order: 0;
   }
 
-  .block_4 {
-    order: 3;
-  }
-
-  .block_5 {
-    order: 2;
-  }
-
-  .block_6 {
+  .block_3 {
     order: 1;
+  }
+
+  .block_5,
+  .block_6 {
+    order: 2;
   }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1050px) {
-  .main_content {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
+@media screen and (min-width: 900px) {
   .block {
-    flex-grow: 1;
-  }
-
-  .block_1,
-  .block_2,
-  .block_3 {
-    order: 0;
-  }
-
-  .block_4 {
-    order: 3;
-  }
-
-  .block_5 {
-    order: 2;
-  }
-
-  .block_6 {
-    order: 1;
-  }
-}
-
-@media screen and (min-width: 1051px) and (max-width: 1201px) {
-  .main_content {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .block {
-    flex-basis: 301px;
-    flex-grow: 1;
-  }
-
-  .block_1,
-  .block_2,
-  .block_3 {
-    order: 0;
+    flex-basis: 33%;
   }
 
   .block_4 {
