@@ -22,6 +22,7 @@ body {
   line-height: 300px;
   color: white;
   flex-basis: 33%;
+  flex-grow: 1;
 
 }
 
@@ -50,6 +51,7 @@ body {
 }
 
 @media (min-width: 600px) {
+
   .bloks-3 {
     order: 1;
   }
