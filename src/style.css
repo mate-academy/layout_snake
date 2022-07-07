@@ -18,7 +18,6 @@ body {
   font-size: 100px;
   flex-grow: 1;
   color: white;
-
 }
 
 .color1 {
@@ -64,18 +63,6 @@ body {
 }
 
 @media(min-width:900px) {
-  .color1 {
-    order: 1;
-  }
-   
-  .color2 {
-    order: 2;
-  }
-
-  .color3 {
-    order: 3;
-  }
-
   .color4 {
     order: 6;
   }
