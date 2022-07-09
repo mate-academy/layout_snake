@@ -16,7 +16,7 @@ body {
 
 .block {
   display: flex;
-  flex: 1 1 300px;
+  flex: 1 0 300px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
