@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  max-width: 1199px;
+
   display: flex;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +16,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
+  flex-basis: 33.3%;
   height: 300px;
   min-width: 300px;
   flex-grow: 1;
