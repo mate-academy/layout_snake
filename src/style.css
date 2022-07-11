@@ -51,14 +51,11 @@
 }
 
 @media (max-width: 899px) {
-  .block--3 {
-    order: 3;
-  }
-
   .block--4 {
     order: 2;
   }
-
+  
+  .block--3,
   .block--5,
   .block--6 {
     order: 3;
