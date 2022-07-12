@@ -6,13 +6,11 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .block {
   height: var(--block-height);
-  min-width: var(--block-height);
-  /* border: 1px solid red; */
+  flex-basis: var(--block-height);
   font-family: Arial, sans-serif;
   font-size: 100px;
   display: flex;
@@ -48,7 +46,7 @@ body {
 
 @media (min-width: 600px) {
   .block {
-    flex-basis: 40%;
+    flex-basis: 50%;
   }
 
   .block__3 {
@@ -70,15 +68,17 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    flex-basis: 30%;
+    flex-basis: 33.33%;
   }
 
   .block__3 {
     order: 1;
   }
+
   .block__4 {
     order: 4;
   }
+
   .block__5 {
     order: 3;
   }
