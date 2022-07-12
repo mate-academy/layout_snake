@@ -16,8 +16,8 @@ body {
   align-items: center;
   height: 300px;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-size: 100px; */
 }
 
 @media (min-width: 451px) {
@@ -50,26 +50,26 @@ body {
   }
 }
 
-#first {
+.block:first-of-type {
   background-color: red;
 }
 
-#second {
+.block:nth-of-type(2) {
   background-color: rgb(204, 0, 0);
 }
 
-#third {
+.block:nth-of-type(3) {
   background-color: rgb(152, 0, 0);
 }
 
-#fourth {
+.block:nth-of-type(4) {
   background-color: rgb(101, 0, 0);
 }
 
-#fifth {
+.block:nth-of-type(5) {
   background-color: rgb(52, 0, 0);
 }
 
-#sixth {
+.block:last-of-type {
   background-color: black;
 }
