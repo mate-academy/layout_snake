@@ -9,7 +9,7 @@ body {
 
 .collor__block .box:nth-child(n) {
   flex-basis: 100%;
-  font-style: arial, sans-serif;
+  font-family: arial, helvetica, sans-serif;
   font-size: 100px;
   color: rgb(255,255,255);
   display: flex;
