@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  --height-box: 300px;
+
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: var(--height-box);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 100px;
+  background-color: rgb(255,0,0);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  min-width: var(--height-box);
+  flex-grow: 1;
+}
+
+.num2 {
+  background-color: rgb(204,0,0);
+  /* order:2; */
+}
+
+.num3 {
+  background-color: rgb(153,0,0);
+}
+
+.num4 {
+  background-color: rgb(102,0,0);
+}
+
+.num5 {
+  background-color: rgb(51,0,0);
+}
+
+.num6 {
+  background-color: rgb(0,0,0);
+}
+
+@media (max-width: 1200px) {
+  .flexbox {
+    flex-direction: row;
+    max-width: 1199px;
+  }
+
+  .num6 {
+    order: 4;
+  }
+
+  .num5 {
+    order: 5;
+  }
+
+  .num4 {
+    order: 6;
+  }
+}
+
+@media (max-width: 899px) {
+  .flexbox {
+    flex-direction: row;
+    max-width: 899px;
+  }
+
+  .num3 {
+    order: 4;
+  }
+
+  .num4 {
+    order: 3;
+  }
+  .num5 {
+    order: 5;
+  }
+  .num6 {
+    order: 6;
+  }
+}
+
+@media (max-width: 450px) {
+  .flexbox {
+    flex-direction: column;
+  }
+  .num3 {
+    order: 3;
+  }
+
+  .num4 {
+    order: 4;
+  }
+}
