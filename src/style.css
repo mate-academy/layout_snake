@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wrapper > div {
+  line-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
+.wrapper > div:nth-child(1) {
+  background-color: rgb(255, 0, 0);
+  order: 1;
+}
+
+.wrapper > div:nth-child(2) {
+  background-color: rgb(204, 0, 0);
+  order: 2;
+}
+
+.wrapper > div:nth-child(3) {
+  background-color: rgb(153, 0, 0);
+  order: 3;
+}
+
+.wrapper > div:nth-child(4) {
+  background-color: rgb(102, 0, 0);
+  order: 4;
+}
+
+.wrapper > div:nth-child(5) {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.wrapper > div:nth-child(6) {
+  background-color: rgb(0, 0, 0);
+  order: 6;
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+  .wrapper > div {
+    flex-basis: 100%;
+  }
+
+  .wrapper > div:nth-child(3) {
+    order: 3;
+  }
+
+  .wrapper > div:nth-child(4) {
+    order: 4;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+  .wrapper > div {
+    flex-basis: 50%;
+  }
+
+  .wrapper > div:nth-child(3) {
+    order: 4;
+  }
+
+  .wrapper > div:nth-child(4) {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapper > div {
+    flex-basis: 33.33%;
+  }
+  .wrapper > div:nth-child(4) {
+    background-color: rgb(102, 0, 0);
+    order: 6;
+  }
+
+  .wrapper > div:nth-child(5) {
+    background-color: rgb(51, 0, 0);
+    order: 5;
+  }
+
+  .wrapper > div:nth-child(6) {
+    background-color: rgb(0, 0, 0);
+    order: 4;
+  }
+}
