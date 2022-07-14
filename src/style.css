@@ -23,10 +23,6 @@ body {
   align-items: center;
   background: rgb(255 0 0);
 }
-/* Блок 2 должен быть 4/5 redи 1/5black
-Блок 3 должен быть 3/5 redи 2/5black
-Блок 4 должен быть 2/5 redи 3/5black
-Блок 5 должен быть 1/5 redи 4/5black */
 
 .block-2 {
   background: rgba(0, 0, 0, 0.2);
