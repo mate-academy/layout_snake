@@ -1,49 +1,51 @@
-* {
+body {
   margin: 0;
   box-sizing: border-box;
-}
 
-body {
   color: white;
   font-size: 100px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1000px;
 }
 
 .block {
+  display: flex;
   min-width: 300px;
   height: 300px;
   flex-basis: 33.33%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 }
 
-.block-1 {
+.block:nth-child(1) {
   background-color: red;
 }
 
-.block-2 {
+.block:nth-child(2) {
   background-color: rgb(204, 0, 0);
 }
 
-.block-3 {
+.block:nth-child(3) {
   background-color: rgb(153, 0, 0);
 }
 
-.block-4 {
+.block:nth-child(4) {
   background-color: rgb(102, 0, 0);
 }
 
-.block-5 {
+.block:nth-child(5) {
   background-color: rgb(51, 0, 0);
 }
 
-.block-6 {
+.block:nth-child(6) {
   background-color: black;
 }
 
