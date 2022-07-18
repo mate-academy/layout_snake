@@ -56,43 +56,43 @@ body {
 }
 
 @media (min-width: 600px) {
-  .block-1 {
+  .block--1 {
     order: 0;
   }
-  .block-2 {
+  .block--2 {
     order: 1;
   }
-  .block-3 {
+  .block--3 {
     order: 3;
   }
-  .block-4 {
+  .block--4 {
     order: 2;
   }
-  .block-5 {
+  .block--5 {
     order: 4;
   }
-  .block-6 {
+  .block--6 {
     order: 5;
   }
 }
 
 @media (min-width: 900px) {
-  .block-1 {
+  .block--1 {
     order: 0;
   }
-  .block-2 {
+  .block--2 {
     order: 1;
   }
-  .block-3 {
+  .block--3 {
     order: 2;
   }
-  .block-4 {
+  .block--4 {
     order: 5;
   }
-  .block-5 {
+  .block--5 {
     order: 4;
   }
-  .block-6 {
+  .block--6 {
     order: 3;
   }
 }
