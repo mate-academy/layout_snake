@@ -14,8 +14,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 33.3%;
+  flex-grow: 1;
   min-width: var(--snake-height);
   height: var(--snake-height);
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 100px;
 }
