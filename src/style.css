@@ -8,11 +8,11 @@ body {
 
 .cont {
   display: flex;
-  max-width: 1199px;
   flex-wrap: wrap;
 }
 
 .block {
+  flex-basis: 33.33%;
   font-family: Arial, sans-serif;
   font-size: 100px;
   height: 300px;
