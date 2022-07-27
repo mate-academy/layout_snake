@@ -11,7 +11,7 @@ body {
   flex-wrap: wrap;
 }
 
-div {
+.block {
   height: 300px;
   flex-basis: 100%;
   color: white;
@@ -22,60 +22,60 @@ div {
   
 }
 
-div:nth-child(1) {
+.block--1 {
   background: rgb(255, 0, 0);
   order: 1;
 }
 
-div:nth-child(2) {
+.block--2 {
   background: rgb(204, 0, 0);
   order: 2;
 }
 
-div:nth-child(3) {
+.block--3 {
   background: rgb(153, 0, 0);
   order: 3;
 }
 
-.container > div:nth-child(4) {
+.block--4 {
   background: rgb(102, 0, 0);
   order: 4;
 }
 
-.container > div:nth-child(5) {
+.block--5 {
   background: rgb(51, 0, 0);
   order: 5;
 }
 
-.container > div:nth-child(6) {
+.block--6 {
   background: rgb(0, 0, 0);
   order: 6;
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .container > div {
+  .block {
     flex-basis: 50%;
   }
 
-  .container > div:nth-child(3) {
+  .block--3 {
     order: 4;
   }
 
-  .container > div:nth-child(4) {
+  .block--4 {
     order: 3;
   }
 }
 
 @media (min-width: 900px) {
-  .container > div {
+  .block {
     flex-basis: 33.33%;
   }
 
-  .container > div:nth-child(4) {
+  .block--4 {
     order: 6;
   }
 
-  .container > div:nth-child(6) {
+  .block--6 {
     order: 4;
   }
 }
