@@ -65,7 +65,7 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    flex-basis: 33.3%;
+    flex-basis: 33%;
   }
   .fourth {
     order: 4;
