@@ -49,12 +49,6 @@ body {
 
 }
 
-@media (min-width: 1600px) {
-  .container {
-    flex-basis: 800px;
-  }
-}
-
 @media (min-width: 600px) and (max-width: 900px) {
   .fourth {
     order: 3;
@@ -90,5 +84,22 @@ body {
 @media (min-width: 1200px) {
   .container {
     flex-basis: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    flex-basis: 500px;
+  }
+  .sixth {
+    order: 4;
+  }
+          
+  .fourth {
+    order: 6;
+  }
+          
+  .fifth {
+    order: 5;
   }
 }
