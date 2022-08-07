@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  height: 300px;
+  min-width: 300px;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.block--1 {
+  background-color: red;
+}
+
+.block--2 {
+  background-color: #c00;
+}
+
+.block--3 {
+  background-color: #900;
+}
+
+.block--4 {
+  background-color: #600;
+}
+
+.block--5 {
+  background-color: #300;
+}
+
+.block--6 {
+  background-color: black;
+}
+
+@media (min-width:450px) {
+  .container {
+    flex-direction: row;
+    max-width: 450px;
+    flex-wrap: wrap;
+  }
+  .block {
+    width: 450px;
+  }
+}
+
+@media (min-width:600px) {
+  .container {
+    flex-direction: row;
+    max-width: 600px;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    width: 300px;
+  }
+
+  .block--4 {
+    order: 1;
+  }
+
+  .block--3 {
+    order: 2;
+  }
+
+  .block--5,
+  .block--6 {
+    order: 3;
+  }
+}
+
+@media (min-width:750px) {
+  .container {
+    flex-direction: row;
+    max-width: 750px;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    width: 375px;
+  }
+
+  .block--4 {
+    order: 1;
+  }
+
+  .block--3 {
+    order: 2;
+  }
+
+  .block--5,
+  .block--6 {
+    order: 3;
+  }
+}
+
+@media (min-width:900px) {
+  .container {
+    flex-direction: row;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+  .block {
+    width: 300px;
+  }
+
+  .block--6 {
+    order: 2;
+  }
+
+  .block--5 {
+    order: 3;
+  }
+
+  .block--4 {
+    order: 4;
+  }
+}
+
+@media (min-width:1050px) {
+  .container {
+    flex-direction: row;
+    max-width: 1050px;
+    flex-wrap: wrap;
+  }
+  .block {
+    width: 350px;
+  }
+
+  .block--6 {
+    order: 2;
+  }
+
+  .block--5 {
+    order: 3;
+  }
+
+  .block--4 {
+    order: 4;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    flex-direction: row;
+    max-width: 1200px;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    width: 400px;
+  }
+
+  .block--6 {
+    order: 2;
+  }
+
+  .block--5 {
+    order: 3;
+  }
+
+  .block--4 {
+    order: 4;
+  }
+}
