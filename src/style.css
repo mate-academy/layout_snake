@@ -48,9 +48,6 @@ body {
   .block {
     flex-basis: 50%;
   }
-}
-
-@media (min-width: 600px) {
   .block:nth-child(3),
   .block:nth-child(5),
   .block:nth-child(6) {
@@ -62,9 +59,6 @@ body {
   .block {
     flex-basis: 33.33%;
   }
-}
-
-@media (min-width: 900px) {
   .block:nth-child(3),
   .block:nth-child(6) {
     order: 1;
