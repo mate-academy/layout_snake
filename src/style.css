@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.snakeBody {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snakeBody__part {
+  height: 300px;
+  min-width: 300px;
+  flex-basis: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.snakeBody__part--1 {
+  background-color: #f00;
+}
+
+.snakeBody__part--2 {
+  background-color: #cf0000;
+}
+
+.snakeBody__part--3 {
+  background-color: #9f0000;
+}
+
+.snakeBody__part--4 {
+  background-color: #6f0000;
+}
+
+.snakeBody__part--5 {
+  background-color: #3f0000;
+}
+
+.snakeBody__part--6 {
+  background-color: #000;
+}
+
+@media (min-width: 1200px) {
+  .snakeBody__part {
+    flex-basis: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .snakeBody__part {
+    flex-basis: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  .snakeBody__part--4 {
+    order: 3;
+  }
+  .snakeBody__part--5 {
+    order: 2;
+  }
+  .snakeBody__part--6 {
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .snakeBody__part--3 {
+    order: 2;
+  }
+  .snakeBody__part--4 {
+    order: 1;
+  }
+  .snakeBody__part--5 {
+    order: 3;
+  }
+  .snakeBody__part--6 {
+    order: 4;
+  }
+}
