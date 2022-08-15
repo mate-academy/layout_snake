@@ -11,13 +11,11 @@ body {
 }
 
 .block {
-  --block-size: 300px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: var(--block-size);
+  height: 300px;
   flex-basis: 100%;
   flex-grow: 1;
 }
