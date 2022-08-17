@@ -34,56 +34,44 @@ body {
 
 .block-3 {
   background-color: #900;
+  order: 2;
 }
 
 .block-4 {
   background-color: #600;
+  order: 1;
 }
 
 .block-5 {
   background-color: #300;
+  order: 3;
 }
 
 .block-6 {
   background-color: #000;
+  order: 4;
 }
 
-@media screen and (min-width: 600px) {
-  .block-3,
-  .block-5,
-  .block-6 {
-    order: 1;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .block-4 {
-    order: 3;
-  }
-
-  .block-5 {
-    order: 2;
-  }
-
-  .block-6 {
-    order: 1;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media (max-width: 599px) {
   .block {
-    flex-basis: 400px;
+    order: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .block {
+    min-width: 33%;
   }
 
   .block-4 {
-    order: 3;
+    order: 5;
   }
 
   .block-5 {
-    order: 2;
+    order: 4;
   }
 
   .block-6 {
-    order: 1;
+    order: 3;
   }
 }
