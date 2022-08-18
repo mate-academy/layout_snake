@@ -32,12 +32,12 @@ body {
 
 .block--3 {
   background-color: hsl(0, 100%, 30%);
-  order: 3;
+  order: 4;
 }
 
 .block--4 {
   background-color: hsl(0, 100%, 20%);
-  order: 4;
+  order: 3;
 }
 
 .block--5 {
