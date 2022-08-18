@@ -82,7 +82,7 @@ body {
     flex-flow: row wrap;
   }
   .block {
-    width: 33%;
+    width: 33.33%;
   }
   .block-4 {
     order: 6;
