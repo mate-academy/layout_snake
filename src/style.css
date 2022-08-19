@@ -1,0 +1,87 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.container > .block {
+  height: 300px;
+  width: 450px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .container > .block {
+    flex-basis: 50%;
+  }
+  .container > .block:nth-child(3) {
+    order: 4;
+  }
+
+  .container > .block:nth-child(4) {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .container > .block {
+    flex-basis: 33.33%;
+  }
+
+  .container > .block:nth-child(4) {
+    order: 6;
+  }
+
+  .container > .block:nth-child(5) {
+    order: 5;
+  }
+
+  .container > .block:nth-child(6) {
+    order: 4;
+  }
+}
+
+.container > div:nth-child(1) {
+  order: 1;
+  background-color: red;
+}
+
+.container > div:nth-child(2) {
+  order: 2;
+  background-color: rgb(204,0,0);
+}
+
+.container > div:nth-child(3) {
+  background-color: rgb(153, 0, 0);
+
+  order: 3;
+}
+
+.container > div:nth-child(4) {
+  order: 4;
+  background-color: rgb(102, 0, 0);
+}
+
+.container > div:nth-child(5) {
+  background-color: rgb(51,0,0);
+  order: 5;
+}
+
+.container > div:nth-child(6) {
+
+  background-color: black;
+  order: 6;
+}
