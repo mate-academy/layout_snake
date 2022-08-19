@@ -55,10 +55,10 @@ body {
     flex-direction: column;
   }
   .block:nth-child(3) {
-    order: 3;
+    order: 4;
   }
   .block:nth-child(4) {
-    order: 4;
+    order: 3;
   }
   .block:nth-child(5) {
     order: 5;
