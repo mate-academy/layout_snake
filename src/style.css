@@ -1,8 +1,8 @@
-body {
+.entire {
   margin: 0;
 }
 
-.tutto {
+.container {
   display: flex;
   color: white;
   flex-direction: column;
@@ -50,7 +50,7 @@ body {
 
 @media screen and (min-width: 600px) {
 
-  .tutto {
+  .container {
     width: auto;
     height: 900px;
     flex-direction: column;
@@ -79,7 +79,7 @@ body {
 
 @media screen and (min-width: 900px) {
 
-  .tutto {
+  .container {
     height: 600px;
   }
 
