@@ -47,6 +47,7 @@ body {
   .block {
     flex-basis: 50%;
   }
+
   .block:nth-child(3),
   .block:nth-child(5),
   .block:nth-child(6) {
@@ -58,9 +59,11 @@ body {
   .block {
     flex-basis: 33.33%;
   }
+
   .block:nth-child(5) {
     order: 2;
   }
+  
   .block:nth-child(4) {
     order: 3;
   }
