@@ -1,10 +1,14 @@
+body {
+  margin: 0;
+}
+
 .tutto {
   display: flex;
   color: white;
   flex-direction: column;
   text-align: center;
   font-size: 100px;
-  font-family: "Times New Roman", serif;
+  margin: 0;
 }
 
 .one {
@@ -34,30 +38,30 @@
 .box {
   height: 300px;
   width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 300px) {
   .box {
-    width: 450px;
+    width: auto;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .box {
-    height: 300px;
-    width: 300px;
-  }
 
   .tutto {
-    width: 650px;
+    width: auto;
     height: 900px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-
   }
 
+  .two {
+    order: 3;
+  }
   .three {
-    order: 2;
+    order: 4;
   }
 
   .four {
@@ -65,52 +69,30 @@
   }
 
   .five {
-    order: 3;
+    order: 2;
   }
 
   .six {
-    order: 4;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .box {
-    height: 300px;
-    width: 375px;
-  }
-
-  .tutto {
-    width: 750px;
-    height: 900px;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-  }
-
-  .first {
-    flex-direction: row-reverse;
+    order: 5;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .box {
-    height: 300px;
-    width: 300px;
-  }
 
   .tutto {
-    width: 900px;
     height: 600px;
-    flex-direction: row;
-    flex-wrap: wrap;
+  }
+
+  .two {
+    order: 2;
   }
 
   .three {
-    order: 1;
+    order: 4;
   }
 
   .four {
-    order: 4;
+    order: 5;
   }
 
   .five {
@@ -118,48 +100,6 @@
   }
 
   .six {
-    order: 2;
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  .box {
-    height: 300px;
-    width: 350px;
-  }
-
-  .tutto {
-    width: 1050px;
-    height: 600px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .box {
-    height: 300px;
-    width: 400px;
-  }
-
-  .tutto {
-    width: 1200px;
-    height: 600px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-}
-@media screen and (min-width: 4096px) {
-  .box {
-    height: 300px;
-    width: 1364px;
-  }
-
-  .tutto {
-    width: 4096px;
-    height: 600px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    order: 1;
   }
 }
