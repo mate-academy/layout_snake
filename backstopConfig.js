@@ -15,6 +15,11 @@ const config = {
   fileNameTemplate: '{scenarioLabel}_{viewportLabel}',
   viewports: [
     {
+      name: '4096',
+      width: 4096,
+      height: 3112,
+    },
+    {
       name: '1200',
       width: 1200,
       height: 200,
