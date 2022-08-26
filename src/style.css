@@ -1,0 +1,92 @@
+/* default margin = 0, font-style */
+.body {
+  margin: 0;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* main block property */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* size of blocks, position, property*/
+.blocks {
+  height: 300px;
+  min-width: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+/* blocks color decoration */
+.block__1 {
+  background-color: red;
+}
+
+.block__2 {
+  background-color: rgba(80%, 0%, 0%);
+}
+
+.block__3 {
+  background-color: rgba(60%, 0%, 0%);
+}
+
+.block__4 {
+  background-color: rgba(40%, 0%, 0%);
+}
+
+.block__5 {
+  background-color: rgba(20%, 0%, 0%);
+}
+
+.block__6 {
+  background-color: black;
+}
+
+@media (min-width: 300px) {
+  .blocks {
+    flex-basis: 100%;
+  }
+
+  .block__3 {
+    order: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .blocks {
+    flex-basis: 50%;
+  }
+
+  .block__3 {
+    order: 1;
+  }
+
+  .block__5 {
+    order: 1;
+  }
+
+  .block__6 {
+    order: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .blocks {
+    flex-basis: 33.33%;
+  }
+
+  .block__4 {
+    order: 6;
+  }
+
+  .block__5 {
+    order: 5;
+  }
+}
