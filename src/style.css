@@ -1,3 +1,7 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +19,6 @@ body {
   height: 300px;
   flex-basis: 100%;
   color: white;
-  font-family: Arial, serif;
   font-size: 100px;
   text-align: center;
   line-height: 300px;
