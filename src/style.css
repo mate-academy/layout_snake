@@ -5,6 +5,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
 }
 
 .block {
@@ -44,7 +45,7 @@ body {
 }
 
 @media (min-width: 800px) {
-  
+
   .container {
     flex-direction: row;
     flex-wrap: wrap;
