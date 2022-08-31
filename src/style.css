@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --height: 300px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  min-height: var(--height);
+  font-size: 100px;
+  color: white;
+  line-height: var(--height);
+  text-align: center;
+  min-width: var(--height);
+  flex-grow: 1;
+}
+
+.first {
+  background-color: red;
+}
+
+.second {
+  background-color: rgba(204, 0, 0);
+}
+
+.third {
+  background-color: rgba(153, 0, 0);
+}
+
+.fourth {
+  background-color: rgba(102, 0, 0);
+}
+
+.five {
+  background-color: rgba(51, 0, 0);
+}
+
+.six {
+  background-color: rgba(0, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .first,
+  .second {
+    order: -3;
+  }
+  .fourth {
+    order: -1;
+  }
+}
+
+@media (min-width: 900px) {
+  .third,
+  .six {
+    order: -3;
+  }
+  .five {
+    order: -2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .block {
+    min-width: 533px;
+  }
+}
+
+@media (min-width: 2132px) {
+  .block {
+    min-width: 710px;
+  }
+}
+
+@media (min-width: 2842px) {
+  .block {
+    min-width: 947px;
+  }
+}
+
+@media (min-width: 3788px) {
+  .block {
+    min-width: 1262px;
+  }
+}
+
+@media (min-width: 4096px) {
+  .block {
+    min-width: 1365px;
+  }
+}
