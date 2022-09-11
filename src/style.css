@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Arial, sans-serif;
   font-size: 100px;
@@ -69,6 +73,7 @@ body {
   .block {
     flex-basis: 33%;
   }
+
   .block_1,
   .block_2,
   .block_3 {
