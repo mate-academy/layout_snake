@@ -1,13 +1,16 @@
 # Boilerplate for layout tasks
+
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+
+- [DEMO LINK](https://Artem66.github.io/layout_snake/)
+- [TEST REPORT LINK](https://Artem66.github.io/layout_snake/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline)
 
 ## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
 
 ## The task
+
 Display six colored blocks on the screen without any extra margins:
 
 - Use `flexbox`
@@ -25,11 +28,13 @@ Display six colored blocks on the screen without any extra margins:
 - The first row is to be read from left ro right, the second row from right to left, the third row again from left to right (this way we have a zigzag, or a snake).
 
 ---
+
 --> [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md)
 
 ---
+
 ## Screenshots
 
-| 3 columns |2columns | 1 column |
-| --------- | ------- | -------- |
+| 3 columns                              | 2columns                             | 1 column                             |
+| -------------------------------------- | ------------------------------------ | ------------------------------------ |
 | ![1050px image](./references/1050.png) | ![750px image](./references/750.png) | ![450px image](./references/450.png) |
