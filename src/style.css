@@ -1,10 +1,8 @@
-* {
+body {
   margin: 0;
-}
-
-html {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
 }
 
 .block__wrapper {
@@ -16,7 +14,6 @@ html {
   display: flex;
   height: 300px;
   min-width: 300px;
-  font-size: 100px;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
