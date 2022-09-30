@@ -54,18 +54,18 @@ body {
   }
 
   .block-3 {
-    order: 4;
+    order: 2;
   }
 
   .block-4 {
-    order: 3;
+    order: 1;
   }
 
   .block-5 {
-    order: 5;
+    order: 3;
   }
   .block-6 {
-    order: 6;
+    order: 4;
   }
 }
 
