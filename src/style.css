@@ -1,0 +1,78 @@
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 300px;
+  min-width: 300px;
+  text-align: center;
+  line-height: 300px;
+  color: #fff;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.33%;
+  font-size: 100px;
+}
+
+.snake--part1 {
+  background-color: red;
+}
+
+.snake--part2 {
+  background-color: #c00;
+}
+
+.snake--part3 {
+  background-color: #900;
+}
+
+.snake--part4 {
+  background-color: #600;
+}
+
+.snake--part5 {
+  background-color: #300;
+}
+
+.snake--part6 {
+  background-color: #000;
+}
+
+@media (min-width:600px) {
+  .snake--part3 {
+    order: 2;
+  }
+
+  .snake--part4 {
+    order: 1;
+  }
+
+  .snake--part5 {
+    order: 3;
+  }
+
+  .snake--part6 {
+    order: 4;
+  }
+}
+
+@media (min-width:900px) {
+  .snake--part4 {
+    order: 4;
+  }
+
+  .snake--part5 {
+    order: 3;
+  }
+
+  .snake--part6 {
+    order: 2;
+  }
+}
