@@ -1,0 +1,95 @@
+/* 6 Checklist point Get used to style all elements using classes.
+Should I use body selector for body {margin: 0;}
+or better make a class for tag <body> ? */
+
+/* I don't understand this problem: if resolution
+is 899px there are 3 columns bur the third one is
+just a white space/ The same problem with resolution 599px*/
+
+body {
+  margin: 0;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.snake__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 300px;
+  min-width: 300px;
+  flex-basis: 33.33%;
+
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 100px;
+}
+
+.snake__block_1 {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.snake__block_2 {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.snake__block_3 {
+  background-color: hsl(0, 100%, 30%);
+}
+
+.snake__block_4 {
+  background-color: hsl(0, 100%, 20%);
+}
+
+.snake__block_5 {
+  background-color: hsl(0, 100%, 10%);
+}
+
+.snake__block_6 {
+  background-color: hsl(0, 100%, 0%);
+}
+
+@media (min-width: 900px) {
+  .snake__block {
+    flex-basis: 33.33%;
+  }
+  .snake__block_4 {
+    order: 3;
+  }
+  .snake__block_5 {
+    order: 2;
+  }
+  .snake__block_6 {
+    order: 1;
+  }
+}
+
+@media (max-width: 899px) {
+  .snake__block {
+    flex-basis: 50%;
+  }
+  .snake__block_3 {
+    order: 2;
+  }
+  .snake__block_4 {
+    order: 1;
+  }
+  .snake__block_5 {
+    order: 3;
+  }
+  .snake__block_6 {
+    order: 4;
+  }
+}
+
+@media (max-width: 599px) {
+  .snake__block {
+    flex-basis: 100%;
+    order: 0;
+  }
+}
