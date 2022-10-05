@@ -12,7 +12,6 @@ body {
 }
     
 .row {
-  border: 1px solid black;
   color: white;
   height: 300px;
   min-width: 300px;
