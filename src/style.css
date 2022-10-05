@@ -1,0 +1,95 @@
+html {
+  --col--1: red;
+  --col--2: rgb(204, 0, 0);
+  --col--3: rgb(153, 0, 0);
+  --col--4: rgb(102, 0, 0);
+  --col--5: rgb(51, 0, 0);
+  --col--6: black;
+
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  color: white;
+}
+
+.wrap {
+  display: flex;
+  background-color: brown;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.color__block {
+  display: flex;
+  min-width: 300px;
+  height: 300px;
+  justify-content: center;
+  /* flex-grow: 1; */
+}
+
+.block--1 {
+  background-color: var(--col--1);
+}
+
+.block--2 {
+  background-color: var(--col--2);
+}
+
+.block--3 {
+  background-color: var(--col--3);
+}
+
+.block--4 {
+  background-color: var(--col--4);
+}
+
+.block--5 {
+  background-color: var(--col--5);
+}
+
+.block--6 {
+  background-color: var(--col--6);
+}
+
+@media (min-width: 900px) {
+  .color__block {
+    flex-basis: 33.33%;
+  }
+
+  .block--4 {
+    order: 2;
+  }
+
+  .block--5 {
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .color__block {
+    flex-basis: 50%;
+  }
+
+  .block--3 {
+    order: 2;
+  }
+
+  .block--4 {
+    order: 1;
+  }
+
+  .block--5,
+  .block--6 {
+    order: 3;
+  }
+}
+
+@media (max-width: 599px) {
+  .color__block {
+    flex-basis: 100%;
+  }
+}
