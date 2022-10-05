@@ -20,6 +20,7 @@ body {
   display: flex;
   height: 300px;
   min-width: 300px;
+  flex-basis: 30%;
   flex-grow: 1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
@@ -44,6 +45,7 @@ body {
 .block-4 {
   background-color: rgb(102, 0, 0);
   order: 3;
+
 }
 
 .block-5 {
