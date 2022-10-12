@@ -47,10 +47,11 @@ body {
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .block--1 {
     order: 1;
   }
+
   .block--2 {
     order: 2;
   }
@@ -58,21 +59,21 @@ body {
   .block--3 {
     order: 4;
   }
-  
+
   .block--4 {
     order: 3;
   }
-  
+
   .block--5 {
     order: 5;
   }
-  
+
   .block--6 {
     order: 6;
   }
 }
 
-@media (min-width: 900px) and (max-width: 1199px) {
+@media (min-width: 900px) {
   .block--1 {
     order: 1;
   }
@@ -84,15 +85,15 @@ body {
   .block--3 {
     order: 3;
   }
-  
+
   .block--4 {
     order: 6;
   }
-  
+
   .block--5 {
     order: 5;
   }
-  
+
   .block--6 {
     order: 4;
   }
@@ -101,29 +102,5 @@ body {
 @media (min-width: 1200px) {
   .block {
     flex-basis: 33.3%;
-  }
-
-  .block--1 {
-    order: 1;
-  }
-
-  .block--2 {
-    order: 2;
-  }
-
-  .block--3 {
-    order: 3;
-  }
-  
-  .block--4 {
-    order: 6;
-  }
-  
-  .block--5 {
-    order: 5;
-  }
-  
-  .block--6 {
-    order: 4;
   }
 }
