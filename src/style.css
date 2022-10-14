@@ -56,3 +56,41 @@ body {
   order: 4;
 }
 
+@media screen and (min-width: 900px) {
+  .box {
+    min-width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .box {
+    min-width: 50%;
+  }
+  .box--3 {
+    order: 4;
+  }
+  .box--4 {
+    order: 3;
+  }
+  .box--5 {
+    order: 5;
+  }
+  .box--6 {
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .box {
+    width: 100%;
+  }
+  .box--4 {
+    order: 4;
+  }
+  .box--5 {
+    order: 5;
+  }
+  .box--6 {
+    order: 6;
+  }
+}
