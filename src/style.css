@@ -2,3 +2,57 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 300px;
+  min-width: 300px;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+
+  /* center the text via display: flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* center the text without display: flex */
+  /* text-align: center; */
+  /* line-height: 300px; */
+}
+
+/* 1st box must be red */
+.box--1 {
+  background: rgb(255, 0, 0);
+  order: 1;
+}
+
+/* 2nd box must be 4/5 red and 1/5 black (255*0.8 = 204) */
+.box--2 {
+  background: rgb(204, 0, 0);
+  order: 2;
+}
+
+.box--3 {
+  background: rgb(153, 0, 0);
+  order: 3;
+}
+
+.box--4 {
+  background: rgb(102, 0, 0);
+  order: 6;
+}
+
+.box--5 {
+  background: rgb(51, 0, 0);
+  order: 5;
+}
+
+.box--6 {
+  background: rgb(0, 0, 0);
+  order: 4;
+}
+
