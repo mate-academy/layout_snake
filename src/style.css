@@ -11,7 +11,7 @@ body {
 
 .box {
   color: #fff;
-  font-family: Arial;
+  font-family: Arial sans-serif;
   font-size: 100px;
   text-align: center;
   line-height: 300px;
@@ -20,19 +20,19 @@ body {
 .box-1 {
   height: 300px;
   width: 300px;
-  background-color: #ff0000;
+  background-color: #f00;
 }
 
 .box-2 {
   height: 300px;
   width: 300px;
-  background-color: #DD0000;
+  background-color: #d00;
 }
 
 .box-3 {
   height: 300px;
   width: 300px;
-  background-color: #CC0000;
+  background-color: #C00;
 }
 
 .box-4 {
@@ -50,7 +50,7 @@ body {
 .box-6 {
   height: 300px;
   width: 300px;
-  background-color: #000000;
+  background-color: #000;
 }
 
 @media (min-width: 900px) {
