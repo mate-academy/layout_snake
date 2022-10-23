@@ -62,27 +62,22 @@ body {
   }
 
   .item--2 {
-    background-color: #c00;
     order: 3;
   }
 
   .item--3 {
-    background-color: #900;
     order: 4;
   }
 
   .item--4 {
-    background-color: #600;
     order: 1;
   }
 
   .item--5 {
-    background-color: #300;
     order: 2;
   }
 
   .item--6 {
-    background-color: #000;
     order: 5;
   }
 }
@@ -93,28 +88,11 @@ body {
     flex-wrap: nowrap;
   }
 
-  .item--2 {
-    background-color: #c00;
-    order: 0;
-  }
-
-  .item--3 {
-    background-color: #900;
-    order: 0;
-  }
-
-  .item--4 {
-    background-color: #600;
-    order: 0;
-  }
-
-  .item--5 {
-    background-color: #300;
-    order: 0;
-  }
-
+  .item--2,
+  .item--3,
+  .item--4,
+  .item--5,
   .item--6 {
-    background-color: #000;
     order: 0;
   }
 }
