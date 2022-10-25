@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.snake {
+  display: flex;
+  height: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 300px;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.snake--1 {
+  background-color: red;
+}
+
+.snake--2 {
+  background-color: rgb(80%, 0%, 0%);
+}
+
+.snake--3 {
+  background-color: rgb(60%, 0%, 0%);
+}
+
+.snake--4 {
+  background-color: rgb(40%, 0%, 0%);
+}
+
+.snake--5 {
+  background-color: rgb(20%, 0%, 0%);
+}
+
+.snake--6 {
+  background-color: black;
+}
+
+@media (min-width:451px) and  (max-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .snake {
+    flex-basis: 50%;
+  }
+
+  .snake--3 {
+    order: 11;
+  }
+
+  .snake--5 {
+    order: 14;
+  }
+
+  .snake--6 {
+    order: 15;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .snake {
+    flex-basis: 33%;
+  }
+
+  .snake--4 {
+    order: 13;
+  }
+
+  .snake--5 {
+    order: 12;
+  }
+
+  .snake--6 {
+    order: 11;
+  }
+}
