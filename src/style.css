@@ -14,7 +14,6 @@ body {
 
 .block {
   display: flex;
-  flex-basis: 300px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 100px;
@@ -46,6 +45,13 @@ body {
 
 .block--6 {
   background-color: hsl(0, 100%, 0%);
+}
+
+@media (max-width: 599px) {
+  .block {
+    flex-basis: 100%;
+    order: 0;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
