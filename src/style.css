@@ -48,5 +48,28 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
 
+  .block--1 {
+    order: -1;
+  }
+
+  .block--2 {
+    order: 0;
+  }
+
+  .block--3 {
+    order: 2;
+  }
+
+  .block--4 {
+    order: 1;
+  }
+
+  .block--5 {
+    order: 3;
+  }
+
+  .block--6 {
+    order: 4;
+  }
+}
