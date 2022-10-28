@@ -14,13 +14,13 @@
 
 .block {
   display: flex;
-  height: 300px;
-  min-width: 300px;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 100px;
   justify-content: center;
   align-items: center;
+  height: 300px;
+  min-width: 300px;
 }
 
 .block--1 {
