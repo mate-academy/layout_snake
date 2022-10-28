@@ -2,17 +2,8 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Arial Regular";
-  src: url("fonts/ArialMT.eot");
-  src: url("fonts/ArialMT.woff") format("woff"),
-    url("fonts/ArialMT.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: "Arial Regular", sans-serif;
+  font-family: Arial, sans-serif;
   color: #fff;
   margin: 0;
 }
