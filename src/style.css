@@ -81,7 +81,11 @@
     flex-basis: 33.33%;
   }
 
-  .block--4 {
+  .block--3 {
+    order: 1;
+  }
+
+  .block--6 {
     order: 1;
   }
 
@@ -89,7 +93,7 @@
     order: 2;
   }
 
-  .block--6 {
+  .block--4 {
     order: 3;
   }
 }
