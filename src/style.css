@@ -1,0 +1,138 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 100px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.block {
+  width: 30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-1 {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.block-2 {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.block-3 {
+  background-color: hsl(0, 100%, 30%);
+}
+
+.block-4 {
+  background-color: hsl(0, 100%, 20%);
+  order: 3;
+}
+
+.block-5 {
+  background-color: hsl(0, 100%, 10%);
+  order: 2;
+}
+
+.block-6 {
+  background-color: hsl(0, 100%, 0%);
+  order: 1;
+}
+
+@media (max-width: 850px) and (min-width: 460px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .block {
+    width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .block-1 {
+    background-color: hsl(0, 100%, 50%);
+  }
+  
+  .block-2 {
+    background-color: hsl(0, 100%, 40%);
+  }
+  
+  .block-3 {
+    background-color: hsl(0, 100%, 30%);
+    order: 1;
+  }
+  
+  .block-4 {
+    background-color: hsl(0, 100%, 20%);
+    order: 0;
+  }
+  
+  .block-5 {
+    background-color: hsl(0, 100%, 10%);
+    order: 2;
+  }
+  
+  .block-6 {
+    background-color: hsl(0, 100%, 0%);
+    order: 3;
+  }
+}
+
+@media (max-width: 459px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .block {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .block-1 {
+    background-color: hsl(0, 100%, 50%);
+  }
+  
+  .block-2 {
+    background-color: hsl(0, 100%, 40%);
+  }
+  
+  .block-3 {
+    background-color: hsl(0, 100%, 30%);
+  }
+  
+  .block-4 {
+    background-color: hsl(0, 100%, 20%);
+    order: 1;
+  }
+  
+  .block-5 {
+    background-color: hsl(0, 100%, 10%);
+    order: 1;
+  }
+  
+  .block-6 {
+    background-color: hsl(0, 100%, 0%);
+  }
+}
