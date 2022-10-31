@@ -1,23 +1,24 @@
-html,
-body,
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
-.flex {
+.container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   align-items: stretch;
   justify-content: stretch;
-  font-family: "arial", sans-serif;
+  font-family: "arial", Helvetica, sans-serif;
 }
 
-.box {
+.block {
   height: 300px;
   min-width: 300px;
   color: white;
@@ -28,77 +29,77 @@ body,
   flex-shrink: 1;
 }
 
-.box-1 {
+.block-1 {
   background-color: rgb(255, 0, 0);
 }
 
-.box-2 {
+.block-2 {
   background-color: #cc0200;
 }
 
-.box-3 {
+.block-3 {
   background-color: #990001;
 }
 
-.box-4 {
+.block-4 {
   background-color: rgb(93, 14, 7);
 }
 
-.box-5 {
+.block-5 {
   background-color: rgb(46, 4, 2);
 }
 
-.box-6 {
+.block-6 {
   background-color: rgb(0, 0, 0);
 }
 
 @media screen and (min-width: 600px) {
-  .flex {
+  .container {
     flex-flow: row wrap;
   }
 
-  .box {
+  .block {
     flex-basis: 50%;
   }
 
-  .box-3 {
+  .block-3 {
     order: 5;
   }
-  .box-4 {
+  .block-4 {
     order: 4;
   }
 
-  .box-5 {
+  .block-5 {
     order: 5;
   }
 
-  .box-6 {
+  .block-6 {
     order: 6;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .flex {
+  .container {
     flex-flow: row wrap;
   }
 
-  .box {
+  .block {
     flex-basis: 33.33%;
   }
 
-  .box-3 {
+  .block-3 {
     order: 3;
   }
 
-  .box-4 {
+  .block-4 {
     order: 6;
   }
 
-  .box-5 {
+  .block-5 {
     order: 5;
   }
 
-  .box-6 {
+  .block-6 {
     order: 4;
   }
 }
