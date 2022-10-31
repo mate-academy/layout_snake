@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.snake__container {
+  display: flex;
+}
+
+.snakes {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  min-height: 300px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+}
+
+.snake-1 {
+  order: 1;
+  background-color: rgb(100%, 0%, 0%);
+}
+
+.snake-2 {
+  order: 2;
+  background-color: rgb(80%, 0%, 0%);
+}
+
+.snake-3 {
+  order: 3;
+  background-color: rgb(60%, 0%, 0%);
+}
+
+.snake-4 {
+  order: 4;
+  background-color: rgb(40%, 0%, 0%);
+}
+
+.snake-5 {
+  order: 5;
+  background-color: rgb(20%, 0%, 0%);
+}
+
+.snake-6 {
+  order: 6;
+  background-color: rgb(00%, 0%, 0%);
+}
+
+@media screen  and (min-width:300px) and (max-width: 599px) {
+  .snake__container {
+    flex-flow: column wrap;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .snake__container {
+    flex-flow: row wrap;
+  }
+
+  .snake-3 {
+    order: 4;
+  }
+
+  .snake-4 {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .snake-4 {
+    order: 6;
+  }
+  .snake-6 {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .snakes {
+    flex: 30%;
+    flex-shrink: 1;
+  }
+}
