@@ -59,17 +59,14 @@ body {
   }
 
   .block:nth-child(3) {
-    background-color: #900;
     order: 4;
   }
 
   .block:nth-child(4) {
-    background-color: #600;
     order: 3;
   }
 
   .block:nth-child(6) {
-    background-color: #000;
     order: 6;
   }
 }
@@ -80,12 +77,10 @@ body {
   }
 
   .block:nth-child(4) {
-    background-color: #600;
     order: 4;
   }
 
   .block:nth-child(6) {
-    background-color: #000;
     order: 6;
   }
 }
