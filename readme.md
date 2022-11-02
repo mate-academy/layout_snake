@@ -1,9 +1,9 @@
 # Boilerplate for layout tasks
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+- [DEMO LINK](https://Sergii-Osedchuk.github.io/layout_snake/)
+- [TEST REPORT LINK](https://Sergii-Osedchuk.github.io/layout_snake/report/html_report/)
 
-> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline)
+> Follow [this instructions](https://mate-academy.github.io/layout_task-gunpideline)
 
 ## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
 
@@ -25,7 +25,7 @@ Display six colored blocks on the screen without any extra margins:
 - The first row is to be read from left ro right, the second row from right to left, the third row again from left to right (this way we have a zigzag, or a snake).
 
 ---
---> [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md)
+--> [CHECKLIST](https://github.com/mate-academy/layout_snake/blob8/master/checklist.md)
 
 ---
 ## Screenshots
