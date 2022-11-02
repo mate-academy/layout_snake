@@ -44,6 +44,7 @@ body {
 .block--6 {
   background-color: #000;
 }
+
 @media (min-width: 600px) {
   .block--3 {
     order: 4;
