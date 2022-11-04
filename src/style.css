@@ -49,7 +49,7 @@ body {
 
 /* #endregion */
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 600px) {
   .box {
     flex-basis: 50%;
   }
@@ -61,7 +61,7 @@ body {
   }
 }
 
-@media screen and (min-width: 899px) {
+@media screen and (min-width: 900px) {
   .box {
     flex-basis: 33.33%;
   }
