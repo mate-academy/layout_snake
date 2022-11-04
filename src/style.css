@@ -29,7 +29,6 @@ body {
   height: var(--main__hight);
 
   flex-grow: 1;
-  flex-shrink: 0;
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -67,6 +66,9 @@ body {
 @media (min-width: 900px) {
   .conteiner {
     flex-direction: row;
+  }
+  .block {
+    flex-basis: calc(100% / 3);
   }
 
   /* #region orders */
