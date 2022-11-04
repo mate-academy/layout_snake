@@ -51,13 +51,6 @@ body {
   background-color: #000;
 }
 
-@media (min-width: 599px) {
-  .block {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
 @media (min-width: 900px) {
   .block {
     flex-direction: row;
@@ -70,5 +63,11 @@ body {
 
   .block--5 {
     order: 3;
+  }
+}
+
+@media (min-width: 599px) {
+  .block {
+    flex-direction: row;
   }
 }
