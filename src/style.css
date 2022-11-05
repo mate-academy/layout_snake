@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 450px) and (max-width: 750px) {
+@media (min-width: 451px) and (max-width: 750px) {
   .block {
     width: 50%;
   }
@@ -91,9 +91,8 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 451px) {
   .blocks {
-    width: 100%;
     flex-direction: column;
   }
 }
