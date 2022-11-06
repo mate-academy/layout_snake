@@ -5,7 +5,6 @@ body {
 }
 
 .main_block > * {
-
   height: var(--height_main_block);
   flex-grow: 1;
   text-align: center;
@@ -46,7 +45,6 @@ body {
   .main_block {
     flex-direction: row;
     flex-wrap: wrap;
-
   }
 
   .block_4 {
@@ -67,9 +65,8 @@ body {
 }
 
 @media (min-width: 900px) {
-  .main_block {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .main_block > * {
+    flex-basis: calc(100% / 3);
   }
 
   .block_4 {
