@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+
+}
+
+.box__1 {
+  background-color: rgb(100%, 0%, 0%);
+}
+
+.box__2 {
+  background-color: rgb(80%, 0%, 0%);
+}
+
+.box__3 {
+  background-color: rgb(60%, 0%, 0%);
+}
+
+.box__4 {
+  background-color: rgb(40%, 0%, 0%);
+}
+
+.box__5 {
+  background-color: rgb(20%, 0%, 0%);
+}
+
+.box__6 {
+  background-color: rgb(0%, 0%, 0%);
+}
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 600px) {
+  .box {
+    width: 50%;
+  }
+  .box__3,
+  .box__5,
+  .box__6 {
+    order: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .box {
+    flex-basis: 33.33%;
+  }
+  .box__4 {
+    order: 3;
+  }
+  .box__5 {
+    order: 2;
+  }
+
+}
+/* it means when */
