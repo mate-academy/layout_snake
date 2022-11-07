@@ -57,31 +57,24 @@ body {
 }
 
 @media(min-width:600px) {
-
   .container :nth-child(3) {
     order: 4;
   }
-
   .container :nth-child(4) {
     order: 3;
   }
-
 }
 
 @media(min-width:900px) {
-
   .container :nth-child(3) {
     order: 3;
   }
-
   .container :nth-child(4) {
     order: 6;
   }
-
   .container :nth-child(5) {
     order: 5;
   }
-
   .container :nth-child(6) {
     order: 4;
   }
