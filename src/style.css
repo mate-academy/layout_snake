@@ -1,9 +1,11 @@
-
 * {
   box-sizing: border-box;
 }
 
-html,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +15,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
 }
 
@@ -24,7 +25,7 @@ body {
   height: 300px;
   min-width: 300px;
   flex-grow: 1;
-  flex-basis: 33.3%;
+  flex-basis: calc(100% / 3);
 }
 
 .block--1 {
