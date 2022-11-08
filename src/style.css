@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .box {
+    flex-basis: 50%;
+  }
+  .box-1,
+  .box-2,
+  .box-4 {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .box {
+    flex-basis: 33.33%;
+  }
+  .box-4 {
+    order: 2;
+  }
+  .box-5 {
+    order: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  height: 300px;
+  width: 300px;
+
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: white;
+}
+
+.box-1 {
+  background-color: rgb(100%, 0%, 0%);
+}
+
+.box-2 {
+  background-color: rgb(80%, 0%, 0%);
+}
+
+.box-3 {
+  background-color: rgb(60%, 0%, 0%);
+}
+
+.box-4 {
+  background-color: rgb(40%, 0%, 0%);
+}
+
+.box-5 {
+  background-color: rgb(20%, 0%, 0%);
+}
+
+.box-6 {
+  background-color: rgb(00%, 0%, 0%);
+}
