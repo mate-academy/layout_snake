@@ -11,7 +11,7 @@ body {
 .block {
   display: flex;
   min-width: 300px;
-  flex-basis: 33%;
+  flex-basis: 33.3%;
   align-items: center;
   justify-content: center;
   color: white;
