@@ -10,7 +10,6 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
 }
 
 .block {
@@ -47,7 +46,11 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 1199px) {
+@media (min-width: 4095px) {
+  .block {
+    min-width: 1365.33px;
+  }
+
   .block--6 {
     order: 4;
   }
@@ -61,7 +64,65 @@ body {
   }
 }
 
-@media screen and (max-width: 899px) {
+@media (min-width: 1199px) and (max-width: 4095px) {
+  .block {
+    min-width: 400px;
+  }
+
+  .block--6 {
+    order: 4;
+  }
+
+  .block--5 {
+    order: 5;
+  }
+
+  .block--4 {
+    order: 6;
+  }
+}
+
+@media (min-width: 1049px) and (max-width: 1199px) {
+  .block {
+    min-width: 350px;
+  }
+
+  .block--6 {
+    order: 4;
+  }
+
+  .block--5 {
+    order: 5;
+  }
+
+  .block--4 {
+    order: 6;
+  }
+}
+
+@media (min-width: 899px) and (max-width: 1049px) {
+  .block {
+    min-width: 300px;
+  }
+
+  .block--6 {
+    order: 4;
+  }
+
+  .block--5 {
+    order: 5;
+  }
+
+  .block--4 {
+    order: 6;
+  }
+}
+
+@media (min-width: 749px) and (max-width: 899px) {
+  .block {
+    min-width: 375px;
+  }
+
   .block--6 {
     order: 6;
   }
@@ -77,9 +138,51 @@ body {
   .block--3 {
     order: 4;
   }
+
+  .block--2 {
+    order: 2;
+  }
+
+  .block--1 {
+    order: 1;
+  }
 }
 
-@media screen and (max-width: 599px) {
+@media (min-width: 599px) and (max-width: 749px) {
+  .block {
+    min-width: 300px;
+  }
+
+  .block--6 {
+    order: 6;
+  }
+
+  .block--5 {
+    order: 5;
+  }
+
+  .block--4 {
+    order: 3;
+  }
+
+  .block--3 {
+    order: 4;
+  }
+
+  .block--2 {
+    order: 2;
+  }
+
+  .block--1 {
+    order: 1;
+  }
+}
+
+@media (min-width: 449px) and (max-width: 599px) {
+  .block {
+    min-width: 450px;
+  }
+
   .block--6 {
     order: 6;
   }
@@ -98,5 +201,39 @@ body {
 
   .block--2 {
     order: 2;
+  }
+
+  .block--1 {
+    order: 1;
+  }
+}
+
+@media (max-width: 301px) {
+  .block {
+    min-width: 300px;
+  }
+
+  .block--6 {
+    order: 6;
+  }
+
+  .block--5 {
+    order: 5;
+  }
+
+  .block--4 {
+    order: 4;
+  }
+
+  .block--3 {
+    order: 3;
+  }
+
+  .block--2 {
+    order: 2;
+  }
+
+  .block--1 {
+    order: 1;
   }
 }
