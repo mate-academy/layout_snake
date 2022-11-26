@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.snake__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake_block {
+  height: 300px;
+  flex-basis: 30%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  min-width: 300px;
+}
+
+.snake_block:first-child {
+  background-color: red;
+}
+
+.snake_block:nth-child(n+2) {
+  background-color: rgb(204, 0, 0);
+}
+
+.snake_block:nth-child(n+3) {
+  background-color: rgb(153, 0, 0);
+}
+
+.snake_block:nth-child(n+4) {
+  background-color: rgb(102, 0, 0);
+}
+
+.snake_block:nth-child(n+5) {
+  background-color: rgb(51, 0, 0);
+}
+
+.snake_block:last-child {
+  background-color: black;
+}
+
+@media (min-width: 900px) {
+  .snake_block:nth-child(4n) {
+    order: 2;
+  }
+
+  .snake_block:nth-child(5n) {
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .snake_block:nth-child(n+3) {
+    order: 2;
+  }
+
+  .snake_block:nth-child(4n) {
+    order: 1;
+  }
+}
