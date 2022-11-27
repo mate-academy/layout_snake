@@ -1,0 +1,108 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+}
+
+/* --------------------------------------- */
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 33.33% 0 1;
+  height: 300px;
+  font-size: 100px;
+  color: #fff;
+}
+
+.block--1 {
+  background-color: red;
+  order: 1;
+}
+
+.block--2 {
+  background-color: #c00;
+  order: 2;
+}
+
+.block--3 {
+  background-color: #900;
+  order: 3;
+}
+
+.block--4 {
+  background-color: #600;
+  order: 6;
+}
+
+.block--5 {
+  background-color: #300;
+  order: 5;
+}
+
+.block--6 {
+  background-color: black;
+  order: 4;
+}
+
+@media screen and (max-width: 899px) {
+  .block {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .block--3 {
+    background-color: #900;
+    order: 4;
+  }
+
+  .block--4 {
+    background-color: #600;
+    order: 3;
+  }
+
+  .block--6 {
+    background-color: black;
+    order: 6;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .block {
+    flex-basis: 100%;
+  }
+
+  .block--3 {
+    background-color: #900;
+    order: 3;
+  }
+
+  .block--4 {
+    background-color: #600;
+    order: 4;
+  }
+}
