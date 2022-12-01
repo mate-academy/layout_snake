@@ -21,7 +21,7 @@ body {
 }
 
 .block {
-  min-width: 300px;
+  flex-basis: 300px;
   height: 300px;
   text-align: center;
   flex-grow: 1;
@@ -68,7 +68,7 @@ body {
 
 @media (min-width: 900px) {
   .block {
-    min-width: 33.3%;
+    flex-basis: 33.3%;
   }
 
   .block__one {
