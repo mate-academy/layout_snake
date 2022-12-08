@@ -58,9 +58,12 @@ body {
     order: 3;
   }
 
-  .block--5,
-  .block--6 {
+  .block--5 {
     order: 5;
+  }
+  
+  .block--6 {
+    order: 6;
   }
 }
 
