@@ -14,11 +14,12 @@ body {
 .block {
   height: 300px;
   min-width: 300px;
-  display: flex;
+  width: 33%;
   flex-wrap: wrap;
-  justify-content: center;
+  line-height: 300px;
   align-items: center;
   text-align: center;
+  flex-grow: 1;
 }
 
 .block-1 {
@@ -45,13 +46,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-@media (max-width: 599px) {
-  .block {
-    flex-basis: 100%;
-  }
-}
-
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .block-3 {
     order: 2;
   }
@@ -69,17 +64,7 @@ body {
   }
 }
 
-@media (max-width: 899px) {
-  .block {
-    flex-basis: 50%;
-  }
-}
-
 @media (min-width: 900px) {
-  .block {
-    flex-basis: 33.33%;
-  }
-
   .block-3 {
     order: 0;
   }
