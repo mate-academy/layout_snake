@@ -32,7 +32,10 @@
   .box--3 {
     order: 1;
   }
-  .box--5, .box--6 {
+  .box--5 {
+    order: 2;
+  }
+  .box--6 {
     order: 2;
   }
 }
@@ -54,7 +57,7 @@
   .box--5 {
     order: 1;
   }
-}  
+}
 
 .box--1 {
   background-color: rgb(100%, 0%, 0%);
