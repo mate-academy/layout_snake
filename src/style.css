@@ -16,12 +16,15 @@ body {
 }
 
 .block {
-  background-color: #f00;
   height: 300px;
   display: flex;
   flex-basis: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.block--1 {
+  background-color: #f00;
 }
 
 .block--2 {
