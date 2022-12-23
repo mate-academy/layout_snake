@@ -7,7 +7,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  min-width: 300px;
 }
 
 .cub {
@@ -16,13 +16,8 @@ body {
   box-sizing: border-box;
   line-height: 300px;
   text-align: center;
-  /* выставили по центру куба цифры */
   display: inline-block;
-  flex-shrink: 0;
-}
-
-.row--2 {
-  height: 300px;
+  /* flex-basis: 100%; */
 }
 
 .cub--1 {
@@ -30,19 +25,23 @@ body {
 }
 
 .cub--2 {
-  background-color: rgba(204, 0, 0, 20);
+  background-color: #c00;
 }
 
 .cub--3 {
-  background-color: rgba(153, 0, 0, 40);
+  background-color: #900;
 }
 
 .cub--4 {
-  background-color: rgba(102, 0, 0, 60);
+  background-color: #600;
 }
 
 .cub--5 {
-  background-color: rgba(51, 0, 0, 80);
+  background-color: #300;
+}
+
+.cub--6 {
+  background-color: black;
 }
 
 @media (min-width:600px) {
@@ -56,13 +55,6 @@ body {
 @media (min-width:900px) {
   .container {
     width: 900px;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:1800px) {
-  .container {
-    width: 1800px;
     flex-direction: row;
   }
 }
