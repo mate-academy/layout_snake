@@ -55,8 +55,12 @@ body {
     order: 1;
   }
 
-  .box-5 .box-6 {
-    order: 2 ;
+  .box-5 {
+    order: 2;
+  }
+
+  .box-6 {
+    order: 2;
   }
 }
 
@@ -70,11 +74,11 @@ body {
     order: 3;
   }
 
-  .box-6 {
-    order: 1;
-  }
-
   .box-5 {
     order: 2;
+  }
+
+  .box-6 {
+    order: 1;
   }
 }
