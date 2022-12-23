@@ -50,12 +50,31 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
   }
-  
+
+  .box-3 {
+    order: 1;
+  }
+
+  .box-5 .box-6 {
+    order: 2 ;
+  }
 }
 
 @media (min-width:900px) {
   .container {
     width: 900px;
     flex-direction: row;
+  }
+
+  .box-4 {
+    order: 3;
+  }
+
+  .box-6 {
+    order: 1;
+  }
+
+  .box-5 {
+    order: 2;
   }
 }
