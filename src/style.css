@@ -7,8 +7,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  border: 20px solid red;
-  /* постаила рамку чтоб видно было контейнер */
+  background-color: black;
 }
 
 .cub {
@@ -27,27 +26,23 @@ body {
 }
 
 .cub--1 {
-  background-color: red;
+  background-color: #f00;
 }
 
 .cub--2 {
-  background-color: blue;
+  background-color: rgba(204, 0, 0, 20);
 }
 
 .cub--3 {
-  background-color: gold;
+  background-color: rgba(153, 0, 0, 40);
 }
 
 .cub--4 {
-  background-color: green;
+  background-color: rgba(102, 0, 0, 60);
 }
 
 .cub--5 {
-  background-color: aqua;
-}
-
-.cub--6 {
-  background-color: blueviolet;
+  background-color: rgba(51, 0, 0, 80);
 }
 
 @media (min-width:600px) {
