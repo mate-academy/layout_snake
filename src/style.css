@@ -10,7 +10,7 @@ body {
   flex-direction: column;
 }
 
-.cub {
+.box {
   height: 300px;
   min-width: 300px;
   box-sizing: border-box;
@@ -20,27 +20,27 @@ body {
   /* flex-basis: 100%; */
 }
 
-.cub--1 {
+.box-1 {
   background-color: #f00;
 }
 
-.cub--2 {
+.box-2 {
   background-color: #c00;
 }
 
-.cub--3 {
+.box-3 {
   background-color: #900;
 }
 
-.cub--4 {
+.box-4 {
   background-color: #600;
 }
 
-.cub--5 {
+.box-5 {
   background-color: #300;
 }
 
-.cub--6 {
+.box-6 {
   background-color: black;
 }
 
@@ -50,6 +50,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
   }
+  
 }
 
 @media (min-width:900px) {
