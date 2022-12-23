@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 20px solid red;
+  /* постаила рамку чтоб видно было контейнер */
+}
+
+.cub {
+  height: 300px;
+  width: 300px;
+  box-sizing: border-box;
+  line-height: 300px;
+  text-align: center;
+  /* выставили по центру куба цифры */
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.row--2 {
+  height: 300px;
+}
+
+.cub--1 {
+  background-color: red;
+}
+
+.cub--2 {
+  background-color: blue;
+}
+
+.cub--3 {
+  background-color: gold;
+}
+
+.cub--4 {
+  background-color: green;
+}
+
+.cub--5 {
+  background-color: aqua;
+}
+
+.cub--6 {
+  background-color: blueviolet;
+}
+
+@media (min-width:600px) {
+  .container {
+    width: 600px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:900px) {
+  .container {
+    width: 900px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1800px) {
+  .container {
+    width: 1800px;
+    flex-direction: row;
+  }
+}
