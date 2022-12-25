@@ -17,7 +17,6 @@ body {
   line-height: 300px;
   text-align: center;
   display: inline-block;
-  /* flex-basis: 100%; */
 }
 
 .box-1 {
@@ -46,39 +45,46 @@ body {
 
 @media (min-width:600px) {
   .container {
-    width: 600px;
+    height: 900px;
     flex-wrap: wrap;
-    flex-direction: row;
+  }
+
+  .box-2 {
+    order: 1;
   }
 
   .box-3 {
     order: 1;
   }
 
-  .box-5 {
-    order: 2;
-  }
-
   .box-6 {
-    order: 2;
+    order: 1;
   }
 }
 
 @media (min-width:900px) {
   .container {
-    width: 900px;
-    flex-direction: row;
+    height: 600px;
+    flex-wrap: wrap;
   }
 
-  .box-4 {
-    order: 3;
+  .box-2 {
+    order: 1;
   }
 
-  .box-5 {
+  .box-3 {
     order: 2;
   }
 
-  .box-6 {
+  .box-4 {
+    order: 2;
+  }
+
+  .box-5 {
     order: 1;
+  }
+
+  .box-6 {
+    order: 0;
   }
 }
