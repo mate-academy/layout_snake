@@ -3,6 +3,7 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 - [DEMO LINK](https://<your_account>.github.io/layout_snake/)
 - [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
 
+
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline)
 
 ## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
