@@ -1,0 +1,103 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.box-field {
+  display: flex;
+  height: 300px;
+  flex-basis: 300px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-grow: 1;
+}
+
+.box-field.one {
+  background-color: rgb(100%, 0%, 0%);
+}
+
+.box-field.two {
+  background-color: rgb(80%, 0%, 0%);
+}
+
+.box-field.three {
+  background-color: rgb(60%, 0%, 0%);
+}
+
+.box-field.four {
+  background-color: rgb(40%, 0%, 0%);
+}
+
+.box-field.five {
+  background-color: rgb(20%, 0%, 0%);
+}
+
+.box-field.six {
+  background-color: rgb(0%, 0%, 0%);
+}
+
+@media (max-width: 600px) {
+  
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+ 
+  .row {
+    flex-wrap: wrap;
+  }
+  
+  .three {
+    order: 4;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+ 
+  .box-field {
+    flex-basis: 33%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .four {
+    order: 6;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 4;
+  }
+}
