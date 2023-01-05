@@ -2,8 +2,9 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
-  color: white
+  color: white;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -42,37 +43,35 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-
-
 @media (min-width:600px) {
-.container {
-  flex-direction: row;
-}
+  .container {
+    flex-direction: row;
+  }
 
-.box-1 {
-  order: 1;
+  .box-1 {
+    order: 1;
 
-}
+  }
 
-.box-2 {
-  order: 2;
-}
+  .box-2 {
+    order: 2;
+  }
 
-.box-3 {
-  order: 4;
-}
+  .box-3 {
+    order: 4;
+  }
 
-.box-4 {
-  order: 3;
+  .box-4 {
+    order: 3;
+  }
 
-}
+  .box-5 {
+    order: 5;
+  }
 
-.box-5 {
-  order: 5;
-}
-
-.box-6 {
-  order: 6;
+  .box-6 {
+    order: 6;
+  }
 }
 
 @media (min-width:900px) {
@@ -95,7 +94,6 @@ body {
 
   .box-4 {
     order: 6;
-
   }
 
   .box-5 {
@@ -105,7 +103,6 @@ body {
   .box-6 {
     order: 4;
   }
-
 }
 
 @media (min-width:1200px) {
