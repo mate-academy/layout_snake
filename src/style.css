@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 300px;
+  flex-basis: 300px;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+.odyn {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.dva {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.try {
+  background-color: hsl(0, 100%, 30%);
+}
+
+.chotyry {
+  background-color: hsl(0, 100%, 20%);
+}
+
+.pat {
+  background-color: hsl(0, 100%, 10%);
+}
+
+.shist {
+  background-color: hsl(0, 100%, 0%);
+}
+
+@media (min-width: 900px) {
+  .block {
+    flex-basis: 33%;
+  }
+
+  .chotyry {
+    order: 6;
+  }
+
+  .pat {
+    order: 5;
+  }
+
+  .shist {
+    order: 4;
+  }
+}
+
+@media (min-width: 451px) and (max-width:899px) {
+  .block {
+    flex-basis: 50%;
+  }
+
+  .try {
+    order: 4;
+  }
+
+  .chotyry {
+    order: 3;
+  }
+
+  .pat {
+    order: 5;
+  }
+
+  .shist {
+    order: 6;
+  }
+}
