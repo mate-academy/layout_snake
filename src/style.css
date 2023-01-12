@@ -53,12 +53,11 @@ body {
     box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 900px;
   }
 
   .block {
     box-sizing: border-box;
-    width: 50%;
+    flex-basis: 50%;
     flex-grow: 1;
   }
 
@@ -71,9 +70,10 @@ body {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 600px;
+
   }
   .block {
+    flex-basis: 33.33%;
     height: 300px;
     flex-grow: 1;
   }
