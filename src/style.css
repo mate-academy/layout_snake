@@ -1,14 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .box__card {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: auto;
+  flex-grow: 1;
   height: 300px;
+  min-width: 300px;
   background-color: red;
   font-size: 100px;
   color: white;
@@ -34,4 +41,40 @@
 
 .box__card:nth-child(n+6) {
   background-color: #000;
+}
+
+@media (min-width: 600px) and (max-width:899px) {
+  .box__card:nth-child(n+3) {
+    order: 2;
+  }
+
+  .box__card:nth-child(n+4) {
+    order: 1;
+  }
+
+  .box__card:nth-child(n+5) {
+    order: 3;
+  }
+
+  .box__card:nth-child(n+6) {
+    order: 4;
+  }
+}
+
+@media (min-width: 900px) {
+  .box__card:nth-child(n+3) {
+    order: 0;
+  }
+
+  .box__card:nth-child(n+4) {
+    order: 3;
+  }
+
+  .box__card:nth-child(n+5) {
+    order: 2;
+  }
+
+  .box__card:nth-child(n+6) {
+    order: 1;
+  }
 }
