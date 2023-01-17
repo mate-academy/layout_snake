@@ -3,12 +3,7 @@
   margin: 0;
 }
 
-body {
-  width: 100%;
-}
-
 .container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
