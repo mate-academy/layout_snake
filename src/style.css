@@ -1,0 +1,13 @@
+:root {
+  --first-block: #f00;
+  --second-block: #c00;
+  --third-block: #900;
+  --fourth-block: #600;
+  --fifth-block: #300;
+  --sixth-block: #000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
