@@ -1,0 +1,66 @@
+html {
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 96px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  min-width: 300px;
+  width: 33%;
+}
+
+.box-1 {
+  background-color: rgb(255 0 0);
+}
+
+.box-2 {
+  background-color: rgb(204 0 0);
+}
+
+.box-3 {
+  background-color: rgb(153 0 0);
+}
+
+.box-4 {
+  background-color: rgb(102 0 0);
+}
+
+.box-5 {
+  background-color: rgb(41 0 0);
+}
+
+.box-6 {
+  background-color: rgb(0 0 0);
+}
+
+@media (width: 300px) {
+  .container {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 300px) and (min-width: 600px) {
+  .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    justify-content: flex-start;
+  }
+}
