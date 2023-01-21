@@ -53,7 +53,7 @@ body {
   }
 }
 
-@media (max-width: 300px) and (min-width: 600px) {
+@media (min-width: 301px) and (max-width: 600px) {
   .container {
     justify-content: flex-end;
   }
