@@ -59,7 +59,7 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .container {
     justify-content: flex-start;
   }
