@@ -1,11 +1,15 @@
 body {
   margin: 0;
-  padding: 0;
+  margin: 0;
+  font-size: 100px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .box__card {
@@ -17,10 +21,6 @@ body {
   height: 300px;
   min-width: 300px;
   background-color: red;
-  font-size: 100px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .box__card:nth-child(n+2) {
@@ -44,6 +44,10 @@ body {
 }
 
 @media (min-width: 600px) and (max-width:899px) {
+  .box__card {
+    flex-basis: 50%;
+  }
+
   .box__card:nth-child(n+3) {
     order: 2;
   }
@@ -62,6 +66,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .box__card {
+    flex-basis: 33.33%;
+  }
+
   .box__card:nth-child(n+3) {
     order: 0;
   }
