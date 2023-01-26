@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_4096.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_4096.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_4096.png",
         "selector": "document",
         "fileName": "Entire_document_4096.png",
         "label": "Entire document",
@@ -21,7 +21,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 272
+          "analysisTime": 270
         }
       },
       "status": "pass"
@@ -29,7 +29,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_1200.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_1200.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_1200.png",
         "selector": "document",
         "fileName": "Entire_document_1200.png",
         "label": "Entire document",
@@ -53,7 +53,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_1050.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_1050.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_1050.png",
         "selector": "document",
         "fileName": "Entire_document_1050.png",
         "label": "Entire document",
@@ -77,7 +77,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_900.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_900.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_900.png",
         "selector": "document",
         "fileName": "Entire_document_900.png",
         "label": "Entire document",
@@ -101,7 +101,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_750.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_750.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_750.png",
         "selector": "document",
         "fileName": "Entire_document_750.png",
         "label": "Entire document",
@@ -125,7 +125,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_600.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_600.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_600.png",
         "selector": "document",
         "fileName": "Entire_document_600.png",
         "label": "Entire document",
@@ -149,7 +149,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_450.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_450.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_450.png",
         "selector": "document",
         "fileName": "Entire_document_450.png",
         "label": "Entire document",
@@ -173,7 +173,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document_300.png",
-        "test": "..\\bitmaps_test\\20230127-005236\\Entire_document_300.png",
+        "test": "..\\bitmaps_test\\20230127-010605\\Entire_document_300.png",
         "selector": "document",
         "fileName": "Entire_document_300.png",
         "label": "Entire document",
