@@ -15,6 +15,7 @@ body {
   background-color: black;
   color: white;
   font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .rectangle {
@@ -50,7 +51,7 @@ body {
   background-color: rgba(255,0,0,0);
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .block-4 {
     order: 1;
   }
@@ -65,5 +66,19 @@ body {
 
   .block-6 {
     order: 4;
+  }
+}
+
+@media (min-width: 900px) {
+  .block-6 {
+    order: 1;
+  }
+
+  .block-5 {
+    order: 2;
+  }
+
+  .block-4 {
+    order: 3;
   }
 }
