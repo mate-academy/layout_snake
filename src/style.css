@@ -69,3 +69,17 @@ body {
     order: 6;
   }
 }
+
+@media (max-width: 599px) {
+  .boxes {
+    flex-basis: 300px;
+  }
+
+  .box4 {
+    order: 4;
+  }
+
+  .box6 {
+    order: 6;
+  }
+}
