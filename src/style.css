@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-.container {
+html {
   font-family: Arial, sans-serif;
+}
+
+.container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
-.block {
+.container__block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +52,7 @@
 }
 
 @media (max-width: 899px) {
-  .block {
+  .container__block {
     width: 300px;
   }
 
@@ -69,7 +71,7 @@
 }
 
 @media (max-width: 599px) {
-  .block {
+  .container__block {
     order: 0;
   }
 }
