@@ -38,7 +38,6 @@ html {
 
 .cont3 {
   background-color: rgb(60%, 0%, 0%);
-
 }
 
 .cont4 {
@@ -53,9 +52,8 @@ html {
   background-color: black;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 300px) {
   .child {
-    flex-basis: calc(100% / 3);
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -73,7 +71,7 @@ html {
   }
 
   .cont4 {
-    order: 6;
+    order: 4;
   }
 
   .cont5 {
@@ -81,7 +79,7 @@ html {
   }
 
   .cont6 {
-    order: 4;
+    order: 6;
   }
 }
 
@@ -116,11 +114,13 @@ html {
   }
 }
 
-@media (min-width: 300px) {
+@media (min-width: 900px) {
   .child {
+    flex-basis: calc(100% / 3);
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   .cont1 {
     order: 1;
   }
@@ -134,7 +134,7 @@ html {
   }
 
   .cont4 {
-    order: 4;
+    order: 6;
   }
 
   .cont5 {
@@ -142,6 +142,6 @@ html {
   }
 
   .cont6 {
-    order: 6;
+    order: 4;
   }
 }
