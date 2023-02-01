@@ -16,13 +16,9 @@ body {
 }
 
 .block {
-  /* order: 0; */
-  /* min-width: 300px; */
   height: 300px;
   flex-basis: 300px;
   flex-grow: 1;
-  /* flex-shrink: 0; */
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   line-height: 300px;
@@ -52,16 +48,12 @@ body {
 .block__6 {
   background-color: rgb(0%, 0%, 0%);
 }
+
 @media (min-width: 600px) {
   .container {
     flex-direction: row;
   }
-  /* .block {
-      flex-basis: 50%;
-  } */
-  /* .block__4 {
-     order: 2;
-    } */
+
   .block__3,
   .block__5,
   .block__6 {
