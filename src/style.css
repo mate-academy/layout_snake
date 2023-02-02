@@ -19,7 +19,7 @@ body {
   justify-content: center;
   flex-basis: 33%;
   flex-grow: 1;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   font-size: 100px;
   height: 300px;
   width: 1000px;
