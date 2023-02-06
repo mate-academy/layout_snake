@@ -4,7 +4,7 @@
 }
 
 .snake {
-  width: 4096px;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -15,7 +15,8 @@
   justify-content: center;
   align-items: center;
   height: 300px;
-  width: 1300px;
+  min-width: 300px;
+  width: 33%;
   flex-grow: 1;
   font-size: 100px;
   font-family: Arial, Helvetica, sans-serif;
@@ -49,85 +50,22 @@
   background-color: rgb(0%, 0%, 0%);
 }
 
-@media (max-width: 1200px) {
-
-  .snake {
-    width: 1200px;
-  }
-
-  .block {
-    width: 400px;
-  }
-}
-
-@media ( max-width: 1050px) {
-
-  .snake {
-    width: 1050px;
-  }
-
-  .block {
-    width: 350px;
-  }
-}
-
-@media ( max-width: 900px) {
-
-  .snake {
-    width: 900px;
-  }
-
-  .block {
-    width: 300px;
-  }
-}
-
-@media ( max-width: 750px) {
-
-  .snake {
-    width: 750px;
-  }
-
-  .block {
-    width: 275px;
-  }
-  
-  .block--4 {
-    order: 0;
+@media (max-width: 899px) {
+  .block--6 {
+    order: 3;
   }
 
   .block--3 {
     order: 1;
   }
 
-  .block--5 {
-    order: 1;
+  .block--4 {
+    order: 0;
   }
 }
 
-@media (max-width: 600px) {
-
-  .snake {
-    width: 600px;
-  }
-}
-
-@media (max-width: 450px) {
-
-  .snake {
-    width: 450px;
-  }
-
+@media (max-width: 599px) {
   .block {
     order: 0;
   }
-
-}
-
-@media (max-width: 300px) {
-
-  .snake {
-    width: 300px;
-  }
-
 }

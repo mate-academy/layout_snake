@@ -22,7 +22,7 @@ Display six colored blocks on the screen without any extra margins:
 - The width of each block should be not less than its height (`300px`)
 - Blocks must be put in 2 to 6 rows and stretched: each row must fit either 1, 2, or 3 blocks.
   See the screenshots [here](./references).
-- The first row is to be read from left ro right, the second row from right to left, the third row again from left to right (this way we have a zigzag, or a snake).
+- The first row is to be read from left ro right, the second row from right to left, the third row again from left to right (this way we have a zigzag, or a snke).
 
 ---
 --> [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md)
