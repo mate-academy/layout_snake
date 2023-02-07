@@ -10,7 +10,6 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 
@@ -51,11 +50,7 @@ body {
   
 }
 
-
-@media (min-width: 600px) and (max-width:899px) {
-  .container {
-    flex-direction: row;
-  }
+@media (min-width: 600px) {
   .box__3 {
     order: 1;
   }
@@ -67,10 +62,7 @@ body {
   }
 }
 
-@media (min-width: 900px) and (max-width:1200px) {
-  .container {
-    flex-direction: row;
-  }
+@media (min-width: 900px) {
   .box {
     flex-basis: 33%;
   }
