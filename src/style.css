@@ -30,18 +30,21 @@ body {
   .box-4 {
     order: 2;
   }
+
   .box-5 {
     order: 1;
   }
 }
 
-@media (600px <= width < 900px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .box-3 {
     order: 1;
   }
+
   .box-5 {
     order: 1;
   }
+
   .box-6 {
     order: 1;
   }
