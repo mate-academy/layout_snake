@@ -5,6 +5,8 @@ body {
 
 .block {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
@@ -13,16 +15,9 @@ body {
   }
 }
 
-@media screen and (min-width: 451px) and (max-width:750px) {
-  .second {
-    flex-direction: row-reverse;
-    justify-content: left;
-  }
-}
-
 .box {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   height: 300px;
   width: 100%;
   text-align: center;
