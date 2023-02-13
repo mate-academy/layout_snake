@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box ;
+}
+
+.body {
+  margin: 0 ;
+  padding: 0 ;
+}
+
+.h1 {
+  display: none ;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap ;
+  flex-direction: row ;
+  align-items: center ;
+  justify-content: center ;
+}
+
+.blosk {
+  display: flex;
+  align-items: center ;
+  justify-content: center ;
+  flex-basis: 300px ;
+  min-height: 300px ;
+  min-width: 300px ;
+  font-family: "Arial", sans-serif ;
+  font-size: 100px ;
+  color: #fff ;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px ;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 750px ;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 450px ;
+  }
+}
+
+.blosk--1 {
+  background-color: #f00 ;
+}
+
+.blosk--2 {
+  background-color: #c00 ;
+}
+
+.blosk--3 {
+  background-color: #900 ;
+}
+
+.blosk--4 {
+  background-color: #600 ;
+}
+
+.blosk--5 {
+  background-color: #300 ;
+}
+
+.blosk--6 {
+  background-color: #000 ;
+}
+
+@media (min-width: 1199.5px) {
+  .box {
+    flex-direction: row ;
+  }
+  .blosk--1 {
+    order: 1 ;
+  }
+  .blosk--2 {
+    order: 2 ;
+  }
+  .blosk--3 {
+    order: 4 ;
+  }
+  .blosk--4 {
+    order: 6 ;
+  }
+  .blosk--5 {
+    order: 5 ;
+  }
+  .blosk--6 {
+    order: 4 ;
+  }
+  .blosk {
+    flex-basis: 33.33% ;
+  }
+}
+
+@media (max-width: 1199.5px) {
+  
+  .box {
+    flex-direction: row ;
+  }
+  .blosk--1 {
+    order: 1 ;
+  }
+  .blosk--2 {
+    order: 2 ;
+  }
+  .blosk--3 {
+    order: 4 ;
+  }
+  .blosk--4 {
+    order: 6 ;
+  }
+  .blosk--5 {
+    order: 5 ;
+  }
+  .blosk--6 {
+    order: 4 ;
+  }
+  .blosk {
+    flex-basis: 33.33% ;
+  }
+}
+
+@media (max-width: 899.5px) {
+  
+  .box {
+    flex-direction: row ;
+  }
+  .blosk--1 {
+    order: 1 ;
+  }
+  .blosk--2 {
+    order: 2 ;
+  }
+  .blosk--3 {
+    order: 4 ;
+  }
+  .blosk--4 {
+    order: 3 ;
+  }
+  .blosk--5 {
+    order: 5 ;
+  }
+  .blosk--6 {
+    order: 6 ;
+  }
+  .blosk {
+    flex-basis: 50% ;
+  }
+}
+
+@media (max-width: 599.5px) {
+  
+  .box {
+    flex-direction: column ;
+    align-items: stretch ;
+  }
+
+  .blosk {
+    order: 0 ;
+  }
+}
