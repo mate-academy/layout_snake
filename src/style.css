@@ -79,15 +79,15 @@ body {
 @media (min-width: 890px) {
 
   .block3 {
-    order: 1;
-  }
-  .block4 {
-    order: 3;
-  }
-  .block5 {
     order: 2;
   }
+  .block4 {
+    order: 6;
+  }
+  .block5 {
+    order: 5;
+  }
   .block6 {
-    order: 1;
+    order: 4;
   }
 }
