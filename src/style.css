@@ -1,0 +1,94 @@
+:root {
+  --heigh: 300px;
+  --widt: 300px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: auto;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  height: 300px;
+  line-height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box--1:nth-child(1) {
+  background-color: rgb(255, 0, 0);
+  height: var(--heigh);
+  width: var(--widt);
+  order: 1;
+}
+
+.box--2:nth-child(2) {
+  background-color: rgb(204, 0, 0);
+  height: var(--heigh);
+  width: var(--widt);
+  order: 2;
+}
+
+.box--3:nth-child(3) {
+  background-color: rgb(153, 0, 0);
+  height: var(--heigh);
+  width: var(--widt);
+  order: 3;
+}
+
+.box--4:nth-child(4) {
+  background-color: rgb(102, 0, 0);
+  height: var(--heigh);
+  width: var(--widt);
+  order: 4;
+}
+
+.box--5:nth-child(5) {
+  background-color: rgb(51, 0, 0);
+  height: var(--heigh);
+  width: var(--widt);
+  order: 5;
+}
+
+.box--6:nth-child(6) {
+  background-color: rgb(0, 0, 0);
+  height: var(--heigh);
+  width: var(--widt);
+  order: 6;
+}
+
+@media (min-width: 600px) {
+  .box {
+    flex-basis: 50%;
+  }
+
+  .box--3:nth-child(3) {
+    order: 4;
+  }
+
+  .box--4:nth-child(4) {
+    order: 3;
+  }
+}
+
+@media (min-width:900px) and (max-width: 4096px) {
+  .box {
+    flex-basis: 33.3%;
+  }
+
+  .box--6:nth-child(6) {
+    order: 4;
+  }
+
+  .box--4:nth-child(4) {
+    order: 6;
+  }
+}
