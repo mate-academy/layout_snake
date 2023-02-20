@@ -1,3 +1,4 @@
+/* RESET CSS */
 * {
   box-sizing: border-box;
 }
@@ -8,7 +9,7 @@ body {
   font-size: 100px;
   color: #fff;
 }
-
+/* MAIN CONTENT */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +46,7 @@ body {
 .block--6 {
   background-color: rgb(0, 0, 0);
 }
-
+/* MEDIA QUERIES DIFFERENT SCREEN WIDTHS*/
 @media (min-width: 600px) {
   .block {
     max-width: 50%;
