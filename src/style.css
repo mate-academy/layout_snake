@@ -53,7 +53,7 @@ body {
   background-color: black;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 899px) {
   .block {
     flex-basis: 50%;
   }
@@ -71,7 +71,7 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
   .container {
     flex-direction: column;
   }
