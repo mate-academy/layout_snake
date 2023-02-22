@@ -1,0 +1,94 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #fff;
+  --bgSaturation: 255;
+  --blockSize: 300px;
+  --rowWidth: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+}
+
+[class*="colorBox_"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--blockSize);
+  min-width: var(--blockSize);
+  background-color: rgb(var(--bgSaturation), 0, 0);
+}
+
+.colorBox_2 {
+  background-color: rgb(calc(var(--bgSaturation) / 5 * 4), 0, 0);
+}
+
+.colorBox_3 {
+  background-color: rgb(calc(var(--bgSaturation) / 5 * 3), 0, 0);
+}
+
+.colorBox_4 {
+  background-color: rgb(calc(var(--bgSaturation) / 5 * 2), 0, 0);
+}
+
+.colorBox_5 {
+  background-color: rgb(calc(var(--bgSaturation) / 5 * 1), 0, 0);
+}
+
+.colorBox_6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .main {
+    flex-flow: row wrap;
+  }
+
+  [class*="colorBox_"] {
+    width: 50%;
+  }
+
+  .colorBox_3 {
+    order: 2;
+  }
+
+  .colorBox_4 {
+    order: 1;
+  }
+
+  .colorBox_5 {
+    order: 3;
+  }
+
+  .colorBox_6 {
+    order: 4;
+  }
+}
+
+@media (min-width: 900px) {
+  [class*="colorBox_"] {
+    width: calc(var( --rowWidth) / 3);
+  }
+
+  .colorBox_3 {
+    order: 1;
+  }
+
+  .colorBox_4 {
+    order: 4;
+  }
+
+  .colorBox_5 {
+    order: 3;
+  }
+
+  .colorBox_6 {
+    order: 2;
+  }
+}
