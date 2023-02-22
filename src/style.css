@@ -11,6 +11,14 @@ html {
   color: white;
 }
 
+div.a {
+  font-family: inherit;
+}
+
+div.b {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   margin: 0;
 }
@@ -51,6 +59,7 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+
   .snake {
     max-width: 50%;
   }
@@ -63,13 +72,17 @@ body {
     order: 0;
   }
 
-  .snake--5,
+  .snake--5 {
+    order: 2;
+  }
+
   .snake--6 {
-    order: 3;
+    order: 4;
   }
 }
 
 @media (min-width: 900px) {
+
   .snake {
     min-width: 33.33%;
   }
