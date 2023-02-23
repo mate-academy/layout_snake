@@ -1,0 +1,89 @@
+html {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake {
+  font-family: "Open Sans", Helvetica, Futura, sans-serif;
+  line-height: 300px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.snake-1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.snake-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.snake-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.snake-4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.snake-5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.snake-6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .snake {
+    max-width: 50%;
+  }
+
+  .snake-3 {
+    order: 1;
+  }
+
+  .snake-4 {
+    order: 0;
+  }
+
+  .snake-5 {
+    order: 3;
+  }
+
+  .snake-6 {
+    order: 4;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .snake {
+    width: 33.33%;
+  }
+
+  .snake-4 {
+    order: 2;
+  }
+
+  .snake-5 {
+    order: 1;
+  }
+
+  .snake-6 {
+    order: 0;
+  }
+
+}
