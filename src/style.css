@@ -46,7 +46,7 @@ body {
 
 .block:nth-child(n) {
   order: var(--number);
-  background-color: rgb(calc(120% - var(--number) * 20%), 0%, 0%);
+  background-color: rgb(calc(255 * (1.2 - var(--number) * 0.2)), 0, 0);
 }
 
 @media (min-width: 600px) {
