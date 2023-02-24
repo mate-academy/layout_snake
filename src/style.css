@@ -27,17 +27,17 @@ body {
 }
 
 .block2 {
-  background-color: rgb(204, 52, 52);
+  background-color: rgb(204,0,0);
   order: 2;
 }
 
 .block3 {
-  background-color: rgba(165, 42, 42, 0.77);
+  background-color: rgb(153,0,0);
   order: 3;
 }
 
 .block4 {
-  background-color: rgba(97, 1, 1, 0.76);
+  background-color: rgb(102,0,0);
   order: 4;
 }
 
