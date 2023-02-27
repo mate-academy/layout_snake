@@ -64,7 +64,6 @@ html {
 @media screen and (max-width: 450px) {
   .block {
     flex-grow: 1;
-    flex-basis: 100%;
   }
 
 }
@@ -72,7 +71,7 @@ html {
 @media screen and (min-width: 451px) and (max-width: 750px) {
   .block {
     flex-grow: 1;
-    flex-basis: 50%;
+    min-width: 50%;
   }
 
   .block--3 {
@@ -87,7 +86,7 @@ html {
 @media screen and (min-width: 751px) {
   .block {
     flex-grow: 1;
-    flex-basis: 33%;
+    min-width: 33%;
   }
 
   .block--6 {
