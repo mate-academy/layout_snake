@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Arial, sans-serif;
+  src: url(fonts/Arial-BoldMT.ttf);
+  font-weight: normal;
+}
+
+body {
+  font-family: Arial, serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  background-color: #000;
+  flex-wrap: wrap;
+}
+
+.block {
+  min-width: 300px;
+  min-height: 300px;
+  font-size: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.block--1 {
+  background-color: red;
+  order: 1;
+}
+
+.block--2 {
+  background-color: rgba(255, 0, 0, calc(4 / 5));
+  order: 2;
+}
+
+.block--3 {
+  background-color: rgba(255, 0, 0, calc(3 / 5));
+  order: 3;
+}
+
+.block--4 {
+  background-color: rgba(255, 0, 0, calc(2 / 5));
+  order: 6;
+}
+
+.block--5 {
+  background-color: rgba(255, 0, 0, calc(1 / 5));
+  order: 5;
+}
+
+.block--6 {
+  background-color: black;
+  order: 4;
+}
+
+@media(min-width: 1200px) {
+  .block {
+    min-width: 33%;
+  }
+}
+
+@media(max-width: 899.98px) {
+  .block--3 {
+    order: 4;
+  }
+  .block--4 {
+    order: 3;
+  }
+  .block--5 {
+    order: 4;
+  }
+}
+
+@media(max-width: 599.98px) {
+  .block--3 {
+    order: 3;
+  }
+  .block--4 {
+    order: 4;
+  }
+}
