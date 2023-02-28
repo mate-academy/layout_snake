@@ -15,38 +15,43 @@ body {
 }
 
 .block {
+  display: flex;
   height: 300px;
-  width: 350px;
-  text-align: center;
+  min-width: 300px;
   flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 33.3%;
 }
 
 .block--1 {
-  background-color: #f00;
+  background-color: rgb(255, 0, 0);
 }
 
 .block--2 {
-  background-color: #b00;
+  background-color: rgb(204, 0, 0);
 }
 
 .block--3 {
-  background-color: #9a0000;
+  background-color: rgb(153, 0, 0);
 }
 
 .block--4 {
-  background-color: #5a0004;
+  background-color: rgb(99, 0, 0);
 }
 
 .block--5 {
-  background-color: #3a0002;
+  background-color: rgb(48, 0, 0);
 }
 
 .block--6 {
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 599px) {
   .block--1 {
     order: -1;
   }
@@ -67,7 +72,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 899px) {
   .block--1 {
     order: -1;
   }
