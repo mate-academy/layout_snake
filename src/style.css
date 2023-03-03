@@ -1,3 +1,10 @@
+body {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  margin: 0;
+}
+
 .block-1 {
   background-color: red;
 }
@@ -22,13 +29,6 @@
 
 .block-6 {
   background-color: rgb(0, 0, 0);
-}
-
-body {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
-  margin: 0;
 }
 
 .container {
