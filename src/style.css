@@ -1,0 +1,82 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+/* RESET MARGINS */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* CONTAINER FOR BLOCKS */
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* GENERAL CSS FOR BLOCKS */
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  flex-basis: 33%;
+  flex-grow: 1;
+}
+
+.block--1 {
+  background: #f00;
+  order: 1;
+}
+
+.block--2 {
+  background: #c00;
+  order: 2;
+}
+
+.block--3 {
+  background: #900;
+  order: 4;
+}
+
+.block--4 {
+  background: #600;
+  order: 6;
+}
+
+.block--5 {
+  background: #300;
+  order: 5;
+}
+
+.block--6 {
+  background: #000;
+  order: 4;
+}
+/* MEDIA FOR TABLET */
+@media screen and (max-width: 750px) {
+  .block {
+    flex-basis: 300px;
+  }
+
+  .block--1,
+  .block--2 ,
+  .block--4 {
+    order: 0;
+  }
+
+  .block--3,
+  .block--5,
+  .block--6 {
+    order: 1;
+  }
+
+}
+/* MEDIA FOR PHONES */
+@media screen and (max-width: 450px) {
+  .block {
+    order: 0;
+  }
+}
