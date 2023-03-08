@@ -1,27 +1,28 @@
+:root {
+  --block-height: 300px;
+}
+
 * {
-  margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   color: #fff;
-  --block-height: 300px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  min-width: calc(var(--block-height * 3));
 }
 
 .block {
   height: var(--block-height);
-  flex-basis: var(--block-height);
   line-height: var(--block-height);
+  flex-basis: 100%;
   text-align: center;
-  flex-grow: 1;
 }
 
 .block-1 {
@@ -49,6 +50,10 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+  .block {
+    flex-basis: 50%;
+  }
+
   .block-3 {
     order: 1;
   }
@@ -62,7 +67,7 @@ body {
   }
 }
 
-@media (min-width: 899px) {
+@media (min-width: 900px) {
   .block {
     flex-basis: 33.3%;
   }
