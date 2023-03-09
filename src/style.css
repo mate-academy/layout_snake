@@ -14,10 +14,10 @@ body {
   font-size: 100px;
 
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
 
-  width: 100%;
   min-width: 300px;
   min-height: 300px;
 
@@ -50,24 +50,38 @@ body {
 
 @media (min-width: 900px) {
   .snakeBlocks {
-    width: 33.3%;
+    width: 33.33%;
   }
 
-  .block4 {
-    order: 6;
+  .block6 {
+    order: 1;
   }
-}
 
-@media (min-width: 600px) and (max-width: 900px) {
-  .snakeBlocks {
-    width: 50%;
+  .block5 {
+    order: 2;
   }
 
   .block4 {
     order: 3;
   }
+}
 
-  .block3 {
+@media (min-width: 600px) {
+
+  .block6 {
     order: 4;
   }
+
+  .block5 {
+    order: 3;
+  }
+
+  .block4 {
+    order: 1;
+  }
+
+  .block3 {
+    order: 2;
+  }
+
 }
