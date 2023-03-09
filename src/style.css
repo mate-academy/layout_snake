@@ -1,0 +1,73 @@
+/* change of CSS style | easier CSS navigation/ improved values localization */
+
+body {
+  margin: 0;
+}
+
+.snakeContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snakeBlocks {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-width: 300px;
+  min-height: 300px;
+
+  color: white;
+}
+
+.block1 {
+  background-color: red;
+}
+
+.block2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.block3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.block4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.block5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.block6 {
+  background-color: black;
+}
+
+@media (min-width: 900px) {
+  .snakeBlocks {
+    width: 33.3%;
+  }
+
+  .block4 {
+    order: 6;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .snakeBlocks {
+    width: 50%;
+  }
+
+  .block4 {
+    order: 3;
+  }
+
+  .block3 {
+    order: 4;
+  }
+}
