@@ -19,8 +19,9 @@ body {
 .block {
   height: var(--block-height);
   flex-basis: var(--block-height);
-  line-height: var(--block-height);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-grow: 1;
 }
 
