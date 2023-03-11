@@ -49,7 +49,7 @@
 
 @media (min-width: 600px) and (max-width: 899px) {
   .block {
-    flex-basis: 33.333%;  
+    flex-basis: 50%;
   }
 
   .block-3 {
