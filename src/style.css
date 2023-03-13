@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake--cell {
+  height: 300px;
+  min-width: 300px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+}
+
+.snake--cell:nth-child(1) {
+  background-color: red;
+  order: 1;
+}
+
+.snake--cell:nth-child(2) {
+  background-color: rgb(204, 0, 0);
+  order: 2;
+}
+
+.snake--cell:nth-child(3) {
+  background-color: rgb(153, 0, 0);
+  order: 3;
+}
+
+.snake--cell:nth-child(4) {
+  background-color: rgb(102, 0, 0);
+  order: 4;
+}
+
+.snake--cell:nth-child(5) {
+  background-color: rgb(51, 0, 0);
+  order: 5;
+}
+
+.snake--cell:nth-child(6) {
+  background-color: black;
+  order: 6;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .snake--cell {
+    width: 50%;
+  }
+
+  .snake--cell:nth-child(3) {
+    background-color: rgb(153, 0, 0);
+    order: 4;
+  }
+
+  .snake--cell:nth-child(4) {
+    background-color: rgb(102, 0, 0);
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .snake--cell {
+    width: 33.33%;
+  }
+
+  .snake--cell:nth-child(4) {
+    order: 6;
+  }
+
+  .snake--cell:nth-child(6) {
+    order: 4;
+  }
+}
