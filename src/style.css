@@ -25,21 +25,67 @@ body {
 }
 
 .block--2 {
-  background-color: color-mix(in hsl, #ff0000, #000000 20%);
+  background-color: color-mix(in hsl, #f00, #000 20%);
 }
 
 .block--3 {
-  background-color: color-mix(in hsl, #ff0000, #000000 40%);
+  background-color: color-mix(in hsl, #f00, #000 40%);
 }
 
 .block--4 {
-  background-color: color-mix(in hsl, #ff0000, #000000 60%);
+  background-color: color-mix(in hsl, #f00, #000 60%);
 }
 
 .block--5 {
-  background-color: color-mix(in hsl, #ff0000, #000000 80%);
+  background-color: color-mix(in hsl, #f00, #000 80%);
 }
 
 .block--6 {
   background-color: black;
+}
+
+@media (min-width: 900px) {
+  .block {
+    min-width: 33.333%;
+  }
+
+  .block--4 {
+    order: 3;
+  }
+
+  .block--5 {
+    order: 2;
+  }
+  
+  .block--6 {
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .block {
+    min-width: 50%;
+  } 
+
+  .block--3 {
+    order: 2;
+  }
+
+  .block--4 {
+    order: 1;
+  }
+
+  .block--5 {
+    order: 3;
+  }
+
+  .block--6 {
+    order: 4;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+  .block {
+    min-width: 100%;
+  } 
 }
