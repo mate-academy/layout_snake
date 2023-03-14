@@ -51,8 +51,30 @@ body {
   order: 1;
 }
 
-@media screen (max-width: 900px) {
+@media (max-width: 899px) {
   .block {
     flex-basis: 50%;
+  }
+
+  .block3 {
+    order: 2;
+  }
+
+  .block4 {
+    order: 1;
+  }
+
+  .block6 {
+    order: 3;
+  }
+}
+
+@media (max-width: 599px) {
+  .block {
+    flex-basis: 100%;
+  }
+
+  .block3 {
+    order: 0;
   }
 }
