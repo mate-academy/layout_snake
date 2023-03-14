@@ -8,21 +8,19 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .block {
   width: 300px;
   height: 300px;
+  line-height: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   text-align: center;
   color: #fff;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-basis: 33.33%;
+  flex-shrink: 0;
 }
 
 .block--1 {
@@ -55,19 +53,11 @@ body {
   order: 6;
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (max-width: 599px) {
   .block {
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
-   
-  .block--1 {
-    order: 1;
-  }
-
-  .block--2 {
-    order: 2;
-  }
-
+  
   .block--3 {
     order: 4;
   }
@@ -85,9 +75,9 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 899px) {
   .block {
-    flex-basis: 33.33%;
+    flex-basis: 50%;
   }
   
   .block--1 {
@@ -112,9 +102,5 @@ body {
 
   .block--6 {
     order: 4;
-  }
-
-  .container {
-    max-width: 1190px;
   }
 }
