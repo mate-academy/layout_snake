@@ -20,6 +20,7 @@ body {
   font-size: 100px;
   text-align: center;
   color: #fff;
+  flex-grow: 1;
 }
 
 .block--1 {
@@ -53,6 +54,10 @@ body {
 }
 
 @media (min-width: 600px) {
+  .block {
+    flex-basis: 50%;
+  }
+   
   .block--1 {
     order: 1;
   }
@@ -79,6 +84,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .block {
+    flex-basis: 33.33%;
+  }
+  
   .block--1 {
     order: 1;
   }
