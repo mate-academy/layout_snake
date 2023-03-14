@@ -29,19 +29,19 @@ body {
 }
 
 .block--2 {
-  background-color: color-mix(in hsl, #f00, #000 20%);
+  background-color: rgb(204, 0, 0);
 }
 
 .block--3 {
-  background-color: color-mix(in hsl, #f00, #000 40%);
+  background-color: rgb(153, 0, 0);
 }
 
 .block--4 {
-  background-color: color-mix(in hsl, #f00, #000 60%);
+  background-color: rgb(102, 0, 0);
 }
 
 .block--5 {
-  background-color: color-mix(in hsl, #f00, #000 80%);
+  background-color: rgb(51, 0, 0);
 }
 
 .block--6 {
