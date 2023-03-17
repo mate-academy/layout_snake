@@ -19,6 +19,7 @@ body {
 .block {
   height: 300px;
   width: 100%;
+  min-width: 300px;
   font-family: inherit;
   text-align: center;
   line-height: 300px;
@@ -49,7 +50,7 @@ body {
   background-color: hsl(0, 100%, 0%);
 }
 
-@media (min-width: 599px) {
+@media (min-width: 600px) {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,7 +85,7 @@ body {
   }
 }
 
-@media (min-width: 899px) {
+@media (min-width: 900px) {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
