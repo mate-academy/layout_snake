@@ -1,5 +1,3 @@
-# Boilerplate for layout tasks
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://Lazarend.github.io/layout_snake/)
 - [TEST REPORT LINK](https://Lazarend.github.io/layout_snake/report/html_report/)
 
