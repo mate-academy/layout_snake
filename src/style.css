@@ -1,0 +1,97 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  flex-grow: 1;
+  flex-basis: 300px;
+  line-height: 300px;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+}
+
+.block--2 {
+  background-color: rgb( 80%, 0%, 0%);
+  order: 2;
+}
+
+.block--3 {
+  background-color: rgb( 60%, 0%, 0%);
+  order: 3;
+}
+
+.block--4 {
+  background-color: rgb( 40%, 0%, 0%);
+  order: 4;
+}
+
+.block--5 {
+  background-color: rgb( 20%, 0%, 0%);
+  order: 5;
+}
+
+.block--6 {
+  background-color: black;
+  order: 6;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    flex-direction: row;
+  }
+  .block {
+    flex-basis: 33.33%;
+  }
+  .block--6 {
+    order: 4;
+  }
+  .block--4 {
+    order: 6;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .block {
+    flex-basis: 33.33%;
+  }
+
+  .block--6 {
+    order: 4;
+  }
+
+  .block--4 {
+    order: 6;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .block {
+    min-width: auto;
+    max-width: auto;
+  }
+  
+  .block--4 {
+    order: 3;
+  }
+
+  .block--3 {
+    order: 4;
+  }
+}
