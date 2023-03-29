@@ -44,21 +44,6 @@ body {
   order: 6;
 }
 
-@media (min-width: 1600px) {
-  .container {
-    flex-direction: row;
-  }
-  .block {
-    flex-basis: 33.33%;
-  }
-  .block--6 {
-    order: 4;
-  }
-  .block--4 {
-    order: 6;
-  }
-}
-
 @media (min-width: 800px) {
   .container {
     flex-direction: row;
