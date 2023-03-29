@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: white;
 }
 
 body {
@@ -16,9 +22,6 @@ body {
   display: flex;
   height: 300px;
   width: 33.33%;
-  color: white;
-  font-size: 100px;
-  line-height: 300px;
   align-items: center;
   justify-content: center;
   text-align: center;
