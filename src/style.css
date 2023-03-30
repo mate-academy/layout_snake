@@ -16,7 +16,6 @@
 
   height: 300px;
   flex-basis: 300px;
-
   flex-grow: 1;
   flex-shrink: 0;
 
@@ -50,10 +49,6 @@
 }
 
 @media (min-width: 600px) {
-  .container {
-    flex-basis: 600px;
-  }
-
   .colored__block:nth-of-type(3) {
     order: 4;
   }
