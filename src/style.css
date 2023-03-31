@@ -1,0 +1,73 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  flex-grow: 1;
+  background-color: black;
+  font-size: 100px;
+  color: #fff;
+}
+
+.color-1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.color-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.color-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.color-4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.color-5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.color-6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .color {
+    flex-basis: 50%;
+  }
+
+  .color-1,
+  .color-2,
+  .color-4 {
+    order: -1;
+  }
+}
+
+@media (min-width: 900px) {
+  .color {
+    flex-basis: 33.33%;
+  }
+  .color-4 {
+    order: 2;
+  }
+
+  .color-5 {
+    order: 1;
+  }
+}
