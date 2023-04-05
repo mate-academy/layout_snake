@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-family: Arial, sans-serif;
-  font-size: 100px;
-  color: #fff;
-}
-
 body {
   margin: 0;
 }
@@ -15,6 +9,9 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: #fff;
 }
 
 .block {
@@ -74,7 +71,6 @@ body {
 }
 
 @media (min-width: 900px) {
-
   .block {
     order: 2;
   }
@@ -97,8 +93,32 @@ body {
   }
 }
 
-@media (min-width: 4096px) {
+@media (min-width: 1590px) {
   .block {
-    flex-basis: 1200px;
+    flex-basis: 530px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .block {
+    flex-basis: 700px;
+  }
+}
+
+@media (min-width: 2790px) {
+  .block {
+    flex-basis: 930px;
+  }
+}
+
+@media (min-width: 3720px) {
+  .block {
+    flex-basis: 1240px;
+  }
+}
+
+@media (min-width: 4950px) {
+  .block {
+    flex-basis: 1650px;
   }
 }
