@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  --color-1: #fe0000;
+  --color-2: #cc0001;
+  --color-3: #9a0000;
+  --color-4: #600;
+  --color-5: #300;
+  --color-6: #000;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color: #fff;
+  font-size: 100px;
+  flex: 0 0 33.33%;
+}
+
+.snake_body_01 {
+  background-color: var(--color-1);
+}
+
+.snake_body_02 {
+  background-color: var(--color-2);
+  /* order: 4; */
+}
+
+.snake_body_03 {
+  background-color: var(--color-3);
+}
+
+.snake_body_04 {
+  background-color: var(--color-4);
+  order: 6;
+}
+
+.snake_body_05 {
+  background-color: var(--color-5);
+  order: 5;
+}
+
+.snake_body_06 {
+  background-color: var(--color-6);
+  order: 4;
+}
+
+@media (max-width: 4096px) and (min-width: 900px) {
+  .snake {
+    flex: 1 0 33.33%;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 600px) {
+  .snake {
+    flex: 1 0 50%;
+  }
+
+  .snake_body_03 {
+    order: 4;
+  }
+
+  .snake_body_04 {
+    order: 3;
+  }
+
+  .snake_body_05 {
+    order: 5;
+  }
+
+  .snake_body_06 {
+    order: 6;
+  }
+}
+
+@media (max-width: 599px) {
+  .snake {
+    flex: 1 0 100%;
+  }
+
+  .snake_body_04 {
+    order: 4;
+  }
+
+  .snake_body_05 {
+    order: 5;
+  }
+
+  .snake_body_06 {
+    order: 6;
+  }
+}
