@@ -45,6 +45,7 @@ body {
 @media (min-width:600px) {
   .container {
     flex-direction: row;
+    flex-basis: 100%;
   }
   .block--3 {
     order: 2;
