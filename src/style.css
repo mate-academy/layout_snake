@@ -13,7 +13,6 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1199px;
 }
 
 .block {
@@ -52,26 +51,57 @@ body {
   order: 4;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
+  .block {
+    height: 300px;
+    flex-basis: 33.33%;
+  }
+  .block--1 {
+    order: 1;
+  }
+  .block--2 {
+    order: 2;
+  }
   .block--3 {
-    order: 4;
+    order: 3;
   }
   .block--6 {
-    order: 6;
+    order: 4;
   }
   .block--5 {
     order: 5;
   }
   .block--4 {
-    order: 3;
+    order: 6;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) and (max-width: 899px) {
+  .block--3 {
+    order: 4;
+  }
+  .block--4 {
+    order: 3;
+  }
+  .block--5 {
+    order: 5;
+  }
+  .block--6 {
+    order: 6;
+  }
+}
+
+@media (max-width: 599px) {
   .block--3 {
     order: 3;
   }
   .block--4 {
     order: 4;
+  }
+  .block--5 {
+    order: 5;
+  }
+  .block--6 {
+    order: 6;
   }
 }
