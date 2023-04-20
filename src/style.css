@@ -31,32 +31,32 @@ ul {
   color: #fff;
 }
 
-.block1 {
+.block--1 {
   background-color: rgb(100%, 0%, 0%);
   order: 1;
 }
 
-.block2 {
+.block--2 {
   background-color: rgb(80%, 0%, 0%);
   order: 2;
 }
 
-.block3 {
+.block--3 {
   background-color: rgb(60%, 0%, 0%);
   order: 3;
 }
 
-.block4 {
+.block--4 {
   background-color: rgb(40%, 0%, 0%);
   order: 6;
 }
 
-.block5 {
+.block--5 {
   background-color: rgb(20%, 0%, 0%);
   order: 5;
 }
 
-.block6 {
+.block--6 {
   background-color: rgb(0%, 0%, 0%);
   order: 4;
 }
@@ -66,19 +66,19 @@ ul {
     min-width: 50%;
   }
 
-  .block3 {
+  .block--3 {
     order: 4;
   }
 
-  .block4 {
+  .block--4 {
     order: 3;
   }
 
-  .block5 {
+  .block--5 {
     order: 5;
   }
 
-  .block6 {
+  .block--6 {
     order: 5;
   }
 }
@@ -88,7 +88,7 @@ ul {
     min-width: 100%;
   }
 
-  .block4 {
+  .block--4 {
     order: 4;
   }
 }
