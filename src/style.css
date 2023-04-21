@@ -20,14 +20,14 @@ body {
 
 .block {
   --max-height: 300px;
-
   display: flex;
   height: var(--max-height);
   flex-grow: 1;
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: rgb(0, 0, 0); 
+  background-color: rgb(0, 0, 0);
+
 }
 
 .block-1 {
