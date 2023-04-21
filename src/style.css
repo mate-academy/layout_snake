@@ -5,19 +5,6 @@ body {
   color: white;
 }
 
-.heading {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -30,35 +17,35 @@ body {
   align-items: center;
   height: 300px;
   min-width: 300px;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
 
 .block--2 {
   order: 2;
-  background-color: #d50000;
+  background-color: rgb(204, 0, 0);
 }
 
 .block--3 {
   order: 3;
-  background-color: #990001;
+  background-color: rgb(153, 0, 0);
 }
 
 .block--4 {
   order: 4;
-  background-color: #600;
+  background-color: rgb(102, 0, 0)0;
 }
 
 .block--5 {
   order: 5;
-  background-color: #300;
+  background-color: rgb(51, 0, 0);
 }
 
 .block--6 {
   order: 6;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) {
   .block {
     flex-basis: 50%;
   }
