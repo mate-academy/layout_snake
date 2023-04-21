@@ -67,10 +67,10 @@ body {
 
 @media (min-width: 600px) and (max-width: 899px) {
   .block-3 {
-    order: 1;
+    order: 2;
   }
   .block-4 {
-    order: 2;
+    order: 1;
   }
   .block-5 {
     order: 3;
