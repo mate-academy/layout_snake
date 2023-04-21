@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
 }
 
 .block {
@@ -65,24 +64,6 @@ body {
 }
 
 @media (min-width: 899px) {
-  .block-container {
-    flex-direction: row;
-  }
-  .block-3 {
-    order: 0;
-  }
-  .block-4 {
-    order: 3;
-  }
-  .block-5 {
-    order: 2;
-  }
-  .block-6 {
-    order: 1;
-  }
-}
-
-@media (min-width: 1199px) {
   .block-container {
     flex-direction: row;
   }
