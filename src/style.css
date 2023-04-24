@@ -56,10 +56,6 @@ body {
 }
 
 @media (min-width: 900px) {
-  .block {
-    flex: 33.33%;
-  }
-
   .block-4 {
     order: 3;
   }
@@ -70,5 +66,9 @@ body {
 
   .block-6 {
     order: 1;
+  }
+
+  .block {
+    flex: 33.33%;
   }
 }
