@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.block {
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 300px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-content: stretch;
+
+}
+
+.block--1 {
+  background-color: rgb(255 0 0);
+}
+
+.block--2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.block--3 {
+  background-color: rgba(153, 0, 0);
+}
+
+.block--4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.block--5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.block--6 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    align-content: stretch;
+  }
+  .block {
+    flex-basis: 33%;
+  }
+  .block--3 {
+    flex-grow: 1;
+    order: 1;
+  }
+  .block--4 {
+    flex-grow: 1;
+    order: 4;
+  }
+  .block--5 {
+    flex-grow: 1;
+    order: 3;
+  }
+  .block--6 {
+    flex-grow: 1;
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .container {
+    flex-direction: row;
+  }
+  .block--3 {
+    order: 2;
+  }
+  .block--4 {
+    order: 1;
+  }
+  .block--5 {
+    order: 3;
+  }
+  .block--6 {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 599px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
