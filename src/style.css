@@ -1,82 +1,92 @@
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+body {
+  margin: 0;
 }
 
-td,
-th {
-  border: 1px solid #ddd;
-  text-align: center;
-  padding: 8px;
-}
-
-.block {
-  min-height: 300px;
-  width: 300px;
+.container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.blocks {
+  display: flex;
   justify-content: center;
-  font-family: arial, sans-serif;
+  align-items: center;
   font-size: 100px;
-}
-
-.column {
-  display: flex;
-}
-
-.column-3 {
-  flex-wrap: wrap;
-}
-
-.column-2 {
-  flex-wrap: wrap;
-}
-
-.column-1 {
-  flex-direction: column;
-}
-
-li {
-  list-style: none;
-  flex-basis: 100%;
-}
-
-.box {
-  display: flex;
-}
-
-.row:nth-child(2n) .box {
-  flex-direction: row-reverse;
-}
-
-.color-item-1 {
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background-color: rgba(255,0,0,255);
+  width: 100%;
+  height: 300px;
 }
 
-.color-item-2 {
-  color: white;
-  background-color: rgba(205,2,0,255);
+@media (min-width: 600px) {
+  .blocks {
+    flex-basis: 50%;
+  }
+
+  .red-1,
+  .red-2 {
+    order: -1;
+  }
+
+  .red-4 {
+    order: 0;
+  }
+
+  .red-3 {
+    order: 1;
+  }
+
+  .red-5,
+  .red-6 {
+    order: 2;
+  }
 }
 
-.color-item-3 {
-  color: white;
-  background-color: rgba(153,0,1,255);
+@media (min-width: 900px) {
+  .blocks {
+    flex-basis: 33.33%;
+  }
+
+  .red-1,
+  .red-2,
+  .red-3 {
+    order: -1;
+  }
+
+  .red-4 {
+    order: 2;
+  }
+
+  .red-5 {
+    order: 1;
+  }
+
+  .red-6 {
+    order: 0;
+  }
 }
 
-.color-item-4 {
-  color: white;
-  background-color: rgba(102,0,0,255);
+.red-1 {
+  background-color: rgba(100%, 0%, 0%, 1);
 }
 
-.color-item-5 {
-  color: white;
-  background-color: rgba(51,0,0,255);
+.red-2 {
+  background-color: rgba(80%, 0%, 0%, 1);
 }
 
-.color-item-6 {
-  color: white;
-  background-color: rgba(0,0,0,255);
+.red-3 {
+  background-color: rgba(60%, 0%, 0%, 1);
+}
+
+.red-4 {
+  background-color: rgba(40%, 0%, 0%, 1);
+}
+
+.red-5 {
+  background-color: rgba(20%, 0%, 0%, 1);
+}
+
+.red-6 {
+  background-color: rgba(0%, 0%, 0%, 1);
 }
