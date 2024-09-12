@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+.numbers {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.number {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  min-width: 300px;
+  flex-basis: calc(100% / 3);
+}
+
+.number--1 {
+  background-color: #f00;
+}
+
+.number--2 {
+  background-color: #c00;
+}
+
+.number--3 {
+  background-color: #900;
+}
+
+.number--4 {
+  background-color: #600;
+}
+
+.number--5 {
+  background-color: #300;
+}
+
+.number--6 {
+  background-color: #000;
+}
+
+@media (min-width: 900px) {
+  .number--6 {
+    order: 1;
+  }
+
+  .number--5 {
+    order: 2;
+  }
+
+  .number--4 {
+    order: 3;
+  }
+}
+
+@media (min-width: 600px) and (max-width:899px) {
+  .number--4 {
+    order: 1;
+  }
+
+  .number--3 {
+    order: 2;
+  }
+
+  .number--5 {
+    order: 4;
+  }
+
+  .number--6 {
+    order: 5;
+  }
+}
