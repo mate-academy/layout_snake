@@ -1,0 +1,93 @@
+:root {
+  --color-fonts: #fff;
+  --color-snake-1: hsl(0, 100%, 50%);
+  --color-snake-2: hsl(0, 100%, 40%);
+  --color-snake-3: hsl(0, 100%, 30%);
+  --color-snake-4: hsl(0, 100%, 20%);
+  --color-snake-5: hsl(0, 100%, 10%);
+  --color-snake-6: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+  font-size: 100px;
+}
+
+.snake {
+  flex-basis: 100%;
+  height: 300px;
+  color: var(--color-fonts);
+  line-height: 300px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .snake {
+    flex-basis: 50%;
+  }
+
+  .snake--3 {
+    order: 1;
+  }
+
+  .snake--5,
+  .snake--6 {
+    order: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .snake {
+    flex-basis: 33.33%;
+  }
+
+  .snake--3,
+  .snake--6 {
+    order: 0;
+  }
+
+  .snake--5 {
+    order: 1;
+  }
+
+  .snake--4 {
+    order: 2;
+  }
+}
+
+.snake--1 {
+  background-color: var(--color-snake-1);
+}
+
+.snake--2 {
+  background-color: var(--color-snake-2);
+}
+
+.snake--3 {
+  background-color: var(--color-snake-3);
+}
+
+.snake--4 {
+  background-color: var(--color-snake-4);
+}
+
+.snake--5 {
+  background-color: var(--color-snake-5);
+}
+
+.snake--6 {
+  background-color: var(--color-snake-6);
+}
