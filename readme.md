@@ -1,13 +1,16 @@
 # Boilerplate for layout tasks
+
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+
+- [DEMO LINK](https://marinagera.github.io/layout_snake/)
+- [TEST REPORT LINK](https://marinagera.github.io/layout_snake/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline)
 
 ## ❗️❗️❗️ This task does not require an approval of mentor and is automatically approved on the platform when the tests are passed❗️❗️❗️
 
 ## The task
+
 Display six colored blocks on the screen without any extra margins:
 
 - Use `flexbox`
@@ -30,6 +33,6 @@ Display six colored blocks on the screen without any extra margins:
 ---
 ## Screenshots
 
-| 3 columns |2columns | 1 column |
-| --------- | ------- | -------- |
+| 3 columns                              | 2columns                             | 1 column                             |
+| -------------------------------------- | ------------------------------------ | ------------------------------------ |
 | ![1050px image](./references/1050.png) | ![750px image](./references/750.png) | ![450px image](./references/450.png) |
