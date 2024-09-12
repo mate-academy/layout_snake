@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.block--1 {
+  background-color: #f00;
+}
+
+.block--2 {
+  background-color: #c00;
+}
+
+.block--3 {
+  background-color: #8f0000;
+}
+
+.block--4 {
+  background-color: #600;
+}
+
+.block--5 {
+  background-color: #300;
+}
+
+.block--6 {
+  background-color: #000;
+}
+
+@media (min-width: 300px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .block {
+    order: 1;
+  }
+
+  .block--1,
+  .block--2,
+  .block--4 {
+    order: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .block {
+    order: 2;
+  }
+
+  .block--1,
+  .block--2,
+  .block--3,
+  .block--6 {
+    order: 0;
+  }
+
+  .block--5 {
+    order: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block {
+    flex-basis: 400px;
+  }
+}
+
+@media (min-width: 1590px) {
+  .block {
+    flex-basis: 530px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .block {
+    flex-basis: 700px;
+  }
+}
+
+@media (min-width: 2790px) {
+  .block {
+    flex-basis: 930px;
+  }
+}
+
+@media (min-width: 3720px) {
+  .block {
+    flex-basis: 1240px;
+  }
+}
+
+@media (min-width: 4950px) {
+  .block {
+    flex-basis: 1650px;
+  }
+}
