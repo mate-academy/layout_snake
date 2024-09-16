@@ -1,7 +1,7 @@
 # Boilerplate for layout tasks
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+- [DEMO LINK](https://yuriiKorolov.github.io/layout_snake/)
+- [TEST REPORT LINK](https://yuriiKorolov.github.io/layout_snake/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline)
 
@@ -32,4 +32,4 @@ Display six colored blocks on the screen without any extra margins:
 
 | 3 columns |2columns | 1 column |
 | --------- | ------- | -------- |
-| ![1050px image](./references/1050.png) | ![750px image](./references/750.png) | ![450px image](./references/450.png) |
+| ![1050px image](./references/1050.png) | ![750px image](./references/750.png) | ![450px image](./refeh300rences/450.png) |
