@@ -1,11 +1,12 @@
 # Boilerplate for layout tasks
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+- [DEMO LINK](https://igor-1987.github.io/layout_snake/)
+- [TEST REPORT LINK](https://igor-1987.github.io/layout_snake/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline)
 
 ## ❗️❗️❗️ This task does not require an approval of mentor and is automatically approved on the platform when the tests are passed❗️❗️❗️
+
 
 ## The task
 Display six colored blocks on the screen without any extra margins:
