@@ -1,0 +1,101 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+
+.snake {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.snake_box {
+  min-width: 300px;
+  height: 300px;
+  font-size: 100px;
+  text-align: center;
+  line-height: 300px;
+  color: white;
+  flex-grow: 1;
+}
+
+.snake_box_2 {
+  background-color: rgba(0, 0, 0, 0.2);
+  order: 10;
+}
+
+.snake_box_3 {
+  background-color: rgba(0, 0, 0, 0.4);
+  order: 20;
+}
+
+.snake_box_4 {
+  background-color: rgba(0, 0, 0, 0.6);
+  order: 30;
+}
+
+.snake_box_5 {
+  background-color: rgba(0, 0, 0, 0.8);
+  order: 40;
+}
+
+.snake_box_6 {
+  background-color: rgba(0, 0, 0, 1);
+  order: 50;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .snake {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .snake_box_4 {
+    order: 15;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .snake {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .snake_box_4 {
+    order: 50;
+  }
+  .snake_box_5 {
+    order: 40;
+  }
+  .snake_box_6 {
+    order: 30;
+  }
+}
+
+@media (min-width: 1200px) {
+  .snake {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .snake_box {
+    min-width: 33%;
+  }
+
+  .snake_box_4 {
+    order: 50;
+  }
+
+  .snake_box_5 {
+    order: 40;
+  }
+
+  .snake_box_6 {
+    order: 30;
+  }
+}
