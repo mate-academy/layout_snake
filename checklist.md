@@ -23,7 +23,7 @@ maximum 3 blocks in a row.
 GOOD example:
 ```css
 /* style.css */
-.block {
+.container__block {
   height: 300px;
 }
 ```
