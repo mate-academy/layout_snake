@@ -1,7 +1,7 @@
 # Boilerplate for layout tasks
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_snake/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_snake/report/html_report/)
+Replace `serbinm` with your Github username and copy the links to Pull Request description:
+- [DEMO LINK](https://serbinm.github.io/layout_snake/)
+- [TEST REPORT LINK](https://serbinm.github.io/layout_snake/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline)
 
@@ -10,9 +10,9 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 ## The task
 Display six colored blocks on the screen without any extra margins:
 
-- Use `flexbox`
-- Each block should be `300px` high.
-- Each block should have its number (1 to 6) placed in its center in white Arial 100px font.
++ Use `flexbox`
++ Each block should be `300px` high.
++ Each block should have its number (1 to 6) placed in its center in white Arial 100px font.
   - Block 1 must be `red`
   - Block 2 must be 4/5 `red` and 1/5 `black`
   - Block 3 must be 3/5 `red` and 2/5 `black`
