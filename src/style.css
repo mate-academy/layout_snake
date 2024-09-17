@@ -1,0 +1,109 @@
+* {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.blok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 300px;
+  min-width: 300px;
+  /* flex-basis: 300px; */
+  font-size: 100px;
+  color: rgb(255,255,255);
+}
+
+.blok_1 {
+  background-color: rgb(255,0,0);
+}
+
+.blok_2 {
+  background-color: rgb(204,0,0);
+}
+
+.blok_3 {
+  background-color: rgb(153,0,0);
+}
+
+.blok_4 {
+  background-color: rgb(102,0,0);
+
+}
+
+.blok_5 {
+  background-color: rgb(51,0,0);
+
+}
+
+.blok_6 {
+  background-color: rgb(0,0,0);
+}
+
+@media (min-width: 599px) {
+  .blok_3 {
+    order: 2;
+  }
+  .blok_4 {
+    order: 1;
+  }
+  .blok_5 {
+    order: 3;
+  }
+  .blok_6 {
+    order: 4;
+  }
+}
+
+@media (min-width: 899px) {
+  .blok_1 {
+    order: 0;
+  }
+  .blok_2 {
+    order: 0;
+  }
+  .blok_3 {
+    order: 0 ;
+  }
+  .blok_4 {
+    order: 3;
+  }
+  .blok_5 {
+    order: 2 ;
+  }
+  .blok_6 {
+    order: 1;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .blok {
+    min-width: 400px;
+  }
+
+}
+
+@media (min-width: 1300px) {
+  .blok {
+    min-width: 1200px;
+  }
+
+}
