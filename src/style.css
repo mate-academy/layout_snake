@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  flex-basis: 33%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  line-height: 300px;
+}
+
+.one {
+  background-color: rgb(255,0,0);
+  order: 1;
+}
+
+.two {
+  background-color: rgb(204,0,0);
+  order: 2;
+}
+
+.there {
+  background-color: rgb(153,0,0);
+  order: 3;
+}
+
+.four {
+  background-color: rgb(102,0,0);
+  order: 6;
+}
+
+.five {
+  background-color: rgb(51,0,0);
+  order: 5;
+}
+
+.six {
+  background-color: black;
+  order: 4;
+}
+
+@media (max-width: 599px) {
+
+  .body {
+    flex-direction: column;
+  }
+
+  .block {
+    flex-basis: 100%;
+  }
+
+  .one {
+    order: 1;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .there {
+    order: 3;
+  }
+
+  .four {
+    order: 4;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    flex-basis: 50%;
+  }
+
+  .one {
+    order: 1;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .there {
+    order: 4;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+
+}
