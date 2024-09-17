@@ -1,0 +1,63 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.snake {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 100px;
+  color: white;
+}
+
+.block {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 33%;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  min-width: 300px;
+}
+
+.block-1 {
+  background-color: red;
+}
+
+.block-2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.block-3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.block-4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.block-5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.block-6 {
+  background-color: black;
+}
+
+@media (min-width: 600px) {
+  .block-1,
+  .block-2,
+  .block-4 {
+    order: -1;
+  }
+}
+
+@media (min-width: 900px) {
+  .block-4 {
+    order: 3;
+  }
+  .block-5 {
+    order: 2;
+  }
+}
