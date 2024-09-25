@@ -28,17 +28,18 @@
     "backstopjs": "^5.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^8.0.1",
+    "gulp-sass": "^5.0.0",
     "jest": "^27.3.1",
     "node-sass": "^4.14.1",
     "parcel": "^1.12.4",
     "stylelint": "^13.5.0",
-    "stylelint-scss": "^3.17.2"
+    "stylelint-scss": "^3.17.2",
+    "sugarss": "^4.0.1"
   },
   "mateAcademy": {
     "projectType": "layout",
     "linters": {
       "bem": false
     }
-  },
-  "dependencies": {}
+  }
 }
