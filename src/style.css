@@ -1,0 +1,69 @@
+.page {
+  margin: 0;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+  min-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-basis: 33%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.block--1 {
+  background-color: red;
+}
+
+.block--2 {
+  background-color: #c00;
+}
+
+.block--3 {
+  background-color: #900;
+}
+
+.block--4 {
+  background-color: #600;
+}
+
+.block--5 {
+  background-color: #320000;
+}
+
+.block--6 {
+  background-color: #000;
+}
+
+@media (min-width: 900px) {
+  .block--4 {
+    order: 2;
+  }
+
+  .block--5 {
+    order: 1;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 600px) {
+  .block--6 {
+    order: 3;
+  }
+
+  .block--5 {
+    order: 2;
+  }
+
+  .block--3 {
+    order: 1;
+  }
+}
