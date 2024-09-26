@@ -1,0 +1,107 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.snake {
+  display: flex;
+  flex-direction: column;
+}
+
+.snake__block {
+  display: flex;
+  flex-grow: 1;
+  height: 300px;
+  min-width: 300px;
+  background-color: red;
+
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.block--2 {
+  background-color: rgb(204, 0 , 0);
+}
+
+.block--3 {
+  background-color: rgb(153, 0 , 0);
+}
+
+.block--4 {
+  background-color: rgb(102, 0 , 0);
+}
+
+.block--5 {
+  background-color: rgb(51, 0 , 0);
+}
+
+.block--6 {
+  background-color: black;
+}
+
+@media (min-width: 600px) {
+  .snake {
+    flex-flow: row wrap;
+  }
+  .block--1 {
+    order: 1;
+  }
+  .block--2 {
+    order: 2;
+  }
+  .block--3 {
+    order: 4;
+  }
+  .block--4 {
+    order: 3;
+  }
+  .block--5 {
+    order: 5;
+  }
+  .block--6 {
+    order: 6;
+  }
+}
+
+@media (min-width: 900px) {
+  .snake {
+    flex-flow: row wrap;
+  }
+  .block--1 {
+    order: 01;
+  }
+  .block--2 {
+    order: 02;
+  }
+  .block--3 {
+    order: 03;
+  }
+  .block--4 {
+    order: 06;
+  }
+  .block--5 {
+    order: 05;
+  }
+  .block--6 {
+    order: 04;
+  }
+}
+
+@media (min-width: 1200px) {
+  .snake {
+    flex-flow: row wrap;
+  }
+  .snake__block {
+    min-width: 400px;
+  }
+}
