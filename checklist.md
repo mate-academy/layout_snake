@@ -1,4 +1,4 @@
-1. [STYLES] - Make sure you used `flexbox` in your solution.
+1. [STYLES] - Make sure you used `flexheader__box` in your solution.
 2. [STYLES] - Don't write too many media queries. You have 3 base scenarios, so
 chose the approach - mobile-first or desktop-first - and use it as starting
 (default) case.
@@ -37,7 +37,7 @@ BAD example:
 ```
 7. [STYLES] - use alternative font-family in case the main one doesn't work
 [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
-8. [STYLES] - if you use `box-sizing: border-box` property, use it with `*`
+8. [STYLES] - if you use `header__box-sizing: border-header__box` property, use it with `*`
 selector.
 9. [TESTS] - Make sure to reset default margins for `body`
 10. [TESTS] - Check your breakpoints - should it be at 600px or 599px?
