@@ -1,0 +1,77 @@
+body {
+  margin: auto;
+  color: white;
+  font-size: 100px;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bricks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  flex: 1 0 33%;
+  min-width: 300px;
+}
+
+.brick--1 {
+  background-color: red;
+}
+
+.brick--2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.brick--3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.brick--4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.brick--5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.brick--6 {
+  background-color: black;
+}
+
+@media all and (min-width: 600px) {
+  .brick--3 {
+    order: 2;
+  }
+  .brick--4 {
+    order: 1;
+  }
+  .brick--5 {
+    order: 3;
+  }
+  .brick--6 {
+    order: 4;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .brick--3 {
+    order: 0;
+  }
+  .brick--4 {
+    order: 3;
+  }
+  .brick--5 {
+    order: 2;
+  }
+  .brick--6 {
+    order: 1;
+  }
+}
