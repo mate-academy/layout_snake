@@ -1,0 +1,104 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 33.33%;
+  height: 300px;
+  min-width: 300px;
+  /* flex-basis: 300px; */
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.one {
+  background-color: #f00;
+}
+
+.two {
+  background-color: #c00;
+}
+
+.three {
+  background-color: #900;
+}
+
+.four {
+  background-color: #600;
+}
+
+.five {
+  background-color: #300;
+}
+
+.six {
+  background-color: #000;
+}
+
+@media (min-width:600px) {
+  .one {
+    order: 1;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .three {
+    order: 4;
+  }
+
+  .four {
+    order: 3;
+  }
+
+  .five {
+    order: 5;
+  }
+
+  .six {
+    order: 6;
+  }
+}
+
+@media (min-width:900px) {
+
+  .one {
+    order: -1;
+  }
+
+  .two {
+    order: -1;
+  }
+
+  .three {
+    order: -1;
+  }
+
+  .four {
+    order: 1;
+  }
+
+  .five {
+    order: 0;
+  }
+
+  .six {
+    order: -1;
+  }
+
+}
