@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100px;
+  font-family: Arial Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  min-width: 300px;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
+}
+
+.box1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.box2 {
+  background-color: rgb(204, 0, 0);
+}
+
+.box3 {
+  background-color: rgb(153, 0, 0);
+}
+
+.box4 {
+  background-color: rgb(102, 0, 0);
+}
+
+.box5 {
+  background-color: rgb(51, 0, 0);
+}
+
+.box6 {
+  background-color: rgb(10, 0, 0);
+}
+
+@media (min-width: 900px) {
+  .box {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+  }
+
+  .box4 {
+    order: 3;
+  }
+
+  .box5 {
+    order: 2;
+  }
+
+  .box6 {
+    order: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .box {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+  }
+
+  .box3 {
+    order: 2;
+  }
+
+  .box4 {
+    order: 1;
+  }
+
+  .box5 {
+    order: 3;
+  }
+
+  .box6 {
+    order: 4;
+  }
+}
+
+@media (min-width: 900px) {
+  .box {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+  }
+
+  .box4 {
+    order: 3;
+  }
+
+  .box5 {
+    order: 2;
+  }
+
+  .box6 {
+    order: 1;
+  }
+}
+
+@media (max-width: 599px) {
+  .box {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+}
